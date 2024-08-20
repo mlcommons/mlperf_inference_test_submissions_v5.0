@@ -1,0 +1,51 @@
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: MLPerf inference results updater
+
+
+on:
+  push:
+    branches: [ "main", "v4.1" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      CM_INDEX: "on"
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.10" ]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python3 -m pip install cm4mlops
+
+    - name: Run MLPerf Inference Submission Checker and generate results summary
+      run: |
+        cmr "run mlc mlcommons mlperf inference mlperf-inference submission checker submission-checker mlc-submission-checker" --adr.inference-src.tags=_repo.https://github.com/GATEOverflow/inference --quiet --extra_args=" --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
+        cmr "convert from-csv to-md" --csv_file=summary.csv --md_file=README.md
+
+        USER=admin
+        EMAIL=admin@mlcommons.org
+
+        git config --global user.name "$USER"
+        git config --global user.email "$EMAIL"
+        git remote set-url origin https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}
+        git add summary*
+        echo -e 'Please download [summary.xlsx](summary.xlsx) to view the most recent results. [This page](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCu8F7Hwck-AGJ5kWxi2G3xhO5MJoc_igybvsxjCt-2fEEYyf2BIcR0rTXW0eUzg/pubhtml) shows the results which may not be the latest. \n ```' > temp
+        tail -n 16 checker_log.txt >> temp
+        echo -e '\n```\n' >> temp
+        cat temp | cat - README.md > temp1
+        head -n 100 temp1 > README.md
+        git add README.md
+        
+        git diff-index --quiet HEAD || (git commit -am "Updated results summary" && git push)
