@@ -154,7 +154,7 @@ def processdata(data, category, division, availability):
             mydata[myid][key] = item[key]
     return mydata
 
-models = [ "stable-diffusion-xl" ]
+models = [ "resnet", "retinanet", "bert-99", "bert-99.9", "gptj-99", "gptj-99.9", "llama2-70b-99", "llama2-70b-99.9", "stable-diffusion-xl", "dlrm-v2-99", "dlrm-v2-99.9", "3d-unet-99", "3d-unet-99.9"  ]
 
 '''
 def get_precision_info(measurements_url, platform):
