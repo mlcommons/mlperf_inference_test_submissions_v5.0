@@ -28,4 +28,4 @@ jobs:
         python3 -m pip install cm4mlops
     - name: Run MLPerf Inference Submission Checker
       run: |
-        cmr "run mlc mlcommons mlperf inference mlperf-inference submission checker submission-checker mlc-submission-checker" --adr.inference-src.tags=_repo.https://github.com/GATEOverflow/inference --quiet --extra_args=" --skip-extra-files-in-root-check" --submission_dir=./
+        cm run script --tags=run,mlperf,inference,submission-checker,_short-run --adr.inference-src.tags=_repo.https://github.com/GATEOverflow/inference --quiet --extra_args=" --skip-extra-files-in-root-check" --submission_dir=./
