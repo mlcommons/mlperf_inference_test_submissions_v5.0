@@ -1,5 +1,6 @@
 import json
 import os
+import time
 
 with open('summary_results.json') as f:
     data = json.load(f)
@@ -8,7 +9,7 @@ with open('summary_results.json') as f:
 
 tableposhtml = """
 <!-- pager -->
-<div class="pager PAGER_CLASS">
+<div class="pager1 PAGER_CLASS">
             <img src="https://mottie.github.io/tablesorter/addons/pager/icons/first.png" class="first"/>
             <img src="https://mottie.github.io/tablesorter/addons/pager/icons/prev.png" class="prev"/>
             <span class="pagedisplay"></span> <!-- this can be any element, including an input -->
@@ -123,7 +124,7 @@ def getsummarydata(data, category, division):
 def processdata(data, category, division, availability):
 
     mydata = {}
-    needed_keys_model = [ "has_power", "Performance_Result", "Performance_Units", "Accuracy", "Location" ]
+    needed_keys_model = [ "has_power", "Performance_Result", "Performance_Units", "Accuracy", "Location", "weight_data_types" ]
 
     needed_keys_system = [ "System", "Submitter", "Availability", "Category", "Accelerator", "a#", "Nodes", "Processor", "host_processors_per_node", "host_processor_core_count", "Notes", "Software", "Details", "Platform" ]
     for item in data:
@@ -153,9 +154,11 @@ def processdata(data, category, division, availability):
             mydata[myid][key] = item[key]
     return mydata
 
-models = [ "llama2-70b-99", "llama2-70b-99.9", "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl",  "dlrm-v2-99", "dlrm-v2-99.9", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
+models = [ "stable-diffusion-xl" ]
 
+'''
 def get_precision_info(measurements_url, platform):
+    return {'weight_data_types': '', 'input_data_types': ''}
     github_url  = measurements_url
     measurements_json_file_name =  find_match(get_json_files(github_url), f"""^{platform}.*\\.json$""")
     measurements_json = f"""{github_url}{measurements_json_file_name}"""
@@ -164,10 +167,11 @@ def get_precision_info(measurements_url, platform):
     with urllib.request.urlopen(measurements_json_raw) as url:
         data = json.load(url)
     return data
+'''
 
 def construct_table(category, division, availability):
     # Initialize the HTML table with the header
-    html = f"""<div id="results_table_{availability}" class="resultstable_wrapper"> <table class="resultstable tablesorter" id="results_{availability}">"""
+    html = f"""<div id="results_table_{availability}" class="resultstable_wrapper"> <table class="resultstable tablesorter tableclosed tabledatacenter" id="results_{availability}">"""
     html += "<thead> <tr>"
     
     # Table header
@@ -176,19 +180,7 @@ def construct_table(category, division, availability):
         <th id="col-system" class="headcol col-system">System</th>
         <th id="col-submitter" class="headcol col-submitter">Submitter</th>
         <th id="col-accelerator" class="headcol col-accelerator">Accelerator</th>
-        <th id="col-llama2-99" colspan="2">LLAMA2-70B-99</th>
-        <th id="col-llama2-99.9" colspan="2">LLAMA2-70B-99.9</th>
-        <th id="col-gptj-99" colspan="2">GPTJ-99</th>
-        <th id="col-gptj-99.9" colspan="2">GPTJ-99.9</th>
-        <th id="col-bert-99" colspan="2">Bert-99</th>
-        <th id="col-bert-99.9" colspan="2">Bert-99.9</th>
-        <th id="col-dlrm-v2-99" colspan="2">Stable Diffusion</th>
-        <th id="col-dlrm-v2-99" colspan="2">DLRM-v2-99</th>
-        <th id="col-dlrm-v2-99.9" colspan="2">DLRM-v2-99.9</th>
-        <th id="col-retinanet" colspan="2">Retinanet</th>
-        <th id="col-resnet50" colspan="2">ResNet50</th>
-        <th id="col-3d-unet-99" colspan="1">3d-unet-99</th>
-        <th id="col-3d-unet-99.9" colspan="1">3d-unet-99.9</th>
+        <th id="col-sdxl" colspan="1">Stable Diffusion</th>
         """ 
     tableheader += "</tr>"
     
@@ -198,29 +190,6 @@ def construct_table(category, division, availability):
     <th class="headcol col-system"></th>
     <th class="headcol col-submitter"></th>
     <th class="headcol col-accelerator"></th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Offline</th>
     <th class="col-scenario">Offline</th>
     """
     
@@ -238,7 +207,7 @@ def construct_table(category, division, availability):
     #models = [ "resnet", "retinanet", "bert-99", "bert-99.9", "gptj-99", "gptj-99.9", "llama2-70b-99", "llama2-70b-99.9", "stable-diffusion-xl", "dlrm-v2-99", "dlrm-v2-99.9", "3d-unet-99", "3d-unet-99.9"  ]
 
 
-    location_pre = "https://github.com/mlcommons/inference_results_v4.0/tree/main/"
+    location_pre = "https://github.com/mlcommons/inference_results_v4.1/tree/main/"
     result_link_text = "See result logs"
     result_link_text = ""
     for rid in mydata:
@@ -267,20 +236,25 @@ Notes: {mydata[rid]['Notes']}
             if mydata[rid].get(m):
                 if mydata[rid][m].get('Server'):
                     github_server_url  = f"""{location_pre}{mydata[rid][m]['Server']['Location'].replace("results", "measurements")}/"""
-                    server_precision_info = get_precision_info( github_server_url, mydata[rid]['Platform'])
+                    '''server_precision_info = get_precision_info( github_server_url, mydata[rid]['Platform'])
                     extra_model_info = f"""Weight data types: {server_precision_info['weight_data_types']}
 Input data types: {server_precision_info['input_data_types']}
                     """
+                    '''
+                    extra_model_info = f"""Model precision: {mydata[rid][m]['Server']['weight_data_types']}"""
                     #print(server_precision_info)
                     
                     html += f"""
                         <td class="col-result"><a target="_blank" title="{result_link_text}{extra_model_info}" href="{location_pre}{mydata[rid][m]['Offline']['Location']}"> {round(mydata[rid][m]['Server']['Performance_Result'],1)} </a> </td>
                     """
                 github_offline_url  = f"""{location_pre}{mydata[rid][m]['Offline']['Location'].replace("results", "measurements")}/"""
+                extra_model_info = f"""Model precision: {mydata[rid][m]['Offline']['weight_data_types']}"""
+                '''
                 offline_precision_info = get_precision_info( github_offline_url, mydata[rid]['Platform'])
                 extra_model_info = f"""Weight data types: {offline_precision_info['weight_data_types']}
 Input data types: {offline_precision_info['input_data_types']}
                     """
+                '''
                 html += f"""
                 <td class="col-result"><a target="_blank" title="{result_link_text}{extra_model_info}" href="{location_pre}{mydata[rid][m]['Offline']['Location']}"> {round(mydata[rid][m]['Offline']['Performance_Result'],1)} </a> </td>
                 """
@@ -288,7 +262,7 @@ Input data types: {offline_precision_info['input_data_types']}
                 html += f"""
                 <td></td>
                 """
-                if "3d-unet" not in m:
+                if "3d-unet" not in m and False:
                     html += f"""
                     <td></td>
                     """
@@ -310,7 +284,7 @@ def construct_summary_table(category, division):
     html  = ""
     html += """
     <div class="counttable_wrapper">
-    <table class="tablesorter counttable">
+    <table class="tablesorter counttable" id="results_summary">
     <thead>
     <tr>
     <th class="count-submitter">Submitter</th>
@@ -366,14 +340,6 @@ def construct_summary_table(category, division):
     html += "</table></div>"
     return html
 
-
-
-
-
-
-
-
-
 categories = { "datacenter" : "Datacenter",
               "edge": "Edge"
               }
@@ -382,32 +348,92 @@ divisions= {
         "open": "Open"
         }
 
+def generate_html_form(categories, divisions, selected_category=None, selected_division=None, with_power=None):
+    # Setting default values if not provided
+    if not selected_category:
+        selected_category = ''
+    if not selected_division:
+        selected_division = ''
+    if with_power is None:
+        with_power = 'false'
+
+    # Create select options for categories and divisions
+    def generate_select_options(options, selected_value):
+        html = ""
+        for key, value in options.items():
+            selected = 'selected' if key == selected_value else ''
+            html += f"<option value='{key}' {selected}>{value}</option>\n"
+        return html
+
+    category_options = generate_select_options(categories, selected_category)
+    division_options = generate_select_options(divisions, selected_division)
+
+    # Generate the HTML for the form
+    html_form = f"""
+    <form id="resultSelectionForm" method="post" action="">
+        <h3>Select Category and Division</h3>
+
+        <div class="form-field">
+            <label for="category">Category</label>
+            <select id="category" name="category" class="col">
+                {category_options}
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label for="division">Division</label>
+            <select id="division" name="division" class="col">
+                {division_options}
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label for="with_power">Power</label>
+            <select id="with_power" name="with_power" class="col">
+                <option value="true" {'selected' if with_power == 'true' else ''}>Performance and Power</option>
+                <option value="false" {'selected' if with_power == 'false' else ''}>Performance</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <button type="submit" name="submit" value="1" id="results_tablesorter">Submit</button>
+        </div>
+    </form>
+    """
+
+    return html_form
+
 availabilities = ["Available", "Preview", "RDI" ]
 #availabilities = ["Available" ]
-division="closed"
+division="open"
 category="datacenter"
 html = ""
 for availability in availabilities:
     val = availability.lower()
-    pager_class= f"pager_{val}"
-    tableposhtmlval = tableposhtml.replace("PAGER_CLASS", pager_class)
     html_table = construct_table(category, division, val)
 
     if html_table:
         html += f"""
-        <h2>{categories[category]} Category: {availability} submissions in {divisions[division]} division</h2>
-{tableposhtmlval}
+        <h2 id="results_heading_{availability.lower()}" class="results_table_heading">{categories[category]} Category: {availability} submissions in {divisions[division]} division</h2>
+{tableposhtml}
 {html_table}
-{tableposhtmlval}
+{tableposhtml}
 <hr>
 """
-summary = construct_summary_table(category, division)
+#summary = construct_summary_table(category, division)
 #print(summary)
-html += f"""
-<h2>Count of Results </h2>
-{summary}
-<hr>
+#html += f"""
+#<h2 id="count_heading">Count of Results </h2>
+#{summary}
+#<hr>
 """
+
+#html += """
+#    <div id="submittervssubmissionchartContainer" class="bgtext" style="height:370px; width:80%; margin:auto;"></div>
+#    <div id="modelvssubmissionchartContainer" class="bgtext" style="height:370px; width:80%; margin:auto;"></div>
+#    """
+
+#html += generate_html_form(categories, divisions)
 
 
 extra_scripts = """
@@ -415,8 +441,9 @@ extra_scripts = """
 var sortcolumnindex = 4, perfsortorder = 1;
 </script>
 
+<!--<script type="text/javascript" src="javascripts/tablesorter.js"></script>-->
 <script type="text/javascript" src="javascripts/results_tablesorter.js"></script>
-
+<script type="text/javascript" src="javascripts/results_charts.js"></script>
 """
 
 out_html = f"""---
@@ -435,60 +462,4 @@ with open(os.path.join("docs", "index.md"), "w") as f:
 
 
 #print(data)
-def generate_html_form(platforms, models_all, data1=None, data2=None, modelsdata=None):
-    # Setting default values if not provided
-    if not data1:
-        data1 = ''
-    if not data2:
-        data2 = ''
-    if not modelsdata:
-        modelsdata = 'All models'
-
-    # Create select options for system 1 and system 2
-    def generate_select_options(options, selected_value):
-        html = ""
-        for key, value in options.items():
-            selected = 'selected' if key == selected_value else ''
-            html += f"<option value='{key}' {selected}>{value}</option>\n"
-        return html
-
-    system1_options = generate_select_options(platforms, data1)
-    system2_options = generate_select_options(platforms, data2)
-
-    # Create select options for models
-    models_options = generate_select_options(models_all, modelsdata)
-
-    # Generate the HTML for the form
-    html_form = f"""
-    <form id="compareform"  method="post" action="">
-        <h3>Compare Results</h3>
-
-        <div class="form-field">
-            <label for="system1">System 1</label>
-            <select id="system1" name="system1" class="col">
-                {system1_options}
-            </select>
-        </div>
-
-        <div class="form-field">
-            <label for="system2">System 2</label>
-            <select id="system2" name="system2" class="col">
-                {system2_options}
-            </select>
-        </div>
-
-        <div class="form-field">
-            <label for="models">Models</label>
-            <select id="models" name="models[]" class="col" multiple>
-                {models_options}
-            </select>
-        </div>
-
-        <div class="form-field">
-            <button type="submit" name="okthen" value="1" id="compare_results">Compare SUTs</button>
-        </div>
-    </form>
-    """
-
-    return html_form
 
