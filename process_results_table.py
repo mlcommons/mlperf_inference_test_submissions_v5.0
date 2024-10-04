@@ -184,6 +184,7 @@ def construct_table(category, division, availability):
         <th id="col-model" colspan="1">RetinaNet</th>
         <th id="col-model" colspan="1">Bert-99</th>
         <th id="col-model" colspan="1">GPTJ-99</th>
+        <th id="col-model" colspan="1">GPTJ-99.9</th>
         <th id="col-model" colspan="1">Stable Diffusion</th>
         <th id="col-model" colspan="1">3d-unet-99</th>
         <th id="col-model" colspan="1">3d-unet-99.9</th>
