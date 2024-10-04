@@ -1,20 +1,20 @@
 Please download [summary.xlsx](summary.xlsx) to view the most recent results. 
  ```
-[2024-10-04 10:00:47,104 submission_checker1.py:2936 INFO] Results=1, NoResults=0, Power Results=0
-[2024-10-04 10:00:47,104 submission_checker1.py:2943 INFO] ---
-[2024-10-04 10:00:47,104 submission_checker1.py:2944 INFO] Closed Results=0, Closed Power Results=0
+[2024-10-04 10:07:12,511 submission_checker1.py:2936 INFO] Results=1, NoResults=0, Power Results=0
+[2024-10-04 10:07:12,511 submission_checker1.py:2943 INFO] ---
+[2024-10-04 10:07:12,511 submission_checker1.py:2944 INFO] Closed Results=0, Closed Power Results=0
 
-[2024-10-04 10:00:47,104 submission_checker1.py:2949 INFO] Open Results=1, Open Power Results=0
+[2024-10-04 10:07:12,511 submission_checker1.py:2949 INFO] Open Results=1, Open Power Results=0
 
-[2024-10-04 10:00:47,104 submission_checker1.py:2954 INFO] Network Results=0, Network Power Results=0
+[2024-10-04 10:07:12,511 submission_checker1.py:2954 INFO] Network Results=0, Network Power Results=0
 
-[2024-10-04 10:00:47,104 submission_checker1.py:2959 INFO] ---
-[2024-10-04 10:00:47,104 submission_checker1.py:2961 INFO] Systems=1, Power Systems=0
-[2024-10-04 10:00:47,104 submission_checker1.py:2962 INFO] Closed Systems=0, Closed Power Systems=0
-[2024-10-04 10:00:47,104 submission_checker1.py:2967 INFO] Open Systems=1, Open Power Systems=0
-[2024-10-04 10:00:47,104 submission_checker1.py:2972 INFO] Network Systems=0, Network Power Systems=0
-[2024-10-04 10:00:47,104 submission_checker1.py:2977 INFO] ---
-[2024-10-04 10:00:47,104 submission_checker1.py:2982 INFO] SUMMARY: submission looks OK
+[2024-10-04 10:07:12,512 submission_checker1.py:2959 INFO] ---
+[2024-10-04 10:07:12,512 submission_checker1.py:2961 INFO] Systems=1, Power Systems=0
+[2024-10-04 10:07:12,512 submission_checker1.py:2962 INFO] Closed Systems=0, Closed Power Systems=0
+[2024-10-04 10:07:12,512 submission_checker1.py:2967 INFO] Open Systems=1, Open Power Systems=0
+[2024-10-04 10:07:12,512 submission_checker1.py:2972 INFO] Network Systems=0, Network Power Systems=0
+[2024-10-04 10:07:12,512 submission_checker1.py:2977 INFO] ---
+[2024-10-04 10:07:12,512 submission_checker1.py:2982 INFO] SUMMARY: submission looks OK
 INFO:root:       ! call "postprocess" from /home/runner/CM/repos/mlcommons@cm4mlops/script/run-mlperf-inference-submission-checker/customize.py
 
 ```
