@@ -1,7 +1,6 @@
-# This is a basic workflow to help you get started with Actions
+# Publish the github io website
 
 name: Publish site
-
 
 on:
   release:
