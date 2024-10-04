@@ -1,4 +1,5 @@
-Please download [summary.xlsx](summary.xlsx) to view the most recent results. [This page](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCu8F7Hwck-AGJ5kWxi2G3xhO5MJoc_igybvsxjCt-2fEEYyf2BIcR0rTXW0eUzg/pubhtml) shows the results which may not be the latest. 
+Please download [summary.xlsx](summary.xlsx) to view the most recent results. 
+
  ```
 [2024-10-04 09:36:45,748 submission_checker1.py:2936 INFO] Results=1, NoResults=0, Power Results=0
 [2024-10-04 09:36:45,749 submission_checker1.py:2943 INFO] ---
