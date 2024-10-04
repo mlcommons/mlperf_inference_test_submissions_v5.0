@@ -1,5 +1,5 @@
 site_name: MLPerf Inference Results Comparison
-repo_url: https://github.com/mlcommons/inference_results_v4.0
+repo_url: https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0
 theme:
   name: material
   logo: img/logo_v2.svg
@@ -22,6 +22,7 @@ theme:
 nav:
   - Results: index.md
   - Compare: compare/index.md
+  - Top Results: top_results/index.md
 
 markdown_extensions:
   - pymdownx.tasklist:
