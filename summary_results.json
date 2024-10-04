@@ -1,6 +1,6 @@
 [
   {
-    "ID": "4.0-0001",
+    "ID": "4.1-0001",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -28,8 +28,8 @@
     "has_power": false,
     "weight_data_types": "fp32",
     "p#": 1,
-    "Details": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_/tree/main/open/MLCommons/results/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base",
-    "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_/tree/main/open/MLCommons/code",
+    "Details": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/results/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base",
+    "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
     "Performance_Result": 0.374837,
