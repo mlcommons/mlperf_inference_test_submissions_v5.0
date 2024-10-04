@@ -55,7 +55,7 @@ def construct_table(scenario, models, data1, data2, is_power, results1, results2
     # Add header and footer
     html += tableheader
     html += "</thead>"
-    html += f"<tfoot> <tr>{tableheader}</tr></tfoot>"
+    #html += f"<tfoot> <tr>{tableheader}</tr></tfoot>"
     
     # Initialize performance title (not used in the original PHP code, but included for completeness)
     performance_title = "Samples per Second"
@@ -137,16 +137,19 @@ def process_scenarios(system1, system2, sysversion1, sysversion2, modelfilterstr
         keys = [ "Scenario", "Platform", "version" ]
         values = [ scenario, system1, sysversion1 ]
         result1 = filterdata(data, keys, values)
-        if len(result1) == 0:
-            continue
+        content[f'custom_{customid}'] = f""
         
         values = [ scenario, system2, sysversion2 ]
         result2 = filterdata(data, keys, values)
         result2 = filterdata(data, keys, values)
-        if len(result2) == 0:
-            continue
+        if len(result1) == 0 or len(result2) == 0:
+            display_string=f"""style="display:none"
+            """
+        else:
+            display_string =""
+            
         
-        is_power = (result2[0]['has_power'])
+        is_power = len(result2) > 0 and (result2[0]['has_power'])
         power_string = "true" if is_power else "false"
         
         data1_str = f"{sysversion1}: {system1}"
@@ -155,7 +158,7 @@ def process_scenarios(system1, system2, sysversion1, sysversion2, modelfilterstr
         
         content[f'custom_{customid}'] = f"""
         <script type='text/javascript'>
-        data1['{scenario}'] = '{data1_str}', data2['{scenario}'] = '{data2_str}', draw_power['{scenario}'] = {power_string}, draw_power_efficiency['{scenario}'] = {power_string},
+        data1['{scenario}'] = '{data1_str}', data2['{scenario}'] = '{data2_str}', draw_power['{scenario}'] = {power_string}, draw_power_efficiency['{scenario}'] = {power_string}, is_power = {power_string},
         ytitle['{scenario}'] = '{ytitle}',
         sortcolumnindex = 4, perfsortorder = 1;
         </script>
@@ -172,7 +175,7 @@ def process_scenarios(system1, system2, sysversion1, sysversion2, modelfilterstr
         
         tableposthtml = """
             <!-- pager -->
-            <div class="pager">
+            <div class="pager1">
             <img src="https://mottie.github.io/tablesorter/addons/pager/icons/first.png" class="first"/>
             <img src="https://mottie.github.io/tablesorter/addons/pager/icons/prev.png" class="prev"/>
             <span class="pagedisplay"></span> <!-- this can be any element, including an input -->
@@ -188,7 +191,7 @@ def process_scenarios(system1, system2, sysversion1, sysversion2, modelfilterstr
             </div>
         """
         
-        html = f"<h3>Comparing {scenario} scenario for {data1_str} and {data2_str}</h3>" + tableposthtml
+        html = f"""<div id="{scenario}" {display_string}> <h3 id="table_header_{scenario}">Comparing {scenario} scenario for {data1_str} and {data2_str}</h3>""" + tableposthtml
         htmltable = construct_table(scenario, models, data1_str, data2_str, is_power, results1, results2)
         html += htmltable
         html += tableposthtml
@@ -201,13 +204,17 @@ def process_scenarios(system1, system2, sysversion1, sysversion2, modelfilterstr
             <div id="chartContainer{scenario}1" class="bgtext" style="height: 370px; width: 100%;"></div>
             <button class="btn btn-primary"  id="printChart{scenario}1">Download</button>
         """
-        if is_power:
-            content[f'custom_{customid}'] += f"""
-            <div id="chartContainer{scenario}2" class="bgtext" style="height: 370px; width: 100%;"></div>
-            <button class="btn btn-primary"  id="printChart{scenario}2">Download</button>
-            <div id="chartContainer{scenario}3" class="bgtext" style="height: 370px; width: 100%;"></div>
-            <button class="btn btn-primary"  id="printChart{scenario}3">Download</button>
-            """
+        content[f'custom_{customid}'] += f"""
+            <div id="chartContainer{scenario}2" class="bgtext power-content" style="height: 370px; width: 100%;"></div>
+            <button class="btn btn-primary power-content"  id="printChart{scenario}2">Download</button>
+            <div id="chartContainer{scenario}3" class="bgtext power-content" style="height: 370px; width: 100%;"></div>
+            <button class="btn btn-primary power-content"  id="printChart{scenario}3">Download</button>
+        """
+        
+        content[f'custom_{customid}'] += f"""
+        <hr>
+        </div>
+        """
         
         customid += 1
     
@@ -227,8 +234,9 @@ def generate_html_form(platforms, models_all, data1=None, data2=None, modelsdata
     # Create select options for system 1 and system 2
     def generate_select_options(options, selected_value):
         html = ""
+        #print(options)
         for key, value in options.items():
-            selected = 'selected' if key == selected_value else ''
+            selected = 'selected' if value == selected_value else ''
             html += f"<option value='{key}' {selected}>{value}</option>\n"
         return html
 
@@ -272,17 +280,21 @@ def generate_html_form(platforms, models_all, data1=None, data2=None, modelsdata
 
     return html_form
 
-system1 = "ESC8000_E11P_H100x8_TRT"
-system2 = "ESC8000_E11_L40Sx8_TRT"
-sysversion1 = "v4.0"
-sysversion2 = "v4.0"
+system1 = "1xMI300X_2EPYC-937F"
+system2 = "8xMI300X_2EPYC-937F"
+sysversion1 = "v4.1"
+sysversion2 = "v4.1"
 modelfilterstring = ""
 
 content = process_scenarios(system1, system2, sysversion1, sysversion2, modelfilterstring)
-out_html = ''
+
+out_html = ""
+
 for key,value in content.items():
     out_html += "\n" + value
 out_html += """
+<script type="text/javascript" src="javascripts/compare_results_charts.js">
+</script>
 <script type="text/javascript" src="javascripts/compare_results.js">
 </script>
 """
@@ -302,7 +314,15 @@ models_data = {v:k for v,k in enumerate(models_all)}
 html_form = generate_html_form(platforms_data, models_data, data1, data2, modelsdata)
 
 # Output the generated HTML
-out_html = f"<html>{out_html}{html_form}</html>"
+out_html = f"""---
+hide:
+  - toc
+---
+
+<html>
+{out_html}{html_form}
+</html>
+"""
 
 out_path = os.path.join("docs", "compare", "index.md")
 
@@ -312,6 +332,4 @@ if not os.path.exists(os.path.dirname(out_path)):
 with open(out_path, "w") as f:
     f.write(out_html)
 
-print(out_html)
-
-
+#print(out_html)
