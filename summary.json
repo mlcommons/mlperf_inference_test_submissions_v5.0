@@ -1,2 +1,32 @@
-[
-]
+{
+    "0":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter",
+        "SystemName":"3b07702db56d",
+        "Platform":"3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base",
+        "Model":"stable-diffusion-xl",
+        "MlperfModel":"stable-diffusion-xl",
+        "Scenario":"Offline",
+        "Result":0.374837,
+        "Accuracy":"CLIP_SCORE: 15.18544016778469  FID_SCORE: 235.69504308101006",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":1,
+        "Location":"open\/MLCommons\/results\/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base\/stable-diffusion-xl\/offline",
+        "framework":"pytorch v2.4.1",
+        "operating_system":"Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)",
+        "notes":"Automated by MLCommons CM v2.3.9. ",
+        "compliance":1,
+        "errors":0,
+        "version":"v4.1",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    }
+}
