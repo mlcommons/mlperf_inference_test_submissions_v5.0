@@ -406,7 +406,7 @@ def generate_html_form(categories, divisions, selected_category=None, selected_d
 availabilities = ["Available", "Preview", "RDI" ]
 #availabilities = ["Available" ]
 division="open"
-category="datacenter"
+category="edge"
 html = ""
 for availability in availabilities:
     val = availability.lower()
