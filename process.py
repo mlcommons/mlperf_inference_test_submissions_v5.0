@@ -8,7 +8,7 @@ def getuniquevalues(data, key):
             uniquevalues.append(item[key])
     return uniquevalues
 
-with open('summary.json') as f:
+with open('summary_results.json') as f:
     data = json.load(f)
 models_all = getuniquevalues(data, "Model")
 models_all.insert(0, "All models")
