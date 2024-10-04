@@ -1,27 +1,27 @@
 Please download [summary.xlsx](summary.xlsx) to view the most recent results. 
  ```
-[2024-10-04 18:18:20,203 submission_checker1.py:2936 INFO] Results=6, NoResults=0, Power Results=0
-[2024-10-04 18:18:20,203 submission_checker1.py:2943 INFO] ---
-[2024-10-04 18:18:20,203 submission_checker1.py:2944 INFO] Closed Results=0, Closed Power Results=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2936 INFO] Results=6, NoResults=0, Power Results=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2943 INFO] ---
+[2024-10-04 18:19:18,556 submission_checker1.py:2944 INFO] Closed Results=0, Closed Power Results=0
 
-[2024-10-04 18:18:20,203 submission_checker1.py:2949 INFO] Open Results=6, Open Power Results=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2949 INFO] Open Results=6, Open Power Results=0
 
-[2024-10-04 18:18:20,203 submission_checker1.py:2954 INFO] Network Results=0, Network Power Results=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2954 INFO] Network Results=0, Network Power Results=0
 
-[2024-10-04 18:18:20,203 submission_checker1.py:2959 INFO] ---
-[2024-10-04 18:18:20,203 submission_checker1.py:2961 INFO] Systems=6, Power Systems=0
-[2024-10-04 18:18:20,203 submission_checker1.py:2962 INFO] Closed Systems=0, Closed Power Systems=0
-[2024-10-04 18:18:20,203 submission_checker1.py:2967 INFO] Open Systems=6, Open Power Systems=0
-[2024-10-04 18:18:20,203 submission_checker1.py:2972 INFO] Network Systems=0, Network Power Systems=0
-[2024-10-04 18:18:20,203 submission_checker1.py:2977 INFO] ---
-[2024-10-04 18:18:20,203 submission_checker1.py:2982 INFO] SUMMARY: submission looks OK
+[2024-10-04 18:19:18,556 submission_checker1.py:2959 INFO] ---
+[2024-10-04 18:19:18,556 submission_checker1.py:2961 INFO] Systems=6, Power Systems=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2962 INFO] Closed Systems=0, Closed Power Systems=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2967 INFO] Open Systems=6, Open Power Systems=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2972 INFO] Network Systems=0, Network Power Systems=0
+[2024-10-04 18:19:18,556 submission_checker1.py:2977 INFO] ---
+[2024-10-04 18:19:18,556 submission_checker1.py:2982 INFO] SUMMARY: submission looks OK
 INFO:root:       ! call "postprocess" from /home/runner/CM/repos/mlcommons@cm4mlops/script/run-mlperf-inference-submission-checker/customize.py
 
 ```
 
 |    | Organization   | Availability   | Division   | SystemType   | SystemName           | Platform                                                              | Model               | MlperfModel         | Scenario   |    Result | Accuracy                                                     |   number_of_nodes | host_processor_model_name       |   host_processors_per_node |   host_processor_core_count | accelerator_model_name   |   accelerators_per_node | Location                                                                                                      | framework           | operating_system                                | notes                             |   compliance |   errors | version   |   inferred | has_power   | Units     | weight_data_types   |
 |---:|:---------------|:---------------|:-----------|:-------------|:---------------------|:----------------------------------------------------------------------|:--------------------|:--------------------|:-----------|----------:|:-------------------------------------------------------------|------------------:|:--------------------------------|---------------------------:|----------------------------:|:-------------------------|------------------------:|:--------------------------------------------------------------------------------------------------------------|:--------------------|:------------------------------------------------|:----------------------------------|-------------:|---------:|:----------|-----------:|:------------|:----------|:--------------------|
-|  0 | MLCommons      | available      | open       | edge         | gh_ubuntu-latest_x86 | gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config          | resnet50            | resnet              | Offline    | 21.0092   | acc: 76.000                                                  |                 1 | AMD EPYC 7763 64-Core Processor |                          1 |                           2 | nan                      |                       0 | open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50/offline          | tf v2.17.0          | Ubuntu 22.04 (linux-6.8.0-1014-azure-glibc2.35) | Automated by MLCommons CM v2.3.9. |            1 |        0 | v4.1      |          0 | False       | Samples/s | fp32                |
+|  0 | MLCommons      | available      | open       | edge         | gh_ubuntu-latest_x86 | gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config          | resnet50            | resnet              | Offline    | 21.1068   | acc: 76.000                                                  |                 1 | AMD EPYC 7763 64-Core Processor |                          1 |                           2 | nan                      |                       0 | open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50/offline          | tf v2.17.0          | Ubuntu 22.04 (linux-6.8.0-1014-azure-glibc2.35) | Automated by MLCommons CM v2.3.9. |            1 |        0 | v4.1      |          0 | False       | Samples/s | fp32                |
 |  1 | MLCommons      | available      | open       | edge         | gh_ubuntu-latest_x86 | gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config | resnet50            | resnet              | Offline    | 23.1136   | acc: 76.000                                                  |                 1 | AMD EPYC 7763 64-Core Processor |                          1 |                           2 | nan                      |                       0 | open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50/offline | onnxruntime v1.19.2 | Ubuntu 22.04 (linux-6.8.0-1014-azure-glibc2.35) | Automated by MLCommons CM v2.3.9. |            1 |        0 | v4.1      |          0 | False       | Samples/s | fp32                |
 |  2 | MLCommons      | available      | open       | edge         | gh_macos-latest_x86  | gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config  | resnet50            | resnet              | Offline    | 19.9056   | acc: 76.000                                                  |                 1 | undefined                       |                          1 |                           3 | nan                      |                       0 | open/MLCommons/results/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50/offline  | onnxruntime v1.19.2 | (darwin-23.6.0)                                 | Automated by MLCommons CM v2.3.9. |            1 |        0 | v4.1      |          0 | False       | Samples/s | fp32                |
 |  3 | MLCommons      | available      | open       | edge         | gh_ubuntu-latest_x86 | gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config     | resnet50            | resnet              | Offline    | 23.0598   | acc: 76.000                                                  |                 1 | AMD EPYC 7763 64-Core Processor |                          1 |                           2 | nan                      |                       0 | open/MLCommons/results/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50/offline     | onnxruntime         | Ubuntu 22.04 (linux-6.8.0-1014-azure-glibc2.35) | Automated by MLCommons CM v2.3.9. |            1 |        0 | v4.1      |          0 | False       | Samples/s | fp32                |
