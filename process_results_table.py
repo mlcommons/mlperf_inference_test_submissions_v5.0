@@ -154,7 +154,7 @@ def processdata(data, category, division, availability):
             mydata[myid][key] = item[key]
     return mydata
 
-models = [ "resnet", "retinanet", "bert-99", "bert-99.9", "gptj-99", "gptj-99.9", "llama2-70b-99", "llama2-70b-99.9", "stable-diffusion-xl", "dlrm-v2-99", "dlrm-v2-99.9", "3d-unet-99", "3d-unet-99.9"  ]
+models = [ "resnet", "retinanet", "bert-99", "bert-99.9", "gptj-99", "gptj-99.9", "stable-diffusion-xl","3d-unet-99", "3d-unet-99.9"  ]
 
 '''
 def get_precision_info(measurements_url, platform):
@@ -180,7 +180,15 @@ def construct_table(category, division, availability):
         <th id="col-system" class="headcol col-system">System</th>
         <th id="col-submitter" class="headcol col-submitter">Submitter</th>
         <th id="col-accelerator" class="headcol col-accelerator">Accelerator</th>
-        <th id="col-sdxl" colspan="1">ResNet50</th>
+        <th id="col-model" colspan="1">ResNet50</th>
+        <th id="col-model" colspan="1">RetinaNet</th>
+        <th id="col-model" colspan="1">Bert-99</th>
+        <th id="col-model" colspan="1">GPTJ-99</th>
+        <th id="col-model" colspan="1">Stable Diffusion</th>
+        <th id="col-model" colspan="1">3d-unet-99</th>
+        <th id="col-model" colspan="1">3d-unet-99.9</th>
+
+
         """ 
     tableheader += "</tr>"
     
@@ -191,6 +199,13 @@ def construct_table(category, division, availability):
     <th class="headcol col-submitter"></th>
     <th class="headcol col-accelerator"></th>
     <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Offline</th>
+
     """
     
     
