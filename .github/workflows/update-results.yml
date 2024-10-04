@@ -35,7 +35,7 @@ jobs:
         cm run script --tags=convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
 
         USER=admin
-        EMAIL=admin@mlcommons.org
+        EMAIL=admin@gateoverflow.com
 
         git config --global user.name "$USER"
         git config --global user.email "$EMAIL"
