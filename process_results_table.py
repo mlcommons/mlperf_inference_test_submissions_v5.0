@@ -1,7 +1,7 @@
 import json
 import os
 
-with open('summary.json') as f:
+with open('summary_results.json') as f:
     data = json.load(f)
 #print(models_all)
 #print(platforms)
