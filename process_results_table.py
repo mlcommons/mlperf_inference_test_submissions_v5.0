@@ -180,7 +180,7 @@ def construct_table(category, division, availability):
         <th id="col-system" class="headcol col-system">System</th>
         <th id="col-submitter" class="headcol col-submitter">Submitter</th>
         <th id="col-accelerator" class="headcol col-accelerator">Accelerator</th>
-        <th id="col-sdxl" colspan="1">Stable Diffusion</th>
+        <th id="col-sdxl" colspan="1">ResNet50</th>
         """ 
     tableheader += "</tr>"
     
