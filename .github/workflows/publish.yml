@@ -27,7 +27,7 @@ jobs:
           python-version: "3.11"
 
       - name: Init docs
-        run: bash initdocs.sh
+        run: bash run.sh
 
       - name: Run Mkdocs deploy
         run: mkdocs gh-deploy --force
