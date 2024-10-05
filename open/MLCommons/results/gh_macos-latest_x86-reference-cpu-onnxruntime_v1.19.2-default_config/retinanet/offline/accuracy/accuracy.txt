@@ -10,7 +10,7 @@ Running per image evaluation...
 Evaluate annotation type *bbox*
 DONE (t=0.02s).
 Accumulating evaluation results...
-DONE (t=0.03s).
+DONE (t=0.02s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.770
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.982
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.677
@@ -28,4 +28,4 @@ found 5 results
 found 5 images
 found 0 images with no results
 ignored 0 dupes
-hash=af3e4489c970f5ea8a7a5904b1f878ea9da040c3155705c8ec885944702f31fd
+hash=191a2b134393ceb375e89f4f3f490122db9050d1d9164b962d410484c8ac68f6
