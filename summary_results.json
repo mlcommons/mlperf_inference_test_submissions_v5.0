@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.2074,
+    "Performance_Result": 23.0704,
     "Performance_Units": "Samples/s"
   },
   {
@@ -248,7 +248,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.0423,
+    "Performance_Result": 21.0283,
     "Performance_Units": "Samples/s"
   }
 ]
