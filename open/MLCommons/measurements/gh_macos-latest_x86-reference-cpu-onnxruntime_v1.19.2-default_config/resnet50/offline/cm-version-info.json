@@ -127,7 +127,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/23f51d6e3ab64462/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/712ccad592304edb/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
@@ -137,15 +137,15 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "md5sha1sum",
         "version": "undetected",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/23f51d6e3ab64462/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/712ccad592304edb/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_path./Users/runner/CM/repos/local/cache/23f51d6e3ab64462/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_path./Users/runner/CM/repos/local/cache/712ccad592304edb/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./Users/runner/CM/repos/local/cache/23f51d6e3ab64462/caffe_ilsvrc12.tar.gz",
+        "script_variations": "path./Users/runner/CM/repos/local/cache/712ccad592304edb/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz )"
       }
@@ -317,15 +317,15 @@
         "script_tags": "dae,file,download-and-extract",
         "script_variations": "url.https://zenodo.org/record/4735647/files/resnet50_v1.onnx",
         "version": "",
-        "parent": "get-ml-model-resnet50,56203e4e998b4bc0 ( fp32,_onnx )"
+        "parent": "get-ml-model-resnet50,56203e4e998b4bc0 ( onnx,_fp32 )"
       }
     },
     {
-      "get,ml-model,image-classification,resnet50,raw,_fp32,_onnx": {
+      "get,ml-model,image-classification,resnet50,raw,_onnx,_fp32": {
         "script_uid": "56203e4e998b4bc0",
         "script_alias": "get-ml-model-resnet50",
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
-        "script_variations": "fp32,onnx",
+        "script_variations": "onnx,fp32",
         "version": "",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_resnet50,_offline,_fp32 )"
       }
@@ -387,7 +387,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/d8a68b3c6f564923/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/9666b0f53f0d49e2/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
@@ -397,15 +397,15 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "md5sha1sum",
         "version": "undetected",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/d8a68b3c6f564923/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/CM/repos/local/cache/9666b0f53f0d49e2/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
-      "extract,file,_path./Users/runner/CM/repos/local/cache/d8a68b3c6f564923/ILSVRC2012_img_val_500.tar": {
+      "extract,file,_path./Users/runner/CM/repos/local/cache/9666b0f53f0d49e2/ILSVRC2012_img_val_500.tar": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./Users/runner/CM/repos/local/cache/d8a68b3c6f564923/ILSVRC2012_img_val_500.tar",
+        "script_variations": "path./Users/runner/CM/repos/local/cache/9666b0f53f0d49e2/ILSVRC2012_img_val_500.tar",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar )"
       }
