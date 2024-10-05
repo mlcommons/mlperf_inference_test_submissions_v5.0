@@ -41,6 +41,42 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
+    "System": "gh_action",
+    "Platform": "gh_action-reference-gpu-pytorch_v2.4.1-default_config",
+    "UsedModel": "gptj-99",
+    "Model": "gptj-99",
+    "Scenario": "Offline",
+    "Accuracy": "ROUGE1: 32.2581  ROUGE2: 6.6667  ROUGEL: 22.5806  GEN_LEN: 264",
+    "Nodes": 1,
+    "Processor": "Intel(R) Xeon(R) w7-2495X",
+    "host_processors_per_node": 1,
+    "host_processor_core_count": 24,
+    "Accelerator": "NVIDIA GeForce RTX 4090",
+    "a#": 1,
+    "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.4.1-default_config/gptj-99/offline",
+    "Software": "pytorch v2.4.1",
+    "operating_system": "Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)",
+    "Notes": "Automated by MLCommons CM v2.3.4. ",
+    "compliance": 1,
+    "errors": 0,
+    "version": "v4.1",
+    "inferred": 0,
+    "has_power": false,
+    "weight_data_types": "fp32",
+    "p#": 1,
+    "Details": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.4.1-default_config",
+    "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
+    "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.4.1-default_config/gptj-99",
+    "ColorKey": "availableMLCommons",
+    "Performance_Result": 48.3726,
+    "Performance_Units": "Tokens/s"
+  },
+  {
+    "ID": "4.1-0003",
+    "Submitter": "MLCommons",
+    "Availability": "available",
+    "Category": "open",
+    "Suite": "edge",
     "System": "gh_macos-latest_x86",
     "Platform": "gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
     "UsedModel": "resnet50",
@@ -72,7 +108,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "4.1-0003",
+    "ID": "4.1-0004",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -108,7 +144,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "4.1-0004",
+    "ID": "4.1-0005",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -144,7 +180,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "4.1-0005",
+    "ID": "4.1-0006",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -180,7 +216,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "4.1-0006",
+    "ID": "4.1-0007",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
