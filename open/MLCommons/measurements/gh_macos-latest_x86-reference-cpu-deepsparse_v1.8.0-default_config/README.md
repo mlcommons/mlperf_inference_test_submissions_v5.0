@@ -1,3 +1,3 @@
 | Model   | Scenario   |   Accuracy |   Throughput | Latency (in ms)   |
 |---------|------------|------------|--------------|-------------------|
-| bert-99 | offline    |         80 |        7.205 | -                 |
+| bert-99 | offline    |         80 |        5.804 | -                 |
