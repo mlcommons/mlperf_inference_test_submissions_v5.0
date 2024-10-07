@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo GATEOverflow@cm4mlops --checkout=e293066f86115d79f631ebf4e400ee6c6a47c157
+cm pull repo GATEOverflow@cm4mlops --checkout=ef474c1188cac4c3d12182cc32fcb10ad6d771a7
 
 cm run script \
 	--tags=run-mlperf,inference,_submission,_short \
@@ -54,4 +54,4 @@ Model Precision: fp32
 `acc`: `76.0`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Samples per second`: `9.86157`
+`Samples per second`: `9.18973`
