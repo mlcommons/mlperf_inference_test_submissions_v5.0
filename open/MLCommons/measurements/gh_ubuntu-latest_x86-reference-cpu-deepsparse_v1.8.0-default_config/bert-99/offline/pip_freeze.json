@@ -51,7 +51,7 @@
     "tokenizers": "0.20.0",
     "torch": "2.4.1+cpu",
     "tqdm": "4.66.5",
-    "transformers": "4.45.1",
+    "transformers": "4.45.2",
     "typing_extensions": "4.12.2",
     "tzdata": "2024.2",
     "urllib3": "2.2.3",
