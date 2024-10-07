@@ -7,7 +7,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * OS version: Linux-6.8.0-1014-azure-x86_64-with-glibc2.35
 * CPU version: x86_64
 * Python version: 3.12.6 (main, Sep  9 2024, 03:08:08) [GCC 11.4.0]
-* MLCommons CM version: 2.4.0
+* MLCommons CM version: 3.0.1
 
 ## CM Run Command
 
@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo anandhu-eng@cm4mlops --checkout=30755628d064adbf2480f27706fd7c02af4101ef
+cm pull repo anandhu-eng@cm4mlops --checkout=e1fbdf6e41d79549556708a1e7d72827c169d0d2
 
 cm run script \
 	--tags=run,mlperf,inference,generate-run-cmds,_submission,_short \
@@ -55,4 +55,4 @@ Model Precision: fp32
 `mAP`: `76.951`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `0.410074`
+`Samples per second`: `0.411276`
