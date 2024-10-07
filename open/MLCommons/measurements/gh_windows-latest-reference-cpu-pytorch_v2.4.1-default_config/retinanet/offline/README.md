@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo anandhu-eng@cm4mlops --checkout=e1fbdf6e41d79549556708a1e7d72827c169d0d2
+cm pull repo GATEOverflow@cm4mlops --checkout=e293066f86115d79f631ebf4e400ee6c6a47c157
 
 cm run script ^
 	--tags=run,mlperf,inference,generate-run-cmds,_submission,_short ^
@@ -37,11 +37,11 @@ cm run script ^
 	--target_qps=1
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
- you should simply reload anandhu-eng@cm4mlops without checkout and clean CM cache as follows:*
+ you should simply reload GATEOverflow@cm4mlops without checkout and clean CM cache as follows:*
 
 ```bash
-cm rm repo anandhu-eng@cm4mlops
-cm pull repo anandhu-eng@cm4mlops
+cm rm repo GATEOverflow@cm4mlops
+cm pull repo GATEOverflow@cm4mlops
 cm rm cache -f
 
 ```
@@ -56,4 +56,4 @@ Model Precision: fp32
 `mAP`: `76.951`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `0.312847`
+`Samples per second`: `0.314275`
