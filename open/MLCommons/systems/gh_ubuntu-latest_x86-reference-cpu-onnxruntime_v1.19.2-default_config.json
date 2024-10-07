@@ -27,7 +27,7 @@
   "hw_notes": "",
   "number_of_nodes": "1",
   "operating_system": "Ubuntu 22.04 (linux-6.8.0-1014-azure-glibc2.35)",
-  "other_software_stack": "Python: 3.12.6, GCC-11.4.0",
+  "other_software_stack": "Python: 3.12.6, LLVM-14.0.0",
   "status": "available",
   "submitter": "MLCommons",
   "sw_notes": "Automated by MLCommons CM v3.0.1. ",
