@@ -4,9 +4,9 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: macOS-14.6.1-arm64-arm-64bit
+* OS version: macOS-14.7-arm64-arm-64bit
 * CPU version: arm
-* Python version: 3.12.6 (v3.12.6:a4a2d2b0d85, Sep  6 2024, 16:08:03) [Clang 13.0.0 (clang-1300.0.29.30)]
+* Python version: 3.12.7 (v3.12.7:0b05ead877f, Sep 30 2024, 23:18:00) [Clang 13.0.0 (clang-1300.0.29.30)]
 * MLCommons CM version: 3.0.1
 
 ## CM Run Command
@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo anandhu-eng@cm4mlops --checkout=4eecdf82ad28eb1c2f33dee21d4eba4787f825e9
+cm pull repo anandhu-eng@cm4mlops --checkout=bcec9ec54eb3b0408cc2033e6f86e05a995c5b23
 
 cm run script \
 	--tags=run-mlperf,inference,_submission,_short \
@@ -54,4 +54,4 @@ Model Precision: fp32
 `acc`: `76.0`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Samples per second`: `9.34392`
+`Samples per second`: `9.66144`
