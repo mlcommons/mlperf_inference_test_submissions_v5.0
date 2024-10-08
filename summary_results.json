@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.69125,
+    "Performance_Result": 9.2347,
     "Performance_Units": "Samples/s"
   },
   {
@@ -176,7 +176,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 3.65954,
+    "Performance_Result": 6.275,
     "Performance_Units": "Samples/s"
   },
   {
@@ -248,7 +248,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.390447,
+    "Performance_Result": 0.247035,
     "Performance_Units": "Samples/s"
   },
   {
@@ -392,7 +392,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.08412,
+    "Performance_Result": 6.29398,
     "Performance_Units": "Samples/s"
   },
   {
@@ -536,7 +536,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 20.8554,
+    "Performance_Result": 20.8708,
     "Performance_Units": "Samples/s"
   },
   {
