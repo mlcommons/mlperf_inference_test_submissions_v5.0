@@ -2,7 +2,7 @@
   "pip_freeze": {
     "certifi": "2024.8.30",
     "charset-normalizer": "3.3.2",
-    "cmind": "3.0.1",
+    "cmind": "3.0.2",
     "dmiparser": "5.1",
     "giturlparse": "0.12.0",
     "idna": "3.10",
