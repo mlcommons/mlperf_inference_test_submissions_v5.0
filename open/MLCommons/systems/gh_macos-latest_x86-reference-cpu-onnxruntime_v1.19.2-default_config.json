@@ -27,7 +27,7 @@
   "hw_notes": "",
   "number_of_nodes": "1",
   "operating_system": " (darwin-23.6.0)",
-  "other_software_stack": "Python: 3.12.7, GCC-13.3.0",
+  "other_software_stack": "Python: 3.12.6, LLVM-15.0.0",
   "status": "available",
   "submitter": "MLCommons",
   "sw_notes": "Automated by MLCommons CM v3.0.2. ",
