@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=1e8b4448a1c1a440b1194a605fc23a182371eae1
+cm pull repo gateoverflow@cm4mlops --checkout=0efa8f35d073e68543317b04ee7e5487f88af5cc
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -30,6 +30,7 @@ cm run script \
 	--env.CM_MLPERF_BACKEND=pytorch \
 	--env.GPTJ_BEAM_SIZE=1 \
 	--env.CM_MLPERF_CLEAN_ALL=True \
+	--env.CM_CUSTOM_SYSTEM_NVIDIA=yes \
 	--env.CM_MLPERF_DEVICE=cuda \
 	--env.CM_MLPERF_USE_DOCKER=True \
 	--env.CM_HW_NAME=gh_action \
@@ -49,7 +50,7 @@ cm run script \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
 	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
-	--env.CM_MLPERF_LAST_RELEASE=v4.0 \
+	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
 	--env.CM_TMP_CURRENT_PATH=/home/arjun/actions-runner/_work/cm4mlops/cm4mlops \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=gptj-99 \
@@ -101,4 +102,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 3615190.2`
 
 ### Performance Results 
-`Samples per second`: `0.724306`
+`Samples per second`: `47.1875`
