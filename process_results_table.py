@@ -154,81 +154,111 @@ def processdata(data, category, division, availability):
             mydata[myid][key] = item[key]
     return mydata
 
-models = [ "llama2-70b-99", "llama2-70b-99.9", "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl",  "dlrm-v2-99", "dlrm-v2-99.9", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
+models_dc = [ "llama2-70b-99", "llama2-70b-99.9", "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl",  "dlrm-v2-99", "dlrm-v2-99.9", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
+models_edge = [ "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
 
-'''
-def get_precision_info(measurements_url, platform):
-    return {'weight_data_types': '', 'input_data_types': ''}
-    github_url  = measurements_url
-    measurements_json_file_name =  find_match(get_json_files(github_url), f"""^{platform}.*\\.json$""")
-    measurements_json = f"""{github_url}{measurements_json_file_name}"""
-    measurements_json_raw = measurements_json.replace("github.com", "raw.githubusercontent.com").replace("/tree/", "/")
-    import urllib.request
-    with urllib.request.urlopen(measurements_json_raw) as url:
-        data = json.load(url)
-    return data
-'''
+
+def get_scenario_result(data, scenario, location_pre, result_link_text):
+    html = ''
+    if data.get(scenario):#dc
+        github_url  = f"""{location_pre}{data[scenario]['Location'].replace("results", "measurements")}/"""
+        extra_model_info = f"""Model precision: {data[scenario]['weight_data_types']}"""
+                    
+        html += f"""
+            <td class="col-result"><a target="_blank" title="{result_link_text}{extra_model_info}" href="{location_pre}{data[scenario]['Location']}"> {round(data[scenario]['Performance_Result'],1)} </a> </td>"""
+    else:
+        html += """<td class="col-result"></td>"""
+
+    return html
+
 
 def construct_table(category, division, availability):
     # Initialize the HTML table with the header
     html = f"""<div id="results_table_{availability}" class="resultstable_wrapper"> <table class="resultstable tablesorter tableclosed tabledatacenter" id="results_{availability}">"""
     html += "<thead> <tr>"
+
+    if category == "datacenter":
+        models = models_dc
+    else:
+        models = models_edge
     
     # Table header
-    tableheader = f"""
-        <th id="col-id" class="headcol col-id">ID</th>
-        <th id="col-system" class="headcol col-system">System</th>
-        <th id="col-submitter" class="headcol col-submitter">Submitter</th>
-        <th id="col-accelerator" class="headcol col-accelerator">Accelerator</th>
-        <th id="col-llama2-99" colspan="2">LLAMA2-70B-99</th>
-        <th id="col-llama2-99.9" colspan="2">LLAMA2-70B-99.9</th>
-        <th id="col-gptj-99" colspan="2">GPTJ-99</th>
-        <th id="col-gptj-99.9" colspan="2">GPTJ-99.9</th>
-        <th id="col-bert-99" colspan="2">Bert-99</th>
-        <th id="col-bert-99.9" colspan="2">Bert-99.9</th>
-        <th id="col-dlrm-v2-99" colspan="2">Stable Diffusion</th>
-        <th id="col-dlrm-v2-99" colspan="2">DLRM-v2-99</th>
-        <th id="col-dlrm-v2-99.9" colspan="2">DLRM-v2-99.9</th>
-        <th id="col-retinanet" colspan="2">Retinanet</th>
-        <th id="col-resnet50" colspan="2">ResNet50</th>
-        <th id="col-3d-unet-99" colspan="1">3d-unet-99</th>
-        <th id="col-3d-unet-99.9" colspan="1">3d-unet-99.9</th>
-        """ 
-    tableheader += "</tr>"
+    if category == "datacenter":
+        tableheader = f"""
+            <th id="col-id" class="headcol col-id">ID</th>
+            <th id="col-system" class="headcol col-system">System</th>
+            <th id="col-submitter" class="headcol col-submitter">Submitter</th>
+            <th id="col-accelerator" class="headcol col-accelerator">Accelerator</th>
+            <th id="col-llama2-99" colspan="2">LLAMA2-70B-99</th>
+            <th id="col-llama2-99.9" colspan="2">LLAMA2-70B-99.9</th>
+            <th id="col-gptj-99" colspan="2">GPTJ-99</th>
+            <th id="col-gptj-99.9" colspan="2">GPTJ-99.9</th>
+            <th id="col-bert-99" colspan="2">Bert-99</th>
+            <th id="col-bert-99.9" colspan="2">Bert-99.9</th>
+            <th id="col-sdxl" colspan="2">Stable Diffusion</th>
+            <th id="col-dlrm-v2-99" colspan="2">DLRM-v2-99</th>
+            <th id="col-dlrm-v2-99.9" colspan="2">DLRM-v2-99.9</th>
+            <th id="col-retinanet" colspan="2">Retinanet</th>
+            <th id="col-resnet50" colspan="2">ResNet50</th>
+            <th id="col-3d-unet-99" colspan="1">3d-unet-99</th>
+            <th id="col-3d-unet-99.9" colspan="1">3d-unet-99.9</th>
+            """ 
+        tableheader += "</tr>"
     
-    tableheader += f"""
-    <tr>
-    <th class="headcol col-id"></th>
-    <th class="headcol col-system"></th>
-    <th class="headcol col-submitter"></th>
-    <th class="headcol col-accelerator"></th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Server</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Offline</th>
-    """
+        tableheader += f"""
+        <tr>
+        <th class="headcol col-id"></th>
+        <th class="headcol col-system"></th>
+        <th class="headcol col-submitter"></th>
+        <th class="headcol col-accelerator"></th>
+        """
+        for model in models:
+            if "3d-unet" in model:
+                tableheader += f"""
+                <th class="col-scenario">Offline</th>
+                """
+            else:
+                tableheader += f"""
+                <th class="col-scenario">Server</th>
+                <th class="col-scenario">Offline</th>
+                """
+    else: # category == "edge":
+        tableheader = f"""
+            <th id="col-id" class="headcol col-id">ID</th>
+            <th id="col-system" class="headcol col-system">System</th>
+            <th id="col-submitter" class="headcol col-submitter">Submitter</th>
+            <th id="col-accelerator" class="headcol col-accelerator">Accelerator</th>
+            <th id="col-gptj-99" colspan="2">GPTJ-99</th>
+            <th id="col-gptj-99.9" colspan="2">GPTJ-99.9</th>
+            <th id="col-bert-99" colspan="2">Bert-99</th>
+            <th id="col-bert-99.9" colspan="2">Bert-99.9</th>
+            <th id="col-sdxl" colspan="2">Stable Diffusion</th>
+            <th id="col-retinanet" colspan="3">Retinanet</th>
+            <th id="col-resnet50" colspan="3">ResNet50</th>
+            <th id="col-3d-unet-99" colspan="2">3d-unet-99</th>
+            <th id="col-3d-unet-99.9" colspan="2">3d-unet-99.9</th>
+            """ 
+        tableheader += "</tr>"
     
-    
+        tableheader += f"""
+        <tr>
+        <th class="headcol col-id"></th>
+        <th class="headcol col-system"></th>
+        <th class="headcol col-submitter"></th>
+        <th class="headcol col-accelerator"></th>
+        """
+        for model in models:
+            if  model in ["resnet", "retinanet"]:
+                tableheader += f"""
+                <th class="col-scenario">Offline</th>
+                <th class="col-scenario">SingleStream</th>
+                <th class="col-scenario">MultiStream</th>
+                """
+            else:
+                tableheader += f"""
+                <th class="col-scenario">Offline</th>
+                """
+     
     # Add header and footer
     html += tableheader
     html += "</tr></thead>"
@@ -242,7 +272,7 @@ def construct_table(category, division, availability):
     #models = [ "resnet", "retinanet", "bert-99", "bert-99.9", "gptj-99", "gptj-99.9", "llama2-70b-99", "llama2-70b-99.9", "stable-diffusion-xl", "dlrm-v2-99", "dlrm-v2-99.9", "3d-unet-99", "3d-unet-99.9"  ]
 
 
-    location_pre = "https://github.com/mlcommons/inference_results_v4.1/tree/main/"
+    location_pre = "https://github.com/gateoverflow/mlperf_inference_test_submissions_v5.0/tree/main/"
     result_link_text = "See result logs"
     result_link_text = ""
     for rid in mydata:
@@ -259,7 +289,7 @@ Notes: {mydata[rid]['Notes']}
             acc = ""
         else:
             acc = f"{mydata[rid]['Accelerator']} x {int(a_num)}"
-        system_json_link = f"""{mydata[rid]['Details'].replace("results", "systems").replace("submissions_inference_4.0", "inference_results_v4.0")}.json"""
+        system_json_link = f"""{mydata[rid]['Details'].replace("results", "systems")}.json"""
         html += f"""
         <tr>
         <td class="col-id headcol"> {rid} </td>
@@ -267,37 +297,27 @@ Notes: {mydata[rid]['Notes']}
         <td class="col-submitter headcol"> {mydata[rid]['Submitter']} </td>
         <td class="col-accelerator headcol"> {acc} </td>
         """
+
         for m in models:
             if mydata[rid].get(m):
-                if mydata[rid][m].get('Server'):
-                    github_server_url  = f"""{location_pre}{mydata[rid][m]['Server']['Location'].replace("results", "measurements")}/"""
-                    '''server_precision_info = get_precision_info( github_server_url, mydata[rid]['Platform'])
-                    extra_model_info = f"""Weight data types: {server_precision_info['weight_data_types']}
-Input data types: {server_precision_info['input_data_types']}
-                    """
-                    '''
-                    extra_model_info = f"""Model precision: {mydata[rid][m]['Server']['weight_data_types']}"""
-                    #print(server_precision_info)
+                if category == "datacenter" and "3d-unet" not in m:#dc
+                    html +=  get_scenario_result(mydata[rid][m], "Server", location_pre, result_link_text):
                     
-                    html += f"""
-                        <td class="col-result"><a target="_blank" title="{result_link_text}{extra_model_info}" href="{location_pre}{mydata[rid][m]['Offline']['Location']}"> {round(mydata[rid][m]['Server']['Performance_Result'],1)} </a> </td>
-                    """
-                github_offline_url  = f"""{location_pre}{mydata[rid][m]['Offline']['Location'].replace("results", "measurements")}/"""
-                extra_model_info = f"""Model precision: {mydata[rid][m]['Offline']['weight_data_types']}"""
-                '''
-                offline_precision_info = get_precision_info( github_offline_url, mydata[rid]['Platform'])
-                extra_model_info = f"""Weight data types: {offline_precision_info['weight_data_types']}
-Input data types: {offline_precision_info['input_data_types']}
-                    """
-                '''
-                html += f"""
-                <td class="col-result"><a target="_blank" title="{result_link_text}{extra_model_info}" href="{location_pre}{mydata[rid][m]['Offline']['Location']}"> {round(mydata[rid][m]['Offline']['Performance_Result'],1)} </a> </td>
-                """
+                html +=  get_scenario_result(mydata[rid][m], "Offline", location_pre, result_link_text):
+                
+                if category == "edge": #Process SS and MS
+                    html +=  get_scenario_result(mydata[rid][m], "SingleStream", location_pre, result_link_text):
+                    if m in ["resnet", "retinanet"]:
+                        html +=  get_scenario_result(mydata[rid][m], "MultiStream", location_pre, result_link_text):
             else:
                 html += f"""
                 <td></td>
                 """
-                if "3d-unet" not in m:
+                if "3d-unet" not in m and category == "datacenter":
+                    html += f"""
+                    <td></td>
+                    """
+                if m in ["resnet", "retinanet"]  and category == "edge":
                     html += f"""
                     <td></td>
                     """
