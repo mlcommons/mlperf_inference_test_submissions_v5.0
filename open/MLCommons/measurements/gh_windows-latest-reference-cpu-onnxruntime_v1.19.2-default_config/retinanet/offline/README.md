@@ -6,8 +6,8 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 * OS version: Windows-2022Server-10.0.20348-SP0
 * CPU version: AMD64 Family 25 Model 1 Stepping 1, AuthenticAMD
-* Python version: 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]
-* MLCommons CM version: 3.0.2
+* Python version: 3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]
+* MLCommons CM version: 3.0.4
 
 ## CM Run Command
 
@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo anandhu-eng@cm4mlops --checkout=17114558ec5c24995158d14d8ec6780fd95eab96
+cm pull repo anandhu-eng@cm4mlops --checkout=4990504f0b834ae59336aa362598b71ae5d33862
 
 cm run script ^
 	--tags=run,mlperf,inference,generate-run-cmds,_submission,_short ^
@@ -56,4 +56,4 @@ Model Precision: fp32
 `mAP`: `76.951`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `0.329212`
+`Samples per second`: `0.319522`
