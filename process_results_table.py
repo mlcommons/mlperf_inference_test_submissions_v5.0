@@ -160,7 +160,7 @@ models_edge = [ "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusio
 
 def get_scenario_result(data, scenario, location_pre, result_link_text):
     html = ''
-    if data.get(scenario):#dc
+    if data.get(scenario):
         github_url  = f"""{location_pre}{data[scenario]['Location'].replace("results", "measurements")}/"""
         extra_model_info = f"""Model precision: {data[scenario]['weight_data_types']}"""
                     
@@ -248,16 +248,14 @@ def construct_table(category, division, availability):
         <th class="headcol col-accelerator"></th>
         """
         for model in models:
-            if  model in ["resnet", "retinanet"]:
-                tableheader += f"""
+            tableheader += f"""
                 <th class="col-scenario">Offline</th>
                 <th class="col-scenario">SingleStream</th>
-                <th class="col-scenario">MultiStream</th>
-                """
-            else:
+            """
+            if  model in ["resnet", "retinanet"]:
                 tableheader += f"""
-                <th class="col-scenario">Offline</th>
-                """
+                <th class="col-scenario">MultiStream</th>
+            """
      
     # Add header and footer
     html += tableheader
@@ -268,8 +266,6 @@ def construct_table(category, division, availability):
 
     if not mydata:
         return None
-
-    #models = [ "resnet", "retinanet", "bert-99", "bert-99.9", "gptj-99", "gptj-99.9", "llama2-70b-99", "llama2-70b-99.9", "stable-diffusion-xl", "dlrm-v2-99", "dlrm-v2-99.9", "3d-unet-99", "3d-unet-99.9"  ]
 
 
     location_pre = "https://github.com/gateoverflow/mlperf_inference_test_submissions_v5.0/tree/main/"
@@ -301,19 +297,19 @@ Notes: {mydata[rid]['Notes']}
         for m in models:
             if mydata[rid].get(m):
                 if category == "datacenter" and "3d-unet" not in m:#dc
-                    html +=  get_scenario_result(mydata[rid][m], "Server", location_pre, result_link_text):
+                    html +=  get_scenario_result(mydata[rid][m], "Server", location_pre, result_link_text)
                     
-                html +=  get_scenario_result(mydata[rid][m], "Offline", location_pre, result_link_text):
+                html +=  get_scenario_result(mydata[rid][m], "Offline", location_pre, result_link_text)
                 
                 if category == "edge": #Process SS and MS
-                    html +=  get_scenario_result(mydata[rid][m], "SingleStream", location_pre, result_link_text):
+                    html +=  get_scenario_result(mydata[rid][m], "SingleStream", location_pre, result_link_text)
                     if m in ["resnet", "retinanet"]:
-                        html +=  get_scenario_result(mydata[rid][m], "MultiStream", location_pre, result_link_text):
+                        html +=  get_scenario_result(mydata[rid][m], "MultiStream", location_pre, result_link_text)
             else:
                 html += f"""
                 <td></td>
                 """
-                if "3d-unet" not in m and category == "datacenter":
+                if ("3d-unet" not in m and category == "datacenter") or (category == "edge"):
                     html += f"""
                     <td></td>
                     """
@@ -336,6 +332,11 @@ def construct_summary_table(category, division):
     summary_data, count_data = getsummarydata(data, category, division)
     #print(count_data)
 
+    if category == "datacenter":
+        models = models_dc
+    else:
+        models = models_edge
+
     html  = ""
     html += """
     <div class="counttable_wrapper">
@@ -343,22 +344,40 @@ def construct_summary_table(category, division):
     <thead>
     <tr>
     <th class="count-submitter">Submitter</th>
-        <th id="col-llama2-99">LLAMA2-70B-99</th>
-        <th id="col-llama2-99.9">LLAMA2-70B-99.9</th>
-        <th id="col-gptj-99">GPTJ-99</th>
-        <th id="col-gptj-99.9">GPTJ-99.9</th>
-        <th id="col-bert-99">Bert-99</th>
-        <th id="col-bert-99.9">Bert-99.9</th>
-        <th id="col-dlrm-v2-99">Stable Diffusion</th>
-        <th id="col-dlrm-v2-99">DLRM-v2-99</th>
-        <th id="col-dlrm-v2-99.9">DLRM-v2-99.9</th>
-        <th id="col-retinanet">Retinanet</th>
-        <th id="col-resnet50">ResNet50</th>
-        <th id="col-3d-unet-99">3d-unet-99</th>
-        <th id="col-3d-unet-99.9">3d-unet-99.9</th>
-        <th id="all-models">Total</th>
-        </tr>
-        </thead>
+    """
+    if category == "datacenter":
+        html += """
+            <th id="col-llama2-99">LLAMA2-70B-99</th>
+            <th id="col-llama2-99.9">LLAMA2-70B-99.9</th>
+            <th id="col-gptj-99">GPTJ-99</th>
+            <th id="col-gptj-99.9">GPTJ-99.9</th>
+            <th id="col-bert-99">Bert-99</th>
+            <th id="col-bert-99.9">Bert-99.9</th>
+            <th id="col-dlrm-v2-99">Stable Diffusion</th>
+            <th id="col-dlrm-v2-99">DLRM-v2-99</th>
+            <th id="col-dlrm-v2-99.9">DLRM-v2-99.9</th>
+            <th id="col-retinanet">Retinanet</th>
+            <th id="col-resnet50">ResNet50</th>
+            <th id="col-3d-unet-99">3d-unet-99</th>
+            <th id="col-3d-unet-99.9">3d-unet-99.9</th>
+            <th id="all-models">Total</th>
+            </tr>
+            </thead>
+            """
+    else:
+        html += """
+                <th id="col-gptj-99">GPTJ-99</th>
+                <th id="col-gptj-99.9">GPTJ-99.9</th>
+                <th id="col-bert-99">Bert-99</th>
+                <th id="col-bert-99.9">Bert-99.9</th>
+                <th id="col-sdxl">Stable Diffusion</th>
+                <th id="col-retinanet">Retinanet</th>
+                <th id="col-resnet50">ResNet50</th>
+                <th id="col-3d-unet-99">3d-unet-99</th>
+                <th id="col-3d-unet-99.9">3d-unet-99.9</th>
+                <th id="all-models">Total</th>
+                </tr>
+                </thead>
         """
     total_counts = {}
     for submitter, item in count_data.items():
@@ -436,8 +455,8 @@ def generate_html_form(categories, divisions, selected_category=None, selected_d
         </div>
 
         <div class="form-field">
-            <label for="division">Division</label>
-            <select id="division" name="division" class="col">
+            <label for="division1">Division</label>
+            <select id="division1" name="division" class="col">
                 {division_options}
             </select>
         </div>
