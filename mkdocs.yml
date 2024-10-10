@@ -1,4 +1,4 @@
-site_name: MLPerf Inference Test Results (only meant for testing)
+site_name: MLPerf Inference Test Results (only meant for testing workflow)
 repo_url: https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0
 theme:
   name: material
