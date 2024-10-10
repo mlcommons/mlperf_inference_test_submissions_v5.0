@@ -154,7 +154,7 @@ def processdata(data, category, division, availability):
             mydata[myid][key] = item[key]
     return mydata
 
-models = [ "resnet", "retinanet", "bert-99", "bert-99.9", "gptj-99", "gptj-99.9", "stable-diffusion-xl","3d-unet-99", "3d-unet-99.9"  ]
+models = [ "llama2-70b-99", "llama2-70b-99.9", "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl",  "dlrm-v2-99", "dlrm-v2-99.9", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
 
 '''
 def get_precision_info(measurements_url, platform):
@@ -180,16 +180,19 @@ def construct_table(category, division, availability):
         <th id="col-system" class="headcol col-system">System</th>
         <th id="col-submitter" class="headcol col-submitter">Submitter</th>
         <th id="col-accelerator" class="headcol col-accelerator">Accelerator</th>
-        <th id="col-model" colspan="1">ResNet50</th>
-        <th id="col-model" colspan="1">RetinaNet</th>
-        <th id="col-model" colspan="1">Bert-99</th>
-        <th id="col-model" colspan="1">GPTJ-99</th>
-        <th id="col-model" colspan="1">GPTJ-99.9</th>
-        <th id="col-model" colspan="1">Stable Diffusion</th>
-        <th id="col-model" colspan="1">3d-unet-99</th>
-        <th id="col-model" colspan="1">3d-unet-99.9</th>
-
-
+        <th id="col-llama2-99" colspan="2">LLAMA2-70B-99</th>
+        <th id="col-llama2-99.9" colspan="2">LLAMA2-70B-99.9</th>
+        <th id="col-gptj-99" colspan="2">GPTJ-99</th>
+        <th id="col-gptj-99.9" colspan="2">GPTJ-99.9</th>
+        <th id="col-bert-99" colspan="2">Bert-99</th>
+        <th id="col-bert-99.9" colspan="2">Bert-99.9</th>
+        <th id="col-dlrm-v2-99" colspan="2">Stable Diffusion</th>
+        <th id="col-dlrm-v2-99" colspan="2">DLRM-v2-99</th>
+        <th id="col-dlrm-v2-99.9" colspan="2">DLRM-v2-99.9</th>
+        <th id="col-retinanet" colspan="2">Retinanet</th>
+        <th id="col-resnet50" colspan="2">ResNet50</th>
+        <th id="col-3d-unet-99" colspan="1">3d-unet-99</th>
+        <th id="col-3d-unet-99.9" colspan="1">3d-unet-99.9</th>
         """ 
     tableheader += "</tr>"
     
@@ -199,14 +202,30 @@ def construct_table(category, division, availability):
     <th class="headcol col-system"></th>
     <th class="headcol col-submitter"></th>
     <th class="headcol col-accelerator"></th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
+    <th class="col-scenario">Offline</th>
+    <th class="col-scenario">Server</th>
     <th class="col-scenario">Offline</th>
     <th class="col-scenario">Offline</th>
     <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Offline</th>
-    <th class="col-scenario">Offline</th>
-
     """
     
     
@@ -278,7 +297,7 @@ Input data types: {offline_precision_info['input_data_types']}
                 html += f"""
                 <td></td>
                 """
-                if "3d-unet" not in m and False:
+                if "3d-unet" not in m:
                     html += f"""
                     <td></td>
                     """
@@ -421,8 +440,8 @@ def generate_html_form(categories, divisions, selected_category=None, selected_d
 
 availabilities = ["Available", "Preview", "RDI" ]
 #availabilities = ["Available" ]
-division="open"
-category="edge"
+division="closed"
+category="datacenter"
 html = ""
 for availability in availabilities:
     val = availability.lower()
@@ -436,20 +455,20 @@ for availability in availabilities:
 {tableposhtml}
 <hr>
 """
-#summary = construct_summary_table(category, division)
+summary = construct_summary_table(category, division)
 #print(summary)
-#html += f"""
-#<h2 id="count_heading">Count of Results </h2>
-#{summary}
-#<hr>
+html += f"""
+<h2 id="count_heading">Count of Results </h2>
+{summary}
+<hr>
 """
 
-#html += """
-#    <div id="submittervssubmissionchartContainer" class="bgtext" style="height:370px; width:80%; margin:auto;"></div>
-#    <div id="modelvssubmissionchartContainer" class="bgtext" style="height:370px; width:80%; margin:auto;"></div>
-#    """
+html += """
+    <div id="submittervssubmissionchartContainer" class="bgtext" style="height:370px; width:80%; margin:auto;"></div>
+    <div id="modelvssubmissionchartContainer" class="bgtext" style="height:370px; width:80%; margin:auto;"></div>
+    """
 
-#html += generate_html_form(categories, divisions)
+html += generate_html_form(categories, divisions)
 
 
 extra_scripts = """
@@ -478,4 +497,5 @@ with open(os.path.join("docs", "index.md"), "w") as f:
 
 
 #print(data)
+
 
