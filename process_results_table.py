@@ -455,8 +455,8 @@ def generate_html_form(categories, divisions, selected_category=None, selected_d
         </div>
 
         <div class="form-field">
-            <label for="division1">Division</label>
-            <select id="division1" name="division" class="col">
+            <label for="division">Division</label>
+            <select id="division" name="division" class="col">
                 {division_options}
             </select>
         </div>
@@ -513,6 +513,8 @@ html += generate_html_form(categories, divisions)
 extra_scripts = """
 <script type="text/javascript">
 var sortcolumnindex = 4, perfsortorder = 1;
+$('#submittervssubmissionchartContainer').hide();
+$('#modelvssubmissionchartContainer').hide();
 </script>
 
 <!--<script type="text/javascript" src="javascripts/tablesorter.js"></script>-->
