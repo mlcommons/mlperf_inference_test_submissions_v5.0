@@ -379,8 +379,8 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99/offline",
     "Software": "deepsparse v1.8.0",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-1014-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.0.2. ",
+    "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
+    "Notes": "Automated by MLCommons CM v3.0.3. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -392,7 +392,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.29398,
+    "Performance_Result": 6.34394,
     "Performance_Units": "Samples/s"
   },
   {
@@ -668,7 +668,7 @@
     "Location": "open/MLCommons/results/gh_windows-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50/offline",
     "Software": "tf v2.17.0",
     "operating_system": "Windows-2022Server-10.0.20348-SP0",
-    "Notes": "Automated by MLCommons CM v3.0.2. ",
+    "Notes": "Automated by MLCommons CM v3.0.3. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -680,7 +680,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_windows-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 22.0579,
+    "Performance_Result": 21.7487,
     "Performance_Units": "Samples/s"
   },
   {
