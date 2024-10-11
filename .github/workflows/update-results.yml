@@ -30,7 +30,7 @@ jobs:
 
     - name: Run MLPerf Inference Submission Checker and generate results summary
       run: |
-        cm run script --tags=run,mlperf,inference,submission-checker,_short-run --src_version=v4.1 --adr.inference-src.tags=_repo.https://github.com/GATEOverflow/inference --quiet --extra_args=" --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
+        cm run script --tags=run,mlperf,inference,submission-checker,_short-run --src_version=v4.1 --repo_name=${{ github.event.repository.name }} --repo_owner=${{ github.repository_owner }} --repo_branch=${{ github.ref_name }} --adr.inference-src.tags=_repo.https://github.com/GATEOverflow/inference --quiet --extra_args=" --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
         cm run script --tags=convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
 
         USER="GitHub Action"
