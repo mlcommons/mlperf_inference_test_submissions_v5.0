@@ -507,7 +507,7 @@ html += """
     <div id="modelvssubmissionchartContainer" class="bgtext" style="height:370px; width:80%; margin:auto;"></div>
     """
 
-html += generate_html_form(categories, divisions)
+html += generate_html_form(categories, divisions, category, division)
 
 
 extra_scripts = """
