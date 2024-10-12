@@ -12,7 +12,6 @@
     "giturlparse": "0.12.0",
     "huggingface-hub": "0.25.2",
     "idna": "3.10",
-    "ijson": "3.3.0",
     "importlib_metadata": "8.5.0",
     "Jinja2": "3.1.4",
     "lightning-utilities": "0.11.7",
