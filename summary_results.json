@@ -416,7 +416,7 @@
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99/offline",
     "Software": "deepsparse v1.8.0",
     "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.0.4. ",
+    "Notes": "Automated by MLCommons CM v3.2.1. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -428,7 +428,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.36705,
+    "Performance_Result": 6.32763,
     "Performance_Units": "Samples/s"
   },
   {
