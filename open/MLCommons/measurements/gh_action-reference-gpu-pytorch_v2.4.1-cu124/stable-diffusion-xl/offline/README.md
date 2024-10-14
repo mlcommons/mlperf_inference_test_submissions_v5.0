@@ -99,4 +99,4 @@ Model Precision: fp32
 `FID_SCORE`: `235.69504`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
 
 ### Performance Results 
-`Samples per second`: `0.347147`
+`Samples per second`: `0.351566`
