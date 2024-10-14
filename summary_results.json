@@ -104,7 +104,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.4.1-cu124/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.347147,
+    "Performance_Result": 0.351566,
     "Performance_Units": "Samples/s"
   },
   {
