@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo anandhu-eng@cm4mlops --checkout=90f75288b81d124f689084637df4bfc18ab78676
+cm pull repo anandhu-eng@cm4mlops --checkout=e3ee8a88b025c5c950c63a07de3f1a138d680a80
 
 cm run script \
 	--tags=run,mlperf,inference,generate-run-cmds,_submission,_short \
@@ -54,4 +54,4 @@ Model Precision: fp32
 `F1`: `80.0`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`Samples per second`: `5.56788`
+`Samples per second`: `6.81873`
