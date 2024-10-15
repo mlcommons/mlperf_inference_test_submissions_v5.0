@@ -9,7 +9,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.371952,
+        "Result":0.276429,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
