@@ -164,7 +164,7 @@
     "Location": "open/MLCommons/results/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50/offline",
     "Software": "onnxruntime",
     "operating_system": " (darwin-23.6.0)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -176,7 +176,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 9.73986,
+    "Performance_Result": 9.14675,
     "Performance_Units": "Samples/s"
   },
   {
@@ -200,7 +200,7 @@
     "Location": "open/MLCommons/results/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99/offline",
     "Software": "deepsparse v1.8.0",
     "operating_system": " (darwin-23.6.0)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -212,7 +212,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.73134,
+    "Performance_Result": 7.25984,
     "Performance_Units": "Samples/s"
   },
   {
@@ -236,7 +236,7 @@
     "Location": "open/MLCommons/results/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50/offline",
     "Software": "onnxruntime v1.19.2",
     "operating_system": " (darwin-23.6.0)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -272,7 +272,7 @@
     "Location": "open/MLCommons/results/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet/offline",
     "Software": "onnxruntime v1.19.2",
     "operating_system": " (darwin-23.6.0)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -284,7 +284,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.311707,
+    "Performance_Result": 0.3549,
     "Performance_Units": "Samples/s"
   },
   {
@@ -308,7 +308,7 @@
     "Location": "open/MLCommons/results/gh_macos-latest_x86-reference-cpu-pytorch_v2.4.1-default_config/retinanet/offline",
     "Software": "pytorch v2.4.1",
     "operating_system": " (darwin-23.6.0)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -320,7 +320,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-pytorch_v2.4.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.256302,
+    "Performance_Result": 0.430417,
     "Performance_Units": "Samples/s"
   },
   {
@@ -344,7 +344,7 @@
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50/offline",
     "Software": "onnxruntime",
     "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -380,7 +380,7 @@
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet/offline",
     "Software": "onnxruntime",
     "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -392,7 +392,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.433647,
+    "Performance_Result": 0.433142,
     "Performance_Units": "Samples/s"
   },
   {
@@ -452,7 +452,7 @@
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50/offline",
     "Software": "onnxruntime v1.19.2",
     "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -464,7 +464,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.2812,
+    "Performance_Result": 23.274,
     "Performance_Units": "Samples/s"
   },
   {
@@ -488,7 +488,7 @@
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet/offline",
     "Software": "onnxruntime v1.19.2",
     "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -500,7 +500,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.431244,
+    "Performance_Result": 0.432822,
     "Performance_Units": "Samples/s"
   },
   {
@@ -524,7 +524,7 @@
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.1-default_config/retinanet/offline",
     "Software": "pytorch v2.4.1",
     "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -536,7 +536,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.412771,
+    "Performance_Result": 0.413923,
     "Performance_Units": "Samples/s"
   },
   {
@@ -560,7 +560,7 @@
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50/offline",
     "Software": "tf v2.17.0",
     "operating_system": "Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -572,7 +572,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.0119,
+    "Performance_Result": 21.2213,
     "Performance_Units": "Samples/s"
   },
   {
@@ -596,7 +596,7 @@
     "Location": "open/MLCommons/results/gh_windows-latest-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet/offline",
     "Software": "onnxruntime v1.19.2",
     "operating_system": "Windows-2022Server-10.0.20348-SP0",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -608,7 +608,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_windows-latest-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.334305,
+    "Performance_Result": 0.338212,
     "Performance_Units": "Samples/s"
   },
   {
@@ -668,7 +668,7 @@
     "Location": "open/MLCommons/results/gh_windows-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50/offline",
     "Software": "onnxruntime v1.19.2",
     "operating_system": "Windows-2022Server-10.0.20348-SP0",
-    "Notes": "Automated by MLCommons CM v3.2.1. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -680,7 +680,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_windows-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 17.7317,
+    "Performance_Result": 16.7039,
     "Performance_Units": "Samples/s"
   },
   {
