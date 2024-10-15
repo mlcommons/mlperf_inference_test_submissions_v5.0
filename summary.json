@@ -189,7 +189,7 @@
         "Model":"bert-99",
         "MlperfModel":"bert-99",
         "Scenario":"Offline",
-        "Result":6.07965,
+        "Result":6.36464,
         "Accuracy":"F1: 80.0",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
