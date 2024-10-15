@@ -639,7 +639,7 @@
         "Model":"gptj-99",
         "MlperfModel":"gptj-99",
         "Scenario":"Offline",
-        "Result":48.5292,
+        "Result":48.2946,
         "Accuracy":"ROUGE1: 32.2581  ROUGE2: 6.6667  ROUGEL: 22.5806  GEN_LEN: 264",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
