@@ -248,7 +248,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 16.5681,
+    "Performance_Result": 22.9054,
     "Performance_Units": "Samples/s"
   },
   {
