@@ -704,7 +704,7 @@
     "Location": "open/MLCommons/results/gh_windows-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50/offline",
     "Software": "tf v2.17.0",
     "operating_system": "Windows-2022Server-10.0.20348-SP0",
-    "Notes": "Automated by MLCommons CM v3.0.4. ",
+    "Notes": "Automated by MLCommons CM v3.2.2. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -716,7 +716,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_windows-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.8653,
+    "Performance_Result": 21.472,
     "Performance_Units": "Samples/s"
   },
   {
