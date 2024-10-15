@@ -97,7 +97,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -127,7 +127,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -157,7 +157,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.12.7",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -237,7 +237,7 @@
         "script_tags": "get,install,generic,generic-python-lib",
         "script_variations": "onnxruntime",
         "version": "1.19.2",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -287,7 +287,7 @@
         "script_tags": "get,ml-model,raw,resnext50,retinanet,object-detection",
         "script_variations": "fp32,onnx",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1197,7 +1197,7 @@
         "script_tags": "get,dataset,openimages,open-images,object-detection,preprocessed",
         "script_variations": "validation,NCHW",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1297,7 +1297,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1747,7 +1747,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "from-pip",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1757,7 +1757,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1767,7 +1767,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1847,7 +1847,7 @@
         "script_tags": "get,install,generic,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "6.0.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1857,7 +1857,7 @@
         "script_tags": "get,install,generic,generic-python-lib",
         "script_variations": "opencv-python",
         "version": "4.10.0.84",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1867,7 +1867,7 @@
         "script_tags": "get,install,generic,generic-python-lib",
         "script_variations": "numpy",
         "version": "1.26.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1877,7 +1877,7 @@
         "script_tags": "get,install,generic,generic-python-lib",
         "script_variations": "pycocotools",
         "version": "2.0.8",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     },
     {
@@ -1927,7 +1927,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_offline,_retinanet,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_onnxruntime,_offline,_cpu,_fp32 )"
       }
     }
   ]
