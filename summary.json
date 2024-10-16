@@ -609,7 +609,7 @@
         "Model":"stable-diffusion-xl",
         "MlperfModel":"stable-diffusion-xl",
         "Scenario":"Offline",
-        "Result":0.351416,
+        "Result":0.344991,
         "Accuracy":"CLIP_SCORE: 15.18544016778469  FID_SCORE: 235.69504308101006",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
