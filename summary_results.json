@@ -308,7 +308,7 @@
     "Location": "open/MLCommons/results/gh_macos-latest_x86-reference-cpu-pytorch_v2.4.1-default_config/retinanet/offline",
     "Software": "pytorch v2.4.1",
     "operating_system": " (darwin-23.6.0)",
-    "Notes": "Automated by MLCommons CM v3.2.2. ",
+    "Notes": "Automated by MLCommons CM v3.2.3. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -320,7 +320,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-pytorch_v2.4.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.456169,
+    "Performance_Result": 0.350957,
     "Performance_Units": "Samples/s"
   },
   {
@@ -356,7 +356,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.1984,
+    "Performance_Result": 23.4911,
     "Performance_Units": "Samples/s"
   },
   {
@@ -392,7 +392,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.431006,
+    "Performance_Result": 0.430657,
     "Performance_Units": "Samples/s"
   },
   {
@@ -500,7 +500,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.19.2-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.438086,
+    "Performance_Result": 0.431962,
     "Performance_Units": "Samples/s"
   },
   {
