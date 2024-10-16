@@ -16,7 +16,7 @@
   "host_network_card_count": "1",
   "host_networking": "Gig Ethernet",
   "host_networking_topology": "N/A",
-  "host_processor_caches": "L1d cache:  , L1i cache: 196608, L2 cache: 12582912, L3 cache:  ",
+  "host_processor_caches": "L1d cache:  , L1i cache: 131072, L2 cache: 12582912, L3 cache:  ",
   "host_processor_core_count": "3",
   "host_processor_frequency": "undefined",
   "host_processor_interconnect": "",
@@ -30,7 +30,7 @@
   "other_software_stack": "Python: 3.12.7, LLVM-15.0.0",
   "status": "available",
   "submitter": "MLCommons",
-  "sw_notes": "Automated by MLCommons CM v3.2.2. ",
+  "sw_notes": "Automated by MLCommons CM v3.2.3. ",
   "system_name": "gh_macos-latest_x86",
   "system_type": "edge",
   "system_type_detail": "edge server"
