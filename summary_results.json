@@ -536,7 +536,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.410806,
+    "Performance_Result": 0.409818,
     "Performance_Units": "Samples/s"
   },
   {
@@ -572,7 +572,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.17.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.3922,
+    "Performance_Result": 21.2756,
     "Performance_Units": "Samples/s"
   },
   {
