@@ -3,7 +3,7 @@ Done (t=0.00s)
 creating index...
 index created!
 Loading and preparing results...
-DONE (t=0.01s)
+DONE (t=0.00s)
 creating index...
 index created!
 Running per image evaluation...
@@ -28,4 +28,4 @@ found 5 results
 found 5 images
 found 0 images with no results
 ignored 0 dupes
-hash=fa264a1472551bdb5d720071bbba2ba4f0b575040cc164b7b5e7eb8387670aec
+hash=258eb7024956ba079b9afed23b2afb01d4f4bb9616817b32034d740a1b4eba0c
