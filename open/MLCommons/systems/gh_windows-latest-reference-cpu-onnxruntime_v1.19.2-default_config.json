@@ -30,7 +30,7 @@
   "other_software_stack": "Python: 3.12.7, -",
   "status": "available",
   "submitter": "MLCommons",
-  "sw_notes": "Automated by MLCommons CM v3.2.3. ",
+  "sw_notes": "Automated by MLCommons CM v3.2.4. ",
   "system_name": "gh_windows-latest",
   "system_type": "edge",
   "system_type_detail": "edge server"
