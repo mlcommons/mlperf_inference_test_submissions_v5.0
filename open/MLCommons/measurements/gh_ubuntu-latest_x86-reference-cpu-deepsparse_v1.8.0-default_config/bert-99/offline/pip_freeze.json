@@ -30,7 +30,7 @@
     "pandas": "2.2.3",
     "pip": "24.2",
     "protobuf": "5.28.2",
-    "psutil": "6.0.0",
+    "psutil": "6.1.0",
     "py-machineid": "0.6.0",
     "pybind11": "2.13.6",
     "pydantic": "2.9.2",
