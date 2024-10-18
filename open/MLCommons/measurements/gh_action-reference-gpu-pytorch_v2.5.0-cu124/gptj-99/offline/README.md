@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=ac0a7ce23adaa79fc347ce1197b50ac383a0343a
+cm pull repo gateoverflow@cm4mlops --checkout=0179dec7444249383219e6fcd3c85910554a0b19
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -27,6 +27,7 @@ cm run script \
 	--env.CM_MLPERF_IMPLEMENTATION=reference \
 	--env.CM_MLPERF_MODEL=gptj-99 \
 	--env.CM_MLPERF_RUN_STYLE=test \
+	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
 	--env.CM_MLPERF_BACKEND=pytorch \
 	--env.GPTJ_BEAM_SIZE=1 \
 	--env.CM_MLPERF_CLEAN_ALL=True \
@@ -102,4 +103,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 3615190.2`
 
 ### Performance Results 
-`Samples per second`: `0.62049`
+`Samples per second`: `0.695219`
