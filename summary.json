@@ -183,6 +183,66 @@
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
+        "SystemType":"datacenter",
+        "SystemName":"gh_ubuntu_x86",
+        "Platform":"gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Server",
+        "Result":75016.1,
+        "Accuracy":"acc: 76.078",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config\/resnet50\/server",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31)",
+        "notes":"Automated by MLCommons CM v3.2.4. ",
+        "compliance":1,
+        "errors":0,
+        "version":"v4.1",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Queries\/s",
+        "weight_data_types":"int8"
+    },
+    "7":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter",
+        "SystemName":"gh_ubuntu_x86",
+        "Platform":"gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":80229.7,
+        "Accuracy":"acc: 76.078",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config\/resnet50\/offline",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31)",
+        "notes":"Automated by MLCommons CM v3.2.4. ",
+        "compliance":1,
+        "errors":0,
+        "version":"v4.1",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"int8"
+    },
+    "8":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
         "SystemType":"edge",
         "SystemName":"gh_ubuntu-latest_x86",
         "Platform":"gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.0-default_config",
@@ -209,7 +269,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "7":{
+    "9":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -239,7 +299,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "8":{
+    "10":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -269,7 +329,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "9":{
+    "11":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -299,7 +359,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "10":{
+    "12":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -329,7 +389,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "11":{
+    "13":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -359,7 +419,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "12":{
+    "14":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -389,7 +449,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "13":{
+    "15":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -419,7 +479,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "14":{
+    "16":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -449,7 +509,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "15":{
+    "17":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -479,7 +539,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "16":{
+    "18":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -509,7 +569,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "17":{
+    "19":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -539,7 +599,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "18":{
+    "20":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -569,7 +629,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "19":{
+    "21":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -599,7 +659,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "20":{
+    "22":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -629,7 +689,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "21":{
+    "23":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -659,7 +719,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "22":{
+    "24":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -689,7 +749,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "23":{
+    "25":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -719,7 +779,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "24":{
+    "26":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -749,7 +809,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "25":{
+    "27":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
