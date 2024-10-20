@@ -308,7 +308,7 @@
     "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.5.0-cu124/gptj-99/offline",
     "Software": "pytorch v2.5.0",
     "operating_system": "Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.4. ",
+    "Notes": "Automated by MLCommons CM v3.2.5. ",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -320,7 +320,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.5.0-cu124/gptj-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 48.7018,
+    "Performance_Result": 50.1247,
     "Performance_Units": "Tokens/s"
   },
   {
