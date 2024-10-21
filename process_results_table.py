@@ -25,6 +25,10 @@ tableposhtml = """
 </div>
         """
 
+repo_owner = os.environ.get("INFERENCE_RESULTS_REPO_OWNER", "mlcommons") 
+repo_name = os.environ.get("INFERENCE_RESULTS_REPO_NAME", "inference_results_v4.1") 
+repo_branch = os.environ.get("INFERENCE_RESULTS_REPO_OWNER", "main") 
+
 def get_json_files(github_url):
     import requests
     from bs4 import BeautifulSoup
@@ -268,7 +272,7 @@ def construct_table(category, division, availability):
         return None
 
 
-    location_pre = "https://github.com/gateoverflow/mlperf_inference_test_submissions_v5.0/tree/main/"
+    location_pre = f"https://github.com/{repo_owner}/{repo_name}/tree/{repo_branch}/"
     result_link_text = "See result logs"
     result_link_text = ""
     for rid in mydata:
