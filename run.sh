@@ -6,6 +6,7 @@ if [ ! -e docs ]; then
 fi
 
 cp docs/docinit.sh .
-
+export default_division="open";
+export default_category="edge";
 
 INFERENCE_RESULTS_VERSION=v4.1 INFERENCE_RESULTS_REPO_OWNER=${INFERENCE_RESULTS_REPO_OWNER} INFERENCE_RESULTS_REPO_BRANCH=main INFERENCE_RESULTS_REPO_NAME=mlperf_inference_test_submissions_v5.0 bash docinit.sh
