@@ -5,6 +5,7 @@ if [ ! -e docs ]; then
     test $? -eq 0 || exit $?
 fi
 
+
 cp docs/docinit.sh .
 export default_division="open";
 export default_category="edge";
