@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=699d5425fbd148932cdf04f2d92448ef28dc1ed3
+cm pull repo gateoverflow@cm4mlops --checkout=50e7ab1933dee994ae0b3c2cad63214a82463e5c
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -63,6 +63,7 @@ cm run script \
 	--env.CM_MLPERF_LOADGEN_MODES,=performance,accuracy \
 	--env.CM_OUTPUT_FOLDER_NAME=test_results \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=no \
+	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.submission-checker.tags=_short-run \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
@@ -77,6 +78,7 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
+	--gptj_checkpoint_path=/home/cmuser/CM/repos/local/cache/f6ab729f2dca49d9/checkpoint/checkpoint-final \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
 	--env.GPTJ_CHECKPOINT_PATH=/home/cmuser/CM/repos/local/cache/f6ab729f2dca49d9/checkpoint/checkpoint-final
@@ -101,4 +103,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 42.55663`
 
 ### Performance Results 
-`Samples per second`: `45.595`
+`Samples per second`: `49.5356`
