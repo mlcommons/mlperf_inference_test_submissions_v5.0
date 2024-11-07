@@ -22,7 +22,7 @@
   "host_processor_interconnect": "",
   "host_processor_model_name": "Intel(R) Xeon(R) w7-2495X",
   "host_processors_per_node": "1",
-  "host_storage_capacity": "6.9T",
+  "host_storage_capacity": "11T",
   "host_storage_type": "SSD",
   "hw_notes": "",
   "number_of_nodes": "1",
