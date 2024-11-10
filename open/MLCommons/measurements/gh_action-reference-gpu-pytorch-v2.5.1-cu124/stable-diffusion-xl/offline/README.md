@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=a24b7a89e94d86b17f79d33d59fa83ef4f66d391
+cm pull repo gateoverflow@cm4mlops --checkout=2c2f0038ca4e5e522120a8a63ee413df99e54caa
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -29,6 +29,7 @@ cm run script \
 	--env.CM_MLPERF_MODEL=sdxl \
 	--env.CM_MLPERF_RUN_STYLE=test \
 	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
+	--env.CM_DOCKER_PRIVILEGED_MODE=True \
 	--env.CM_MLPERF_BACKEND=pytorch \
 	--env.CM_MLPERF_CLEAN_ALL=True \
 	--env.CM_MLPERF_DEVICE=cuda \
@@ -103,4 +104,4 @@ Model Precision: fp32
 `FID_SCORE`: `237.82579`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
 
 ### Performance Results 
-`Samples per second`: `0.351353`
+`Samples per second`: `0.352529`
