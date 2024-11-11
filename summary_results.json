@@ -248,7 +248,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch-v2.5.1-cu124/gptj-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 37.5682,
+    "Performance_Result": 47.1708,
     "Performance_Units": "Tokens/s"
   },
   {
@@ -284,7 +284,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch-v2.5.1-cu124/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.351353,
+    "Performance_Result": 0.352529,
     "Performance_Units": "Samples/s"
   },
   {
