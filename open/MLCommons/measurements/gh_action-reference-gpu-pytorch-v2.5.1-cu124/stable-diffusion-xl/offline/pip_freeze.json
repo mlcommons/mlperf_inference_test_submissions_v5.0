@@ -3,8 +3,8 @@
     "accelerate": "1.1.1",
     "certifi": "2024.8.30",
     "charset-normalizer": "3.4.0",
-    "cmind": "3.3.4",
-    "diffusers": "0.30.3",
+    "cmind": "3.4.1",
+    "diffusers": "0.31.0",
     "dmiparser": "5.1",
     "filelock": "3.16.1",
     "fsspec": "2024.10.0",
@@ -34,7 +34,7 @@
     "nvidia-nvtx-cu12": "12.4.127",
     "open_clip_torch": "2.29.0",
     "opencv-python": "4.10.0.84",
-    "packaging": "24.1",
+    "packaging": "24.2",
     "pandas": "2.2.3",
     "pillow": "11.0.0",
     "pip": "22.0.2",
@@ -43,7 +43,7 @@
     "pybind11": "2.13.6",
     "pycuda": "2024.1.2",
     "python-dateutil": "2.9.0.post0",
-    "pytools": "2024.1.14",
+    "pytools": "2024.1.15",
     "pytz": "2024.2",
     "PyYAML": "6.0.2",
     "regex": "2024.11.6",
@@ -58,7 +58,7 @@
     "tokenizers": "0.20.3",
     "torch": "2.5.1",
     "torch-fidelity": "0.3.0",
-    "torchmetrics": "1.5.1",
+    "torchmetrics": "1.6.0",
     "torchvision": "0.20.1",
     "tqdm": "4.67.0",
     "transformers": "4.46.2",
@@ -67,7 +67,7 @@
     "tzdata": "2024.2",
     "urllib3": "2.2.3",
     "wcwidth": "0.2.13",
-    "wheel": "0.44.0",
-    "zipp": "3.20.2"
+    "wheel": "0.45.0",
+    "zipp": "3.21.0"
   }
 }
