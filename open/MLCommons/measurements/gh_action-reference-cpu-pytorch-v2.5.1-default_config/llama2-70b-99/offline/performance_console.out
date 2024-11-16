@@ -1,0 +1,78 @@
+INFO:datasets:PyTorch version 2.5.1+cpu available.
+Loading dataset...
+Finished loading dataset.
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:02<00:29,  2.09s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:04<00:27,  2.13s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:06<00:26,  2.18s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:08<00:23,  2.17s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:10<00:21,  2.14s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:12<00:19,  2.16s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:15<00:17,  2.18s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [00:17<00:14,  2.13s/it]Loading checkpoint shards:  60%|██████    | 9/15 [00:19<00:12,  2.15s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [00:21<00:11,  2.23s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [00:24<00:09,  2.30s/it]Loading checkpoint shards:  80%|████████  | 12/15 [00:26<00:07,  2.40s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [00:29<00:04,  2.42s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [00:31<00:02,  2.44s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:32<00:00,  1.77s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:32<00:00,  2.14s/it]
+INFO:Llama-70B-MAIN:Starting Benchmark run
+/home/cmuser/venv/cm/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/cmuser/venv/cm/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/cmuser/venv/cm/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:638: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+================================================
+MLPerf Results Summary
+================================================
+SUT name : PySUT
+Scenario : Offline
+Mode     : PerformanceOnly
+Samples per second: 0.00101553
+Tokens per second: 0.309737
+Result is : VALID
+  Min duration satisfied : Yes
+  Min queries satisfied : Yes
+  Early stopping satisfied: Yes
+
+================================================
+Additional Stats
+================================================
+Min latency (ns)                : 984707952779
+Max latency (ns)                : 984707952779
+Mean latency (ns)               : 984707952779
+50.00 percentile latency (ns)   : 984707952779
+90.00 percentile latency (ns)   : 984707952779
+95.00 percentile latency (ns)   : 984707952779
+97.00 percentile latency (ns)   : 984707952779
+99.00 percentile latency (ns)   : 984707952779
+99.90 percentile latency (ns)   : 984707952779
+
+
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 1
+target_qps : 0.01
+ttft_latency (ns): 2000000000
+tpot_latency (ns): 200000000
+max_async_queries : 1
+min_duration (ms): 0
+max_duration (ms): 0
+min_query_count : 1
+max_query_count : 1
+qsl_rng_seed : 3066443479025735752
+sample_index_rng_seed : 10688027786191513374
+schedule_rng_seed : 14962580496156340209
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+performance_issue_same_index : 0
+performance_sample_count : 24576
+
+No warnings encountered during test.
+
+No errors encountered during test.
+INFO:Llama-70B-MAIN:Run Completed!
+INFO:Llama-70B-MAIN:Destroying SUT...
+INFO:Llama-70B-MAIN:Destroying QSL...
+Loaded model
+Loaded tokenizer
+IssueQuery started with 1 samples
+IssueQuery done
+Saving outputs to run_outputs/q0.pkl
+Samples run: 1
+	BatchMaker time: 0.01138448715209961
+	Inference time: 984.6180140972137
+	Postprocess time: 0.0776216983795166
+	==== Total time: 984.7070202827454
