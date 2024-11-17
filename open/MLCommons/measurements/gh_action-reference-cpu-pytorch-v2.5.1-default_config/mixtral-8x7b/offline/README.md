@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=18b1d06c18b97725f67dfadc12fef904af242c27
+cm pull repo gateoverflow@cm4mlops --checkout=dfc46a9d7da8987550a687a0367004daa4d88c8f
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_mixtral-8x7b,_pytorch,_cpu,_test,_r4.1-dev_default,_float16,_offline \
@@ -109,4 +109,4 @@ Model Precision: fp32
 `mbxp_accuracy`: `0.0`, Required accuracy for closed division `>= 30.05788`
 
 ### Performance Results 
-`Samples per second`: `0.0365307`
+`Samples per second`: `0.0367741`
