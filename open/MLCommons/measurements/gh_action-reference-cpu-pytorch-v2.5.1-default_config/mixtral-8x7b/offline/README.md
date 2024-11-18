@@ -11,7 +11,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
   
 ```markdown
      [View the graph](deps.md)
-     ```
+```
 
 ## CM Run Command
 
