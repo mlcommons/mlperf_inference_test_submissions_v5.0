@@ -8,6 +8,8 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * CPU version: x86_64
 * Python version: 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]
 * MLCommons CM version: 3.4.1
+  
+[View the graph](GRAPH.md)
 
 ## CM Run Command
 
