@@ -1,4 +1,3 @@
-```mermaid
 graph TD
     "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "detect,os"
     "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "get,sys-utils-cm"
@@ -64,6 +63,5 @@ graph TD
     "detect-cpu,586c8a43320142f7" --> "detect,os"
     "benchmark-program,19f369ef47084895" --> "detect,cpu"
     "benchmark-program-mlperf,cfff0132a8aa4018" --> "benchmark-program,program"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "benchmark-mlperf"
-```
+    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "benchmark-mlperf"%
     
