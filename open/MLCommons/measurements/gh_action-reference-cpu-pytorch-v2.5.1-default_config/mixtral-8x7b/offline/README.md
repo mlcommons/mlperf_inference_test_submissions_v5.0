@@ -9,9 +9,9 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * Python version: 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]
 * MLCommons CM version: 3.4.1
   
-```markdown
-     [View the graph](deps.md)
-```
+
+[View the graph](deps.md)
+
 
 ## CM Run Command
 
