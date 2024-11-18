@@ -1,67 +1,66 @@
 graph TD
-    "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "detect,os"
-    "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "get,sys-utils-cm"
-    "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "get,python"
-    "get-mlperf-inference-src,4b57186581024797" --> "detect,os"
-    "get-mlperf-inference-src,4b57186581024797" --> "get,python3"
-    "get-git-repo,ed603e7292974f10 ( branch.master,_repo.https://github.com/mlcommons/inference )" --> "detect,os"
-    "get-mlperf-inference-src,4b57186581024797" --> "get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference"
-    "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "get,mlcommons,inference,src"
-    "get-mlperf-inference-utils,e341e5f86d8342e5" --> "get,mlperf,inference,src"
-    "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "get,mlperf,inference,utils"
-    "get-cuda,46d133d9ef92422d ( toolkit )" --> "detect,os"
-    "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" --> "get,cuda,_toolkit"
-    "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" --> "get,python3"
-    "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )" --> "detect,os"
-    "detect-cpu,586c8a43320142f7" --> "detect,os"
-    "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )" --> "detect,cpu"
-    "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )" --> "get,python3"
-    "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )" --> "get,generic-python-lib,_pip"
-    "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" --> "get,generic-python-lib,_package.pycuda"
-    "get-generic-python-lib,94b62a682bc44791 ( package.numpy )" --> "detect,os"
-    "detect-cpu,586c8a43320142f7" --> "detect,os"
-    "get-generic-python-lib,94b62a682bc44791 ( package.numpy )" --> "detect,cpu"
-    "get-generic-python-lib,94b62a682bc44791 ( package.numpy )" --> "get,python3"
-    "get-generic-python-lib,94b62a682bc44791 ( package.numpy )" --> "get,generic-python-lib,_pip"
-    "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" --> "get,generic-python-lib,_package.numpy"
-    "app-mlperf-inference,d775cac873ee4231 ( reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline )" --> "get,cuda-devices,_with-pycuda"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "detect,os"
-    "detect-cpu,586c8a43320142f7" --> "detect,os"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "detect,cpu"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,sys-utils-cm"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,python"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,cuda,_cudnn"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_torch_cuda"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_torchvision_cuda"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,ml-model,stable-diffusion,text-to-image,sdxl,raw,_pytorch,_fp16"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,dataset,coco2014,_validation"
-    "generate-mlperf-inference-user-conf,3af4475745964b93" --> "detect,os"
-    "detect-cpu,586c8a43320142f7" --> "detect,os"
-    "generate-mlperf-inference-user-conf,3af4475745964b93" --> "detect,cpu"
-    "generate-mlperf-inference-user-conf,3af4475745964b93" --> "get,python"
-    "generate-mlperf-inference-user-conf,3af4475745964b93" --> "get,mlcommons,inference,src"
-    "get-mlperf-inference-sut-configs,c2fbf72009e2445b" --> "get,cache,dir,_name.mlperf-inference-sut-configs"
-    "generate-mlperf-inference-user-conf,3af4475745964b93" --> "get,sut,configs"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "generate,user-conf,mlperf,inference"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,loadgen"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,mlcommons,inference,src"
-    "get-mlperf-inference-src,4b57186581024797 ( branch.dev )" --> "detect,os"
-    "get-mlperf-inference-src,4b57186581024797 ( branch.dev )" --> "get,python3"
-    "get-git-repo,ed603e7292974f10 ( branch.dev,_repo.https://github.com/mlcommons/inference )" --> "detect,os"
-    "get-mlperf-inference-src,4b57186581024797 ( branch.dev )" --> "get,git,repo,_branch.dev,_repo.https://github.com/mlcommons/inference"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,mlcommons,inference,src,_branch.dev"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.psutil"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.diffusers"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.transformers"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.torchvision"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.accelerate"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.torchmetrics"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.torch-fidelity"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.open_clip_torch"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.opencv-python"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "get,generic-python-lib,_package.scipy"
-    "detect-cpu,586c8a43320142f7" --> "detect,os"
-    "benchmark-program,19f369ef47084895" --> "detect,cpu"
-    "benchmark-program-mlperf,cfff0132a8aa4018" --> "benchmark-program,program"
-    "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_sdxl,_pytorch,_float16 )" --> "benchmark-mlperf"%
-    
+    app-mlperf-inference,d775cac873ee4231_(_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline_) --> detect,os
+    app-mlperf-inference,d775cac873ee4231_(_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline_) --> get,sys-utils-cm
+    app-mlperf-inference,d775cac873ee4231_(_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline_) --> get,python
+    get-mlperf-inference-src,4b57186581024797 --> detect,os
+    get-mlperf-inference-src,4b57186581024797 --> get,python3
+    get-git-repo,ed603e7292974f10_(_branch.master,_repo.https://github.com/mlcommons/inference_) --> detect,os
+    get-mlperf-inference-src,4b57186581024797 --> get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference
+    app-mlperf-inference,d775cac873ee4231_(_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline_) --> get,mlcommons,inference,src
+    get-mlperf-inference-utils,e341e5f86d8342e5 --> get,mlperf,inference,src
+    app-mlperf-inference,d775cac873ee4231_(_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline_) --> get,mlperf,inference,utils
+    get-cuda,46d133d9ef92422d_(_toolkit_) --> detect,os
+    get-cuda-devices,7a3ede4d3558427a_(_with-pycuda_) --> get,cuda,_toolkit
+    get-cuda-devices,7a3ede4d3558427a_(_with-pycuda_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> detect,cpu
+    get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> get,generic-python-lib,_pip
+    get-cuda-devices,7a3ede4d3558427a_(_with-pycuda_) --> get,generic-python-lib,_package.pycuda
+    get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> detect,cpu
+    get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,generic-python-lib,_pip
+    get-cuda-devices,7a3ede4d3558427a_(_with-pycuda_) --> get,generic-python-lib,_package.numpy
+    app-mlperf-inference,d775cac873ee4231_(_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline_) --> get,cuda-devices,_with-pycuda
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> detect,cpu
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,sys-utils-cm
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,cuda,_cudnn
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_torch_cuda
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_torchvision_cuda
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,ml-model,stable-diffusion,text-to-image,sdxl,raw,_pytorch,_fp16
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,dataset,coco2014,_validation
+    generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
+    generate-mlperf-inference-user-conf,3af4475745964b93 --> get,python
+    generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src
+    get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
+    generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,loadgen
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,mlcommons,inference,src
+    get-mlperf-inference-src,4b57186581024797_(_branch.dev_) --> detect,os
+    get-mlperf-inference-src,4b57186581024797_(_branch.dev_) --> get,python3
+    get-git-repo,ed603e7292974f10_(_branch.dev,_repo.https://github.com/mlcommons/inference_) --> detect,os
+    get-mlperf-inference-src,4b57186581024797_(_branch.dev_) --> get,git,repo,_branch.dev,_repo.https://github.com/mlcommons/inference
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,mlcommons,inference,src,_branch.dev
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.psutil
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.diffusers
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.transformers
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.torchvision
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.accelerate
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.torchmetrics
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.torch-fidelity
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.open_clip_torch
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.opencv-python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> get,generic-python-lib,_package.scipy
+    detect-cpu,586c8a43320142f7 --> detect,os
+    benchmark-program,19f369ef47084895 --> detect,cpu
+    benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cuda,_sdxl,_pytorch,_float16_) --> benchmark-mlperf%
