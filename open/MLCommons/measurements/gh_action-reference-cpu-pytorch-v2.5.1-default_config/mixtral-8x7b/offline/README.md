@@ -8,10 +8,6 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * CPU version: x86_64
 * Python version: 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]
 * MLCommons CM version: 3.4.1
-  
-
-[View the graph](deps.md)
-
 
 ## CM Run Command
 
@@ -22,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=fb4339ce0dff6437e16f47cd7d70c290ade27b5a
+cm pull repo gateoverflow@cm4mlops --checkout=173648e5e1664344ef6b78a6d557d257836feb5e
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_mixtral-8x7b,_pytorch,_cpu,_test,_r4.1-dev_default,_float16,_offline \
@@ -113,4 +109,4 @@ Model Precision: fp32
 `mbxp_accuracy`: `0.0`, Required accuracy for closed division `>= 30.05788`
 
 ### Performance Results 
-`Samples per second`: `0.0360528`
+`Samples per second`: `0.0366235`
