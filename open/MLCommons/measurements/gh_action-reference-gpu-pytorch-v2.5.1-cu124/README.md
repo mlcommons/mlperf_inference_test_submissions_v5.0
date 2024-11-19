@@ -1,3 +1,3 @@
 | Model   | Scenario   |   Accuracy |   Throughput | Latency (in ms)   |
 |---------|------------|------------|--------------|-------------------|
-| gptj-99 | offline    |        264 |       44.637 | -                 |
+| gptj-99 | offline    |        264 |       44.007 | -                 |
