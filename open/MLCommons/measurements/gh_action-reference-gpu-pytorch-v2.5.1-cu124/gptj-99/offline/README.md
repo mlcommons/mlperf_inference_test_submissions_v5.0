@@ -105,4 +105,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 42.55663`
 
 ### Performance Results 
-`Samples per second`: `44.0066`
+`Samples per second`: `38.3312`
