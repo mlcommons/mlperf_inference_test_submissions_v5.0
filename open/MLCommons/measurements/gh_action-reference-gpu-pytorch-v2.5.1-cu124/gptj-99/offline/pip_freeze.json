@@ -49,7 +49,7 @@
     "pybind11": "2.13.6",
     "pycuda": "2024.1.2",
     "python-dateutil": "2.9.0.post0",
-    "pytools": "2024.1.15",
+    "pytools": "2024.1.16",
     "pytz": "2024.2",
     "PyYAML": "6.0.2",
     "regex": "2024.11.6",
