@@ -109,4 +109,4 @@ Model Precision: fp32
 `mbxp_accuracy`: `0.0`, Required accuracy for closed division `>= 30.05788`
 
 ### Performance Results 
-`Samples per second`: `0.0360945`
+`Samples per second`: `0.0356089`
