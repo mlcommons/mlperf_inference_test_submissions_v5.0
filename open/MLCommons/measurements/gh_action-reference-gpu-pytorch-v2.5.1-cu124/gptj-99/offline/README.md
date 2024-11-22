@@ -6,8 +6,8 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 * OS version: Linux-6.2.0-39-generic-x86_64-with-glibc2.35
 * CPU version: x86_64
-* Python version: 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]
-* MLCommons CM version: 3.3.4
+* Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
+* MLCommons CM version: 3.4.2
 
 ## CM Run Command
 
@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=ab1b7b4b6b1031a5ed5d98afa1be1fa082c94f07
+cm pull repo gateoverflow@cm4mlops --checkout=6eefe2faa982ad10d820d249a6bef9a3c9e54fdf
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -48,6 +48,8 @@ cm run script \
 	--env.CM_RUN_MLPERF_ACCURACY=on \
 	--env.CM_RUN_SUBMISSION_CHECKER=yes \
 	--env.CM_TAR_SUBMISSION_DIR=yes \
+	--env.CM_MLPERF_SUBMISSION_DIVISION=open \
+	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=False \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=short \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
 	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
@@ -105,4 +107,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 42.55663`
 
 ### Performance Results 
-`Samples per second`: `41.5255`
+`Samples per second`: `49.5357`

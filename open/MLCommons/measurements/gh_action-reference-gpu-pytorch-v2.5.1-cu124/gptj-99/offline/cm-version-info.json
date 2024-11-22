@@ -171,46 +171,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
-      }
-    },
-    {
       "get,generic-python-lib,_pip": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -307,7 +267,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -327,7 +287,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -337,7 +297,7 @@
         "script_tags": "get,sys-utils-cm",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -347,7 +307,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.10.12",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -357,67 +317,7 @@
         "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
         "script_variations": "cudnn",
         "version": "12.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torch_cuda )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torch_cuda )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torch_cuda )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "22.0.2",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torch_cuda )"
-      }
-    },
-    {
-      "get,cuda": {
-        "script_uid": "46d133d9ef92422d",
-        "script_alias": "get-cuda",
-        "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
-        "script_variations": "",
-        "version": "12.4",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torch_cuda )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -427,67 +327,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torch_cuda",
         "version": "2.5.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torchvision_cuda )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torchvision_cuda )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torchvision_cuda )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "22.0.2",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torchvision_cuda )"
-      }
-    },
-    {
-      "get,cuda": {
-        "script_uid": "46d133d9ef92422d",
-        "script_alias": "get-cuda",
-        "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
-        "script_variations": "",
-        "version": "12.4",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( torchvision_cuda )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -497,57 +337,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torchvision_cuda",
         "version": "0.20.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( transformers )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( transformers )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( transformers )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "22.0.2",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( transformers )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -556,8 +346,8 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "transformers",
-        "version": "4.46.2",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "version": "4.46.3",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -567,7 +357,7 @@
         "script_tags": "get,raw,ml-model,gptj,gpt-j,large-language-model",
         "script_variations": "pytorch",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -577,7 +367,7 @@
         "script_tags": "get,dataset,gpt-j,cnndm,cnn-dailymail,original",
         "script_variations": "validation",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -657,7 +447,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -667,7 +457,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -677,7 +467,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "master-git-35c7e1f0dbbd1a63b608ea06ae80d69f231d6c05",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -687,57 +477,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "master-git-35c7e1f0dbbd1a63b608ea06ae80d69f231d6c05",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "22.0.2",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -747,57 +487,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "6.1.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.datasets )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.datasets )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.datasets )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "22.0.2",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.datasets )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -807,57 +497,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.datasets",
         "version": "3.1.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.attrs )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.attrs )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.attrs )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "22.0.2",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.attrs )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -867,57 +507,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.attrs",
         "version": "24.2.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.accelerate )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.accelerate )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.accelerate )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "22.0.2",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.accelerate )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -926,8 +516,8 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.accelerate",
-        "version": "1.1.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "version": "1.1.1",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     },
     {
@@ -967,7 +557,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( gptj-99,_pytorch,_offline,_cuda,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_cuda,_gptj-99,_pytorch,_float16 )"
       }
     }
   ]
