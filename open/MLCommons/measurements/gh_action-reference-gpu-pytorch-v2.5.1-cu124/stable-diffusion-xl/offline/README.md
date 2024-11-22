@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=6882ba32bc0f6fd67115c577d7c766c0db089d47
+cm pull repo gateoverflow@cm4mlops --checkout=9f79f456cc49de5e40b4e06e8124d3c13bf4471f
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -46,6 +46,8 @@ cm run script \
 	--env.CM_RUN_MLPERF_ACCURACY=on \
 	--env.CM_RUN_SUBMISSION_CHECKER=yes \
 	--env.CM_TAR_SUBMISSION_DIR=yes \
+	--env.CM_MLPERF_SUBMISSION_DIVISION=open \
+	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=False \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=short \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
 	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
@@ -100,8 +102,6 @@ Platform: gh_action-reference-gpu-pytorch-v2.5.1-cu124
 Model Precision: fp32
 
 ### Accuracy Results 
-`CLIP_SCORE`: `16.37863`, Required accuracy for closed division `>= 31.68632` and `<= 31.81332`
-`FID_SCORE`: `237.9399`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
 
 ### Performance Results 
-`Samples per second`: `0.352259`
+`Samples per second`: `0.352213`
