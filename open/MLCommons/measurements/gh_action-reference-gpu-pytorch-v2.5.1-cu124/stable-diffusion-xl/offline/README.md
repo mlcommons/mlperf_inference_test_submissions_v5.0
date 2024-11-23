@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=9f79f456cc49de5e40b4e06e8124d3c13bf4471f
+cm pull repo gateoverflow@cm4mlops --checkout=912018ae5f5b02056780d35491b062923786badf
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -104,4 +104,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.352213`
+`Samples per second`: `0.353061`
