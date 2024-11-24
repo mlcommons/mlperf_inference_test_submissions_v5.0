@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=bb6154de1f62c2d98647137d6848518a1a53a106
+cm pull repo gateoverflow@cm4mlops --checkout=c10b61abeabfc24b30f56a70c735b93eac8681db
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_llama2-70b-99,_pytorch,_cpu,_test,_r4.1-dev_default,_bfloat16,_offline \
@@ -48,6 +48,8 @@ cm run script \
 	--env.CM_RUN_MLPERF_ACCURACY=on \
 	--env.CM_RUN_SUBMISSION_CHECKER=yes \
 	--env.CM_TAR_SUBMISSION_DIR=yes \
+	--env.CM_MLPERF_SUBMISSION_DIVISION=open \
+	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=False \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=short \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
 	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
@@ -107,4 +109,4 @@ Model Precision: fp32
 `TOKENS_PER_SAMPLE`: `610.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
 
 ### Performance Results 
-`Samples per second`: `0.367932`
+`Samples per second`: `0.209238`
