@@ -128,7 +128,7 @@
     "Location": "open/MLCommons/results/gh_action-reference-cpu-pytorch-v2.5.1-default_config/llama2-70b-99/offline",
     "Software": "pytorch v2.5.1",
     "operating_system": "Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.6. ",
+    "Notes": "",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
@@ -140,7 +140,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_action-reference-cpu-pytorch-v2.5.1-default_config/llama2-70b-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.367932,
+    "Performance_Result": 0.209238,
     "Performance_Units": "Tokens/s"
   },
   {
@@ -164,7 +164,7 @@
     "Location": "open/MLCommons/results/gh_action-reference-cpu-pytorch-v2.5.1-default_config/mixtral-8x7b/offline",
     "Software": "pytorch v2.5.1",
     "operating_system": "Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)",
-    "Notes": "Automated by MLCommons CM v3.2.6. ",
+    "Notes": "",
     "compliance": 1,
     "errors": 0,
     "version": "v4.1",
