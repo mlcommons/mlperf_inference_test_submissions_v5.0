@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=c10b61abeabfc24b30f56a70c735b93eac8681db
+cm pull repo gateoverflow@cm4mlops --checkout=ea6a31007f0354c5548a8c5d75ab2911f8b070bd
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_llama2-70b-99,_pytorch,_cpu,_test,_r4.1-dev_default,_bfloat16,_offline \
@@ -109,4 +109,4 @@ Model Precision: fp32
 `TOKENS_PER_SAMPLE`: `610.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
 
 ### Performance Results 
-`Samples per second`: `0.209238`
+`Samples per second`: `0.208481`
