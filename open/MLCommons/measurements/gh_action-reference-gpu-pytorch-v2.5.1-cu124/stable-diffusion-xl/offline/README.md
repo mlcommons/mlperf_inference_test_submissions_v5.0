@@ -6,7 +6,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 * OS version: Linux-6.8.0-48-generic-x86_64-with-glibc2.35
 * CPU version: x86_64
-* Python version: 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]
+* Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
 * MLCommons CM version: 3.4.1
 
 ## CM Run Command
@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=c10b61abeabfc24b30f56a70c735b93eac8681db
+cm pull repo gateoverflow@cm4mlops --checkout=bcc1151c7efdb810a05937fe4bc8b1bb4a97ae71
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -83,7 +83,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.SDXL_CHECKPOINT_PATH=/home/cmuser/CM/repos/local/cache/01fac62ee75b44c4/stable_diffusion_fp16
+	--env.SDXL_CHECKPOINT_PATH=/home/cmuser/CM/repos/local/cache/d0f05efed7544e3a/stable_diffusion_fp16
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -104,4 +104,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.351437`
+`Samples per second`: `0.35175`
