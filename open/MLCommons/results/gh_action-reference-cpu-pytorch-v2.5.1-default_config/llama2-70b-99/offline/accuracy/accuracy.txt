@@ -1,5 +1,5 @@
 
 Results
 
-{'rouge1': 61.7021, 'rouge2': 37.9679, 'rougeL': 39.3617, 'rougeLsum': 56.9149, 'gen_len': 1302, 'gen_num': 1, 'gen_tok_len': 610, 'tokens_per_sample': 610.0}
-hash=f3de59b8a585ecf82203af0128622d3175107de8070cbd39a8cc839e297faeb0
+{'rouge1': 59.1479, 'rouge2': 35.2645, 'rougeL': 36.5915, 'rougeLsum': 56.1404, 'gen_len': 1368, 'gen_num': 1, 'gen_tok_len': 690, 'tokens_per_sample': 690.0}
+hash=d7d1106168d4f820765609b0273c39b9168c1803d471044c32b746f5300a7b9b

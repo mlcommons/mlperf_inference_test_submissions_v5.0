@@ -27,7 +27,7 @@
   "hw_notes": "",
   "number_of_nodes": "1",
   "operating_system": "Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)",
-  "other_software_stack": "Python: 3.10.12, GCC-11.4.0",
+  "other_software_stack": "Python: 3.10.12, GCC-11.4.0, Using Docker ",
   "status": "available",
   "submitter": "MLCommons",
   "sw_notes": "",

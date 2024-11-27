@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=ea6a31007f0354c5548a8c5d75ab2911f8b070bd
+cm pull repo gateoverflow@cm4mlops --checkout=bcc1151c7efdb810a05937fe4bc8b1bb4a97ae71
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_llama2-70b-99,_pytorch,_cpu,_test,_r4.1-dev_default,_bfloat16,_offline \
@@ -103,10 +103,10 @@ Platform: gh_action-reference-cpu-pytorch-v2.5.1-default_config
 Model Precision: fp32
 
 ### Accuracy Results 
-`ROUGE1`: `61.7021`, Required accuracy for closed division `>= 43.98689`
-`ROUGE2`: `37.9679`, Required accuracy for closed division `>= 21.81485`
-`ROUGEL`: `39.3617`, Required accuracy for closed division `>= 28.33004`
-`TOKENS_PER_SAMPLE`: `610.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
+`ROUGE1`: `59.1479`, Required accuracy for closed division `>= 43.98689`
+`ROUGE2`: `35.2645`, Required accuracy for closed division `>= 21.81485`
+`ROUGEL`: `36.5915`, Required accuracy for closed division `>= 28.33004`
+`TOKENS_PER_SAMPLE`: `690.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
 
 ### Performance Results 
-`Samples per second`: `0.208481`
+`Samples per second`: `0.241547`
