@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=d18ac5bb5e1eda13c8f8d918bf0ee5602e00895a
+cm pull repo gateoverflow@cm4mlops --checkout=ff66a2488a728239d66b8f0c9a62e159e4e8cae5
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
@@ -107,4 +107,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 42.55663`
 
 ### Performance Results 
-`Samples per second`: `44.3166`
+`Samples per second`: `32.3217`
