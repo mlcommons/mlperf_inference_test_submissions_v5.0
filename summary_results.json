@@ -320,7 +320,7 @@
     "Code": "https://github.com/GATEOverflow/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch-v2.5.1-cu124/gptj-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 32.3217,
+    "Performance_Result": 39.5217,
     "Performance_Units": "Tokens/s"
   },
   {
