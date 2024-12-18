@@ -4,10 +4,10 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.8.0-48-generic-x86_64-with-glibc2.35
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.35
 * CPU version: x86_64
 * Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
-* MLCommons CM version: 3.4.1
+* MLCommons CM version: 3.5.1.1
 
 ## CM Run Command
 
@@ -18,10 +18,10 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=bdeb9213aefedf4ed6c4ab6140466abbb9c2ae4b
+cm pull repo gateoverflow@mlperf-automations --checkout=0b97dc4c2d95b2e99b2037fd5920cb0f3d2d03ee
 
 cm run script \
-	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r4.1-dev_default,_float16,_offline \
+	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
 	--quiet=true \
 	--env.CM_MLPERF_MODEL_SDXL_DOWNLOAD_TO_HOST=yes \
 	--env.CM_QUIET=yes \
@@ -50,10 +50,11 @@ cm run script \
 	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=False \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=short \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
-	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
-	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
+	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
+	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r5.0-dev_default \
+	--env.CM_MLPERF_SUBMISSION_CHECKER_VERSION=v5.0 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.2 \
+	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=sdxl \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -68,29 +69,29 @@ cm run script \
 	--add_deps_recursive.mlperf-implementation.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.submission-checker.tags=_short-run \
-	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
-	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
-	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
+	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r5.0-dev \
+	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r5.0-dev \
+	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r5.0-dev \
 	--adr.mlperf-implementation.tags=_branch.dev \
 	--adr.compiler.tags=gcc \
 	--adr.submission-checker.tags=_short-run \
-	--adr.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
-	--adr.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
-	--adr.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
+	--adr.get-mlperf-inference-results-dir.tags=_version.r5.0-dev \
+	--adr.get-mlperf-inference-submission-dir.tags=_version.r5.0-dev \
+	--adr.mlperf-inference-nvidia-scratch-space.tags=_version.r5.0-dev \
 	--v=False \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.SDXL_CHECKPOINT_PATH=/home/cmuser/CM/repos/local/cache/d0f05efed7544e3a/stable_diffusion_fp16
+	--env.SDXL_CHECKPOINT_PATH=/home/cmuser/CM/repos/local/cache/762e6805370c44eb/stable_diffusion_fp16
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
- you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
+ you should simply reload gateoverflow@mlperf-automations without checkout and clean CM cache as follows:*
 
 ```bash
-cm rm repo gateoverflow@cm4mlops
-cm pull repo gateoverflow@cm4mlops
+cm rm repo gateoverflow@mlperf-automations
+cm pull repo gateoverflow@mlperf-automations
 cm rm cache -f
 
 ```
@@ -104,4 +105,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.350952`
+`Samples per second`: `0.351397`
