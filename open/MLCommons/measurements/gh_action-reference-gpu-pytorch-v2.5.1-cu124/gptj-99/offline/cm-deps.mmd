@@ -2,11 +2,9 @@ graph TD
     app-mlperf-inference,d775cac873ee4231_(_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline_) --> detect,os
     app-mlperf-inference,d775cac873ee4231_(_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline_) --> get,sys-utils-cm
     app-mlperf-inference,d775cac873ee4231_(_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline_) --> get,python
-    get-mlperf-inference-src,4b57186581024797 --> detect,os
-    get-mlperf-inference-src,4b57186581024797 --> get,python3
-    get-git-repo,ed603e7292974f10_(_branch.master,_repo.https://github.com/mlcommons/inference_) --> detect,os
-    get-mlperf-inference-src,4b57186581024797 --> get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference
     app-mlperf-inference,d775cac873ee4231_(_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline_) --> get,mlcommons,inference,src
+    pull-git-repo,c23132ed65c4421d --> detect,os
+    app-mlperf-inference,d775cac873ee4231_(_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline_) --> pull,git,repo
     get-mlperf-inference-utils,e341e5f86d8342e5 --> get,mlperf,inference,src
     app-mlperf-inference,d775cac873ee4231_(_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline_) --> get,mlperf,inference,utils
     get-cuda,46d133d9ef92422d_(_toolkit_) --> detect,os

@@ -31,52 +31,32 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-mlperf-inference-src,4b57186581024797"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.12",
-        "parent": "get-mlperf-inference-src,4b57186581024797"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-git-repo,ed603e7292974f10 ( branch.master,_repo.https://github.com/mlcommons/inference )"
-      }
-    },
-    {
-      "get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference": {
-        "script_uid": "ed603e7292974f10",
-        "script_alias": "get-git-repo",
-        "script_tags": "get,git,repo,repository,clone",
-        "script_variations": "branch.master,repo.https://github.com/mlcommons/inference",
-        "version": "",
-        "parent": "get-mlperf-inference-src,4b57186581024797"
-      }
-    },
-    {
       "get,mlcommons,inference,src": {
         "script_uid": "4b57186581024797",
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e6069aa91c2d8e75f62b00fbdd566b399e77f3f8",
+        "version": "master-git-2fdb814e6a765d994872fb99ee38f8c43418d5b0",
+        "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "pull-git-repo,c23132ed65c4421d"
+      }
+    },
+    {
+      "pull,git,repo": {
+        "script_uid": "c23132ed65c4421d",
+        "script_alias": "pull-git-repo",
+        "script_tags": "pull,git,repo,repository",
+        "script_variations": "",
+        "version": "",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline )"
       }
     },
@@ -86,7 +66,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e6069aa91c2d8e75f62b00fbdd566b399e77f3f8",
+        "version": "master-git-2fdb814e6a765d994872fb99ee38f8c43418d5b0",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -266,7 +246,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.numpy",
-        "version": "2.2.0",
+        "version": "2.2.1",
         "parent": "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )"
       }
     },
@@ -396,7 +376,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "transformers",
-        "version": "4.47.0",
+        "version": "4.47.1",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_gptj-99,_pytorch,_cuda,_float16 )"
       }
     },
@@ -466,7 +446,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e6069aa91c2d8e75f62b00fbdd566b399e77f3f8",
+        "version": "master-git-2fdb814e6a765d994872fb99ee38f8c43418d5b0",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
@@ -516,7 +496,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e6069aa91c2d8e75f62b00fbdd566b399e77f3f8",
+        "version": "master-git-2fdb814e6a765d994872fb99ee38f8c43418d5b0",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_gptj-99,_pytorch,_cuda,_float16 )"
       }
     },
@@ -526,7 +506,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e6069aa91c2d8e75f62b00fbdd566b399e77f3f8",
+        "version": "master-git-2fdb814e6a765d994872fb99ee38f8c43418d5b0",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_gptj-99,_pytorch,_cuda,_float16 )"
       }
     },
@@ -546,7 +526,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
-        "version": "6.1.0",
+        "version": "6.1.1",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_gptj-99,_pytorch,_cuda,_float16 )"
       }
     },

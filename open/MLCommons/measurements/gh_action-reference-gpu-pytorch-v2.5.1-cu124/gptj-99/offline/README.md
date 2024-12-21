@@ -7,7 +7,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.35
 * CPU version: x86_64
 * Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
-* MLCommons CM version: 3.5.1.1
+* MLCommons CM version: 3.5.2
 
 ## CM Run Command
 
@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=0b97dc4c2d95b2e99b2037fd5920cb0f3d2d03ee
+cm pull repo gateoverflow@mlperf-automations --checkout=b051bb1858fc61de02fc68765fc11155fe457b2a
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -37,6 +37,8 @@ cm run script \
 	--env.CM_GET_PLATFORM_DETAILS=yes \
 	--env.CM_HW_NAME=gh_action \
 	--env.CM_MLPERF_MODEL_PRECISION=float16 \
+	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
+	--env.CM_MLPERF_INFERENCE_PULL_SRC_CHANGES=yes \
 	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
 	--env.CM_MLPERF_LOADGEN_SCENARIO=Offline \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
@@ -55,7 +57,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r5.0-dev_default \
 	--env.CM_MLPERF_SUBMISSION_CHECKER_VERSION=v5.0 \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.2 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
 	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=gptj-99 \
@@ -107,4 +109,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 42.55663`
 
 ### Performance Results 
-`Samples per second`: `55.0873`
+`Samples per second`: `48.0536`
