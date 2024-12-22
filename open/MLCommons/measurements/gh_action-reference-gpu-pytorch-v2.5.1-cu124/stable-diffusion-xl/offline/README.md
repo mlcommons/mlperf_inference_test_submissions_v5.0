@@ -7,7 +7,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.35
 * CPU version: x86_64
 * Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
-* MLCommons CM version: 3.5.1.1
+* MLCommons CM version: 3.5.2
 
 ## CM Run Command
 
@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=0b97dc4c2d95b2e99b2037fd5920cb0f3d2d03ee
+cm pull repo gateoverflow@mlperf-automations --checkout=b51e0fd1dffb675912ec47f2c462e5d2e7a14e1e
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -36,6 +36,8 @@ cm run script \
 	--env.CM_MLPERF_USE_DOCKER=True \
 	--env.CM_HW_NAME=gh_action \
 	--env.CM_MLPERF_MODEL_PRECISION=float16 \
+	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
+	--env.CM_MLPERF_INFERENCE_PULL_SRC_CHANGES=yes \
 	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
 	--env.CM_MLPERF_LOADGEN_SCENARIO=Offline \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
@@ -53,7 +55,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r5.0-dev_default \
 	--env.CM_MLPERF_SUBMISSION_CHECKER_VERSION=v5.0 \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.2 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
 	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=sdxl \
@@ -66,13 +68,11 @@ cm run script \
 	--env.CM_OUTPUT_FOLDER_NAME=test_results \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=no \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
-	--add_deps_recursive.mlperf-implementation.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.submission-checker.tags=_short-run \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r5.0-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r5.0-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r5.0-dev \
-	--adr.mlperf-implementation.tags=_branch.dev \
 	--adr.compiler.tags=gcc \
 	--adr.submission-checker.tags=_short-run \
 	--adr.get-mlperf-inference-results-dir.tags=_version.r5.0-dev \
@@ -105,4 +105,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.351397`
+`Samples per second`: `0.351364`
