@@ -18,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=54637559d26146324b387411ebcc1b0aea2a9ebb
+cm pull repo gateoverflow@mlperf-automations --checkout=477f80ff22a22b0503f54e7b5751525a1a520fe0
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -39,9 +39,9 @@ cm run script \
 	--env.CM_MLPERF_MODEL_PRECISION=float16 \
 	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
 	--env.CM_MLPERF_INFERENCE_PULL_SRC_CHANGES=yes \
-	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
+	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_LOADGEN_SCENARIO=Offline \
-	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
+	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
 	--env.CM_MLPERF_LOADGEN_TARGET_QPS=1 \
 	--env.CM_TEST_QUERY_COUNT=1 \
@@ -84,10 +84,7 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
-	--gptj_checkpoint_path=/home/cmuser/CM/repos/local/cache/31767c21a8f149e5/checkpoint/checkpoint-final \
-	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
-	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.GPTJ_CHECKPOINT_PATH=/home/cmuser/CM/repos/local/cache/31767c21a8f149e5/checkpoint/checkpoint-final
+	--gptj_checkpoint_path=/home/cmuser/CM/repos/local/cache/31767c21a8f149e5/checkpoint/checkpoint-final
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@mlperf-automations without checkout and clean CM cache as follows:*
@@ -109,4 +106,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 42.55663`
 
 ### Performance Results 
-`Samples per second`: `47.9013`
+`Samples per second`: `47.9972`
