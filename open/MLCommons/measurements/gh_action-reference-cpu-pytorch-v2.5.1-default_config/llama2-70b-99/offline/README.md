@@ -39,9 +39,9 @@ cm run script \
 	--env.CM_MLPERF_MODEL_PRECISION=bfloat16 \
 	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
 	--env.CM_MLPERF_INFERENCE_PULL_SRC_CHANGES=yes \
-	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
+	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_LOADGEN_SCENARIO=Offline \
-	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
+	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
 	--env.CM_MLPERF_LOADGEN_TARGET_QPS=0.001 \
 	--env.CM_TEST_QUERY_COUNT=1 \
@@ -83,10 +83,7 @@ cm run script \
 	--v=False \
 	--print_env=False \
 	--print_deps=False \
-	--dump_version_info=True \
-	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
-	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.LLAMA2_CHECKPOINT_PATH=/home/cmuser/CM/repos/local/cache/92f669176b2246ad/repo
+	--dump_version_info=True
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@mlperf-automations without checkout and clean CM cache as follows:*
@@ -111,4 +108,4 @@ Model Precision: fp32
 `TOKENS_PER_SAMPLE`: `610.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
 
 ### Performance Results 
-`Samples per second`: `0.343782`
+`Samples per second`: `0.406333`
