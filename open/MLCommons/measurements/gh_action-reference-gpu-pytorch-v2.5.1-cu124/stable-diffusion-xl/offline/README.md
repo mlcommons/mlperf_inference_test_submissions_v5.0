@@ -1,5 +1,3 @@
-This experiment is generated using the [MLCommons Collective Mind automation framework (CM)](https://github.com/mlcommons/cm4mlops).
-
 *Check [CM MLPerf docs](https://docs.mlcommons.org/inference) for more details.*
 
 ## Host platform
@@ -18,7 +16,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=477f80ff22a22b0503f54e7b5751525a1a520fe0
+cm pull repo gateoverflow@mlperf-automations --checkout=48ea6b46a7606d1c5d74909e94d5599dbe7ff9e1
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -102,4 +100,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.351204`
+`Samples per second`: `0.350929`
