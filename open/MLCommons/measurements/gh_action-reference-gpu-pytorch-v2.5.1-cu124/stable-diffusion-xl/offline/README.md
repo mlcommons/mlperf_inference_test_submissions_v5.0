@@ -1,3 +1,5 @@
+This experiment is generated using the [MLCommons Collective Mind automation framework (CM)](https://github.com/mlcommons/cm4mlops).
+
 *Check [CM MLPerf docs](https://docs.mlcommons.org/inference) for more details.*
 
 ## Host platform
@@ -16,7 +18,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=48ea6b46a7606d1c5d74909e94d5599dbe7ff9e1
+cm pull repo gateoverflow@mlperf-automations --checkout=b51e0fd1dffb675912ec47f2c462e5d2e7a14e1e
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -50,11 +52,11 @@ cm run script \
 	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=False \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=short \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
+	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r5.0-dev_default \
 	--env.CM_MLPERF_SUBMISSION_CHECKER_VERSION=v5.0 \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
-	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
+	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=sdxl \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -100,4 +102,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.350929`
+`Samples per second`: `0.352784`
