@@ -1,8 +1,7 @@
 INFO:datasets:PyTorch version 2.5.1+cpu available.
 Loading dataset...
 Finished loading dataset.
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:02<00:33,  2.37s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:04<00:29,  2.24s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:06<00:25,  2.15s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:08<00:23,  2.14s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:11<00:22,  2.28s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:15<00:28,  3.13s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:18<00:23,  2.93s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [00:21<00:21,  3.04s/it]Loading checkpoint shards:  60%|██████    | 9/15 [00:25<00:19,  3.30s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [00:28<00:15,  3.20s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [00:32<00:13,  3.46s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:32<00:00,  2.18s/it]
-WARNING:accelerate.big_modeling:Some parameters are on the meta device because they were offloaded to the disk and cpu.
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:01<00:27,  1.95s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:03<00:25,  1.96s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:05<00:23,  1.95s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:07<00:20,  1.91s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:09<00:18,  1.86s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:11<00:17,  1.89s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:13<00:15,  1.94s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [00:15<00:13,  1.98s/it]Loading checkpoint shards:  60%|██████    | 9/15 [00:17<00:12,  2.01s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [00:19<00:10,  2.12s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [00:22<00:08,  2.22s/it]Loading checkpoint shards:  80%|████████  | 12/15 [00:24<00:06,  2.14s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [00:26<00:04,  2.10s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [00:28<00:02,  2.17s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:28<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:28<00:00,  1.93s/it]
 INFO:Llama-70B-MAIN:Starting Benchmark run
 /home/cmuser/venv/cm/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
@@ -16,8 +15,8 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 0.000131839
-Tokens per second: 0.0402109
+Samples per second: 0.00136406
+Tokens per second: 0.416039
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -26,15 +25,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 7585010835169
-Max latency (ns)                : 7585010835169
-Mean latency (ns)               : 7585010835169
-50.00 percentile latency (ns)   : 7585010835169
-90.00 percentile latency (ns)   : 7585010835169
-95.00 percentile latency (ns)   : 7585010835169
-97.00 percentile latency (ns)   : 7585010835169
-99.00 percentile latency (ns)   : 7585010835169
-99.90 percentile latency (ns)   : 7585010835169
+Min latency (ns)                : 733103814220
+Max latency (ns)                : 733103814220
+Mean latency (ns)               : 733103814220
+50.00 percentile latency (ns)   : 733103814220
+90.00 percentile latency (ns)   : 733103814220
+95.00 percentile latency (ns)   : 733103814220
+97.00 percentile latency (ns)   : 733103814220
+99.00 percentile latency (ns)   : 733103814220
+99.90 percentile latency (ns)   : 733103814220
 
 
 ================================================
@@ -73,7 +72,7 @@ IssueQuery started with 1 samples
 IssueQuery done
 Saving outputs to run_outputs/q0.pkl
 Samples run: 1
-	BatchMaker time: 0.03487110137939453
-	Inference time: 7584.939567565918
-	Postprocess time: 0.038150787353515625
-	==== Total time: 7585.012589454651
+	BatchMaker time: 0.008469581604003906
+	Inference time: 733.0315732955933
+	Postprocess time: 0.06359291076660156
+	==== Total time: 733.1036357879639
