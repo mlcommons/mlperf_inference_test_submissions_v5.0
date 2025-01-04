@@ -386,7 +386,7 @@ for details, entries in tables.items():
 """
             repo_name = os.environ.get('INFERENCE_RESULTS_REPO_NAME', "mlperf_inference_test_submissions_v5.0")
             repo_branch = os.environ.get('INFERENCE_RESULTS_REPO_BRANCH', "main")
-            repo_owner = os.environe.get('INFERENCE_RESULTS_REPO_OWNER', 'mlcommons')
+            repo_owner = os.environ.get('INFERENCE_RESULTS_REPO_OWNER', 'mlcommons')
 
             readme_content = f"""
 See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/{repo_owner}/{repo_name}/blob/{repo_branch}/{division}/{submitter}/results/{sut_name}/summary.html)
