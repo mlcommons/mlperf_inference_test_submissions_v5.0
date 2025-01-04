@@ -53,15 +53,12 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
         <th colspan="3">SingleStream</th>
         <th colspan="3">MultiStream</th>
     </tr>
-    <tr>
-    <td> Accuracy </td>
+    <tr><td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td><td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    <td> Accuracy </td>
-    <td>Metric</td>
-    <td>Performance</td>
-    <td> Accuracy </td>
-    <td>Metric</td>
-    <td>Performance</td>
-    </tr><tr><td>gptj-99</td><td>ROUGE1: 42.5566, ROUGE2: 19.9223, ROUGEL: 29.6882, GEN_LEN: 3615190.2</td><td>ROUGE1: 32.2581  ROUGE2: 6.6667  ROUGEL: 22.5806  GEN_LEN: 264</td><td>Tokens/s</td> <td>50.3446</td><td colspan="3"> N/A </td><td colspan="3"> N/A </td></table>
+    </tr><tr><td>gptj-99</td><td>ROUGE1: 42.5566, ROUGE2: 19.9223, ROUGEL: 29.6882, GEN_LEN: 3615190.2</td><td>ROUGE1: 32.2581  ROUGE2: 6.6667  ROUGEL: 22.5806  GEN_LEN: 264</td><td>Tokens/s</td> <td>50.3446</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table>
 
