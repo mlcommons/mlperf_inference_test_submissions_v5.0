@@ -316,7 +316,7 @@ for details, entries in tables.items():
                         #system = details.replace("github.com", "raw.githubusercontent.com").replace("tree/", "refs/heads/").replace("results/", "systems/")
                         system_json_path = f"""{system}.json"""
                         system_json = get_system_json(system_json_path)
-                        header_table = get_header_table(system_json)
+                        header_table = get_header_table(system_json, version)
                         accelerator_details = get_accelerator_details_table(system_json)
                         cpu_details = get_cpu_details_table(system_json)
                         hardware_details = get_hardware_details_table(system_json)
