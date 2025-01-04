@@ -25,15 +25,15 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
   <tbody>
    <tr>
     <th id="license_num"><a href="">MLPerf Inference Category:</a></th>
-    <td id="license_num_val">Datacenter</td>
+    <td id="license_num_val">datacenter</td>
     <th id="test_date"><a href="">MLPerf Inference Division:</a></th>
-    <td id="test_date_val">Closed</td>
+    <td id="test_date_val">closed</td>
    </tr>
    <tr>
     <th id="tester"><a href="">Submitted by:</a></th>
     <td id="tester_val">MLCommons</td>
     <th id="sw_avail"><a href="">Availability:</a></th>
-    <td id="sw_avail_val">Available as of Feb 2025</td>
+    <td id="sw_avail_val">Available as of February 2025</td>
    </tr>
   </tbody>
  </table>
