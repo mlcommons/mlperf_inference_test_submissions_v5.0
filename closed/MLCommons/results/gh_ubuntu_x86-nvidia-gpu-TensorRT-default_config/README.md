@@ -60,13 +60,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     
     <td>Metric</td>
     <td>Performance</td>
-    
-    <td>Metric</td>
-    <td>Performance</td>
 
-    
-    <td>Metric</td>
-    <td>Performance</td>
     
     <td>Metric</td>
     <td>Performance</td>

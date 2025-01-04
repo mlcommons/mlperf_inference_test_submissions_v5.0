@@ -61,20 +61,11 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    <td> Accuracy </td>
-    <td>Metric</td>
-    <td>Performance</td>
 
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    <td> Accuracy </td>
-    <td>Metric</td>
-    <td>Performance</td>
 
-    <td> Accuracy </td>
-    <td>Metric</td>
-    <td>Performance</td>
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
