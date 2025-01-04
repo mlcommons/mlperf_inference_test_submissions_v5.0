@@ -1,5 +1,5 @@
 
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/gh_action-reference-gpu-pytorch_v2.4.1-cu124/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/auto-update/open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.4.1-cu124/summary.html)
 
 
 
@@ -49,14 +49,16 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <tr>
         <th rowspan="2">Model</th>
         <th rowspan="2">Accuracy Target</th>
-        <th colspan="2">Server</th>
-        <th colspan="2">Offline</th>
+        <th colspan="3">Server</th>
+        <th colspan="3">Offline</th>
     </tr>
     <tr> 
+    <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
+    <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
     </tr>
-    <tr><td>gptj-99</td><td></td><td></td><td></td><td>Tokens/s</td> <td>46.0817</td><tr><td>stable-diffusion-xl</td><td></td><td></td><td></td><td>Samples/s</td> <td>0.346565</td></table>
+<tr><td>gptj-99</td><td>ROUGE1: 42.5566, ROUGE2: 19.9223, ROUGEL: 29.6882, GEN_LEN: 3615190.2</td><td></td><td></td><td>ROUGE1: 32.2581  ROUGE2: 6.6667  ROUGEL: 22.5806  GEN_LEN: 264</td><td>Tokens/s</td> <td>46.0817</td><tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td></td><td>CLIP_SCORE: 15.18544016778469  FID_SCORE: 235.69504308101006</td><td>Samples/s</td> <td>0.346565</td></table>
 

@@ -1,5 +1,5 @@
 
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/gh_action-reference-cpu-pytorch-v2.5.1-default_config/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/auto-update/open/MLCommons/results/gh_action-reference-cpu-pytorch-v2.5.1-default_config/summary.html)
 
 
 
@@ -49,14 +49,16 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <tr>
         <th rowspan="2">Model</th>
         <th rowspan="2">Accuracy Target</th>
-        <th colspan="2">Server</th>
-        <th colspan="2">Offline</th>
+        <th colspan="3">Server</th>
+        <th colspan="3">Offline</th>
     </tr>
     <tr> 
+    <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
+    <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
     </tr>
-    <tr><td>llama2-70b-99</td><td></td><td></td><td></td><td>Tokens/s</td> <td>0.387999</td></table>
+<tr><td>llama2-70b-99</td><td>ROUGE1: 43.9869, ROUGE2: 21.8148, ROUGEL: 28.33, TOKENS_PER_SAMPLE: 265.005</td><td></td><td></td><td>ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0</td><td>Tokens/s</td> <td>0.387999</td></table>
 
