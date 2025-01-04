@@ -209,18 +209,27 @@ for details, entries in tables.items():
     if "datacenter" in entries:
         models = [ "llama2-70b-99", "llama2-70b-99.9", "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl",  "dlrm-v2-99", "dlrm-v2-99.9", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
 
+    if division == "open":
+        accuracy_achieved_header = '<td> Accuracy </td>'
+        colspan = "3"
+    else:
+        accuracy_achieved_header = "" #dont show accuracy as submitters are only expected to achieve the target
+        colspan = "2"
+
     html_table_head = f"""
 <h3>Results Table</h3>
 <table>
     <tr>
         <th rowspan="2">Model</th>
         <th rowspan="2">Accuracy Target</th>
-        <th colspan="2">Server</th>
-        <th colspan="2">Offline</th>
+        <th colspan="{colspan}">Server</th>
+        <th colspan="{colspan}">Offline</th>
     </tr>
     <tr> 
+    {accuracy_achieved_header}
     <td>Metric</td>
     <td>Performance</td>
+    {accuracy_achieved_header}
     <td>Metric</td>
     <td>Performance</td>
     </tr>
@@ -232,26 +241,29 @@ for details, entries in tables.items():
             for model in models:
                 if model in data:
                     html_table += f"""<tr><td>{model}</td>"""
-                    if "closed" in division:
-                        version = data[model]["Offline"]["version"]
-                        acc_target = checker.MODEL_CONFIG[version]["accuracy-target"][model]
-                        i = 0
-                        acc_targets = []
-                        key = None
-                        for item in acc_target:
-                            if i%2 == 0:
-                                key = item
-                            else:
-                                acc_targets.append( (key, item))
-                            i+=1
-                    else:
-                        acc_targets = []
+                    
+                    version = data[model]["Offline"]["version"]
+                    acc_target = checker.MODEL_CONFIG[version]["accuracy-target"][model]
+                    i = 0
+                    acc_targets = []
+                    key = None
+                    for item in acc_target:
+                        if i%2 == 0:
+                            key = item
+                        else:
+                            acc_targets.append( (key, item))
+                        i+=1
+
                     acc_targets_list = []
                     for item in acc_targets:
                         acc_targets_list.append(f"""{item[0]}: {round(item[1], 4)}""")
                     acc_targets_string = ", ".join(acc_targets_list)
                     html_table += f"""<td>{acc_targets_string}</td>"""
+
+
                     if "Server" in data[model]:
+                        if division == "open":
+                            html_table += f"""<td>{data[model]["Server"]["Accuracy"]}</td>"""
                         html_table += f"""<td>{data[model]["Server"]["Performance_Units"]}</td> <td>{data[model]["Server"]["Performance_Result"]}</td>"""
                     else:
                         html_table += "<td></td><td></td>"
@@ -269,6 +281,8 @@ for details, entries in tables.items():
                         hardware_details = get_hardware_details_table(system_json)
                         software_details = get_software_details_table(system_json)
                         network_details = get_network_details_table(system_json)
+                        if division == "open":
+                            html_table += f"""<td>{data[model]["Offline"]["Accuracy"]}</td>"""
                         html_table += f"""<td>{data[model]["Offline"]['Performance_Units']}</td> <td>{data[model]["Offline"]["Performance_Result"]}</td>"""
                     else:
                         html_table += "<td></td><td></td>"
@@ -295,8 +309,11 @@ for details, entries in tables.items():
             </table>
 {html_table}
 """
+            repo_name = os.environ.get('INFERENCE_RESULTS_REPO_NAME', "mlperf_inference_test_submissions_v5.0")
+            repo_branch = os.environ.get('INFERENCE_RESULTS_REPO_BRANCH', "main")
+
             readme_content = f"""
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/{submitter}/results/{sut_name}/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/{repo_name}/blob/{repo_branch}/{division}/{submitter}/results/{sut_name}/summary.html)
 {html_table}
 """
             with open(out_path, "w") as f:
