@@ -291,7 +291,6 @@ for details, entries in tables.items():
                 colspan="2"
                 scenario_missing_td = "<td></td><td></td>"
 
-            hardware_details = ''
             for model in models:
                         
                 if model in data:
