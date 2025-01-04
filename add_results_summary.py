@@ -286,7 +286,6 @@ for details, entries in tables.items():
             os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
             html_table = f"""
-See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/{submitter}/results/{sut_name}/summary.html
 
 {header_table}
 <table>
@@ -296,8 +295,12 @@ See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlc
             </table>
 {html_table}
 """
+            readme_content = f"""
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/{submitter}/results/{sut_name}/summary.html)
+{html_table}
+"""
             with open(out_path, "w") as f:
-                f.write(html_table)
+                f.write(readme_content)
             html_out_path = os.path.join(division, submitter, "results", sut_name, "summary.html")
             html_header = get_header()
             html = f"""
