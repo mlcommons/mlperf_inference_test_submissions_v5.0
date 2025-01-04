@@ -75,6 +75,48 @@ th:nth-child(2), td:nth-child(2) { width: 30%; }
 """
     return html_header
 
+def get_availability_string(version: str) -> str:
+    """
+    Generate availability string based on the version.
+    
+    Args:
+        version (str): Version string (e.g., 'v1.0', 'v1.1', 'v2.0', ..., 'v9.1')
+        
+    Returns:
+        str: Availability string (e.g., "Available as of February 2024")
+    """
+    # Define version-to-month mapping
+    version_month_map = {
+        "0": "February",
+        "1": "August"
+    }
+    
+    try:
+        if not version.startswith('v'):
+            raise ValueError("Version must start with 'v'")
+        
+        major, minor = version[1:].split('.')
+        major = int(major)
+        minor = minor.strip()
+        
+        if minor not in version_month_map:
+            raise ValueError("Invalid minor version. Expected '0' or '1'.")
+        
+        if not (1 <= major <= 9):
+            raise ValueError("Major version out of range (expected 1-9).")
+        
+        # Calculate year, starting from 2024 for v1.0
+        year = 2021 + (major - 1)
+        month = version_month_map[minor]
+        
+        return f" as of {month} {year}"
+    
+    except (ValueError, IndexError) as e:
+        return f"Error: Invalid version format - {e}"
+
+
+
+
 def get_header_table(system_json, version):
     submitter = system_json.get('submitter')
     system_name = system_json.get('system_name')
@@ -82,12 +124,13 @@ def get_header_table(system_json, version):
     category = system_json.get('system_type')
     status = system_json.get('status')
 
+    availability_string = get_availability_string(version)
     if status.lower() == "available":
-        availability_string = "Available as of February 2025"
+        availability_string = f"""Available {availability_string}"""
     elif status.lower() == "preview":
-        availability_string = "Preview as of February 2025, should be avaiable within 180 days"
+        availability_string = f"""Preview {availability_string}, should be avaiable within 180 days"""
     else:
-        availability_string = "Research and Internal as of February 2025"
+        availability_string = f"""Research and Internal {availability_string}"""
     
     html =  f"""
 <div class="resultpage">
