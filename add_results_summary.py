@@ -209,14 +209,17 @@ for details, entries in tables.items():
     if "datacenter" in entries:
         models = [ "llama2-70b-99", "llama2-70b-99.9", "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl",  "dlrm-v2-99", "dlrm-v2-99.9", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
 
-    if division == "open":
-        accuracy_achieved_header = '<td> Accuracy </td>'
-        colspan = "3"
-    else:
-        accuracy_achieved_header = "" #dont show accuracy as submitters are only expected to achieve the target
-        colspan = "2"
+    for category in entries:
+        for division, data in entries[category].items():
+    
+            if division == "open":
+                accuracy_achieved_header = '<td> Accuracy </td>'
+                colspan = "3"
+            else:
+                accuracy_achieved_header = "" #dont show accuracy as submitters are only expected to achieve the target
+                colspan = "2"
 
-    html_table_head = f"""
+            html_table_head = f"""
 <h3>Results Table</h3>
 <table>
     <tr>
@@ -233,10 +236,9 @@ for details, entries in tables.items():
     <td>Metric</td>
     <td>Performance</td>
     </tr>
-    """
-    for category in entries:
-        for division, data in entries[category].items():
+"""
             html_table = html_table_head
+
             hardware_details = ''
             for model in models:
                 if model in data:
