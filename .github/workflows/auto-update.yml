@@ -26,8 +26,8 @@ jobs:
 
       - name: Merge auto-update into main
         run: |
-          git fetch origin auto-update:auto-update
-          git merge --no-ff auto-update -m "Auto-merge updates from auto-update branch"
+          git fetch
+          git merge origin/auto-update -m "Auto-merge updates from auto-update branch"
 
       - name: Push Changes to Main
         run: |
