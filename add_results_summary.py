@@ -286,6 +286,8 @@ for details, entries in tables.items():
             os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
             html_table = f"""
+See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/{submitter}/results/{system_name}/summary.html
+
 {header_table}
 <table>
             <tr><td>{accelerator_details}</td> <td>{cpu_details}</td> </tr>
