@@ -282,7 +282,7 @@ for details, entries in tables.items():
             tmp_path = os.path.dirname(details)
             tmp_path = os.path.dirname(tmp_path)
             submitter = os.path.basename(tmp_path)
-            out_path = os.path.join(division, submitter, "results", sut_name, "summary", "README.md")
+            out_path = os.path.join(division, submitter, "results", sut_name, "README.md")
             os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
             html_table = f"""
@@ -296,7 +296,7 @@ for details, entries in tables.items():
 """
             with open(out_path, "w") as f:
                 f.write(html_table)
-            html_out_path = os.path.join(division, submitter, "results", sut_name, "summary", "summary.html")
+            html_out_path = os.path.join(division, submitter, "results", sut_name, "summary.html")
             html_header = get_header()
             html = f"""
 <html>

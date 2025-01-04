@@ -6,8 +6,8 @@
    <a href="/" style="border: none"><img src="" alt="" /></a>
   </div>
   <div class="titlebar">
-   <h1 class="title">MLPerf Inference v4.1</h1>
-   <p style="font-size: smaller">Copyright 2019-2024 MLCommons</p>
+   <h1 class="title">MLPerf Inference v5.0</h1>
+   <p style="font-size: smaller">Copyright 2019-2025 MLCommons</p>
   </div>
  </div>
  <table class="titlebarcontainer">
@@ -30,7 +30,7 @@
     <th id="tester"><a href="">Submitted by:</a></th>
     <td id="tester_val">MLCommons</td>
     <th id="sw_avail"><a href="">Availability:</a></th>
-    <td id="sw_avail_val">Available as of Aug 2024</td>
+    <td id="sw_avail_val">Available as of Feb 2025</td>
    </tr>
   </tbody>
  </table>
