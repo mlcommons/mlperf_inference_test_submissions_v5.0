@@ -4,7 +4,7 @@ name: MLPerf inference submission checker
 
 on:
   pull_request:
-    branches: [ "main", "v4.1" ]
+    branches: [ "main", "v5.0", "auto-update" ]
 
 jobs:
   build:
@@ -28,4 +28,4 @@ jobs:
         python3 -m pip install cm4mlops
     - name: Run MLPerf Inference Submission Checker
       run: |
-        cm run script --tags=run,mlperf,inference,submission-checker,_short-run --adr.inference-src.tags=_repo.https://github.com/GATEOverflow/inference --quiet --extra_args=" --skip-extra-files-in-root-check" --submission_dir=./
+        cm run script --tags=run,mlperf,inference,submission-checker,_short-run --adr.inference-src.tags=_branch.dev --quiet --extra_args=" --skip-extra-files-in-root-check" --submission_dir=./
