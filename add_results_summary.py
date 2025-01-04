@@ -75,9 +75,20 @@ th:nth-child(2), td:nth-child(2) { width: 30%; }
 """
     return html_header
 
-def get_header_table(system_json):
+def get_header_table(system_json, version):
     submitter = system_json.get('submitter')
     system_name = system_json.get('system_name')
+    division = system_json.get('division')
+    category = system_json.get('system_type')
+    status = system_json.get('status')
+
+    if status.lower() == "available":
+        availability_string = "Available as of February 2025"
+    elif status.lower() == "preview":
+        availability_string = "Preview as of February 2025, should be avaiable within 180 days"
+    else:
+        availability_string = "Research and Internal as of February 2025"
+    
     html =  f"""
 <div class="resultpage">
  <div class="titlebarcontainer">
@@ -85,7 +96,7 @@ def get_header_table(system_json):
    <a href="/" style="border: none"><img src="" alt="" /></a>
   </div>
   <div class="titlebar">
-   <h1 class="title">MLPerf Inference v5.0</h1>
+   <h1 class="title">MLPerf Inference {version}</h1>
    <p style="font-size: smaller">Copyright 2019-2025 MLCommons</p>
   </div>
  </div>
@@ -101,15 +112,15 @@ def get_header_table(system_json):
   <tbody>
    <tr>
     <th id="license_num"><a href="">MLPerf Inference Category:</a></th>
-    <td id="license_num_val">Datacenter</td>
+    <td id="license_num_val">{category}</td>
     <th id="test_date"><a href="">MLPerf Inference Division:</a></th>
-    <td id="test_date_val">Closed</td>
+    <td id="test_date_val">{division}</td>
    </tr>
    <tr>
     <th id="tester"><a href="">Submitted by:</a></th>
     <td id="tester_val">{submitter}</td>
     <th id="sw_avail"><a href="">Availability:</a></th>
-    <td id="sw_avail_val">Available as of Feb 2025</td>
+    <td id="sw_avail_val">{availability_string}</td>
    </tr>
   </tbody>
  </table>
