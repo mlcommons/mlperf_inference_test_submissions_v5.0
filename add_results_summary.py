@@ -179,6 +179,58 @@ def get_software_details_table(system_json):
     table += "</table>"
     return table
 
+def get_table_header(division, category):
+    if division == "open":
+        accuracy_achieved_header = '<td> Accuracy </td>'
+        colspan = "3"
+    else:
+        accuracy_achieved_header = "" #dont show accuracy as submitters are only expected to achieve the target
+        colspan = "2"
+
+    num_scenarios = 1
+    html_table_head = f"""
+<h3>Results Table</h3>
+<table>
+    <tr>
+        <th rowspan="2">Model</th>
+        <th rowspan="2">Accuracy Target</th>
+"""
+    if "datacenter" in category:
+        num_scenarios += 1
+        html_table_head += f"""
+        <th colspan="{colspan}">Server</th>
+"""
+
+    html_table_head += f"""
+        <th colspan="{colspan}">Offline</th>
+"""
+
+    if "edge" in category:
+        num_scenarios += 2
+        html_table_head += f"""
+        <th colspan="{colspan}">SingleStream</th>
+        <th colspan="{colspan}">MultiStream</th>
+"""
+    html_table_head += f"""
+    </tr>
+    <tr>
+"""
+
+    for i in range(num_scenarios):
+        html_table_head += f"""
+    {accuracy_achieved_header}
+    <td>Metric</td>
+    <td>Performance</td>
+    {accuracy_achieved_header}
+    <td>Metric</td>
+    <td>Performance</td>
+"""
+
+    html_table_head += f"""
+    </tr>
+    """
+    return html_table_head
+
 # Initialize a dictionary to organize the data by 'Details'
 tables = {}
 
@@ -212,32 +264,7 @@ for details, entries in tables.items():
     for category in entries:
         for division, data in entries[category].items():
     
-            if division == "open":
-                accuracy_achieved_header = '<td> Accuracy </td>'
-                colspan = "3"
-            else:
-                accuracy_achieved_header = "" #dont show accuracy as submitters are only expected to achieve the target
-                colspan = "2"
-
-            html_table_head = f"""
-<h3>Results Table</h3>
-<table>
-    <tr>
-        <th rowspan="2">Model</th>
-        <th rowspan="2">Accuracy Target</th>
-        <th colspan="{colspan}">Server</th>
-        <th colspan="{colspan}">Offline</th>
-    </tr>
-    <tr> 
-    {accuracy_achieved_header}
-    <td>Metric</td>
-    <td>Performance</td>
-    {accuracy_achieved_header}
-    <td>Metric</td>
-    <td>Performance</td>
-    </tr>
-"""
-            html_table = html_table_head
+            html_table = get_table_header(division, category)
 
             hardware_details = ''
             for model in models:
@@ -263,12 +290,16 @@ for details, entries in tables.items():
                     html_table += f"""<td>{acc_targets_string}</td>"""
 
 
-                    if "Server" in data[model]:
-                        if division == "open":
-                            html_table += f"""<td>{data[model]["Server"]["Accuracy"]}</td>"""
-                        html_table += f"""<td>{data[model]["Server"]["Performance_Units"]}</td> <td>{data[model]["Server"]["Performance_Result"]}</td>"""
-                    else:
-                        html_table += "<td></td><td></td>"
+                    if "datacenter" in category:
+                        if "Server" in data[model]:
+                            if division == "open":
+                                html_table += f"""<td>{data[model]["Server"]["Accuracy"]}</td>"""
+                            html_table += f"""<td>{data[model]["Server"]["Performance_Units"]}</td> <td>{data[model]["Server"]["Performance_Result"]}</td>"""
+                        else:
+                            html_table += "<td></td><td></td>"
+                            if division == "open":
+                                html_table += "<td></td>"
+
                     if "Offline" in data[model]:
                         details_split = details.split("/")
                         details_split[9] = "systems"
@@ -288,6 +319,27 @@ for details, entries in tables.items():
                         html_table += f"""<td>{data[model]["Offline"]['Performance_Units']}</td> <td>{data[model]["Offline"]["Performance_Result"]}</td>"""
                     else:
                         html_table += "<td></td><td></td>"
+                        if division == "open":
+                            html_table += "<td></td>"
+                    if "edge" in category:
+                        if "SingleStream" in data[model]:
+                            scenario = "SingleStream"
+                            if division == "open":
+                                html_table += f"""<td>{data[model][scenario]["Accuracy"]}</td>"""
+                            html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{data[model][scenario]["Performance_Result"]}</td>"""
+                        else:
+                            html_table += "<td></td><td></td>"
+                            if division == "open":
+                                html_table += "<td></td>"
+                        if "MultiStream" in data[model]:
+                            scenario = "MultiStream"
+                            if division == "open":
+                                html_table += f"""<td>{data[model][scenario]["Accuracy"]}</td>"""
+                            html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{data[model][scenario]["Performance_Result"]}</td>"""
+                        else:
+                            html_table += "<td></td><td></td>"
+                            if division == "open":
+                                html_table += "<td></td>"
                 else:
                     pass
                     #html_table += "<td></td> <td></td>"
