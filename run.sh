@@ -15,3 +15,5 @@ export default_division="open";
 export default_category="edge";
 
 bash docinit.sh
+git add .
+git commit -m "Added results summary"
