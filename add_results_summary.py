@@ -295,7 +295,7 @@ for details, entries in tables.items():
                 if model in data:
                     html_table += f"""<tr><td>{model}</td>"""
                     
-                    version = data[model]["Offline"]["version"]
+                    #version = data[model]["Offline"]["version"]
                     acc_target = checker.MODEL_CONFIG[version]["accuracy-target"][model]
                     if model in checker.MODEL_CONFIG[version]["required-scenarios-datacenter"]:
                         required_scenarios_datacenter = checker.MODEL_CONFIG[version]["required-scenarios-datacenter"][model]
