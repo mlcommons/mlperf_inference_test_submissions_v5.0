@@ -31,7 +31,7 @@ jobs:
           git config --global user.name "${{ github.actor }}"
 
       - name: Init docs
-        run: INFERENCE_RESULTS_REPO_OWNER=${{ github.repository_owner }} INFERENCE_RESULTS_REPO_BRANCH=${{ github.ref }} INFERENCE_RESULTS_REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2) INFERENCE_RESULTS_VERSION=v4.1 bash run.sh
+        run: INFERENCE_RESULTS_REPO_OWNER=${{ github.repository_owner }} INFERENCE_RESULTS_REPO_BRANCH=${{ github.ref }} INFERENCE_RESULTS_REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2) INFERENCE_RESULTS_VERSION=v5.0 bash run.sh
 
       - name: Run Mkdocs deploy
         run: mkdocs gh-deploy --force
