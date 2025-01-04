@@ -221,9 +221,6 @@ def get_table_header(division, category):
     {accuracy_achieved_header}
     <td>Metric</td>
     <td>Performance</td>
-    {accuracy_achieved_header}
-    <td>Metric</td>
-    <td>Performance</td>
 """
 
     html_table_head += f"""
