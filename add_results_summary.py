@@ -204,39 +204,32 @@ def get_table_header(division, category):
 <table>
     <tr>
         <th rowspan="2">Model</th>
-        <th rowspan="2">Accuracy Target</th>
-"""
+        <th rowspan="2">Accuracy Target</th>"""
     if "datacenter" in category:
         num_scenarios += 1
         html_table_head += f"""
-        <th colspan="{colspan}">Server</th>
-"""
+        <th colspan="{colspan}">Server</th>"""
 
     html_table_head += f"""
-        <th colspan="{colspan}">Offline</th>
-"""
+        <th colspan="{colspan}">Offline</th>"""
 
     if "edge" in category:
         num_scenarios += 2
         html_table_head += f"""
         <th colspan="{colspan}">SingleStream</th>
-        <th colspan="{colspan}">MultiStream</th>
-"""
+        <th colspan="{colspan}">MultiStream</th>"""
     html_table_head += f"""
     </tr>
-    <tr>
-"""
+    <tr>"""
 
     for i in range(num_scenarios):
         html_table_head += f"""
     {accuracy_achieved_header}
     <td>Metric</td>
-    <td>Performance</td>
-"""
+    <td>Performance</td>"""
 
     html_table_head += f"""
-    </tr>
-    """
+    </tr>"""
     return html_table_head
 
 # Initialize a dictionary to organize the data by 'Details'
@@ -263,6 +256,21 @@ for entry in data:
 
 # Now you can format each group in 'tables' as a markdown table
 for details, entries in tables.items():
+            
+    details_split = details.split("/")
+    details_split[9] = "systems"
+    system = os.path.sep.join(details_split[7:11])
+    #details_split[0] = "https://raw.githubusercontent.com"
+    #system = details.replace("github.com", "raw.githubusercontent.com").replace("tree/", "refs/heads/").replace("results/", "systems/")
+    system_json_path = f"""{system}.json"""
+    system_json = get_system_json(system_json_path)
+    header_table = get_header_table(system_json, version)
+    accelerator_details = get_accelerator_details_table(system_json)
+    cpu_details = get_cpu_details_table(system_json)
+    hardware_details = get_hardware_details_table(system_json)
+    software_details = get_software_details_table(system_json)
+    network_details = get_network_details_table(system_json)
+    
     out = f"## {details}"
 
     models_edge = [ "gptj-99", "gptj-99.9", "bert-99", "bert-99.9", "stable-diffusion-xl", "retinanet", "resnet", "3d-unet-99", "3d-unet-99.9"  ]
@@ -273,14 +281,24 @@ for details, entries in tables.items():
         for division, data in entries[category].items():
     
             html_table = get_table_header(division, category)
+            if division == "open":
+                colspan="3"
+                scenario_missing_td = "<td></td><td></td><td></td>"
+            else:
+                colspan="2"
+                scenario_missing_td = "<td></td><td></td>"
 
             hardware_details = ''
             for model in models:
+                        
                 if model in data:
                     html_table += f"""<tr><td>{model}</td>"""
                     
                     version = data[model]["Offline"]["version"]
                     acc_target = checker.MODEL_CONFIG[version]["accuracy-target"][model]
+                    required_scenarios_datacenter = checker.MODEL_CONFIG[version]["required-scenarios-datacenter"][model]
+                    required_scenarios_edge = checker.MODEL_CONFIG[version]["required-scenarios-edge"][model]
+
                     i = 0
                     acc_targets = []
                     key = None
@@ -304,31 +322,17 @@ for details, entries in tables.items():
                                 html_table += f"""<td>{data[model]["Server"]["Accuracy"]}</td>"""
                             html_table += f"""<td>{data[model]["Server"]["Performance_Units"]}</td> <td>{data[model]["Server"]["Performance_Result"]}</td>"""
                         else:
-                            html_table += "<td></td><td></td>"
-                            if division == "open":
-                                html_table += "<td></td>"
+                            if "Server" in required_scenarios_datacenter: #must be open
+                                html_table += scenario_missing_td
+                            else:
+                                html_table += f"""<td colspan="{colspan}"> N/A </td>"""
 
                     if "Offline" in data[model]:
-                        details_split = details.split("/")
-                        details_split[9] = "systems"
-                        system = os.path.sep.join(details_split[7:11])
-                        #details_split[0] = "https://raw.githubusercontent.com"
-                        #system = details.replace("github.com", "raw.githubusercontent.com").replace("tree/", "refs/heads/").replace("results/", "systems/")
-                        system_json_path = f"""{system}.json"""
-                        system_json = get_system_json(system_json_path)
-                        header_table = get_header_table(system_json, version)
-                        accelerator_details = get_accelerator_details_table(system_json)
-                        cpu_details = get_cpu_details_table(system_json)
-                        hardware_details = get_hardware_details_table(system_json)
-                        software_details = get_software_details_table(system_json)
-                        network_details = get_network_details_table(system_json)
                         if division == "open":
                             html_table += f"""<td>{data[model]["Offline"]["Accuracy"]}</td>"""
                         html_table += f"""<td>{data[model]["Offline"]['Performance_Units']}</td> <td>{data[model]["Offline"]["Performance_Result"]}</td>"""
                     else:
-                        html_table += "<td></td><td></td>"
-                        if division == "open":
-                            html_table += "<td></td>"
+                        html_table += scenario_missing_td
                     if "edge" in category:
                         if "SingleStream" in data[model]:
                             scenario = "SingleStream"
@@ -336,18 +340,20 @@ for details, entries in tables.items():
                                 html_table += f"""<td>{data[model][scenario]["Accuracy"]}</td>"""
                             html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{data[model][scenario]["Performance_Result"]}</td>"""
                         else:
-                            html_table += "<td></td><td></td>"
-                            if division == "open":
-                                html_table += "<td></td>"
+                            if "MultiStream" in required_scenarios_edge: #must be open
+                                html_table += scenario_missing_td
+                            else:
+                                html_table += f"""<td colspan="{colspan}"> N/A </td>"""
                         if "MultiStream" in data[model]:
                             scenario = "MultiStream"
                             if division == "open":
                                 html_table += f"""<td>{data[model][scenario]["Accuracy"]}</td>"""
                             html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{data[model][scenario]["Performance_Result"]}</td>"""
                         else:
-                            html_table += "<td></td><td></td>"
-                            if division == "open":
-                                html_table += "<td></td>"
+                            if "MultiStream" in required_scenarios_edge: #must be open
+                                html_table += scenario_missing_td
+                            else:
+                                html_table += f"""<td colspan="{colspan}"> N/A </td>"""
                 else:
                     pass
                     #html_table += "<td></td> <td></td>"
