@@ -223,8 +223,7 @@ def get_table_header(division, category):
     <tr>"""
 
     for i in range(num_scenarios):
-        html_table_head += f"""
-    {accuracy_achieved_header}
+        html_table_head += f"""{accuracy_achieved_header}
     <td>Metric</td>
     <td>Performance</td>"""
 
@@ -348,7 +347,7 @@ for details, entries in tables.items():
                                 html_table += f"""<td>{data[model][scenario]["Accuracy"]}</td>"""
                             html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{data[model][scenario]["Performance_Result"]}</td>"""
                         else:
-                            if "MultiStream" in required_scenarios_edge: #must be open
+                            if "SingleStream" in required_scenarios_edge: #must be open
                                 html_table += scenario_missing_td
                             else:
                                 html_table += f"""<td colspan="{colspan}"> N/A </td>"""
