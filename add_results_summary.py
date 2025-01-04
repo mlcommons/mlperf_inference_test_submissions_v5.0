@@ -299,8 +299,14 @@ for details, entries in tables.items():
                     
                     version = data[model]["Offline"]["version"]
                     acc_target = checker.MODEL_CONFIG[version]["accuracy-target"][model]
-                    required_scenarios_datacenter = checker.MODEL_CONFIG[version]["required-scenarios-datacenter"][model]
-                    required_scenarios_edge = checker.MODEL_CONFIG[version]["required-scenarios-edge"][model]
+                    if model in checker.MODEL_CONFIG[version]["required-scenarios-datacenter"]:
+                        required_scenarios_datacenter = checker.MODEL_CONFIG[version]["required-scenarios-datacenter"][model]
+                    else:
+                        required_scenarios_datacenter = []
+                    if model in checker.MODEL_CONFIG[version]["required-scenarios-edge"]:
+                        required_scenarios_edge = checker.MODEL_CONFIG[version]["required-scenarios-edge"][model]
+                    else:
+                        required_scenarios_edge = []
 
                     i = 0
                     acc_targets = []
