@@ -49,16 +49,28 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <tr>
         <th rowspan="2">Model</th>
         <th rowspan="2">Accuracy Target</th>
+
         <th colspan="3">Server</th>
+
         <th colspan="3">Offline</th>
+
     </tr>
-    <tr> 
+    <tr>
+
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
+
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+
     </tr>
-<tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.078</td><td>Queries/s</td> <td>75016.1</td><td>acc: 76.078</td><td>Samples/s</td> <td>80229.7</td></table>
+    <tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.078</td><td>Queries/s</td> <td>75016.1</td><td>acc: 76.078</td><td>Samples/s</td> <td>80229.7</td></table>
 

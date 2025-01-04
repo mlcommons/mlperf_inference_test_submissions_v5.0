@@ -49,16 +49,36 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <tr>
         <th rowspan="2">Model</th>
         <th rowspan="2">Accuracy Target</th>
-        <th colspan="3">Server</th>
+
         <th colspan="3">Offline</th>
+
+        <th colspan="3">SingleStream</th>
+        <th colspan="3">MultiStream</th>
+
     </tr>
-    <tr> 
+    <tr>
+
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
+
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+
     </tr>
-<tr><td>retinanet</td><td>mAP: 37.1745</td><td></td><td></td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.277839</td></table>
+    <tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.277839</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
 

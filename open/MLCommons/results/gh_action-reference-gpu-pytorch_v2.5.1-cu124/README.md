@@ -1,67 +1,5 @@
 
-<html>
-
-<head>
-<style type="text/css">
-
-    /* General table styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    border: none;
-}
-
-table.titlebarcontainer,.titlebar {
-    text-align: center !important;
-}
-td.headerbar {
-    text-align: center;
-    font-size: x-large;
-}
-th, td {
-    padding: 8px;
-    text-align: left;
-    vertical-align: top;
-}
-
-/* Styling for the first table to make it stand out */
-table:first-of-type {
-    background-color: #e8e8e8; /* Light grey background */
-    color: #333; /* Darker text for contrast */
-    font-weight: bold; /* Makes text bold */
-}
-
-/* Styling inner tables to have borders */
-table table {
-    border: 1px solid #ccc;
-}
-
-/* More specific styling for headers and rows of inner tables */
-table table th, table table td {
-    border: 1px solid #ccc;
-}
-
-th {
-    background-color: #f4f4f4;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-/* Adjust column widths if necessary */
-th:nth-child(1), td:nth-child(1) { width: 20%; }
-th:nth-child(2), td:nth-child(2) { width: 30%; }
-    
-</style>
-</head>
-
-<body>
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/auto-update/open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.5.1-cu124/summary.html)
 
 
 
@@ -142,8 +80,5 @@ th:nth-child(2), td:nth-child(2) { width: 30%; }
     <td>Performance</td>
 
     </tr>
-    <tr><td>gptj-99</td><td>ROUGE1: 42.5566, ROUGE2: 19.9223, ROUGEL: 29.6882, GEN_LEN: 3615190.2</td><td>GEN_LEN: 264</td><td>Tokens/s</td> <td>42.3041</td><td></td><td></td><td></td><td></td><td></td><td></td><tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td>Samples/s</td> <td>0.352784</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
+    <tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td>Samples/s</td> <td>0.359113</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
 
-</body>
-</html>
-            

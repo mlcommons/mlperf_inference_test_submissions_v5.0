@@ -49,16 +49,28 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <tr>
         <th rowspan="2">Model</th>
         <th rowspan="2">Accuracy Target</th>
+
         <th colspan="3">Server</th>
+
         <th colspan="3">Offline</th>
+
     </tr>
-    <tr> 
+    <tr>
+
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
     <td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
+
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+    <td> Accuracy </td>
+    <td>Metric</td>
+    <td>Performance</td>
+
     </tr>
-<tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td></td><td>CLIP_SCORE: 15.18544016778469  FID_SCORE: 235.69504308101006</td><td>Samples/s</td> <td>0.374837</td></table>
+    <tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td></td><td></td><td>CLIP_SCORE: 15.18544016778469  FID_SCORE: 235.69504308101006</td><td>Samples/s</td> <td>0.374837</td></table>
 
