@@ -234,6 +234,7 @@ def get_table_header(division, category):
 
 # Initialize a dictionary to organize the data by 'Details'
 tables = {}
+version = os.environ.get('INFERENCE_RESULTS_VERSION')
 
 # Populate the dictionary with data
 for entry in data:
