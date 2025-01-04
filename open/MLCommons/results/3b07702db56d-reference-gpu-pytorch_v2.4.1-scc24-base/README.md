@@ -1,5 +1,6 @@
 
-See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base/summary.html
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base/summary.html)
+
 
 
 <div class="resultpage">
@@ -58,3 +59,4 @@ See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlc
     <td>Performance</td>
     </tr>
     <tr><td>stable-diffusion-xl</td><td></td><td></td><td></td><td>Samples/s</td> <td>0.374837</td></table>
+

@@ -1,5 +1,6 @@
 
-See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/summary.html
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/summary.html)
+
 
 
 <div class="resultpage">
@@ -58,3 +59,4 @@ See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlc
     <td>Performance</td>
     </tr>
     <tr><td>resnet</td><td>acc: 75.6954</td><td>Queries/s</td> <td>73015.3</td><td>Samples/s</td> <td>80458.4</td></table>
+

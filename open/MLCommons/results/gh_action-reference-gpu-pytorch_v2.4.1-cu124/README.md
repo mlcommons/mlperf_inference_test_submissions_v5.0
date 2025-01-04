@@ -1,5 +1,6 @@
 
-See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/gh_action-reference-gpu-pytorch_v2.4.1-cu124/summary.html
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/gh_action-reference-gpu-pytorch_v2.4.1-cu124/summary.html)
+
 
 
 <div class="resultpage">
@@ -58,3 +59,4 @@ See the HTML preview [here]https://htmlpreview.github.io/?https://github.com/mlc
     <td>Performance</td>
     </tr>
     <tr><td>gptj-99</td><td></td><td></td><td></td><td>Tokens/s</td> <td>46.0817</td><tr><td>stable-diffusion-xl</td><td></td><td></td><td></td><td>Samples/s</td> <td>0.346565</td></table>
+
