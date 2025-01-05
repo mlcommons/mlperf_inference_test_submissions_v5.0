@@ -100,4 +100,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.359113`
+`Samples per second`: `0.352826`
