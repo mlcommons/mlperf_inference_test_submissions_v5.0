@@ -29,6 +29,7 @@ cm run script \
 	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
 	--env.CM_DOCKER_PRIVILEGED_MODE=True \
 	--env.CM_MLPERF_SUBMISSION_DIVISION=open \
+	--env.CM_MLPERF_INFERENCE_TP_SIZE=1 \
 	--env.CM_MLPERF_BACKEND=pytorch \
 	--env.CM_MLPERF_SUBMISSION_SYSTEM_TYPE=datacenter \
 	--env.CM_MLPERF_CLEAN_ALL=True \
@@ -106,4 +107,4 @@ Model Precision: fp32
 `TOKENS_PER_SAMPLE`: `610.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
 
 ### Performance Results 
-`Samples per second`: `0.381065`
+`Samples per second`: `0.367406`
