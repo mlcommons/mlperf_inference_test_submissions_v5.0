@@ -60,5 +60,5 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr><tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td>Samples/s</td> <td>0.359113</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table>
+    </tr><tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td>Samples/s</td> <td>0.352826</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table>
 
