@@ -29,6 +29,7 @@ cm run script \
 	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
 	--env.CM_DOCKER_PRIVILEGED_MODE=True \
 	--env.CM_MLPERF_SUBMISSION_DIVISION=open \
+	--env.CM_MLPERF_INFERENCE_TP_SIZE=1 \
 	--env.CM_MLPERF_BACKEND=pytorch \
 	--env.CM_MLPERF_CLEAN_ALL=True \
 	--env.CM_MLPERF_DEVICE=cuda \
@@ -100,4 +101,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.352826`
+`Samples per second`: `0.35248`
