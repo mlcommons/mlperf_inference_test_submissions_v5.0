@@ -16,7 +16,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=ee7be856e5def9e46bc4535b6128ec342f6931db
+cm pull repo gateoverflow@mlperf-automations --checkout=683378ba9423e790cbc6e550ea97232435a1c0c3
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -101,4 +101,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.352373`
+`Samples per second`: `0.351673`
