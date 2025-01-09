@@ -16,7 +16,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=ee7be856e5def9e46bc4535b6128ec342f6931db
+cm pull repo gateoverflow@mlperf-automations --checkout=0b0073c83f137dabd0f2abb0866cf1a7193c8100
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_llama2-70b-99,_pytorch,_cpu,_test,_r5.0-dev_default,_bfloat16,_offline \
@@ -107,4 +107,4 @@ Model Precision: fp32
 `TOKENS_PER_SAMPLE`: `610.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
 
 ### Performance Results 
-`Samples per second`: `0.362211`
+`Samples per second`: `0.43025`
