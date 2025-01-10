@@ -2,10 +2,10 @@ Platform Details
 
 ------------------------------------------------------------
 1. uname -a
-Linux 27e18bd6ffcc 6.8.0-49-generic #49-Ubuntu SMP PREEMPT_DYNAMIC Mon Nov  4 02:06:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux 05af6b07c4bf 6.8.0-49-generic #49-Ubuntu SMP PREEMPT_DYNAMIC Mon Nov  4 02:06:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ------------------------------------------------------------
 2. w
- 17:50:11 up 30 days, 10:48,  0 users,  load average: 1.06, 0.57, 0.25
+ 17:31:32 up 31 days, 10:30,  0 users,  load average: 0.73, 0.30, 0.11
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 ------------------------------------------------------------
 3. Username
@@ -69,7 +69,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 1100.000
+cpu MHz		: 1397.335
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -153,7 +153,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 1100.644
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -209,7 +209,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 1068.489
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -489,7 +489,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 801.752
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -545,7 +545,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 800.300
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -573,7 +573,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 799.994
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -601,7 +601,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 798.783
+cpu MHz		: 799.432
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -769,7 +769,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 798.021
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -797,7 +797,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 799.167
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -881,7 +881,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.615
+cpu MHz		: 799.728
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -909,7 +909,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 799.623
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -976,51 +976,51 @@ Vulnerability Tsx async abort:        Not affected
 available: 1 nodes (0)
 node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 node 0 size: 128549 MB
-node 0 free: 13161 MB
+node 0 free: 102281 MB
 node distances:
 node   0 
   0:  10 
 ------------------------------------------------------------
 9. /proc/meminfo
 MemTotal:       131634476 kB
-MemFree:        13477148 kB
-MemAvailable:   127613092 kB
-Buffers:         1066280 kB
-Cached:         109701912 kB
-SwapCached:        38228 kB
-Active:          8644148 kB
-Inactive:       102546144 kB
-Active(anon):     451484 kB
-Inactive(anon):   105584 kB
-Active(file):    8192664 kB
-Inactive(file): 102440560 kB
+MemFree:        104736140 kB
+MemAvailable:   127776080 kB
+Buffers:         1198808 kB
+Cached:         20785668 kB
+SwapCached:        38256 kB
+Active:          8651868 kB
+Inactive:       13739268 kB
+Active(anon):     435056 kB
+Inactive(anon):   105416 kB
+Active(file):    8216812 kB
+Inactive(file): 13633852 kB
 Unevictable:       89412 kB
 Mlocked:               0 kB
 SwapTotal:      1023999996 kB
-SwapFree:       1023650556 kB
+SwapFree:       1023651324 kB
 Zswap:                 0 kB
 Zswapped:              0 kB
-Dirty:             43276 kB
+Dirty:             52072 kB
 Writeback:             0 kB
-AnonPages:        506876 kB
-Mapped:           312504 kB
-Shmem:            134968 kB
-KReclaimable:    4754532 kB
-Slab:            5572372 kB
-SReclaimable:    4754532 kB
-SUnreclaim:       817840 kB
-KernelStack:       15776 kB
-PageTables:        22300 kB
+AnonPages:        491408 kB
+Mapped:           322040 kB
+Shmem:            133812 kB
+KReclaimable:    2441088 kB
+Slab:            3113436 kB
+SReclaimable:    2441088 kB
+SUnreclaim:       672348 kB
+KernelStack:       15824 kB
+PageTables:        22464 kB
 SecPageTables:         0 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    1089817232 kB
-Committed_AS:    5239852 kB
+Committed_AS:    5272908 kB
 VmallocTotal:   34359738367 kB
-VmallocUsed:      375488 kB
+VmallocUsed:      375612 kB
 VmallocChunk:          0 kB
-Percpu:            37888 kB
+Percpu:            38272 kB
 HardwareCorrupted:     0 kB
 AnonHugePages:         0 kB
 ShmemHugePages:    83968 kB
@@ -1034,8 +1034,8 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:    38817228 kB
-DirectMap2M:    94087168 kB
+DirectMap4k:    38878668 kB
+DirectMap2M:    94025728 kB
 DirectMap1G:     1048576 kB
 ------------------------------------------------------------
 10. who -r
@@ -1251,18 +1251,18 @@ systemd-tmpfiles-clean.timer           static   -
 BOOT_IMAGE=/boot/vmlinuz-6.8.0-49-generic root=UUID=f3eb2f51-b893-4fdd-b039-989026684fbe ro quiet splash vt.handoff=7
 ------------------------------------------------------------
 14. cpupower frequency-info
-analyzing CPU 25:
+analyzing CPU 0:
   driver: intel_pstate
-  CPUs which run at the same hardware frequency: 25
-  CPUs which need to have their frequency coordinated by software: 25
+  CPUs which run at the same hardware frequency: 0
+  CPUs which need to have their frequency coordinated by software: 0
   maximum transition latency:  Cannot determine or is not supported.
-  hardware limits: 800 MHz - 4.30 GHz
+  hardware limits: 800 MHz - 5.50 GHz
   available cpufreq governors: performance powersave
-  current policy: frequency should be within 800 MHz and 4.30 GHz.
+  current policy: frequency should be within 800 MHz and 5.50 GHz.
                   The governor "powersave" may decide which speed to use
                   within this range.
   current CPU frequency: Unable to call hardware
-  current CPU frequency: 1000 MHz (asserted by call to kernel)
+  current CPU frequency: 1.58 GHz (asserted by call to kernel)
   boost state support:
     Supported: yes
     Active: yes
@@ -1315,16 +1315,16 @@ dev.tty.ldisc_autoload = 1
 dev.tty.legacy_tiocsti = 0
 fs.aio-max-nr = 65536
 fs.aio-nr = 0
-fs.dentry-state = 2100447	1818505	45	0	1127491	0
+fs.dentry-state = 2203433	1899530	45	0	1165003	0
 fs.dir-notify-enable = 1
 fs.epoll.max_user_watches = 29287112
 fs.fanotify.max_queued_events = 16384
 fs.fanotify.max_user_groups = 128
 fs.fanotify.max_user_marks = 1048576
 fs.file-max = 9223372036854775807
-fs.file-nr = 6496	0	9223372036854775807
-fs.inode-nr = 1022736	54821
-fs.inode-state = 1022736	54821	0	0	0	0	0
+fs.file-nr = 6368	0	9223372036854775807
+fs.inode-nr = 1088245	54827
+fs.inode-state = 1088245	54827	0	0	0	0	0
 fs.inotify.max_queued_events = 16384
 fs.inotify.max_user_instances = 128
 fs.inotify.max_user_watches = 65536
@@ -1352,7 +1352,7 @@ fs.quota.drops = 0
 fs.quota.free_dquots = 0
 fs.quota.lookups = 0
 fs.quota.reads = 0
-fs.quota.syncs = 930
+fs.quota.syncs = 940
 fs.quota.writes = 0
 fs.suid_dumpable = 2
 fs.verity.require_signatures = 0
@@ -1379,7 +1379,7 @@ kernel.ftrace_dump_on_oops = 0
 kernel.ftrace_enabled = 1
 kernel.hardlockup_all_cpu_backtrace = 0
 kernel.hardlockup_panic = 0
-kernel.hostname = 27e18bd6ffcc
+kernel.hostname = 05af6b07c4bf
 kernel.hotplug = 
 kernel.hung_task_all_cpu_backtrace = 0
 kernel.hung_task_check_count = 4194304
@@ -1411,7 +1411,7 @@ kernel.msgmnb = 16384
 kernel.msgmni = 32000
 kernel.ngroups_max = 65536
 kernel.nmi_watchdog = 1
-kernel.ns_last_pid = 10010
+kernel.ns_last_pid = 10027
 kernel.numa_balancing = 0
 kernel.numa_balancing_promote_rate_limit_MBps = 65536
 kernel.oops_all_cpu_backtrace = 0
@@ -1442,13 +1442,13 @@ kernel.printk_devkmsg = on
 kernel.printk_ratelimit = 5
 kernel.printk_ratelimit_burst = 10
 kernel.pty.max = 4096
-kernel.pty.nr = 8
+kernel.pty.nr = 9
 kernel.pty.reserve = 1024
 kernel.random.boot_id = df9374fa-6020-4b1a-8d05-62de67144998
 kernel.random.entropy_avail = 256
 kernel.random.poolsize = 256
 kernel.random.urandom_min_reseed_secs = 60
-kernel.random.uuid = 6c06cf4d-e65c-45cf-8184-78986c195abb
+kernel.random.uuid = 12deda73-c935-4bf7-8b57-68a95bf385c3
 kernel.random.write_wakeup_threshold = 256
 kernel.randomize_va_space = 2
 kernel.real-root-dev = 0
