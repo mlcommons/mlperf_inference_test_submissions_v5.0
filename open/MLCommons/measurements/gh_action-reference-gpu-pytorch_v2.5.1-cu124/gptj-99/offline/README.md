@@ -16,7 +16,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=e735080f4e0228147790459fd056c0c050d4c4cf
+cm pull repo gateoverflow@mlperf-automations --checkout=45c3181e7a5c12b95e8d2411e9c872d9185c2559
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_gptj-99,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -105,4 +105,4 @@ Model Precision: fp32
 `GEN_LEN`: `264.0`, Required accuracy for closed division `>= 42.55663`
 
 ### Performance Results 
-`Samples per second`: `48.3126`
+`Samples per second`: `48.0408`
