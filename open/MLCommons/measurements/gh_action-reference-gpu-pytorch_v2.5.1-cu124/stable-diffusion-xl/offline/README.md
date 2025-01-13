@@ -16,7 +16,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@mlperf-automations --checkout=0b0073c83f137dabd0f2abb0866cf1a7193c8100
+cm pull repo gateoverflow@mlperf-automations --checkout=e7bca7fdf4df586cd3e317e4b9baa0434af5a712
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_reference,_sdxl,_pytorch,_cuda,_test,_r5.0-dev_default,_float16,_offline \
@@ -51,11 +51,11 @@ cm run script \
 	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=False \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=short \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
+	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r5.0-dev_default \
 	--env.CM_MLPERF_SUBMISSION_CHECKER_VERSION=v5.0 \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
-	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
+	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=sdxl \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -101,4 +101,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.351135`
+`Samples per second`: `0.353074`
