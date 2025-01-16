@@ -1,3 +1,3 @@
-| Model               | Scenario   | Accuracy   |   Throughput | Latency (in ms)   |
-|---------------------|------------|------------|--------------|-------------------|
-| stable-diffusion-xl | offline    | ()         |        0.353 | -                 |
+| Model   | Scenario   |   Accuracy |   Throughput | Latency (in ms)   |
+|---------|------------|------------|--------------|-------------------|
+| gptj-99 | offline    |        264 |       48.189 | -                 |
