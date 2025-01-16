@@ -13,15 +13,15 @@ graph TD
     get-mlperf-inference-src,4b57186581024797 --> get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference
     get-mlperf-inference-utils,e341e5f86d8342e5 --> get,mlperf,inference,src
     app-mlperf-inference,d775cac873ee4231_(_reference,_llama2-70b-99,_pytorch,_cpu,_test,_r5.0-dev_default,_bfloat16,_offline_) --> get,mlperf,inference,utils
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> detect,os
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> detect,cpu
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,sys-utils-cm
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> detect,cpu
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,sys-utils-cm
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,python
     get-generic-python-lib,94b62a682bc44791_(_torch_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_torch
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_torch
     get-generic-python-lib,94b62a682bc44791_(_torchvision_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_torchvision
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_torchvision
     get-ml-model-huggingface-zoo,53cf8252a443446a_(_clone-repo,_model-stub.meta-llama/Llama-2-70b-chat-hf_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_huggingface_hub_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
@@ -32,7 +32,7 @@ graph TD
     get-ml-model-huggingface-zoo,53cf8252a443446a_(_clone-repo,_model-stub.meta-llama/Llama-2-70b-chat-hf_) --> get,generic-python-lib,_huggingface_hub
     get-ml-model-huggingface-zoo,53cf8252a443446a_(_clone-repo,_model-stub.meta-llama/Llama-2-70b-chat-hf_) --> get,git,repo,_lfs,_repo.https://huggingface.co/meta-llama/Llama-2-70b-chat-hf
     get-ml-model-llama2,5db97be9f61244c6_(_pytorch_) --> get,ml-model,huggingface,zoo,_clone-repo,_model-stub.meta-llama/Llama-2-70b-chat-hf
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,ml-model,llama2,raw,_pytorch
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,ml-model,llama2,raw,_pytorch
     get-preprocessed-dataset-openorca,5614c39cb1564d72_(_validation,_mlcommons_) --> get,sys-utils-cm
     get-preprocessed-dataset-openorca,5614c39cb1564d72_(_validation,_mlcommons_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.pyarrow_) --> get,python3
@@ -42,7 +42,7 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,python3
     get-preprocessed-dataset-openorca,5614c39cb1564d72_(_validation,_mlcommons_) --> get,generic-python-lib,_package.transformers
     get-preprocessed-dataset-openorca,5614c39cb1564d72_(_validation,_mlcommons_) --> download-and-extract,_rclone,_url.mlc-inference:mlcommons-inference-wg-public/open_orca
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,preprocessed,dataset,openorca,_validation,_mlcommons
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,preprocessed,dataset,openorca,_validation,_mlcommons
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -53,40 +53,40 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> generate,user-conf,mlperf,inference
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,loadgen
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,loadgen
     get-mlperf-inference-src,4b57186581024797 --> detect,os
     get-mlperf-inference-src,4b57186581024797 --> get,python3
     get-mlperf-inference-src,4b57186581024797 --> get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,mlcommons,inference,src
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,mlcommons,inference,src
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.psutil
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.psutil
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.transformers
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.transformers
     get-generic-python-lib,94b62a682bc44791_(_package.datasets_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.datasets
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.datasets
     get-generic-python-lib,94b62a682bc44791_(_package.sentencepiece_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.sentencepiece
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.sentencepiece
     get-generic-python-lib,94b62a682bc44791_(_package.protobuf_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.protobuf
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.protobuf
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.accelerate
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.accelerate
     get-generic-python-lib,94b62a682bc44791_(_package.absl-py_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.absl-py
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.absl-py
     get-generic-python-lib,94b62a682bc44791_(_package.evaluate_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.evaluate
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.evaluate
     get-generic-python-lib,94b62a682bc44791_(_package.nltk_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.nltk
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.nltk
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.numpy
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.numpy
     get-generic-python-lib,94b62a682bc44791_(_package.rouge-score_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.rouge-score
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.rouge-score
     get-generic-python-lib,94b62a682bc44791_(_package.more-itertools_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.more-itertools
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.more-itertools
     get-generic-python-lib,94b62a682bc44791_(_package.compressed_tensors_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> get,generic-python-lib,_package.compressed_tensors
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> get,generic-python-lib,_package.compressed_tensors
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_llama2-70b-99,_pytorch,_cpu,_offline,_bfloat16_) --> benchmark-mlperf
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_pytorch,_llama2-70b-99,_offline,_bfloat16_) --> benchmark-mlperf

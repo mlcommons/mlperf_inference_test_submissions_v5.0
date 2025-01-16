@@ -1,7 +1,7 @@
 INFO:datasets:PyTorch version 2.5.1+cpu available.
 Loading dataset...
 Finished loading dataset.
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:02<00:29,  2.10s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:04<00:25,  1.99s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:06<00:24,  2.03s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:07<00:21,  1.96s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:09<00:19,  1.91s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:11<00:16,  1.87s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:13<00:14,  1.84s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [00:15<00:14,  2.05s/it]Loading checkpoint shards:  60%|██████    | 9/15 [00:18<00:12,  2.10s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [00:20<00:11,  2.21s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [00:22<00:08,  2.18s/it]Loading checkpoint shards:  80%|████████  | 12/15 [00:24<00:06,  2.07s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [00:26<00:03,  1.99s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [00:35<00:04,  4.12s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:35<00:00,  2.94s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:35<00:00,  2.37s/it]
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:02<00:28,  2.00s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:03<00:24,  1.91s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:05<00:23,  1.92s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:07<00:20,  1.88s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:09<00:18,  1.84s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:11<00:16,  1.81s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:12<00:14,  1.80s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [00:14<00:13,  1.88s/it]Loading checkpoint shards:  60%|██████    | 9/15 [00:17<00:11,  1.98s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [00:19<00:10,  2.02s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [00:21<00:08,  2.02s/it]Loading checkpoint shards:  80%|████████  | 12/15 [00:23<00:05,  1.97s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [00:24<00:03,  1.92s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [00:30<00:02,  2.95s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:30<00:00,  2.12s/it]Loading checkpoint shards: 100%|██████████| 15/15 [00:30<00:00,  2.03s/it]
 INFO:Llama-70B-MAIN:Starting Benchmark run
 /home/cmuser/venv/cm/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
@@ -22,7 +22,7 @@ IssueQuery started with 1 samples
 IssueQuery done
 Saving outputs to run_outputs/q0.pkl
 Samples run: 1
-	BatchMaker time: 0.0216982364654541
-	Inference time: 1001.4157693386078
-	Postprocess time: 0.07915091514587402
-	==== Total time: 1001.5166184902191
+	BatchMaker time: 0.022020578384399414
+	Inference time: 878.0318548679352
+	Postprocess time: 0.03908991813659668
+	==== Total time: 878.0929653644562
