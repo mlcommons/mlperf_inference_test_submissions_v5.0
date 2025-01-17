@@ -579,7 +579,7 @@
         "Model":"llama2-70b-99",
         "MlperfModel":"llama2-70b-99",
         "Scenario":"Offline",
-        "Result":0.351429,
+        "Result":0.344622,
         "Accuracy":"ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
