@@ -327,7 +327,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -347,7 +347,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -357,7 +357,7 @@
         "script_tags": "get,sys-utils-cm",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -367,7 +367,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.10.12",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -377,7 +377,7 @@
         "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
         "script_variations": "cudnn",
         "version": "12.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -397,7 +397,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torch_cuda",
         "version": "2.5.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -417,7 +417,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torchvision_cuda",
         "version": "0.20.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -447,7 +447,7 @@
         "script_tags": "get,raw,ml-model,stable-diffusion,sdxl,text-to-image",
         "script_variations": "pytorch,fp16",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -457,7 +457,7 @@
         "script_tags": "get,dataset,coco2014,object-detection,original",
         "script_variations": "validation",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -567,7 +567,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -577,7 +577,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -617,7 +617,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "r5.0-git-b9f22d6c37fa9024616538516e1d3bb59dd7c019",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -627,7 +627,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "master-git-b9f22d6c37fa9024616538516e1d3bb59dd7c019",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -647,7 +647,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "6.1.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -667,7 +667,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.diffusers",
         "version": "0.32.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -687,7 +687,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.transformers",
         "version": "4.47.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -707,7 +707,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.torchvision",
         "version": "0.20.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -727,7 +727,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.accelerate",
         "version": "1.2.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -747,7 +747,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.torchmetrics",
         "version": "1.6.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -767,7 +767,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.torch-fidelity",
         "version": "0.3.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -787,7 +787,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.open_clip_torch",
         "version": "2.29.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -807,7 +807,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.opencv-python",
         "version": "4.10.0.84",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -827,7 +827,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.scipy",
         "version": "1.15.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -847,7 +847,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.pandas",
         "version": "2.2.3",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     },
     {
@@ -887,7 +887,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_sdxl,_cuda,_offline,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( sdxl,_cuda,_offline,_pytorch,_float16 )"
       }
     }
   ]
