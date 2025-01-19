@@ -608,7 +608,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/auto-update/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.5.1-cu124/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.35272,
+    "Performance_Result": 0.352477,
     "Performance_Units": "Samples/s"
   },
   {
