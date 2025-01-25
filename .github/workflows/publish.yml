@@ -7,7 +7,9 @@ on:
     types: [published]
   push:
     branches:
-      - main1
+      - main
+    paths:
+      - summary_results.json
 
 jobs:
 
