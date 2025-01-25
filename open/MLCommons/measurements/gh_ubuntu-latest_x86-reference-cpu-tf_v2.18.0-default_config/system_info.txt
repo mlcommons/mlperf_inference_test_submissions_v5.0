@@ -2,10 +2,10 @@ Platform Details
 
 ------------------------------------------------------------
 1. uname -a
-Linux fv-az1676-337 6.8.0-1020-azure #23-Ubuntu SMP Mon Dec  9 16:58:58 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux fv-az1689-679 6.8.0-1020-azure #23-Ubuntu SMP Mon Dec  9 16:58:58 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ------------------------------------------------------------
 2. w
- 12:03:40 up 4 min,  0 user,  load average: 2.05, 0.87, 0.35
+ 12:04:07 up 5 min,  0 user,  load average: 2.07, 0.92, 0.37
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
 ------------------------------------------------------------
 3. Username
@@ -38,6 +38,8 @@ systemd-+-ModemManager---3*[{ModemManager}]
         |-cron
         |-dbus-daemon
         |-dockerd---9*[{dockerd}]
+        |-fwupd---5*[{fwupd}]
+        |-gpg-agent
         |-haveged
         |-hv_kvp_daemon
         |-multipathd---6*[{multipathd}]
@@ -45,8 +47,8 @@ systemd-+-ModemManager---3*[{ModemManager}]
         |-php-fpm8.3---2*[php-fpm8.3]
         |-polkitd---3*[{polkitd}]
         |-provisioner-+-Runner.Listener-+-Runner.Worker-+-bash---mlcr---sh---bash---pstree
-        |             |                 |               `-17*[{Runner.Worker}]
-        |             |                 `-14*[{Runner.Listener}]
+        |             |                 |               `-18*[{Runner.Worker}]
+        |             |                 `-15*[{Runner.Listener}]
         |             |-provjobd---9*[{provjobd}]
         |             `-13*[{provisioner}]
         |-python3---python3---4*[{python3}]
@@ -67,7 +69,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 3244.014
+cpu MHz		: 3243.806
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -95,7 +97,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 3206.958
+cpu MHz		: 3243.224
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -123,7 +125,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 3255.172
+cpu MHz		: 2445.432
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -151,7 +153,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 3242.887
+cpu MHz		: 3243.779
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -218,53 +220,53 @@ Vulnerability Tsx async abort:        Not affected
 available: 1 nodes (0)
 node 0 cpus: 0 1 2 3
 node 0 size: 15990 MB
-node 0 free: 5665 MB
+node 0 free: 5602 MB
 node distances:
 node   0 
   0:  10 
 ------------------------------------------------------------
 9. /proc/meminfo
 MemTotal:       16373796 kB
-MemFree:         5801336 kB
-MemAvailable:   15327060 kB
-Buffers:          190608 kB
-Cached:          9201868 kB
+MemFree:         5736732 kB
+MemAvailable:   15283984 kB
+Buffers:          190148 kB
+Cached:          9221436 kB
 SwapCached:            0 kB
-Active:          1294044 kB
-Inactive:        8395320 kB
-Active(anon):     378528 kB
+Active:          1320136 kB
+Inactive:        8408456 kB
+Active(anon):     396312 kB
 Inactive(anon):        0 kB
-Active(file):     915516 kB
-Inactive(file):  8395320 kB
+Active(file):     923824 kB
+Inactive(file):  8408456 kB
 Unevictable:       46772 kB
 Mlocked:           43700 kB
 SwapTotal:       4194300 kB
 SwapFree:        4194300 kB
 Zswap:                 0 kB
 Zswapped:              0 kB
-Dirty:              1080 kB
+Dirty:              1428 kB
 Writeback:             0 kB
-AnonPages:        342280 kB
-Mapped:           344300 kB
-Shmem:             72888 kB
-KReclaimable:     560800 kB
-Slab:             671060 kB
-SReclaimable:     560800 kB
-SUnreclaim:       110260 kB
-KernelStack:        4496 kB
-PageTables:         6196 kB
+AnonPages:        358924 kB
+Mapped:           360492 kB
+Shmem:             70540 kB
+KReclaimable:     560884 kB
+Slab:             670304 kB
+SReclaimable:     560884 kB
+SUnreclaim:       109420 kB
+KernelStack:        4032 kB
+PageTables:         6716 kB
 SecPageTables:         0 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    12381196 kB
-Committed_AS:    2154420 kB
+Committed_AS:    2446088 kB
 VmallocTotal:   34359738367 kB
-VmallocUsed:       35632 kB
+VmallocUsed:       35188 kB
 VmallocChunk:          0 kB
 Percpu:             2208 kB
 HardwareCorrupted:     0 kB
-AnonHugePages:    163840 kB
+AnonHugePages:    151552 kB
 ShmemHugePages:        0 kB
 ShmemPmdMapped:        0 kB
 FileHugePages:         0 kB
@@ -276,8 +278,8 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:      110528 kB
-DirectMap2M:     4083712 kB
+DirectMap4k:      114624 kB
+DirectMap2M:     4079616 kB
 DirectMap1G:    14680064 kB
 ------------------------------------------------------------
 10. who -r
@@ -732,7 +734,7 @@ xfs_scrub_all.timer                          disabled        enabled
 BOOT_IMAGE=/vmlinuz-6.8.0-1020-azure root=PARTUUID=8be7931c-8315-4344-95d4-bcbd379998fb ro console=tty1 console=ttyS0 earlyprintk=ttyS0 nvme_core.io_timeout=240 panic=-1
 ------------------------------------------------------------
 14. cpupower frequency-info
-analyzing CPU 0:
+analyzing CPU 1:
   no or unknown cpufreq driver is active on this CPU
   CPUs which run at the same hardware frequency: Not Available
   CPUs which need to have their frequency coordinated by software: Not Available
@@ -808,16 +810,16 @@ fs.binfmt_misc.llvm-16-runtime/binfmt = flags:
 fs.binfmt_misc.llvm-16-runtime/binfmt = offset 0
 fs.binfmt_misc.llvm-16-runtime/binfmt = magic 4243
 fs.binfmt_misc.status = enabled
-fs.dentry-state = 288100	280590	45	0	64733	0
+fs.dentry-state = 287944	280438	45	0	65100	0
 fs.dir-notify-enable = 1
 fs.epoll.max_user_watches = 3643703
 fs.fanotify.max_queued_events = 16384
 fs.fanotify.max_user_groups = 128
 fs.fanotify.max_user_marks = 132601
 fs.file-max = 9223372036854775807
-fs.file-nr = 1696	0	9223372036854775807
-fs.inode-nr = 223349	568
-fs.inode-state = 223349	568	0	0	0	0	0
+fs.file-nr = 1856	0	9223372036854775807
+fs.inode-nr = 222821	568
+fs.inode-state = 222821	568	0	0	0	0	0
 fs.inotify.max_queued_events = 16384
 fs.inotify.max_user_instances = 1280
 fs.inotify.max_user_watches = 655360
@@ -876,7 +878,7 @@ kernel.ftrace_dump_on_oops = 0
 kernel.ftrace_enabled = 1
 kernel.hardlockup_all_cpu_backtrace = 0
 kernel.hardlockup_panic = 0
-kernel.hostname = fv-az1676-337
+kernel.hostname = fv-az1689-679
 kernel.hotplug = 
 kernel.hung_task_all_cpu_backtrace = 0
 kernel.hung_task_check_count = 4194304
@@ -909,7 +911,7 @@ kernel.msgmnb = 16384
 kernel.msgmni = 32000
 kernel.ngroups_max = 65536
 kernel.nmi_watchdog = 0
-kernel.ns_last_pid = 7056
+kernel.ns_last_pid = 7076
 kernel.numa_balancing = 0
 kernel.numa_balancing_promote_rate_limit_MBps = 65536
 kernel.oops_all_cpu_backtrace = 0
@@ -942,11 +944,11 @@ kernel.printk_ratelimit_burst = 10
 kernel.pty.max = 4096
 kernel.pty.nr = 0
 kernel.pty.reserve = 1024
-kernel.random.boot_id = aa66549e-0e60-43ac-af96-77fa0d14ea2b
+kernel.random.boot_id = 2fc16ada-9217-4f41-bb21-bb779df61118
 kernel.random.entropy_avail = 256
 kernel.random.poolsize = 256
 kernel.random.urandom_min_reseed_secs = 60
-kernel.random.uuid = a2c67b78-3788-403c-b453-5936a4dac5bf
+kernel.random.uuid = b3788c4d-8559-4a5f-82a5-f6e426cb7e01
 kernel.random.write_wakeup_threshold = 256
 kernel.randomize_va_space = 2
 kernel.real-root-dev = 0
@@ -1359,7 +1361,7 @@ net.ipv4.tcp_ehash_entries = 131072
 net.ipv4.tcp_fack = 0
 net.ipv4.tcp_fastopen = 1
 net.ipv4.tcp_fastopen_blackhole_timeout_sec = 0
-net.ipv4.tcp_fastopen_key = 85fa3540-d9cb5fbb-57bdd424-a4c3f7bf
+net.ipv4.tcp_fastopen_key = c51e946c-08478cc3-63345b21-5e00f772
 net.ipv4.tcp_fin_timeout = 60
 net.ipv4.tcp_frto = 2
 net.ipv4.tcp_fwmark_accept = 0
@@ -1833,7 +1835,7 @@ net.mptcp.stale_loss_cnt = 4
 net.netfilter.nf_conntrack_acct = 0
 net.netfilter.nf_conntrack_buckets = 262144
 net.netfilter.nf_conntrack_checksum = 1
-net.netfilter.nf_conntrack_count = 162
+net.netfilter.nf_conntrack_count = 154
 net.netfilter.nf_conntrack_dccp_loose = 1
 net.netfilter.nf_conntrack_dccp_timeout_closereq = 64
 net.netfilter.nf_conntrack_dccp_timeout_closing = 64
@@ -2056,8 +2058,8 @@ System Information
 	Manufacturer: Microsoft Corporation
 	Product Name: Virtual Machine
 	Version: 7.0
-	Serial Number: 0000-0015-5312-6104-3821-2032-33
-	UUID: a11f8ad7-d396-214f-9b46-29d72b36b079
+	Serial Number: 0000-0008-0431-6509-3309-0723-64
+	UUID: 09109f6f-82b0-ec43-aa2c-649288ba6f24
 	Wake-up Type: Power Switch
 
 Handle 0x0002, DMI type 2, 8 bytes
@@ -2065,7 +2067,7 @@ Base Board Information
 	Manufacturer: Microsoft Corporation
 	Product Name: Virtual Machine
 	Version: 7.0
-	Serial Number: 0000-0011-1886-7632-8368-2878-65
+	Serial Number: 0000-0012-2622-8646-5944-9403-24
 
 Handle 0x0003, DMI type 3, 17 bytes
 Chassis Information
@@ -2073,7 +2075,7 @@ Chassis Information
 	Type: Desktop
 	Lock: Not Present
 	Version: 7.0
-	Serial Number: 1237-8703-9903-0449-7831-8287-04
+	Serial Number: 0914-8045-6681-5016-6913-4179-39
 	Asset Tag: 7783-7084-3265-9085-8269-3286-77
 	Boot-up State: Safe
 	Power Supply State: Safe
