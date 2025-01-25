@@ -10,8 +10,6 @@ jobs:
   update-results:
 
     runs-on: ubuntu-latest
-    env:
-      CM_INDEX: "on"
     strategy:
       fail-fast: false
       matrix:
@@ -53,4 +51,4 @@ jobs:
         ver_num=$(cat dbversion)
         let ver_num++
         
-        git diff-index --quiet HEAD || (echo "$ver_num" > dbversion && git add dbversion && git commit -am "Updated results summary" && git pull --rebase && git push)
+        git diff-index --quiet HEAD || (echo "$ver_num" > dbversion && git add dbversion && git commit -am "Updated results summary" && git pull --rebase && (git push || (sleep $((RANDOM % 300 + 1)) && git pull && git push))
