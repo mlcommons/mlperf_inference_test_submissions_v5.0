@@ -1,3 +1,3 @@
-| Model    | Scenario   |   Accuracy |   Throughput | Latency (in ms)   |
-|----------|------------|------------|--------------|-------------------|
-| resnet50 | offline    |         76 |       23.151 | -                 |
+| Model     | Scenario   |   Accuracy |   Throughput | Latency (in ms)   |
+|-----------|------------|------------|--------------|-------------------|
+| retinanet | offline    |     76.951 |        0.436 | -                 |
