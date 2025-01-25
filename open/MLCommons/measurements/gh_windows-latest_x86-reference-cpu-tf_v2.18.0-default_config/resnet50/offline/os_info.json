@@ -5,10 +5,10 @@
   "MLC_HOST_OS_PACKAGE_MANAGER_INSTALL_CMD": "choco install -y",
   "MLC_HOST_OS_PACKAGE_MANAGER_UPDATE_CMD": "choco upgrade -y",
   "MLC_HOST_PYTHON_BITS": "64",
-  "MLC_HOST_SYSTEM_NAME": "fv-az653-281",
+  "MLC_HOST_SYSTEM_NAME": "fv-az586-535",
   "+PATH": [
-    "C:\\Users\\runneradmin\\MLC\\repos\\local\\cache\\get-sys-utils-min_d132c9f1\\bin",
+    "C:\\Users\\runneradmin\\MLC\\repos\\local\\cache\\get-sys-utils-min_246378dd\\bin",
     "C:\\hostedtoolcache\\windows\\Python\\3.12.8\\x64\\Scripts",
-    "C:\\Users\\runneradmin/MLC/repos\\local\\cache\\get-sys-utils-min_d132c9f1\\bin"
+    "C:\\Users\\runneradmin/MLC/repos\\local\\cache\\get-sys-utils-min_246378dd\\bin"
   ]
 }
