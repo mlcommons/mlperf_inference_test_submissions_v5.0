@@ -10,8 +10,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-      CM_INDEX: "on"
     strategy:
       fail-fast: false
       matrix:
@@ -25,7 +23,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python3 -m pip install cm4mlops
+        python3 -m pip install mlc-scripts
     - name: Run MLPerf Inference Submission Checker
       run: |
         cm run script --tags=run,mlperf,inference,submission-checker,_short-run --adr.inference-src.tags=_branch.dev --quiet --extra_args=" --skip-extra-files-in-root-check" --submission_dir=./
