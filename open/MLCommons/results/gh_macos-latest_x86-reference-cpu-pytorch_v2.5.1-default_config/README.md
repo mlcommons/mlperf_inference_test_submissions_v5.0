@@ -60,5 +60,5 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.43353</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
+    </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.428482</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
 

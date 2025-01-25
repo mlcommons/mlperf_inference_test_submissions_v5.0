@@ -60,5 +60,5 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr><tr><td>bert-99</td><td>F1: 89.9653</td><td>F1: 80.0</td><td>Samples/s</td> <td>6.37052</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table>
+    </tr><tr><td>bert-99</td><td>F1: 89.9653</td><td>F1: 80.0</td><td>Samples/s</td> <td>6.25064</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table>
 

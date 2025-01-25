@@ -57,5 +57,5 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr><tr><td>rgat</td><td>acc: 0.7213</td><td colspan="3"> N/A </td><td>acc: 75.200</td><td>Samples/s</td> <td>10.2551</td></table>
+    </tr><tr><td>rgat</td><td>acc: 0.7213</td><td colspan="3"> N/A </td><td>acc: 75.200</td><td>Samples/s</td> <td>10.0325</td></table>
 

@@ -60,5 +60,5 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr><tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.000</td><td>Samples/s</td> <td>21.0225</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
+    </tr><tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.000</td><td>Samples/s</td> <td>20.9677</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
 
