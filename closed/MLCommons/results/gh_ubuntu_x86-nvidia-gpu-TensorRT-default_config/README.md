@@ -1,5 +1,5 @@
 
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/auto-update/closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/summary.html)
 
 
 
