@@ -1,46 +1,32 @@
-This experiment is generated using the [MLCommons Collective Mind automation framework (CM)](https://github.com/mlcommons/cm4mlops).
-
 *Check [CM MLPerf docs](https://docs.mlcommons.org/inference) for more details.*
 
 ## Host platform
 
-* OS version: macOS-14.7-arm64-arm-64bit
+* OS version: macOS-14.7.2-arm64-arm-64bit
 * CPU version: arm
 * Python version: 3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]
-* MLCommons CM version: 3.2.6
+* MLC version: 0.1.0
 
 ## CM Run Command
 
 See [CM installation guide](https://docs.mlcommons.org/inference/install/).
 
 ```bash
-pip install -U cmind
+pip install -U mlcflow
 
-cm rm cache -f
+mlc rm cache -f
 
-cm pull repo anandhu-eng@cm4mlops --checkout=8690324a50267a122ae2e1b6a92a86a555e8d35c
+mlc pull repo GATEOverflow@mlperf-automations --checkout=f4f01b1d6b8848c2342cff1cf26ef4f2b94ce2cd
 
-cm run script \
-	--tags=run,mlperf,inference,generate-run-cmds,_submission,_short \
-	--submitter=MLCommons \
-	--hw_name=gh_macos-latest_x86 \
-	--model=bert-99 \
-	--backend=deepsparse \
-	--device=cpu \
-	--scenario=Offline \
-	--test_query_count=5 \
-	--precision=int8 \
-	--target_qps=1 \
-	-v \
-	--quiet
+
 ```
-*Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
- you should simply reload anandhu-eng@cm4mlops without checkout and clean CM cache as follows:*
+*Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf,
+ you should simply reload GATEOverflow@mlperf-automations without checkout and clean MLC cache as follows:*
 
 ```bash
-cm rm repo anandhu-eng@cm4mlops
-cm pull repo anandhu-eng@cm4mlops
-cm rm cache -f
+mlc rm repo GATEOverflow@mlperf-automations
+mlc pull repo GATEOverflow@mlperf-automations
+mlc rm cache -f
 
 ```
 
@@ -54,4 +40,4 @@ Model Precision: fp32
 `F1`: `80.0`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`Samples per second`: `4.26497`
+`Samples per second`: `7.89893`

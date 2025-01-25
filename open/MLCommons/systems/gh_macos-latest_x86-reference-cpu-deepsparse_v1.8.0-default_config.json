@@ -30,7 +30,7 @@
   "other_software_stack": "Python: 3.11.9, LLVM-15.0.0",
   "status": "available",
   "submitter": "MLCommons",
-  "sw_notes": "Automated by MLCommons CM v3.2.6. ",
+  "sw_notes": "",
   "system_name": "gh_macos-latest_x86",
   "system_type": "edge",
   "system_type_detail": "edge server"
