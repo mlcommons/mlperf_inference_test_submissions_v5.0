@@ -752,7 +752,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 7.89893,
+    "Performance_Result": 8.02129,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1436,7 +1436,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.18.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 20.9677,
+    "Performance_Result": 20.9936,
     "Performance_Units": "Samples/s"
   },
   {
