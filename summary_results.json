@@ -104,7 +104,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/Community/code",
     "Unique ID (e.g. for Audit)": "edge/open/Community/default-reference-cpu-tvm-onnx_v1.19.2-default_config/resnet50",
     "ColorKey": "availableCommunity",
-    "Performance_Result": 1.72203,
+    "Performance_Result": 1.74255,
     "Performance_Units": "Samples/s"
   },
   {
@@ -716,7 +716,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 9.60445,
+    "Performance_Result": 8.48163,
     "Performance_Units": "Samples/s"
   },
   {
