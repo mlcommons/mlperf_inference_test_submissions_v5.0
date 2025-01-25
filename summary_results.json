@@ -1580,7 +1580,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_windows-latest-reference-cpu-pytorch_v2.5.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.311813,
+    "Performance_Result": 0.310081,
     "Performance_Units": "Samples/s"
   },
   {
