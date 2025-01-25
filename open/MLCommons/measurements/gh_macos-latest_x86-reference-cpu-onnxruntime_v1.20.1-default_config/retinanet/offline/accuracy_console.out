@@ -1,21 +1,21 @@
-python3 python/main.py --profile retinanet-onnxruntime --model "/Users/runner/MLC/repos/local/cache/download-file_53d17f73/resnext50_32x4d_fpn.onnx" --dataset-path /Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_e9e163e1 --output "/Users/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_f60b4fb6/test_results/gh_macos-latest_x86-reference-cpu-onnxruntime-v1.20.1-default_config/retinanet/offline/accuracy" --scenario Offline --max-batchsize 1 --count 5 --threads 3 --user_conf /Users/runner/MLC/repos/GATEOverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/3f8b61d95ec643b39549b55451f169d3.conf --accuracy --use_preprocessed_dataset --cache_dir /Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_e9e163e1 --dataset-list /Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_e9e163e1/annotations/openimages-mlperf.json
-INFO:main:Namespace(dataset='openimages-800-retinanet-onnx', dataset_path='/Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_e9e163e1', dataset_list='/Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_e9e163e1/annotations/openimages-mlperf.json', data_format=None, profile='retinanet-onnxruntime', scenario='Offline', max_batchsize=1, model='/Users/runner/MLC/repos/local/cache/download-file_53d17f73/resnext50_32x4d_fpn.onnx', output='/Users/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_f60b4fb6/test_results/gh_macos-latest_x86-reference-cpu-onnxruntime-v1.20.1-default_config/retinanet/offline/accuracy', inputs=['images'], outputs=['boxes', 'labels', 'scores'], backend='onnxruntime', device=None, model_name='retinanet', threads=3, qps=None, cache=0, cache_dir='/Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_e9e163e1', preprocessed_dir=None, use_preprocessed_dataset=True, accuracy=True, find_peak_performance=False, debug=False, user_conf='/Users/runner/MLC/repos/GATEOverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/3f8b61d95ec643b39549b55451f169d3.conf', audit_conf='audit.config', time=None, count=5, performance_sample_count=None, max_latency=None, samples_per_query=8)
+python3 python/main.py --profile retinanet-onnxruntime --model "/Users/runner/MLC/repos/local/cache/download-file_d3d05584/resnext50_32x4d_fpn.onnx" --dataset-path /Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_9e360bd4 --output "/Users/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_aa28d2c1/test_results/gh_macos-latest_x86-reference-cpu-onnxruntime-v1.20.1-default_config/retinanet/offline/accuracy" --scenario Offline --max-batchsize 1 --count 5 --threads 3 --user_conf /Users/runner/MLC/repos/GATEOverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/7b6c790965894600b3bfaad58ee27673.conf --accuracy --use_preprocessed_dataset --cache_dir /Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_9e360bd4 --dataset-list /Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_9e360bd4/annotations/openimages-mlperf.json
+INFO:main:Namespace(dataset='openimages-800-retinanet-onnx', dataset_path='/Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_9e360bd4', dataset_list='/Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_9e360bd4/annotations/openimages-mlperf.json', data_format=None, profile='retinanet-onnxruntime', scenario='Offline', max_batchsize=1, model='/Users/runner/MLC/repos/local/cache/download-file_d3d05584/resnext50_32x4d_fpn.onnx', output='/Users/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_aa28d2c1/test_results/gh_macos-latest_x86-reference-cpu-onnxruntime-v1.20.1-default_config/retinanet/offline/accuracy', inputs=['images'], outputs=['boxes', 'labels', 'scores'], backend='onnxruntime', device=None, model_name='retinanet', threads=3, qps=None, cache=0, cache_dir='/Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_9e360bd4', preprocessed_dir=None, use_preprocessed_dataset=True, accuracy=True, find_peak_performance=False, debug=False, user_conf='/Users/runner/MLC/repos/GATEOverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/7b6c790965894600b3bfaad58ee27673.conf', audit_conf='audit.config', time=None, count=5, performance_sample_count=None, max_latency=None, samples_per_query=8)
 INFO:coco:loaded 5 images, cache=0, already_preprocessed=True, took=0.0sec
 INFO:main:starting TestScenario.Offline
 loading annotations into memory...
-Done (t=0.00s)
+Done (t=0.01s)
 creating index...
 index created!
 Loading and preparing results...
 Converting ndarray to lists...
 (756, 7)
 0/756
-DONE (t=0.00s)
+DONE (t=0.01s)
 creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=0.03s).
+DONE (t=0.05s).
 Accumulating evaluation results...
 DONE (t=0.05s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.770
@@ -30,4 +30,4 @@ DONE (t=0.05s).
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.632
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.875
-TestScenario.Offline qps=0.45, mean=7.6589, time=11.070, acc=42.328%, mAP=76.951%, queries=5, tiles=50.0:5.8079,80.0:10.5383,90.0:10.6831,95.0:10.7555,99.0:10.8134,99.9:10.8264
+TestScenario.Offline qps=0.45, mean=7.6635, time=11.153, acc=42.328%, mAP=76.951%, queries=5, tiles=50.0:5.8456,80.0:10.5151,90.0:10.6486,95.0:10.7153,99.0:10.7686,99.9:10.7806
