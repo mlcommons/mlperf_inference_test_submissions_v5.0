@@ -7,7 +7,7 @@ on:
     types: [published]
   push:
     branches:
-      - auto-update
+      - main
 
 jobs:
 
@@ -16,8 +16,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository normally
-        uses: actions/checkout@v3
+      - name: Checkout repository 
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
