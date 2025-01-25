@@ -752,7 +752,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 7.95012,
+    "Performance_Result": 8.20899,
     "Performance_Units": "Samples/s"
   },
   {
