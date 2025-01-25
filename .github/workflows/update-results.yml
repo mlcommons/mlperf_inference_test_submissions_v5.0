@@ -26,16 +26,16 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python3 -m pip install cm4mlops
+        python3 -m pip install mlc-scripts
 
     - name: Run MLPerf Inference Submission Checker and generate results summary
       run: |
         git pull
-        cm run script --tags=run,mlperf,inference,submission-checker,_short-run --src_version=v5.0 --adr.inference-src.tags=_branch.dev --repo_name=${{ github.event.repository.name }} --repo_owner=${{ github.repository_owner }} --repo_branch=${{ github.ref_name }}  --quiet --extra_args=" --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
-        cm run script --tags=convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
+        mlcr --tags=run,mlperf,inference,submission-checker,_short-run --src_version=v5.0 --adr.inference-src.tags=_branch.dev --repo_name=${{ github.event.repository.name }} --repo_owner=${{ github.repository_owner }} --repo_branch=${{ github.ref_name }}  --quiet --extra_args=" --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
+        mlcr --tags=convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
 
-        USER="GitHub Action"
-        EMAIL=admin@gateoverflow.com
+        USER="mlcommons-bot"
+        EMAIL="mlcommons-bot@users.noreply.github.com"
 
         git config --global user.name "$USER"
         git config --global user.email "$EMAIL"
