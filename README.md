@@ -1,5 +1,16 @@
 Please download [summary.xlsx](summary.xlsx) to view the most recent results. 
  ```
+2025-01-25 12:29:26,678 - mlc.main - INFO - Created repos.json in /home/runner/MLC and initialised with local cache folder path: /home/runner/MLC/repos/local
+2025-01-25 12:29:26,679 - mlc.main - INFO - Repos path for Index: /home/runner/MLC/repos
+2025-01-25 12:29:26,679 - mlc.main - INFO - Shared index for script saved to /home/runner/MLC/repos/index_script.json.
+2025-01-25 12:29:26,679 - mlc.main - INFO - Shared index for cache saved to /home/runner/MLC/repos/index_cache.json.
+2025-01-25 12:29:26,680 - mlc.main - INFO - Shared index for experiment saved to /home/runner/MLC/repos/index_experiment.json.
+2025-01-25 12:29:26,680 - mlc.main - ERROR - Script automation not found. Have you done "mlc pull repo mlcommons@mlperf-automations --branch=dev"?
+
+```
+
+Please download [summary.xlsx](summary.xlsx) to view the most recent results. 
+ ```
 2025-01-25 12:29:01,489 - mlc.main - INFO - Created repos.json in /home/runner/MLC and initialised with local cache folder path: /home/runner/MLC/repos/local
 2025-01-25 12:29:01,490 - mlc.main - INFO - Repos path for Index: /home/runner/MLC/repos
 2025-01-25 12:29:01,490 - mlc.main - INFO - Shared index for script saved to /home/runner/MLC/repos/index_script.json.
@@ -83,17 +94,6 @@ Please download [summary.xlsx](summary.xlsx) to view the most recent results.
 2025-01-25 12:22:33,870 - mlc.main - INFO - Shared index for cache saved to /home/runner/MLC/repos/index_cache.json.
 2025-01-25 12:22:33,870 - mlc.main - INFO - Shared index for experiment saved to /home/runner/MLC/repos/index_experiment.json.
 2025-01-25 12:22:33,870 - mlc.main - ERROR - Script automation not found. Have you done "mlc pull repo mlcommons@mlperf-automations --branch=dev"?
-
-```
-
-Please download [summary.xlsx](summary.xlsx) to view the most recent results. 
- ```
-2025-01-25 12:22:20,019 - mlc.main - INFO - Created repos.json in /home/runner/MLC and initialised with local cache folder path: /home/runner/MLC/repos/local
-2025-01-25 12:22:20,020 - mlc.main - INFO - Repos path for Index: /home/runner/MLC/repos
-2025-01-25 12:22:20,020 - mlc.main - INFO - Shared index for script saved to /home/runner/MLC/repos/index_script.json.
-2025-01-25 12:22:20,020 - mlc.main - INFO - Shared index for cache saved to /home/runner/MLC/repos/index_cache.json.
-2025-01-25 12:22:20,020 - mlc.main - INFO - Shared index for experiment saved to /home/runner/MLC/repos/index_experiment.json.
-2025-01-25 12:22:20,021 - mlc.main - ERROR - Script automation not found. Have you done "mlc pull repo mlcommons@mlperf-automations --branch=dev"?
 
 ```
 
