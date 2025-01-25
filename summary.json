@@ -785,6 +785,36 @@
         "Division":"open",
         "SystemType":"edge",
         "SystemName":"gh_ubuntu-latest_x86",
+        "Platform":"gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":23.2736,
+        "Accuracy":"acc: 76.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":2,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config\/resnet50\/offline",
+        "framework":"onnxruntime v1.20.1",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "27":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_ubuntu-latest_x86",
         "Platform":"gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.0-default_config",
         "Model":"retinanet",
         "MlperfModel":"retinanet",
@@ -809,7 +839,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "27":{
+    "28":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -839,7 +869,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "28":{
+    "29":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -869,7 +899,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "29":{
+    "30":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -889,38 +919,8 @@
         "accelerators_per_node":0,
         "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config\/retinanet\/offline",
         "framework":"onnxruntime",
-        "operating_system":"Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-        "notes":"Automated by MLCommons CM v3.2.6. ",
-        "compliance":1,
-        "errors":0,
-        "version":"v5.0",
-        "inferred":0,
-        "has_power":false,
-        "Units":"Samples\/s",
-        "weight_data_types":"fp32"
-    },
-    "30":{
-        "Organization":"MLCommons",
-        "Availability":"available",
-        "Division":"open",
-        "SystemType":"edge",
-        "SystemName":"gh_ubuntu-latest_x86",
-        "Platform":"gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
-        "Model":"resnet50",
-        "MlperfModel":"resnet",
-        "Scenario":"Offline",
-        "Result":23.2405,
-        "Accuracy":"acc: 76.000",
-        "number_of_nodes":1,
-        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
-        "host_processors_per_node":1,
-        "host_processor_core_count":2,
-        "accelerator_model_name":null,
-        "accelerators_per_node":0,
-        "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config\/resnet50\/offline",
-        "framework":"onnxruntime",
-        "operating_system":"Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-        "notes":"Automated by MLCommons CM v3.2.6. ",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+        "notes":null,
         "compliance":1,
         "errors":0,
         "version":"v5.0",
@@ -930,6 +930,36 @@
         "weight_data_types":"fp32"
     },
     "31":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_ubuntu-latest_x86",
+        "Platform":"gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":23.0171,
+        "Accuracy":"acc: 76.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":2,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config\/resnet50\/offline",
+        "framework":"onnxruntime",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "32":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -959,7 +989,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "32":{
+    "33":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -989,7 +1019,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "33":{
+    "34":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1019,7 +1049,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "34":{
+    "35":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1049,7 +1079,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "35":{
+    "36":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1079,7 +1109,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "36":{
+    "37":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1109,7 +1139,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "37":{
+    "38":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1139,7 +1169,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "38":{
+    "39":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
