@@ -968,7 +968,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/auto-update/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.429846,
+    "Performance_Result": 0.428789,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1122,6 +1122,42 @@
     "Category": "open",
     "Suite": "edge",
     "System": "gh_ubuntu-latest_x86",
+    "Platform": "gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config",
+    "UsedModel": "retinanet",
+    "Model": "retinanet",
+    "Scenario": "Offline",
+    "Accuracy": "mAP: 76.951",
+    "Nodes": 1,
+    "Processor": "AMD EPYC 7763 64-Core Processor",
+    "host_processors_per_node": 1,
+    "host_processor_core_count": 2,
+    "Accelerator": "",
+    "a#": "",
+    "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/retinanet/offline",
+    "Software": "onnxruntime v1.20.1",
+    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+    "Notes": "",
+    "compliance": 1,
+    "errors": 0,
+    "version": "v5.0",
+    "inferred": 0,
+    "has_power": false,
+    "weight_data_types": "fp32",
+    "p#": 1,
+    "Details": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/auto-update/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config",
+    "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/auto-update/open/MLCommons/code",
+    "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/retinanet",
+    "ColorKey": "availableMLCommons",
+    "Performance_Result": 0.435178,
+    "Performance_Units": "Samples/s"
+  },
+  {
+    "ID": "5.0-0031",
+    "Submitter": "MLCommons",
+    "Availability": "available",
+    "Category": "open",
+    "Suite": "edge",
+    "System": "gh_ubuntu-latest_x86",
     "Platform": "gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.1-default_config",
     "UsedModel": "retinanet",
     "Model": "retinanet",
@@ -1152,7 +1188,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0031",
+    "ID": "5.0-0032",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1188,7 +1224,43 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0032",
+    "ID": "5.0-0033",
+    "Submitter": "MLCommons",
+    "Availability": "available",
+    "Category": "open",
+    "Suite": "edge",
+    "System": "gh_ubuntu-latest_x86",
+    "Platform": "gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.1-default_config",
+    "UsedModel": "retinanet",
+    "Model": "retinanet",
+    "Scenario": "Offline",
+    "Accuracy": "mAP: 76.951",
+    "Nodes": 1,
+    "Processor": "AMD EPYC 7763 64-Core Processor",
+    "host_processors_per_node": 1,
+    "host_processor_core_count": 2,
+    "Accelerator": "",
+    "a#": "",
+    "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.1-default_config/retinanet/offline",
+    "Software": "pytorch v2.5.1",
+    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+    "Notes": "",
+    "compliance": 1,
+    "errors": 0,
+    "version": "v5.0",
+    "inferred": 0,
+    "has_power": false,
+    "weight_data_types": "fp32",
+    "p#": 1,
+    "Details": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/auto-update/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.1-default_config",
+    "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/auto-update/open/MLCommons/code",
+    "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.1-default_config/retinanet",
+    "ColorKey": "availableMLCommons",
+    "Performance_Result": 0.411035,
+    "Performance_Units": "Samples/s"
+  },
+  {
+    "ID": "5.0-0034",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1224,7 +1296,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0033",
+    "ID": "5.0-0035",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1260,7 +1332,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0034",
+    "ID": "5.0-0036",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1296,7 +1368,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0035",
+    "ID": "5.0-0037",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1332,7 +1404,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0036",
+    "ID": "5.0-0038",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1368,7 +1440,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0037",
+    "ID": "5.0-0039",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1404,7 +1476,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0038",
+    "ID": "5.0-0040",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1440,7 +1512,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0039",
+    "ID": "5.0-0041",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1476,7 +1548,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0040",
+    "ID": "5.0-0042",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
