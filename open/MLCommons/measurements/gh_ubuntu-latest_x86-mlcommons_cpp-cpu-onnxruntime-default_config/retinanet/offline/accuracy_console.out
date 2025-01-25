@@ -1,0 +1,12 @@
+MLPerf Conf path: /home/runner/MLC/repos/local/cache/get-git-repo_0161388d/inference/mlperf.conf
+User Conf path: /home/runner/MLC/repos/GATEOverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/53c2f9f58a5f47b983cdf40d7b86119d.conf
+Dataset Preprocessed path: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_fb96b517
+Dataset List filepath: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_fb96b517/annotations/openimages-mlperf.json
+Scenario: Offline
+Mode: AccuracyOnly
+Batch size: 1
+Query count override: 0
+Performance sample count override in application: 0
+loaded openimages with 5 samples
+starting benchmark
+loading samples to ram with total sample size: 5
