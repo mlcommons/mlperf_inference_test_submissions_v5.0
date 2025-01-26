@@ -10,6 +10,7 @@ on:
       - main
     paths:
       - summary_results.json
+      - dbversion
 
 jobs:
 
