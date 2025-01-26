@@ -1,6 +1,246 @@
 
-                See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.0-default_config/summary.html)
-                
+                <html>
+                    
+    <head>
+        <title>MLPerf Inference v5.0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+        <style type="text/css">
+            
+    * {
+        box-sizing: border-box;
+    }
+    html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    body {
+        font: 400 15px / 22px Roboto, sans-serif;
+        background-color: #212930;
+        background-image: radial-gradient(circle at 100% 0%, rgb(230 157 100 / 20%) 0%, #212930 50%);
+        color: #040304;
+        padding: 0;
+        margin: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        text-align: left;
+    }
+
+    .topbar {
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        height: 66px;
+        border-bottom: 1px solid rgb(255 255 255 / 10%);
+    }
+    .topbar-container {
+        max-width: 1300px;
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+    .logo {
+        width: max-content;
+    }
+    .svg-text {
+        fill: #9d9d9d;
+    }
+    .logo:hover .svg-text {
+        fill: #ffffff;
+        transition: fill .25s ease;
+    }
+    .resultpage {
+        max-width: 1300px;
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+
+    .welcome-section, .welcome-section .table {
+        color: #fff;
+    }
+    .welcome-section a {
+        color: #90bfff;
+    }
+    .welcome-section-wrapper {
+        width: 85%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .titlebarcontainer {
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
+    .main-title {
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    .main-title-description {
+        font-size: smaller;
+    }
+    .submittertitle {
+        text-align: center;
+    }
+    .datebar {
+        text-align: inherit;
+    }
+    .test-details-container {
+        grid-template-columns: 30% 30%;
+    }
+    .details-group {
+        margin-bottom: .5rem;
+    }
+    .details-group .details-cell:first-of-type {
+        font-weight: bold;
+        margin-right: 6px;
+    }
+
+    .table-half {
+        width: 100%;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 50% 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .test-details-container {
+        grid-template-columns: 30% 30%;
+    }
+    .table-full, .table-half {
+        margin-bottom: 2rem;
+    }
+    .table-wrapper {
+        position: relative;
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: 0 1px 16px 0 rgb(25 27 28), 0 1px 16px 1px rgb(20 20 22);
+        border-radius: 8px;
+    }
+    .table-half .table-wrapper:nth-of-type(even) {
+        margin-inline-start: 1rem;
+    }
+    .table-half .table-wrapper:nth-of-type(odd) {
+        margin-inline-end: 1rem;
+    }
+    .table-wrapper .floater {
+        position: absolute;
+        right: 10%;
+        top: -25px;
+    }
+    .table-wrapper h3 {
+        margin: 0;
+        padding: 0rem .3rem .6rem .3rem;
+        border-bottom: 2px solid #dee2e6;
+    }
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #212529;
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .table th, .table td {
+        padding: 0.5rem;
+    }
+    .table th {
+        font-weight: bold;
+        border-bottom: 2px solid #dee2e6;
+    }
+    .table.datebar th {
+        border: none;
+    }
+    .table-full .table:not(.results-table) th, .table-full .table:not(.results-table) td {
+        width: 50%;
+    }
+    .table th:not(:last-child), .table td:not(:last-child) {
+        position: relative;
+    }
+    .table th:not(:last-child):after, .table td:not(:last-child):after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 65%;
+        background-color: #d9d9d9;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+    .th-parent,
+    .results-table tr:nth-child(3) td:nth-child(-n+2) {
+        background-color: #b6bfff;
+        text-align: center;
+    }
+
+    .footer {
+        border-top: 1px solid rgb(255 255 255 / 10%);
+        padding: 1rem 1rem 3rem 1rem;
+        color: rgb(255 255 255 / 70%);
+    }
+    .footer-container {
+        max-width: 1300px;
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+
+    @media (max-width:900px) {
+        .welcome-section-wrapper {
+            width: 100%;
+        }
+        .test-details-container {
+            grid-template-columns: 50% 50%;
+            text-align: center;
+        }
+        
+        .details-container .table-half {
+            display: block;
+        }
+        .table-half .table-wrapper:nth-of-type(odd) {
+            margin-inline-end: initial;
+            margin-bottom: 2rem;
+        }
+        .table-half .table-wrapper:nth-of-type(even) {
+            margin-inline-start: initial;
+        }
+    }
+    @media (max-width:575px) {
+        body {
+            background-image: radial-gradient(circle at 100% 0%, rgb(230 157 100 / 20%) 0%, #212930 20%);
+            font: 400 12px / 19px Roboto, sans-serif;
+        }
+        .welcome-section-wrapper {
+            padding: 0;
+        }
+        .titlebarcontainer {
+            margin-top: 15vh;
+            margin-bottom: 10vh;
+        }
+        .main-title {
+            font-size: 2rem;
+            line-height: normal;
+            margin: .5rem 0;
+        }
+        .submittertitle {
+            text-align: initial;
+        }
+        .test-details-container {
+            display: block;
+            text-align: initial;
+            font-size: small;
+        }
+        .table-container {
+            overflow: auto;
+        }
+    }
+    
+        </style>
+    </head>
+    
+                    <body>
+                        
             <div class="welcome-section">
                 <div class="welcome-section-wrapper">
                     
@@ -24,7 +264,7 @@
             </div>
         </div>
         <div class="table table-full submittertitle">
-            <h2>MLCommons - gh_ubuntu-latest_x86</h2>
+            <h2>MLCommons - gh_windows-latest</h2>
         </div>
         <div class="test-details-container table-half">
             <div class="test-details">
@@ -100,7 +340,7 @@
         <h3>Processor and Memory Details</h3>
         <div class="table-container">
         <table class="table">
-    <tr><td>host_memory_capacity</td><td>15G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 64 KiB (2 instances), L1i cache: 64 KiB (2 instances), L2 cache: 1 MiB (2 instances), L3 cache: 32 MiB (1 instance)</td></tr><tr><td>host_processor_core_count</td><td>2</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_processor_interconnect</td><td></td></tr><tr><td>host_processor_model_name</td><td>AMD EPYC 7763 64-Core Processor</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr></table></div></div>
+    <tr><td>host_memory_capacity</td><td>undefined</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache:  , L1i cache:  , L2 cache:  , L3 cache:  </td></tr><tr><td>host_processor_core_count</td><td>1</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_processor_interconnect</td><td></td></tr><tr><td>host_processor_model_name</td><td>undefined</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr></table></div></div>
                 </div>
                 <div class="table-half table-striped">
                     <div class="table-wrapper">
@@ -176,7 +416,7 @@
         <h3>Software Details</h3>
         <div class="table-container">
         <table class="table">
-    <tr><td>framework</td><td>pytorch v2.5.0</td></tr><tr><td>operating_system</td><td>Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)</td></tr><tr><td>other_software_stack</td><td>Python: 3.12.7, GCC-11.4.0</td></tr><tr><td>sw_notes</td><td>Automated by MLCommons CM v3.2.6. </td></tr></table></div></div>
+    <tr><td>framework</td><td>onnxruntime v1.20.1</td></tr><tr><td>operating_system</td><td>Windows-2022Server-10.0.20348-SP0</td></tr><tr><td>other_software_stack</td><td>Python: 3.12.8, -</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
                 </div>
             </div>
             
@@ -198,6 +438,15 @@
             <td>Performance</td><td>Accuracy</td>
             <td>Metric</td>
             <td>Performance</td>
-            </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.412839</td><td></td><td></td><td></td><td></td><td></td><td></td></table></div>
+            </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.336027</td><td></td><td></td><td></td><td></td><td></td><td></td></table></div>
             
-            
+                        
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="copyright">© 2025 MLCommons.</div>
+        </div>
+    </footer>
+    
+                    </body>
+                </html>
+                
