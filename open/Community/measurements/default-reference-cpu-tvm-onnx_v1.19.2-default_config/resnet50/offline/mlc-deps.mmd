@@ -13,32 +13,32 @@ graph TD
     app-mlperf-inference,d775cac873ee4231_(_python,_resnet50,_tvm-onnx,_cpu,_test,_r5.0-dev_default,_offline_) --> get,mlperf,inference,utils
     download-file,9cdc8dc41aae437e_(_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz_) --> detect,os
     download-and-extract,c67e81a4ce2649f5_(_extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz_) --> download,file,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz
-    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/download-file_37ebeacb/caffe_ilsvrc12.tar.gz_) --> detect,os
-    download-and-extract,c67e81a4ce2649f5_(_extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz_) --> extract,file,_path./home/runner/MLC/repos/local/cache/download-file_37ebeacb/caffe_ilsvrc12.tar.gz
+    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/download-file_584d61ab/caffe_ilsvrc12.tar.gz_) --> detect,os
+    download-and-extract,c67e81a4ce2649f5_(_extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz_) --> extract,file,_path./home/runner/MLC/repos/local/cache/download-file_584d61ab/caffe_ilsvrc12.tar.gz
     get-dataset-imagenet-aux,bb2c6dd8c8c64217 --> download-and-extract,_extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz
     app-mlperf-inference,d775cac873ee4231_(_python,_resnet50,_tvm-onnx,_cpu,_test,_r5.0-dev_default,_offline_) --> get,dataset-aux,imagenet-aux
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> detect,os
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> detect,cpu
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,sys-utils-cm
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> detect,cpu
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,sys-utils-cm
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,python
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,generic-python-lib,_onnxruntime
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,generic-python-lib,_onnxruntime
     download-file,9cdc8dc41aae437e_(_cmutil,_url.https://zenodo.org/record/4735647/files/resnet50_v1.onnx_) --> detect,os
     download-and-extract,c67e81a4ce2649f5_(_url.https://zenodo.org/record/4735647/files/resnet50_v1.onnx_) --> download,file,_cmutil,_url.https://zenodo.org/record/4735647/files/resnet50_v1.onnx
     get-ml-model-resnet50,56203e4e998b4bc0_(_batch_size.1,_fp32_) --> download-and-extract,_url.https://zenodo.org/record/4735647/files/resnet50_v1.onnx
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,ml-model,image-classification,resnet50,_batch_size.1,_fp32
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,ml-model,image-classification,resnet50,_batch_size.1,_fp32
     get-preprocessed-dataset-imagenet,f259d490bbaf45f5 --> get,python3
     get-dataset-imagenet-val,7afd58d287fe4f11_(_size.500,_2012_) --> detect,os
     download-file,9cdc8dc41aae437e_(_cmutil,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> detect,os
     download-and-extract,c67e81a4ce2649f5_(_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> download,file,_cmutil,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar
-    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_365de7e4/ILSVRC2012_img_val_500.tar_) --> detect,os
-    download-and-extract,c67e81a4ce2649f5_(_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_365de7e4/ILSVRC2012_img_val_500.tar
+    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_991c754c/ILSVRC2012_img_val_500.tar_) --> detect,os
+    download-and-extract,c67e81a4ce2649f5_(_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_991c754c/ILSVRC2012_img_val_500.tar
     get-dataset-imagenet-val,7afd58d287fe4f11_(_size.500,_2012_) --> download-and-extract,file,_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar
     get-preprocessed-dataset-imagenet,f259d490bbaf45f5 --> get,dataset,image-classification,original,_size.500,_2012
     get-preprocessed-dataset-imagenet,f259d490bbaf45f5 --> get,dataset-aux,image-classification,imagenet-aux
@@ -60,8 +60,8 @@ graph TD
     get-mlperf-inference-src,4b57186581024797 --> get,python3
     get-mlperf-inference-src,4b57186581024797 --> get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference
     get-preprocessed-dataset-imagenet,f259d490bbaf45f5 --> mlperf,mlcommons,inference,source,src
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,dataset,image-classification,imagenet,preprocessed
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,dataset-aux,image-classification,imagenet-aux
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,dataset,image-classification,imagenet,preprocessed
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,dataset-aux,image-classification,imagenet-aux
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -72,7 +72,7 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> generate,user-conf,mlperf,inference
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> detect,os
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,python3
     get-mlperf-inference-src,4b57186581024797 --> detect,os
@@ -106,47 +106,33 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.setuptools_) --> get,generic-python-lib,_pip
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,generic-python-lib,_package.setuptools
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,loadgen
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,loadgen
     get-mlperf-inference-src,4b57186581024797 --> detect,os
     get-mlperf-inference-src,4b57186581024797 --> get,python3
     get-mlperf-inference-src,4b57186581024797 --> get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,mlcommons,inference,src
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,mlcommons,inference,src
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,generic-python-lib,_package.psutil
-    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> detect,os
-    detect-cpu,586c8a43320142f7 --> detect,os
-    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> detect,cpu
-    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> get,python3
-    get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
-    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,generic-python-lib,_opencv-python
-    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> detect,os
-    detect-cpu,586c8a43320142f7 --> detect,os
-    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> detect,cpu
-    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,python3
-    get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
-    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,generic-python-lib,_numpy
-    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> detect,os
-    detect-cpu,586c8a43320142f7 --> detect,os
-    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> detect,cpu
-    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> get,python3
-    get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
-    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,generic-python-lib,_pycocotools
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,generic-python-lib,_package.psutil
     get-generic-python-lib,94b62a682bc44791_(_onnx_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_onnx_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_onnx_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_onnx_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,generic-python-lib,_onnx
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,generic-python-lib,_onnx
+    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> detect,cpu
+    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,generic-python-lib,_pip
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,generic-python-lib,_numpy
     get-tvm,93c89140e6224f4b_(_pip-install_) --> cmake,get-cmake
     detect-cpu,586c8a43320142f7 --> detect,os
     get-tvm,93c89140e6224f4b_(_pip-install_) --> detect,cpu
@@ -194,23 +180,39 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_typing_extensions_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_apache-tvm_) --> get,generic-python-lib,_typing_extensions
     get-tvm,93c89140e6224f4b_(_pip-install_) --> get,generic-python-lib,_apache-tvm
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,tvm,_pip-install
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,python3
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,tvm,_pip-install
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,tvm,_pip-install
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,python3
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,tvm,_pip-install
     get-generic-python-lib,94b62a682bc44791_(_decorator_) --> get,python3
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_decorator
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_decorator
     get-generic-python-lib,94b62a682bc44791_(_psutil_) --> get,python3
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_psutil
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_psutil
     get-generic-python-lib,94b62a682bc44791_(_scipy_) --> get,python3
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_scipy
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_scipy
     get-generic-python-lib,94b62a682bc44791_(_attrs_) --> get,python3
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_attrs
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_attrs
     get-generic-python-lib,94b62a682bc44791_(_onnx_) --> get,python3
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_onnx
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,generic-python-lib,_onnx
     get-ml-model-resnet50,56203e4e998b4bc0_(_fp32,_onnx_) --> download-and-extract,_url.https://zenodo.org/record/4735647/files/resnet50_v1.onnx
-    get-tvm-model,c1b7b656b6224307_(_onnx,_batch_size.1,_model.resnet50_) --> get,ml-model,raw,resnet50,_fp32,_onnx
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> get,tvm-model,_onnx,_batch_size.1,_model.resnet50
+    get-tvm-model,c1b7b656b6224307_(_onnx,_graph-executor,_batch_size.1,_model.resnet50_) --> get,ml-model,raw,resnet50,_fp32,_onnx
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,tvm-model,_onnx,_graph-executor,_batch_size.1,_model.resnet50
+    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> detect,cpu
+    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> get,generic-python-lib,_pip
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,generic-python-lib,_opencv-python
+    get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,python3
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,generic-python-lib,_numpy
+    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> detect,cpu
+    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> get,generic-python-lib,_pip
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> get,generic-python-lib,_pycocotools
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_offline,_batch_size.1,_resnet50,_tvm-onnx,_fp32_) --> benchmark-mlperf
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_cpu,_tvm-onnx,_batch_size.1,_resnet50,_fp32_) --> benchmark-mlperf
