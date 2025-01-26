@@ -860,7 +860,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 22.5255,
+    "Performance_Result": 22.5042,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1040,7 +1040,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.1435,
+    "Performance_Result": 23.089,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1076,7 +1076,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.431304,
+    "Performance_Result": 0.429665,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1220,7 +1220,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.1513,
+    "Performance_Result": 23.1634,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1256,7 +1256,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.435813,
+    "Performance_Result": 0.437692,
     "Performance_Units": "Samples/s"
   },
   {
