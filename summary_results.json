@@ -104,7 +104,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/Community/code",
     "Unique ID (e.g. for Audit)": "edge/open/Community/default-reference-cpu-tvm-onnx_v1.19.2-default_config/resnet50",
     "ColorKey": "availableCommunity",
-    "Performance_Result": 1.71056,
+    "Performance_Result": 1.71499,
     "Performance_Units": "Samples/s"
   },
   {
