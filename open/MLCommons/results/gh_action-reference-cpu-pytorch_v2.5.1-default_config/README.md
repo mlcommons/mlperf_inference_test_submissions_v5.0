@@ -1,10 +1,10 @@
 See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_action-reference-cpu-pytorch_v2.5.1-default_config/summary.html)
 
 <html>
-            <div class="welcome-section">
-                <div class="welcome-section-wrapper">
+<div class="welcome-section">
+<div class="welcome-section-wrapper">
                     
-    <header class="topbar">
+<header class="topbar">
         <div class="topbar-container">
             <div class="logo">
                 <a href="/" style="border: none">
