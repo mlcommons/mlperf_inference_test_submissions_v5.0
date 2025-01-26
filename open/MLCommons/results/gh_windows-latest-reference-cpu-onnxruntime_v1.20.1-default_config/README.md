@@ -1,5 +1,5 @@
 
-                See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.5.0-default_config/summary.html)
+                See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_windows-latest-reference-cpu-onnxruntime_v1.20.1-default_config/summary.html)
                 
             <div class="welcome-section">
                 <div class="welcome-section-wrapper">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="table table-full submittertitle">
-            <h2>MLCommons - gh_ubuntu-latest_x86</h2>
+            <h2>MLCommons - gh_windows-latest</h2>
         </div>
         <div class="test-details-container table-half">
             <div class="test-details">
@@ -100,7 +100,7 @@
         <h3>Processor and Memory Details</h3>
         <div class="table-container">
         <table class="table">
-    <tr><td>host_memory_capacity</td><td>15G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 64 KiB (2 instances), L1i cache: 64 KiB (2 instances), L2 cache: 1 MiB (2 instances), L3 cache: 32 MiB (1 instance)</td></tr><tr><td>host_processor_core_count</td><td>2</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_processor_interconnect</td><td></td></tr><tr><td>host_processor_model_name</td><td>AMD EPYC 7763 64-Core Processor</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr></table></div></div>
+    <tr><td>host_memory_capacity</td><td>undefined</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache:  , L1i cache:  , L2 cache:  , L3 cache:  </td></tr><tr><td>host_processor_core_count</td><td>1</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_processor_interconnect</td><td></td></tr><tr><td>host_processor_model_name</td><td>undefined</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr></table></div></div>
                 </div>
                 <div class="table-half table-striped">
                     <div class="table-wrapper">
@@ -176,7 +176,7 @@
         <h3>Software Details</h3>
         <div class="table-container">
         <table class="table">
-    <tr><td>framework</td><td>pytorch v2.5.0</td></tr><tr><td>operating_system</td><td>Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)</td></tr><tr><td>other_software_stack</td><td>Python: 3.12.7, GCC-11.4.0</td></tr><tr><td>sw_notes</td><td>Automated by MLCommons CM v3.2.6. </td></tr></table></div></div>
+    <tr><td>framework</td><td>onnxruntime v1.20.1</td></tr><tr><td>operating_system</td><td>Windows-2022Server-10.0.20348-SP0</td></tr><tr><td>other_software_stack</td><td>Python: 3.12.8, -</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
                 </div>
             </div>
             
@@ -198,6 +198,6 @@
             <td>Performance</td><td>Accuracy</td>
             <td>Metric</td>
             <td>Performance</td>
-            </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.412839</td><td></td><td></td><td></td><td></td><td></td><td></td></table></div>
+            </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.336027</td><td></td><td></td><td></td><td></td><td></td><td></td></table></div>
             
             
