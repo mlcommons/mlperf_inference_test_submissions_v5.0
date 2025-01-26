@@ -265,7 +265,7 @@ def get_footer():
 return html_footer
 
 def get_stripe_image():
-    html_stripe_image = f"""
+    html_stripe_svg = f"""
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -284,7 +284,7 @@ def get_stripe_image():
         </svg>
     </div>
     """
-return html_stripe_image
+return html_stripe_svg
 
 def get_availability_string(version: str) -> str:
     """
@@ -405,9 +405,9 @@ def get_system_json(path):
     return data
 
 def get_accelerator_details_table(system_json):
-    html_separator = get_stripe_image()
+    html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_separator}
+        {html_stripe_svg}
         <h3>Accelerator Details</h3>
         <div class="table-container">
         <table class="table">
@@ -421,9 +421,9 @@ def get_accelerator_details_table(system_json):
     return table
 
 def get_cpu_details_table(system_json):
-    html_separator = get_stripe_image()
+    html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_separator}
+        {html_stripe_svg}
         <h3>Processor and Memory Details</h3>
         <div class="table-container">
         <table class="table">
@@ -436,9 +436,9 @@ def get_cpu_details_table(system_json):
     table += "</table></div>"
     return table
 def get_network_details_table(system_json):
-    html_separator = get_stripe_image()
+    html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_separator}
+        {html_stripe_svg}
         <h3>Network and Interconnect Details</h3>
         <div class="table-container">
         <table class="table">
@@ -451,9 +451,9 @@ def get_network_details_table(system_json):
     table += "</table></div>"
     return table
 def get_hardware_details_table(system_json):
-    html_separator = get_stripe_image()
+    html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_separator}
+        {html_stripe_svg}
         <h3>Other Hardware Details</h3>
         <div class="table-container">
         <table class="table">
@@ -467,9 +467,9 @@ def get_hardware_details_table(system_json):
     return table
 
 def get_software_details_table(system_json):
-    html_separator = get_stripe_image()
+    html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_separator}
+        {html_stripe_svg}
         <h3>Software Details</h3>
         <div class="table-container">
         <table class="table">
