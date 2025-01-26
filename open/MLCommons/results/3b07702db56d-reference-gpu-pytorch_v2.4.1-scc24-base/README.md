@@ -1,5 +1,5 @@
 
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/auto-update/open/MLCommons/results/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base/summary.html)
 
 
 

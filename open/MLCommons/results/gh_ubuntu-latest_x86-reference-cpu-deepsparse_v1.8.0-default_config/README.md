@@ -1,5 +1,5 @@
 
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/auto-update/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/summary.html)
 
 
 
@@ -60,5 +60,5 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr><tr><td>bert-99</td><td>F1: 89.9653</td><td>F1: 80.0</td><td>Samples/s</td> <td>6.37052</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table>
+    </tr><tr><td>bert-99</td><td>F1: 89.9653</td><td>F1: 80.0</td><td>Samples/s</td> <td>6.25064</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table>
 

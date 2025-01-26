@@ -9,7 +9,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":1.72298,
+        "Result":1.71499,
         "Accuracy":"acc: 80.000",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -99,7 +99,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.417568,
+        "Result":0.3723,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
@@ -129,7 +129,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":23.5773,
+        "Result":22.5042,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
@@ -159,7 +159,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.43353,
+        "Result":0.38729,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
@@ -180,6 +180,36 @@
         "weight_data_types":"fp32"
     },
     "6":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_windows-latest",
+        "Platform":"gh_windows-latest-reference-cpu-onnxruntime_v1.20.1-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
+        "Scenario":"Offline",
+        "Result":0.336027,
+        "Accuracy":"mAP: 76.951",
+        "number_of_nodes":1,
+        "host_processor_model_name":"undefined",
+        "host_processors_per_node":1,
+        "host_processor_core_count":1,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_windows-latest-reference-cpu-onnxruntime_v1.20.1-default_config\/retinanet\/offline",
+        "framework":"onnxruntime v1.20.1",
+        "operating_system":"Windows-2022Server-10.0.20348-SP0",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "7":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -209,7 +239,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "7":{
+    "8":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -239,7 +269,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "8":{
+    "9":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -249,7 +279,7 @@
         "Model":"bert-99",
         "MlperfModel":"bert-99",
         "Scenario":"Offline",
-        "Result":4.26497,
+        "Result":7.72084,
         "Accuracy":"F1: 80.0",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
@@ -260,7 +290,7 @@
         "Location":"open\/MLCommons\/results\/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config\/bert-99\/offline",
         "framework":"deepsparse v1.8.0",
         "operating_system":" (darwin-23.6.0)",
-        "notes":"Automated by MLCommons CM v3.2.6. ",
+        "notes":null,
         "compliance":1,
         "errors":0,
         "version":"v5.0",
@@ -269,7 +299,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "9":{
+    "10":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -299,7 +329,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "10":{
+    "11":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -329,7 +359,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "11":{
+    "12":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -359,7 +389,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "12":{
+    "13":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -389,7 +419,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "13":{
+    "14":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -419,7 +449,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "14":{
+    "15":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -429,7 +459,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.412351,
+        "Result":0.409754,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -449,7 +479,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "15":{
+    "16":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -479,7 +509,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "16":{
+    "17":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -489,7 +519,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":21.0225,
+        "Result":20.947,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -509,7 +539,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "17":{
+    "18":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -539,7 +569,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "18":{
+    "19":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -569,7 +599,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "19":{
+    "20":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -579,7 +609,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":9.70211,
+        "Result":9.78949,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
@@ -599,7 +629,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "20":{
+    "21":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -629,7 +659,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "21":{
+    "22":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -659,7 +689,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "22":{
+    "23":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -689,7 +719,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "23":{
+    "24":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -719,7 +749,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "24":{
+    "25":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -749,7 +779,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "25":{
+    "26":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -779,7 +809,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "26":{
+    "27":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -809,7 +839,37 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "27":{
+    "28":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_windows-latest_x86",
+        "Platform":"gh_windows-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":17.3279,
+        "Accuracy":"acc: 76.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"undefined",
+        "host_processors_per_node":1,
+        "host_processor_core_count":1,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_windows-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config\/resnet50\/offline",
+        "framework":"onnxruntime v1.20.1",
+        "operating_system":"Windows-2022Server-10.0.20348-SP0",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "29":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -839,7 +899,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "28":{
+    "30":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -869,7 +929,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "29":{
+    "31":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -899,7 +959,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "30":{
+    "32":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -909,7 +969,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.307868,
+        "Result":0.313782,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
@@ -929,7 +989,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "31":{
+    "33":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -939,8 +999,8 @@
         "Model":"rgat",
         "MlperfModel":"rgat",
         "Scenario":"Offline",
-        "Result":10.2551,
-        "Accuracy":"acc: 75.200",
+        "Result":9.86571,
+        "Accuracy":"acc: 75.600",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
         "host_processors_per_node":1,
@@ -959,7 +1019,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "32":{
+    "34":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -989,7 +1049,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "33":{
+    "35":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -999,7 +1059,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.435178,
+        "Result":0.437692,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -1019,7 +1079,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "34":{
+    "36":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1029,7 +1089,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":23.2736,
+        "Result":23.1634,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -1049,7 +1109,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "35":{
+    "37":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1079,7 +1139,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "36":{
+    "38":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1109,7 +1169,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "37":{
+    "39":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1139,7 +1199,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "38":{
+    "40":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1149,7 +1209,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.428754,
+        "Result":0.429665,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -1169,7 +1229,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "39":{
+    "41":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1179,7 +1239,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":22.918,
+        "Result":23.089,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -1199,7 +1259,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "40":{
+    "42":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1229,7 +1289,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "41":{
+    "43":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1259,7 +1319,37 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "42":{
+    "44":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_windows-latest_x86",
+        "Platform":"gh_windows-latest_x86-reference-cpu-tf_v2.18.0-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":21.5168,
+        "Accuracy":"acc: 76.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"undefined",
+        "host_processors_per_node":1,
+        "host_processor_core_count":1,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_windows-latest_x86-reference-cpu-tf_v2.18.0-default_config\/resnet50\/offline",
+        "framework":"tf v2.18.0",
+        "operating_system":"Windows-2022Server-10.0.20348-SP0",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "45":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1269,7 +1359,7 @@
         "Model":"bert-99",
         "MlperfModel":"bert-99",
         "Scenario":"Offline",
-        "Result":6.37052,
+        "Result":6.26939,
         "Accuracy":"F1: 80.0",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -1279,8 +1369,8 @@
         "accelerators_per_node":0,
         "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config\/bert-99\/offline",
         "framework":"deepsparse v1.8.0",
-        "operating_system":"Ubuntu 22.04 (linux-6.5.0-1025-azure-glibc2.35)",
-        "notes":"Automated by MLCommons CM v3.2.6. ",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+        "notes":null,
         "compliance":1,
         "errors":0,
         "version":"v5.0",
@@ -1289,7 +1379,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "43":{
+    "46":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1319,7 +1409,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "44":{
+    "47":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1349,7 +1439,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "45":{
+    "48":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1379,7 +1469,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "46":{
+    "49":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1409,7 +1499,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "47":{
+    "50":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",

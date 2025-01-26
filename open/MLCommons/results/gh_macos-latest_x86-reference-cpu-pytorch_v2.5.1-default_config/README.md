@@ -1,5 +1,5 @@
 
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/auto-update/open/MLCommons/results/gh_macos-latest_x86-reference-cpu-pytorch_v2.5.1-default_config/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_macos-latest_x86-reference-cpu-pytorch_v2.5.1-default_config/summary.html)
 
 
 
@@ -60,5 +60,5 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
     <td>Performance</td><td> Accuracy </td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.43353</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
+    </tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.428482</td><td></td><td></td><td></td><td></td><td></td><td></td></table>
 
