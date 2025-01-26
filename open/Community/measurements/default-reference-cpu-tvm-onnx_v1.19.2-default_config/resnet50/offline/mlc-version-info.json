@@ -147,15 +147,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/download-file_642a45bd/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/download-file_4cebeeea/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_path./home/runner/MLC/repos/local/cache/download-file_642a45bd/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_path./home/runner/MLC/repos/local/cache/download-file_4cebeeea/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./home/runner/MLC/repos/local/cache/download-file_642a45bd/caffe_ilsvrc12.tar.gz",
+        "script_variations": "path./home/runner/MLC/repos/local/cache/download-file_4cebeeea/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
       }
@@ -187,7 +187,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -207,7 +207,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -217,7 +217,7 @@
         "script_tags": "get,sys-utils-cm,sys-utils-mlc",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -227,7 +227,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.9.21",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -297,7 +297,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "onnxruntime",
         "version": "1.19.2",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -327,17 +327,17 @@
         "script_tags": "dae,file,download-and-extract",
         "script_variations": "url.https://zenodo.org/record/4735647/files/resnet50_v1.onnx",
         "version": "",
-        "parent": "get-ml-model-resnet50,56203e4e998b4bc0 ( batch_size.1,_fp32 )"
+        "parent": "get-ml-model-resnet50,56203e4e998b4bc0 ( fp32,_batch_size.1 )"
       }
     },
     {
-      "get,ml-model,image-classification,resnet50,_batch_size.1,_fp32": {
+      "get,ml-model,image-classification,resnet50,_fp32,_batch_size.1": {
         "script_uid": "56203e4e998b4bc0",
         "script_alias": "get-ml-model-resnet50",
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
-        "script_variations": "batch_size.1,fp32",
+        "script_variations": "fp32,batch_size.1",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -387,15 +387,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_9ec3688b/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_1ee440d7/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
-      "extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_9ec3688b/ILSVRC2012_img_val_500.tar": {
+      "extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_1ee440d7/ILSVRC2012_img_val_500.tar": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_9ec3688b/ILSVRC2012_img_val_500.tar",
+        "script_variations": "path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_1ee440d7/ILSVRC2012_img_val_500.tar",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar )"
       }
@@ -617,7 +617,7 @@
         "script_tags": "get,dataset,imagenet,ILSVRC,image-classification,preprocessed",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -627,7 +627,7 @@
         "script_tags": "get,aux,dataset-aux,image-classification,imagenet-aux",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -737,7 +737,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -1077,7 +1077,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -1117,7 +1117,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "r5.0-git-e618c314fc3c323e9b3e82578ce3774e72d9ac2b",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -1127,7 +1127,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "master-git-e618c314fc3c323e9b3e82578ce3774e72d9ac2b",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -1197,7 +1197,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "6.1.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -1207,7 +1207,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
     {
@@ -1227,7 +1227,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
     {
@@ -1237,7 +1237,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.9.21",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
     {
@@ -1257,17 +1257,17 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
         "version": "24.3.1",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
     {
-      "get,generic-python-lib,_onnx": {
+      "get,generic-python-lib,_opencv-python": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "onnx",
-        "version": "1.17.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "script_variations": "opencv-python",
+        "version": "4.11.0.86",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -1337,17 +1337,17 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
         "version": "1.26.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
-      "cmake,get-cmake": {
-        "script_uid": "52bf974d791b4fc8",
-        "script_alias": "get-cmake",
-        "script_tags": "get,cmake,get-cmake",
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
-        "version": "3.31.4",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
     {
@@ -1367,7 +1367,147 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.9.21",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.9.21",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
+      }
+    },
+    {
+      "get,generic-python-lib,_pip": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "pip",
+        "version": "24.3.1",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
+      }
+    },
+    {
+      "get,generic-python-lib,_pycocotools": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "pycocotools",
+        "version": "2.0.8",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.9.21",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.9.21",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
+      }
+    },
+    {
+      "get,generic-python-lib,_pip": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "pip",
+        "version": "24.3.1",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx )"
+      }
+    },
+    {
+      "get,generic-python-lib,_onnx": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "onnx",
+        "version": "1.17.0",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
+      }
+    },
+    {
+      "cmake,get-cmake": {
+        "script_uid": "52bf974d791b4fc8",
+        "script_alias": "get-cmake",
+        "script_tags": "get,cmake,get-cmake",
+        "script_variations": "",
+        "version": "3.31.4",
+        "parent": "get-tvm,93c89140e6224f4b"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-tvm,93c89140e6224f4b"
       }
     },
     {
@@ -1437,7 +1577,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "typing_extensions",
         "version": "4.12.2",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "parent": "get-tvm,93c89140e6224f4b"
       }
     },
     {
@@ -1507,7 +1647,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "decorator",
         "version": "5.1.1",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "parent": "get-tvm,93c89140e6224f4b"
       }
     },
     {
@@ -1577,7 +1717,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "scipy",
         "version": "1.13.1",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "parent": "get-tvm,93c89140e6224f4b"
       }
     },
     {
@@ -1647,7 +1787,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "attrs",
         "version": "25.1.0",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "parent": "get-tvm,93c89140e6224f4b"
       }
     },
     {
@@ -1717,7 +1857,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "psutil",
         "version": "6.1.1",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "parent": "get-tvm,93c89140e6224f4b"
       }
     },
     {
@@ -1807,17 +1947,17 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "apache-tvm",
         "version": "0.14.dev273",
-        "parent": "get-tvm,93c89140e6224f4b ( pip-install )"
+        "parent": "get-tvm,93c89140e6224f4b"
       }
     },
     {
-      "get,tvm,_pip-install": {
+      "get,tvm": {
         "script_uid": "93c89140e6224f4b",
         "script_alias": "get-tvm",
         "script_tags": "get,tvm,get-tvm",
-        "script_variations": "pip-install",
+        "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -1827,17 +1967,17 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.9.21",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
-      "get,tvm,_pip-install": {
+      "get,tvm": {
         "script_uid": "93c89140e6224f4b",
         "script_alias": "get-tvm",
         "script_tags": "get,tvm,get-tvm",
-        "script_variations": "pip-install",
+        "script_variations": "",
         "version": "",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
@@ -1857,7 +1997,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "decorator",
         "version": "5.1.1",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
@@ -1877,7 +2017,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "psutil",
         "version": "6.1.1",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
@@ -1897,7 +2037,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "scipy",
         "version": "1.13.1",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
@@ -1917,7 +2057,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "attrs",
         "version": "25.1.0",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
@@ -1937,7 +2077,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "onnx",
         "version": "1.17.0",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
@@ -1957,177 +2097,17 @@
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
         "script_variations": "fp32,onnx",
         "version": "",
-        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_graph-executor,_model.resnet50 )"
+        "parent": "get-tvm-model,c1b7b656b6224307 ( onnx,_batch_size.1,_model.resnet50 )"
       }
     },
     {
-      "get,tvm-model,_onnx,_batch_size.1,_graph-executor,_model.resnet50": {
+      "get,tvm-model,_onnx,_batch_size.1,_model.resnet50": {
         "script_uid": "c1b7b656b6224307",
         "script_alias": "get-tvm-model",
         "script_tags": "get,ml-model-tvm,tvm-model",
-        "script_variations": "onnx,batch_size.1,graph-executor,model.resnet50",
+        "script_variations": "onnx,batch_size.1,model.resnet50",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.9.21",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.9.21",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "24.3.1",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
-      }
-    },
-    {
-      "get,generic-python-lib,_opencv-python": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "opencv-python",
-        "version": "4.11.0.86",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.9.21",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
-      }
-    },
-    {
-      "get,generic-python-lib,_numpy": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "numpy",
-        "version": "1.26.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
-      "detect,cpu": {
-        "script_uid": "586c8a43320142f7",
-        "script_alias": "detect-cpu",
-        "script_tags": "detect,cpu,detect-cpu,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.9.21",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.9.21",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pip": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pip",
-        "version": "24.3.1",
-        "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
-      }
-    },
-    {
-      "get,generic-python-lib,_pycocotools": {
-        "script_uid": "94b62a682bc44791",
-        "script_alias": "get-generic-python-lib",
-        "script_tags": "get,install,generic,pip-package,generic-python-lib",
-        "script_variations": "pycocotools",
-        "version": "2.0.8",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     },
     {
@@ -2167,7 +2147,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( tvm-onnx,_offline,_resnet50,_batch_size.1,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_resnet50,_tvm-onnx,_cpu,_fp32 )"
       }
     }
   ]
