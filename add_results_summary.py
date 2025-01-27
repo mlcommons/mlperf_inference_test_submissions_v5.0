@@ -76,8 +76,8 @@ def get_header():
         margin: 0 auto;
     }
     .titlebarcontainer {
-        margin-top: 20vh;
-        margin-bottom: 20vh;
+        margin-top: 6vh;
+        margin-bottom: 6vh;
     }
     .main-title {
         font-size: 3rem;
@@ -221,8 +221,8 @@ def get_header():
             padding: 0;
         }
         .titlebarcontainer {
-            margin-top: 15vh;
-            margin-bottom: 10vh;
+            margin-top: 8vh;
+            margin-bottom: 6vh;
         }
         .main-title {
             font-size: 2rem;
@@ -475,7 +475,8 @@ def get_table_header(division, category):
         colspan = "2"
 
     num_scenarios = 1
-    html_table_head = f"""
+    html_stripe_svg = get_stripe_image()
+    html_table_head = f"""{html_stripe_svg}
 <h3>Results Table</h3>
 <div class="table-container">
 <table class="table results-table">
@@ -682,7 +683,7 @@ for details, entries in tables.items():
 <div class="table-wrapper">{software_details}</div>
 </div>
 <div class="table-full table-striped">
-{html_table}
+<div class="table-wrapper">{html_table}</div>
 </div>
 </div>
 </main>
