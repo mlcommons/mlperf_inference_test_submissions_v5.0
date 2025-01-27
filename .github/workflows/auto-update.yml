@@ -29,6 +29,7 @@ jobs:
           git fetch
           git merge origin/auto-update -m "Auto-merge updates from auto-update branch"
 
-      - name: Push Changes to Main
+      - name: Push Changes to Main and auto-update
         run: |
           git push origin main
+          git push origin auto-update
