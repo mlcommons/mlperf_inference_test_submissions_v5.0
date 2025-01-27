@@ -1,6 +1,4 @@
-
 See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base/summary.html)
-
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -78,7 +76,6 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <table class="table">
 <tr><td>accelerator_frequency</td><td>2520000 MHz</td></tr><tr><td>accelerator_host_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect_topology</td><td></td></tr><tr><td>accelerator_memory_capacity</td><td>23.64703369140625 GB</td></tr><tr><td>accelerator_memory_configuration</td><td>N/A</td></tr><tr><td>accelerator_model_name</td><td>NVIDIA GeForce RTX 4090</td></tr><tr><td>accelerator_on-chip_memories</td><td></td></tr><tr><td>accelerators_per_node</td><td>1</td></tr></table></div></div>
 <div class="table-wrapper">
-
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -104,7 +101,6 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="table-half table-striped">
 <div class="table-wrapper">
-
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -128,7 +124,6 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <table class="table">
 <tr><td>cooling</td><td>air</td></tr><tr><td>hw_notes</td><td></td></tr></table></div></div>
 <div class="table-wrapper">
-
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -154,7 +149,6 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="table-full table-striped">
 <div class="table-wrapper">
-
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
