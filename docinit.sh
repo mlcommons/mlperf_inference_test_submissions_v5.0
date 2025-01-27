@@ -67,7 +67,7 @@ fi
 
 python3 add_results_summary.py
 test $? -eq 0 || exit $?
-git push || (sleep $((RANDOM % 300 + 1)) && git pull && git push)
+git push || (sleep $((RANDOM % 100 + 1)) && git pull --rebase && git push)
 
 git add '**/README.md' '**/summary.html'
 git commit -m "Added results summary"

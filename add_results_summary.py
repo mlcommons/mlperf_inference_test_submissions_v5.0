@@ -244,14 +244,14 @@ def get_header():
     """
 
     html_header = f"""
-    <head>
-        <title>MLPerf Inference {version}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
-        <style type="text/css">
-            {css}
-        </style>
-    </head>
-    """
+<head>
+<title>MLPerf Inference {version}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+<style type="text/css">
+{css}
+</style>
+</head>
+"""
     return html_header
 
 def get_footer():
@@ -394,11 +394,11 @@ def get_system_json(path):
 def get_accelerator_details_table(system_json):
     html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_stripe_svg}
-        <h3>Accelerator Details</h3>
-        <div class="table-container">
-        <table class="table">
-    """
+{html_stripe_svg}
+<h3>Accelerator Details</h3>
+<div class="table-container">
+<table class="table">
+"""
     for key,value in system_json.items():
         if not key.startswith("accelerator"):
             continue
@@ -410,11 +410,11 @@ def get_accelerator_details_table(system_json):
 def get_cpu_details_table(system_json):
     html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_stripe_svg}
-        <h3>Processor and Memory Details</h3>
-        <div class="table-container">
-        <table class="table">
-    """
+{html_stripe_svg}
+<h3>Processor and Memory Details</h3>
+<div class="table-container">
+<table class="table">
+"""
     hardware_fields = [ "processor", "cpu", "memory" ]
     for key,value in system_json.items():
         if any (a in key for a in hardware_fields) and "accelerator" not in key:
@@ -422,14 +422,15 @@ def get_cpu_details_table(system_json):
 
     table += "</table></div>"
     return table
+
 def get_network_details_table(system_json):
     html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_stripe_svg}
-        <h3>Network and Interconnect Details</h3>
-        <div class="table-container">
-        <table class="table">
-    """
+{html_stripe_svg}
+<h3>Network and Interconnect Details</h3>
+<div class="table-container">
+<table class="table">
+"""
     hardware_fields = [ "network", "nics" ]
     for key,value in system_json.items():
         if any (a in key for a in hardware_fields) and "accelerator" not in key:
@@ -440,11 +441,11 @@ def get_network_details_table(system_json):
 def get_hardware_details_table(system_json):
     html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_stripe_svg}
-        <h3>Other Hardware Details</h3>
-        <div class="table-container">
-        <table class="table">
-    """
+{html_stripe_svg}
+<h3>Other Hardware Details</h3>
+<div class="table-container">
+<table class="table">
+"""
     hardware_fields = [ "hardware", "disk", "cooling",  "power", "hw_" ]
     for key,value in system_json.items():
         if any (a in key for a in hardware_fields) and "accelerator" not in key:
@@ -456,11 +457,11 @@ def get_hardware_details_table(system_json):
 def get_software_details_table(system_json):
     html_stripe_svg = get_stripe_image()
     table = f"""
-        {html_stripe_svg}
-        <h3>Software Details</h3>
-        <div class="table-container">
-        <table class="table">
-    """
+{html_stripe_svg}
+<h3>Software Details</h3>
+<div class="table-container">
+<table class="table">
+"""
     software_fields = [ "software", "framework", "firmware", "sw_", "operating_" ]
     for key,value in system_json.items():
         if any (a in key for a in software_fields):
@@ -479,13 +480,13 @@ def get_table_header(division, category):
 
     num_scenarios = 1
     html_table_head = f"""
-    <h3>Results Table</h3>
-    <div class="table-container">
-    <table class="table results-table">
-        <tr>
-            <th rowspan="2" class="th-parent">Model</th>
-            <th rowspan="2" class="th-parent">Accuracy Target</th>
-    """
+<h3>Results Table</h3>
+<div class="table-container">
+<table class="table results-table">
+<tr>
+<th rowspan="2" class="th-parent">Model</th>
+<th rowspan="2" class="th-parent">Accuracy Target</th>
+"""
     if "datacenter" in category:
         num_scenarios += 1
         html_table_head += f"""
@@ -697,9 +698,9 @@ for details, entries in tables.items():
             repo_owner = os.environ.get('INFERENCE_RESULTS_REPO_OWNER', 'mlcommons')
 
             readme_content = f"""
-                See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/{repo_owner}/{repo_name}/blob/{repo_branch}/{division}/{submitter}/results/{sut_name}/summary.html)
-                {html_table}
-            """
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/{repo_owner}/{repo_name}/blob/{repo_branch}/{division}/{submitter}/results/{sut_name}/summary.html)
+{html_table}
+"""
 
             with open(out_path, "w") as f:
                 f.write(readme_content)
@@ -708,14 +709,14 @@ for details, entries in tables.items():
             html_footer = get_footer()
 
             html = f"""
-                <html>
-                    {html_header}
-                    <body>
-                        {html_table}
-                        {html_footer}
-                    </body>
-                </html>
-                """
+<html>
+{html_header}
+<body>
+{html_table}
+{html_footer}
+</body>
+</html>
+"""
 
             with open(html_out_path, "w") as f:
                 f.write(html)
