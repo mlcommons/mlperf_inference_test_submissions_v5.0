@@ -1,6 +1,6 @@
 
-                See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_action-reference-gpu-pytorch-v2.5.0-cu124/summary.html)
-                
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_action-reference-gpu-pytorch-v2.5.0-cu124/summary.html)
+
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -54,7 +54,7 @@
 <div class="details-container">
 <div class="table-half table-striped">
 <div class="table-wrapper">
-        
+
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -73,12 +73,12 @@
         </svg>
     </div>
     
-        <h3>Accelerator Details</h3>
-        <div class="table-container">
-        <table class="table">
-    <tr><td>accelerator_frequency</td><td>2520000 MHz</td></tr><tr><td>accelerator_host_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect_topology</td><td></td></tr><tr><td>accelerator_memory_capacity</td><td>23.64703369140625 GB</td></tr><tr><td>accelerator_memory_configuration</td><td>N/A</td></tr><tr><td>accelerator_model_name</td><td>NVIDIA GeForce RTX 4090</td></tr><tr><td>accelerator_on-chip_memories</td><td></td></tr><tr><td>accelerators_per_node</td><td>2</td></tr></table></div></div>
+<h3>Accelerator Details</h3>
+<div class="table-container">
+<table class="table">
+<tr><td>accelerator_frequency</td><td>2520000 MHz</td></tr><tr><td>accelerator_host_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect_topology</td><td></td></tr><tr><td>accelerator_memory_capacity</td><td>23.64703369140625 GB</td></tr><tr><td>accelerator_memory_configuration</td><td>N/A</td></tr><tr><td>accelerator_model_name</td><td>NVIDIA GeForce RTX 4090</td></tr><tr><td>accelerator_on-chip_memories</td><td></td></tr><tr><td>accelerators_per_node</td><td>2</td></tr></table></div></div>
 <div class="table-wrapper">
-        
+
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -97,14 +97,14 @@
         </svg>
     </div>
     
-        <h3>Processor and Memory Details</h3>
-        <div class="table-container">
-        <table class="table">
-    <tr><td>host_memory_capacity</td><td>192G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 1.1 MiB (24 instances), L1i cache: 768 KiB (24 instances), L2 cache: 48 MiB (24 instances), L3 cache: 45 MiB (1 instance)</td></tr><tr><td>host_processor_core_count</td><td>24</td></tr><tr><td>host_processor_frequency</td><td>4800.0000</td></tr><tr><td>host_processor_interconnect</td><td></td></tr><tr><td>host_processor_model_name</td><td>Intel(R) Xeon(R) w7-2495X</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr></table></div></div>
+<h3>Processor and Memory Details</h3>
+<div class="table-container">
+<table class="table">
+<tr><td>host_memory_capacity</td><td>192G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 1.1 MiB (24 instances), L1i cache: 768 KiB (24 instances), L2 cache: 48 MiB (24 instances), L3 cache: 45 MiB (1 instance)</td></tr><tr><td>host_processor_core_count</td><td>24</td></tr><tr><td>host_processor_frequency</td><td>4800.0000</td></tr><tr><td>host_processor_interconnect</td><td></td></tr><tr><td>host_processor_model_name</td><td>Intel(R) Xeon(R) w7-2495X</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr></table></div></div>
 </div>
 <div class="table-half table-striped">
 <div class="table-wrapper">
-        
+
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -123,12 +123,12 @@
         </svg>
     </div>
     
-        <h3>Other Hardware Details</h3>
-        <div class="table-container">
-        <table class="table">
-    <tr><td>cooling</td><td>air</td></tr><tr><td>hw_notes</td><td></td></tr></table></div></div>
+<h3>Other Hardware Details</h3>
+<div class="table-container">
+<table class="table">
+<tr><td>cooling</td><td>air</td></tr><tr><td>hw_notes</td><td></td></tr></table></div></div>
 <div class="table-wrapper">
-        
+
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -147,14 +147,14 @@
         </svg>
     </div>
     
-        <h3>Network and Interconnect Details</h3>
-        <div class="table-container">
-        <table class="table">
-    <tr><td>host_network_card_count</td><td>1</td></tr><tr><td>host_networking</td><td>Gig Ethernet</td></tr><tr><td>host_networking_topology</td><td>N/A</td></tr></table></div></div>
+<h3>Network and Interconnect Details</h3>
+<div class="table-container">
+<table class="table">
+<tr><td>host_network_card_count</td><td>1</td></tr><tr><td>host_networking</td><td>Gig Ethernet</td></tr><tr><td>host_networking_topology</td><td>N/A</td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
 <div class="table-wrapper">
-        
+
     <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
         <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -173,20 +173,20 @@
         </svg>
     </div>
     
-        <h3>Software Details</h3>
-        <div class="table-container">
-        <table class="table">
-    <tr><td>framework</td><td>pytorch v2.5.0</td></tr><tr><td>operating_system</td><td>Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)</td></tr><tr><td>other_software_stack</td><td>Python: 3.10.12, GCC-11.4.0</td></tr><tr><td>sw_notes</td><td>Automated by MLCommons CM v3.2.6. </td></tr></table></div></div>
+<h3>Software Details</h3>
+<div class="table-container">
+<table class="table">
+<tr><td>framework</td><td>pytorch v2.5.0</td></tr><tr><td>operating_system</td><td>Ubuntu 22.04 (linux-6.2.0-39-generic-glibc2.35)</td></tr><tr><td>other_software_stack</td><td>Python: 3.10.12, GCC-11.4.0</td></tr><tr><td>sw_notes</td><td>Automated by MLCommons CM v3.2.6. </td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
 
-    <h3>Results Table</h3>
-    <div class="table-container">
-    <table class="table results-table">
-        <tr>
-            <th rowspan="2" class="th-parent">Model</th>
-            <th rowspan="2" class="th-parent">Accuracy Target</th>
-    
+<h3>Results Table</h3>
+<div class="table-container">
+<table class="table results-table">
+<tr>
+<th rowspan="2" class="th-parent">Model</th>
+<th rowspan="2" class="th-parent">Accuracy Target</th>
+
         <th colspan="3">Offline</th>
             <th colspan="3">SingleStream</th>
             <th colspan="3">MultiStream</th>
@@ -203,4 +203,3 @@
 </div>
 </main>
 
-            
