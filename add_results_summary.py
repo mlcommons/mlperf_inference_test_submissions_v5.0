@@ -409,8 +409,7 @@ def get_accelerator_details_table(system_json):
 
 def get_cpu_details_table(system_json):
     html_stripe_svg = get_stripe_image()
-    table = f"""
-{html_stripe_svg}
+    table = f"""{html_stripe_svg}
 <h3>Processor and Memory Details</h3>
 <div class="table-container">
 <table class="table">
@@ -425,8 +424,7 @@ def get_cpu_details_table(system_json):
 
 def get_network_details_table(system_json):
     html_stripe_svg = get_stripe_image()
-    table = f"""
-{html_stripe_svg}
+    table = f"""{html_stripe_svg}
 <h3>Network and Interconnect Details</h3>
 <div class="table-container">
 <table class="table">
@@ -440,8 +438,7 @@ def get_network_details_table(system_json):
     return table
 def get_hardware_details_table(system_json):
     html_stripe_svg = get_stripe_image()
-    table = f"""
-{html_stripe_svg}
+    table = f"""{html_stripe_svg}
 <h3>Other Hardware Details</h3>
 <div class="table-container">
 <table class="table">
@@ -456,8 +453,7 @@ def get_hardware_details_table(system_json):
 
 def get_software_details_table(system_json):
     html_stripe_svg = get_stripe_image()
-    table = f"""
-{html_stripe_svg}
+    table = f"""{html_stripe_svg}
 <h3>Software Details</h3>
 <div class="table-container">
 <table class="table">
@@ -655,8 +651,7 @@ for details, entries in tables.items():
             out_path = os.path.join(division, submitter, "results", sut_name, "README.md")
             os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
-            html_table = f"""
-<header class="topbar">
+            html_table = f"""<header class="topbar">
 <div class="topbar-container">
 <div class="logo">
 <a href="/" style="border: none">
@@ -697,8 +692,7 @@ for details, entries in tables.items():
             repo_branch = os.environ.get('INFERENCE_RESULTS_REPO_BRANCH', "main")
             repo_owner = os.environ.get('INFERENCE_RESULTS_REPO_OWNER', 'mlcommons')
 
-            readme_content = f"""
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/{repo_owner}/{repo_name}/blob/{repo_branch}/{division}/{submitter}/results/{sut_name}/summary.html)
+            readme_content = f"""See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/{repo_owner}/{repo_name}/blob/{repo_branch}/{division}/{submitter}/results/{sut_name}/summary.html)
 {html_table}
 """
 
@@ -708,8 +702,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/{r
             html_header = get_header()
             html_footer = get_footer()
 
-            html = f"""
-<html>
+            html = f"""<html>
 {html_header}
 <body>
 {html_table}
