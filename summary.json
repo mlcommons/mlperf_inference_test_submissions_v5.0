@@ -753,6 +753,36 @@
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"default",
+        "Platform":"default-mlcommons_cpp-cpu-onnxruntime-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
+        "Scenario":"Offline",
+        "Result":0.432023,
+        "Accuracy":"mAP: 49.593",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":2,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/default-mlcommons_cpp-cpu-onnxruntime-default_config\/retinanet\/offline",
+        "framework":"onnxruntime",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "26":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
         "SystemType":"datacenter",
         "SystemName":"gh_ubuntu_x86",
         "Platform":"gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config",
@@ -779,7 +809,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "26":{
+    "27":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -809,7 +839,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "27":{
+    "28":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -839,7 +869,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "28":{
+    "29":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -869,7 +899,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "29":{
+    "30":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -899,7 +929,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "30":{
+    "31":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -929,7 +959,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "31":{
+    "32":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -959,7 +989,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "32":{
+    "33":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -989,7 +1019,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "33":{
+    "34":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1019,7 +1049,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "34":{
+    "35":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1049,7 +1079,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "35":{
+    "36":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1079,7 +1109,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "36":{
+    "37":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1109,7 +1139,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "37":{
+    "38":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1139,7 +1169,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "38":{
+    "39":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1169,7 +1199,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "39":{
+    "40":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1199,7 +1229,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "40":{
+    "41":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1229,7 +1259,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "41":{
+    "42":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1259,7 +1289,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "42":{
+    "43":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1289,7 +1319,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "43":{
+    "44":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1319,7 +1349,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "44":{
+    "45":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1349,7 +1379,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "45":{
+    "46":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1379,7 +1409,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "46":{
+    "47":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1409,7 +1439,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "47":{
+    "48":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1439,7 +1469,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "48":{
+    "49":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1469,7 +1499,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "49":{
+    "50":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -1499,7 +1529,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "50":{
+    "51":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1529,7 +1559,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "51":{
+    "52":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
