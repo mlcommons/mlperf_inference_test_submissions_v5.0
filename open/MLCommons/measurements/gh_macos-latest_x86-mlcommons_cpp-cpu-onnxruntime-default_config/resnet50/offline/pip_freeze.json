@@ -2,10 +2,11 @@
   "pip_freeze": {
     "certifi": "2024.12.14",
     "charset-normalizer": "3.4.1",
+    "colorama": "0.4.6",
     "dmiparser": "5.1",
     "giturlparse": "0.12.0",
     "idna": "3.10",
-    "mlcflow": "0.1.14",
+    "mlcflow": "0.1.19",
     "numpy": "2.2.2",
     "opencv-python-headless": "4.11.0.86",
     "pillow": "11.1.0",
