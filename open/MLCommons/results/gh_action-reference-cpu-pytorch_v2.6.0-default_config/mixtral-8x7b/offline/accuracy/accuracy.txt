@@ -1,0 +1,9 @@
+Processed 1 in 0.013320872007170692s
+ 0.00% pass@1
+{'javascript': 0} {'javascript': 1}
+
+Results
+
+{'rouge1': 60.7242, 'rouge2': 44.8179, 'rougeL': 50.6964, 'rougeLsum': 59.0529, 'gsm8k': 100.0, 'mbxp': 0.0, 'gen_len': 1450, 'gen_num': 3, 'gen_tok_len': 982, 'tokens_per_sample': 327.3}
+
+hash=dcba7b51b6cfb0ea8ac14dcc5b6750e5d984b48fd3b306950dbccecb2eb6fd81
