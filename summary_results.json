@@ -797,6 +797,42 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
+    "System": "gh_action",
+    "Platform": "gh_action-reference-gpu-pytorch_v2.6.0-cu124",
+    "UsedModel": "stable-diffusion-xl",
+    "Model": "stable-diffusion-xl",
+    "Scenario": "Offline",
+    "Accuracy": "",
+    "Nodes": 1,
+    "Processor": "Intel(R) Xeon(R) w7-2495X",
+    "host_processors_per_node": 1,
+    "host_processor_core_count": 24,
+    "Accelerator": "NVIDIA GeForce RTX 4090",
+    "a#": 2,
+    "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/stable-diffusion-xl/offline",
+    "Software": "pytorch v2.6.0",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
+    "Notes": "",
+    "compliance": 1,
+    "errors": 0,
+    "version": "v5.0",
+    "inferred": 0,
+    "has_power": false,
+    "weight_data_types": "fp32",
+    "p#": 1,
+    "Details": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124",
+    "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
+    "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.6.0-cu124/stable-diffusion-xl",
+    "ColorKey": "availableMLCommons",
+    "Performance_Result": 0.351603,
+    "Performance_Units": "Samples/s"
+  },
+  {
+    "ID": "5.0-0022",
+    "Submitter": "MLCommons",
+    "Availability": "available",
+    "Category": "open",
+    "Suite": "edge",
     "System": "gh_macos-latest_x86",
     "Platform": "gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
     "UsedModel": "resnet50",
@@ -828,7 +864,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0022",
+    "ID": "5.0-0023",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -864,7 +900,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0023",
+    "ID": "5.0-0024",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -900,7 +936,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0024",
+    "ID": "5.0-0025",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -936,7 +972,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0025",
+    "ID": "5.0-0026",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -972,7 +1008,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0026",
+    "ID": "5.0-0027",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1008,7 +1044,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0027",
+    "ID": "5.0-0028",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1044,7 +1080,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0028",
+    "ID": "5.0-0029",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1080,7 +1116,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0029",
+    "ID": "5.0-0030",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1116,7 +1152,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0030",
+    "ID": "5.0-0031",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1152,7 +1188,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0031",
+    "ID": "5.0-0032",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1188,7 +1224,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0032",
+    "ID": "5.0-0033",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1224,7 +1260,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0033",
+    "ID": "5.0-0034",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1260,7 +1296,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0034",
+    "ID": "5.0-0035",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1296,7 +1332,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0035",
+    "ID": "5.0-0036",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1332,7 +1368,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0036",
+    "ID": "5.0-0037",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1368,7 +1404,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0037",
+    "ID": "5.0-0038",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1404,7 +1440,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0038",
+    "ID": "5.0-0039",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1440,7 +1476,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0039",
+    "ID": "5.0-0040",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1476,7 +1512,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0040",
+    "ID": "5.0-0041",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1512,7 +1548,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0041",
+    "ID": "5.0-0042",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1548,7 +1584,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0042",
+    "ID": "5.0-0043",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1584,7 +1620,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0043",
+    "ID": "5.0-0044",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1620,7 +1656,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0044",
+    "ID": "5.0-0045",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1656,7 +1692,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0045",
+    "ID": "5.0-0046",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1692,7 +1728,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0046",
+    "ID": "5.0-0047",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1728,7 +1764,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0047",
+    "ID": "5.0-0048",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1764,7 +1800,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0048",
+    "ID": "5.0-0049",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1800,7 +1836,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0049",
+    "ID": "5.0-0050",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1836,7 +1872,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0050",
+    "ID": "5.0-0051",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1872,7 +1908,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0051",
+    "ID": "5.0-0052",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1908,7 +1944,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0052",
+    "ID": "5.0-0053",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1944,7 +1980,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0053",
+    "ID": "5.0-0054",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
