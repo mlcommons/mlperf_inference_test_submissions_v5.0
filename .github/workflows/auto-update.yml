@@ -32,4 +32,4 @@ jobs:
       - name: Push Changes to Main and auto-update
         run: |
           git push origin main
-          git push origin main:auto-update
+          #git push origin main:auto-update
