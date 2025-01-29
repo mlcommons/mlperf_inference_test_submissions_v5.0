@@ -6,7 +6,7 @@
 * CPU version: x86_64
 * Python version: 3.9.21 (main, Dec 12 2024, 19:08:08) 
 [GCC 13.2.0]
-* MLC version: 0.1.0
+* MLC version: unknown
 
 ## CM Run Command
 
@@ -17,7 +17,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo GATEOverflow@mlperf-automations --checkout=f78d7e8bc12241c1e068a7f6e1df43ea05693f7f
+mlc pull repo GATEOverflow@mlperf-automations --checkout=fe9a774ef04658c8f63f9d98b87e6961ad570525
 
 
 ```
@@ -41,4 +41,4 @@ Model Precision: fp32
 `acc`: `80.0`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Samples per second`: `1.71387`
+`Samples per second`: `1.72882`
