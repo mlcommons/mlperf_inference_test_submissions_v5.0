@@ -37,12 +37,12 @@ Platform: gh_action-reference-cpu-pytorch_v2.6.0-default_config
 Model Precision: fp32
 
 ### Accuracy Results 
-`ROUGE1`: `60.7242`, Required accuracy for closed division `>= 45.14291`
-`ROUGE2`: `44.8179`, Required accuracy for closed division `>= 23.11907`
-`ROUGEL`: `50.6964`, Required accuracy for closed division `>= 30.15619`
-`TOKENS_PER_SAMPLE`: `327.3`, Required accuracy for closed division `>= 130.356` and `<= 160.49`
+`ROUGE1`: `70.1571`, Required accuracy for closed division `>= 45.14291`
+`ROUGE2`: `41.2698`, Required accuracy for closed division `>= 23.11907`
+`ROUGEL`: `45.0262`, Required accuracy for closed division `>= 30.15619`
+`TOKENS_PER_SAMPLE`: `245.3`, Required accuracy for closed division `>= 130.356` and `<= 160.49`
 `gsm8k_accuracy`: `100.0`, Required accuracy for closed division `>= 72.9234`
 `mbxp_accuracy`: `0.0`, Required accuracy for closed division `>= 59.5584`
 
 ### Performance Results 
-`Samples per second`: `0.0152169`
+`Samples per second`: `0.0102599`

@@ -13,16 +13,16 @@ graph TD
     get-mlperf-inference-src,4b57186581024797_(_branch.dev_) --> get,git,repo,_branch.dev,_repo.https://github.com/mlcommons/inference
     get-mlperf-inference-utils,e341e5f86d8342e5 --> get,mlperf,inference,src,_branch.dev
     app-mlperf-inference,d775cac873ee4231_(_reference,_mixtral-8x7b,_pytorch,_cpu,_test,_r5.0-dev_default,_float16,_offline_) --> get,mlperf,inference,utils
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> detect,os
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> detect,cpu
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,sys-utils-cm
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> detect,cpu
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,sys-utils-cm
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,python
     get-generic-python-lib,94b62a682bc44791_(_torch_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_torch
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_torch
     get-generic-python-lib,94b62a682bc44791_(_torchvision_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_torchvision
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,ml-model,mixtral,raw,_batch_size.1,_pytorch
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_torchvision
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,ml-model,mixtral,raw,_batch_size.1,_pytorch
     get-generic-python-lib,94b62a682bc44791_(_package.pandas_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.pandas_) --> detect,cpu
@@ -34,7 +34,7 @@ graph TD
     download-file,9cdc8dc41aae437e_(_cmutil,_url.https://inference.mlcommons-storage.org/mixtral_8x7b%2F2024.06.06_mixtral_15k_v4.pkl_) --> detect,os
     download-and-extract,c67e81a4ce2649f5_(_url.https://inference.mlcommons-storage.org/mixtral_8x7b%2F2024.06.06_mixtral_15k_v4.pkl_) --> download,file,_cmutil,_url.https://inference.mlcommons-storage.org/mixtral_8x7b%2F2024.06.06_mixtral_15k_v4.pkl
     get-dataset-mlperf-inference-mixtral,89e7c91444804775_(_size.1_) --> download-and-extract,_url.https://inference.mlcommons-storage.org/mixtral_8x7b%2F2024.06.06_mixtral_15k_v4.pkl
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,dataset-mixtral,openorca-mbxp-gsm8k-combined,_size.1
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,dataset-mixtral,openorca-mbxp-gsm8k-combined,_size.1
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -45,35 +45,35 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src,_branch.dev
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> generate,user-conf,mlperf,inference
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,loadgen
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,loadgen
     get-mlperf-inference-src,4b57186581024797_(_branch.dev_) --> detect,os
     get-mlperf-inference-src,4b57186581024797_(_branch.dev_) --> get,python3
     get-mlperf-inference-src,4b57186581024797_(_branch.dev_) --> get,git,repo,_branch.dev,_repo.https://github.com/mlcommons/inference
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,mlcommons,inference,src,_branch.dev
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,mlcommons,inference,src,_branch.dev
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,mlcommons,inference,src
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.psutil
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,rust-compiler
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.psutil
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,rust-compiler
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.transformers
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.transformers
     get-generic-python-lib,94b62a682bc44791_(_package.datasets_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.datasets
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.datasets
     get-generic-python-lib,94b62a682bc44791_(_package.sentencepiece_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.sentencepiece
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.sentencepiece
     get-generic-python-lib,94b62a682bc44791_(_package.protobuf_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.protobuf
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.protobuf
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.accelerate
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.accelerate
     get-generic-python-lib,94b62a682bc44791_(_package.absl-py_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.absl-py
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.absl-py
     get-generic-python-lib,94b62a682bc44791_(_package.evaluate_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.evaluate
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.evaluate
     get-generic-python-lib,94b62a682bc44791_(_package.nltk_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_package.nltk
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_package.nltk
     get-generic-python-lib,94b62a682bc44791_(_mxeval_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> get,generic-python-lib,_mxeval
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> get,generic-python-lib,_mxeval
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16_) --> benchmark-mlperf
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16_) --> benchmark-mlperf
