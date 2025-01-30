@@ -147,7 +147,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -167,7 +167,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -177,7 +177,7 @@
         "script_tags": "get,sys-utils-cm,sys-utils-mlc",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -187,7 +187,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.10.12",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -207,7 +207,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torch",
         "version": "2.6.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -227,7 +227,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torchvision",
         "version": "0.21.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -237,7 +237,7 @@
         "script_tags": "get,raw,ml-model,language-processing,mixtral,mixtral-8x7b",
         "script_variations": "batch_size.1,pytorch",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -357,7 +357,7 @@
         "script_tags": "get,dataset-mixtral,openorca-mbxp-gsm8k-combined",
         "script_variations": "size.1",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -467,7 +467,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -477,7 +477,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -517,7 +517,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "branch.dev",
         "version": "r5.0-git-76c250b89fcbcbc89bfed2d921274eda76244216",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -527,7 +527,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "r5.0-git-76c250b89fcbcbc89bfed2d921274eda76244216",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -547,7 +547,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "6.1.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -557,7 +557,7 @@
         "script_tags": "get,rust-compiler",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -577,7 +577,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.transformers",
         "version": "4.48.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -597,7 +597,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.datasets",
         "version": "3.2.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -617,7 +617,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.sentencepiece",
         "version": "0.2.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -637,7 +637,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.protobuf",
         "version": "5.29.3",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -657,7 +657,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.accelerate",
         "version": "1.3.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -677,7 +677,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.absl-py",
         "version": "2.1.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -697,7 +697,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.evaluate",
         "version": "0.4.3",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -717,7 +717,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.nltk",
         "version": "3.9.1",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -737,7 +737,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mxeval",
         "version": "1.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     },
     {
@@ -777,7 +777,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_batch_size.1,_cpu,_mixtral-8x7b,_pytorch,_float16 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pytorch,_batch_size.1,_offline,_mixtral-8x7b,_cpu,_float16 )"
       }
     }
   ]
