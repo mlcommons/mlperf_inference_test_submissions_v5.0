@@ -298,7 +298,7 @@
     "UsedModel": "mixtral-8x7b",
     "Model": "mixtral-8x7b",
     "Scenario": "Offline",
-    "Accuracy": "ROUGE1: 60.7242  ROUGE2: 44.8179  ROUGEL: 50.6964  TOKENS_PER_SAMPLE: 327.3  gsm8k_accuracy: 100.0  mbxp_accuracy: 0.0",
+    "Accuracy": "ROUGE1: 70.1571  ROUGE2: 41.2698  ROUGEL: 45.0262  TOKENS_PER_SAMPLE: 245.3  gsm8k_accuracy: 100.0  mbxp_accuracy: 0.0",
     "Nodes": 1,
     "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
     "host_processors_per_node": 1,
@@ -320,7 +320,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_action-reference-cpu-pytorch_v2.6.0-default_config/mixtral-8x7b",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.0152169,
+    "Performance_Result": 0.0102599,
     "Performance_Units": "Tokens/s"
   },
   {
