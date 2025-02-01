@@ -2,7 +2,7 @@
 
 ## Host platform
 
-* OS version: Linux-6.8.0-51-generic-x86_64-with-glibc2.35
+* OS version: Linux-6.8.0-52-generic-x86_64-with-glibc2.35
 * CPU version: x86_64
 * Python version: 3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]
 * MLC version: unknown
@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo gateoverflow@mlperf-automations --checkout=92ea05b829908f4cf0c7d028c19875020cd116ae
+mlc pull repo gateoverflow@mlperf-automations --checkout=f562fdf708162fd45e74c2be54c8690725d9c4fb
 
 
 ```
@@ -43,4 +43,4 @@ Model Precision: fp32
 `TOKENS_PER_SAMPLE`: `610.0`, Required accuracy for closed division `>= 265.005` and `<= 323.895`
 
 ### Performance Results 
-`Samples per second`: `0.383226`
+`Samples per second`: `0.278282`
