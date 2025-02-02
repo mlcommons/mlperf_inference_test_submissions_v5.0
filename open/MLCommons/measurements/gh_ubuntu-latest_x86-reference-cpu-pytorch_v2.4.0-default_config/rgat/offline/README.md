@@ -16,16 +16,16 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo GATEOverflow@mlperf-automations --checkout=518325f2220786a04fc2f59fc0122c7e6e3b3aad
+mlc pull repo sujik18@mlperf-automations --checkout=2ff93542dd0ac0165633103816e7f225d7ec3ccc
 
 
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf,
- you should simply reload GATEOverflow@mlperf-automations without checkout and clean MLC cache as follows:*
+ you should simply reload sujik18@mlperf-automations without checkout and clean MLC cache as follows:*
 
 ```bash
-mlc rm repo GATEOverflow@mlperf-automations
-mlc pull repo GATEOverflow@mlperf-automations
+mlc rm repo sujik18@mlperf-automations
+mlc pull repo sujik18@mlperf-automations
 mlc rm cache -f
 
 ```
@@ -37,7 +37,7 @@ Platform: gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config
 Model Precision: fp32
 
 ### Accuracy Results 
-`acc`: `76.2`, Required accuracy for closed division `>= 0.72131`
+`acc`: `74.0`, Required accuracy for closed division `>= 0.72131`
 
 ### Performance Results 
-`Samples per second`: `10.027`
+`Samples per second`: `10.2428`
