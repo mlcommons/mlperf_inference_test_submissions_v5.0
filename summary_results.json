@@ -811,7 +811,7 @@
     "a#": 2,
     "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/gptj-99/offline",
     "Software": "pytorch v2.6.0",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -824,7 +824,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.6.0-cu124/gptj-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 47.3379,
+    "Performance_Result": 56.2054,
     "Performance_Units": "Tokens/s"
   },
   {
@@ -847,7 +847,7 @@
     "a#": 2,
     "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/stable-diffusion-xl/offline",
     "Software": "pytorch v2.6.0",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
