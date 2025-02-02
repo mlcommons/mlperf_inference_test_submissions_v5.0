@@ -464,7 +464,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.422753,
+    "Performance_Result": 0.433279,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1040,7 +1040,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 19.1547,
+    "Performance_Result": 16.4667,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1436,7 +1436,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.1795,
+    "Performance_Result": 23.1931,
     "Performance_Units": "Samples/s"
   },
   {
