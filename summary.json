@@ -1479,7 +1479,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":23.0862,
+        "Result":23.0215,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
