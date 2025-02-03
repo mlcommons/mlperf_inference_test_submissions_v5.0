@@ -2,7 +2,7 @@
 
 ## Host platform
 
-* OS version: Linux-6.8.0-51-generic-x86_64-with-glibc2.35
+* OS version: Linux-6.8.0-52-generic-x86_64-with-glibc2.35
 * CPU version: x86_64
 * Python version: 3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]
 * MLC version: unknown
@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo gateoverflow@mlperf-automations --checkout=7cccb35aa3907f62065997308a2202552568a0da
+mlc pull repo gateoverflow@mlperf-automations --checkout=d229e4ec73cb9dd05f27379a73d8371bea886d3d
 
 
 ```
