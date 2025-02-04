@@ -8,7 +8,7 @@ creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=0.08s).
+DONE (t=0.07s).
 Accumulating evaluation results...
 DONE (t=0.08s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.496
@@ -29,4 +29,4 @@ found 10 images
 found 0 images with no results
 ignored 0 dupes
 
-hash=fa7d8d4572632bd1f71ab89848ad85ae56779eae9060a0cda31283ebc0674afe
+hash=60602012c4c21dc5367698caf416b38efce3a704bf82c33083c8281333f0a390
