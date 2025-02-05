@@ -17,7 +17,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo GATEOverflow@mlperf-automations --checkout=a5237186bae626588e7363fc07e9cc8daee26230
+mlc pull repo GATEOverflow@mlperf-automations --checkout=16de19027fa9dc0d9c8e5a2c235d92e869e5f28a
 
 
 ```
@@ -40,4 +40,4 @@ Model Precision: fp32
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `0.431775`
+`Samples per second`: `0.431458`
