@@ -1,9 +1,0 @@
-Processed 1 in 0.012352794990874827s
- 0.00% pass@1
-{'php': 0} {'php': 1}
-
-Results
-
-{'rouge1': 70.1571, 'rouge2': 41.2698, 'rougeL': 45.0262, 'rougeLsum': 67.0157, 'gsm8k': 100.0, 'mbxp': 0.0, 'gen_len': 623, 'gen_num': 3, 'gen_tok_len': 736, 'tokens_per_sample': 245.3}
-
-hash=4ea4d9df2f90e7974e9569307868eb0a714e4df749796275b8f532315f0d27c3

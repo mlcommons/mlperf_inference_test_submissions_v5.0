@@ -1,5 +1,0 @@
-
-Results
-
-{'gsm8k': 100.0, 'mbxp': 0, 'gen_len': 0, 'gen_num': 1, 'gen_tok_len': 342, 'tokens_per_sample': 342.0}
-hash=0ee71c7955eeb264bb8a80475e9a96b06fc2e3a59a22862adea31991828ee904
