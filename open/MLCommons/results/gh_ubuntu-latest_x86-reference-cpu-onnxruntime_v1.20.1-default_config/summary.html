@@ -26,6 +26,55 @@
         overflow-x: hidden;
         text-align: left;
     }
+.details-cell {
+    text-transform: capitalize;
+}
+
+a.button:hover {
+    color: white;
+    background-color: gray;
+    text-decoration: underline;
+}
+a.button {
+display: inline-block; /* Allows background-color to apply */
+    text-decoration: none; /* Removes default underline */
+
+    }
+        .button-container {
+            display: flex;
+            width: 100%;
+            max-width: 800px; /* Optional: Limit the container width */
+            margin: 0 auto;
+        }
+
+        .button-container a {
+            flex: 1; /* Distribute space evenly */
+            text-decoration: none;
+        }
+
+        .button {
+            padding: 15px 0;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: inline-block;
+        }
+
+
+        .button:active {
+            background-color: #003f8a;
+            transform: scale(0.95);
+        }
+
+        /* Add spacing between buttons */
+        .button:not(:last-child) {
+            margin-right: 10px;
+        }
 
     .topbar {
         /* position: fixed; */
@@ -37,7 +86,7 @@
         border-bottom: 1px solid rgb(255 255 255 / 10%);
     }
     .topbar-container {
-        max-width: 1300px;
+        max-width: 1350px;
         padding: 0 2rem;
         margin: 0 auto;
     }
@@ -95,6 +144,15 @@
         font-weight: bold;
         margin-right: 6px;
     }
+    .titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .date-right {
+    font-size: 18px;
+    }
 
     .table-half {
         width: 100%;
@@ -136,7 +194,9 @@
     .table {
         border-collapse: collapse;
         width: 100%;
+        table-layout: fixed;
         color: #212529;
+        word-break: break-word;
     }
     .table-striped tbody tr:nth-of-type(odd) {
         background-color: rgba(0, 0, 0, 0.05);
@@ -154,6 +214,10 @@
     .table-full .table:not(.results-table) th, .table-full .table:not(.results-table) td {
         width: 50%;
     }
+    a.button {
+    color: black;
+    background-color: azure;
+    }
     .table th:not(:last-child), .table td:not(:last-child) {
         position: relative;
     }
@@ -169,10 +233,15 @@
         transform: translatey(-50%);
     }
     .th-parent,
-    .results-table tr:nth-child(3) td:nth-child(-n+2) {
-        background-color: #b6bfff;
+    .results-table tr:nth-child(n+3) td:nth-child(-n+2) {
+        background-color: #dddee3;
         text-align: center;
     }
+    /* Apply styling to the first two columns of rows starting from the third row */
+.results-table th, .results-table tr:nth-child(n+3) td:nth-child(-n+2) {
+    background-color: #dddee3;
+    text-align: center;
+}
 
     .footer {
         border-top: 1px solid rgb(255 255 255 / 10%);
@@ -254,11 +323,11 @@
 <main class="resultpage">
 <div class="welcome-section">
 <div class="welcome-section-wrapper">
-
 <div class="titlebarcontainer">
 <div class="titlebar">
 <h1 class="main-title">MLPerf Inference v5.0</h1>
 <p class="main-title-description">Copyright 2019 - 2025 MLCommons</p>
+<span class="date-right">February 2025</span>
 </div>
 </div>
 <div class="table table-full submittertitle">
@@ -267,190 +336,192 @@
 <div class="test-details-container table-half">
 <div class="test-details">
 <div class="details-group">
-<span id="license_num" class="details-cell"><a href="">MLPerf Inference Category:</a></span>
+<span id="license_num" class="details-cell"><a href="https://github.com/mlcommons/inference/blob/master/README.md">MLPerf Inference Category:</a></span>
 <span id="license_num_val" class="details-cell">edge</span>
 </div>
 <div class="details-group">
-<span id="sw_avail" class="details-cell"><a href="">Availability:</a></span>
-<span id="sw_avail_val" class="details-cell">Available  as of February 2025</span>
+<span id="sw_avail" class="details-cell"><a href="https://github.com/mlcommons/policies/blob/master/submission_rules.adoc#results-categories">Availability:</a></span>
+<span id="sw_avail_val" class="details-cell">available</span>
 </div>
 </div>
 <div class="test-details">
 <div class="details-group">
-<span id="tester" class="details-cell"><a href="">Submitted by:</a></span>
+<span id="tester" class="details-cell">Submitted by:</span>
 <span id="tester_val" class="details-cell">MLCommons</span>
 </div>
 <div class="details-group">
-<span id="test_date" class="details-cell"><a href="">MLPerf Inference Division:</a></span>
+<span id="test_date" class="details-cell"><a href="https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc#divisions">MLPerf Inference Division:</a></span>
 <span id="test_date_val" class="details-cell">open</span>
 </div>
 </div>
 </div>
 
 </div>
+<div class="welcome-section-wrapper">
+<div class="button-container">
+<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/measurements/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config" class="button">Measurements</a>
+</div>
+</div>
 </div>
 <div class="details-container">
 <div class="table-half table-striped">
-<div class="table-wrapper">
+<div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
+<svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
+<path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
+<path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
+<path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
+<path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
+<path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
+<path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
+<path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
+<path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
+<path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
+<path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
+<path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
+<path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
+</svg>
+</div>
 
-    <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
-        <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
-            <path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
-            <path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
-            <path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
-            <path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
-            <path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
-            <path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
-            <path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
-            <path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
-            <path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
-            <path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
-            <path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
-            <path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
-        </svg>
-    </div>
-    
 <h3>Accelerator Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>accelerator_frequency</td><td></td></tr><tr><td>accelerator_host_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect_topology</td><td></td></tr><tr><td>accelerator_memory_capacity</td><td>N/A</td></tr><tr><td>accelerator_memory_configuration</td><td>N/A</td></tr><tr><td>accelerator_model_name</td><td>N/A</td></tr><tr><td>accelerator_on-chip_memories</td><td></td></tr><tr><td>accelerators_per_node</td><td>0</td></tr></table></div></div>
-<div class="table-wrapper">
-    <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
-        <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
-            <path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
-            <path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
-            <path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
-            <path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
-            <path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
-            <path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
-            <path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
-            <path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
-            <path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
-            <path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
-            <path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
-            <path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
-        </svg>
-    </div>
-    
+<tr><td>accelerator_model_name</td><td>N/A</td></tr><tr><td>accelerators_per_node</td><td>0</td></tr><tr><td>accelerator_memory_capacity</td><td>N/A</td></tr><tr><td>accelerator_host_interconnect</td><td>N/A</td></tr><tr><td>accelerator_frequency</td><td></td></tr><tr><td>accelerator_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect_topology</td><td></td></tr><tr><td>accelerator_memory_configuration</td><td>N/A</td></tr><tr><td>accelerator_on-chip_memories</td><td></td></tr></table></div></div>
+<div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
+<svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
+<path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
+<path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
+<path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
+<path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
+<path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
+<path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
+<path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
+<path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
+<path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
+<path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
+<path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
+<path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
+</svg>
+</div>
+
 <h3>Processor and Memory Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>host_memory_capacity</td><td>16G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 64 KiB (2 instances), L1i cache: 64 KiB (2 instances), L2 cache: 1 MiB (2 instances), L3 cache: 32 MiB (1 instance)</td></tr><tr><td>host_processor_core_count</td><td>2</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_processor_interconnect</td><td></td></tr><tr><td>host_processor_model_name</td><td>AMD EPYC 7763 64-Core Processor</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr></table></div></div>
+<tr><td>host_processor_model_name</td><td>AMD EPYC 7763 64-Core Processor</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr><tr><td>host_processor_core_count</td><td>2</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_memory_capacity</td><td>16G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 64 KiB (2 instances), L1i cache: 64 KiB (2 instances), L2 cache: 1 MiB (2 instances), L3 cache: 32 MiB (1 instance)</td></tr><tr><td>host_processor_interconnect</td><td></td></tr></table></div></div>
 </div>
 <div class="table-half table-striped">
-<div class="table-wrapper">
-    <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
-        <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
-            <path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
-            <path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
-            <path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
-            <path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
-            <path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
-            <path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
-            <path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
-            <path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
-            <path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
-            <path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
-            <path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
-            <path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
-        </svg>
-    </div>
-    
+<div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
+<svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
+<path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
+<path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
+<path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
+<path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
+<path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
+<path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
+<path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
+<path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
+<path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
+<path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
+<path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
+<path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
+</svg>
+</div>
+
 <h3>Other Hardware Details</h3>
 <div class="table-container">
 <table class="table">
 <tr><td>cooling</td><td>air</td></tr><tr><td>hw_notes</td><td></td></tr></table></div></div>
-<div class="table-wrapper">
-    <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
-        <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
-            <path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
-            <path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
-            <path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
-            <path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
-            <path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
-            <path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
-            <path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
-            <path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
-            <path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
-            <path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
-            <path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
-            <path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
-        </svg>
-    </div>
-    
+<div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
+<svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
+<path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
+<path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
+<path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
+<path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
+<path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
+<path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
+<path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
+<path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
+<path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
+<path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
+<path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
+<path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
+</svg>
+</div>
+
 <h3>Network and Interconnect Details</h3>
 <div class="table-container">
 <table class="table">
 <tr><td>host_network_card_count</td><td>1</td></tr><tr><td>host_networking</td><td>Gig Ethernet</td></tr><tr><td>host_networking_topology</td><td>N/A</td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
-<div class="table-wrapper">
-    <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
-        <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
-            <path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
-            <path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
-            <path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
-            <path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
-            <path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
-            <path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
-            <path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
-            <path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
-            <path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
-            <path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
-            <path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
-            <path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
-        </svg>
-    </div>
-    
+<div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
+<svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
+<path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
+<path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
+<path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
+<path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
+<path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
+<path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
+<path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
+<path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
+<path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
+<path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
+<path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
+<path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
+</svg>
+</div>
+
 <h3>Software Details</h3>
 <div class="table-container">
 <table class="table">
 <tr><td>framework</td><td>onnxruntime v1.20.1</td></tr><tr><td>operating_system</td><td>Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)</td></tr><tr><td>other_software_stack</td><td>Python: 3.12.8, LLVM-18.1.3</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
-<div class="table-wrapper">
-    <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
-        <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
-            <path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
-            <path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
-            <path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
-            <path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
-            <path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
-            <path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
-            <path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
-            <path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
-            <path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
-            <path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
-            <path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
-            <path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
-        </svg>
-    </div>
-    
+<div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
+<svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
+<path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
+<path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
+<path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
+<path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
+<path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
+<path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
+<path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
+<path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
+<path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
+<path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
+<path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
+<path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
+</svg>
+</div>
+
 <h3>Results Table</h3>
 <div class="table-container">
 <table class="table results-table">
 <tr>
 <th rowspan="2" class="th-parent">Model</th>
 <th rowspan="2" class="th-parent">Accuracy Target</th>
-
-        <th colspan="3">Offline</th>
-            <th colspan="3">SingleStream</th>
-            <th colspan="3">MultiStream</th>
-            </tr>
-            <tr><td>Accuracy</td>
-            <td>Metric</td>
-            <td>Performance</td><td>Accuracy</td>
-            <td>Metric</td>
-            <td>Performance</td><td>Accuracy</td>
-            <td>Metric</td>
-            <td>Performance</td>
-            </tr><tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.000</td><td>Samples/s</td> <td>23.3041</td><td></td><td></td><td></td><td></td><td></td><td></td><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 76.951</td><td>Samples/s</td> <td>0.436753</td><td></td><td></td><td></td><td></td><td></td><td></td></table></div></div>
+<th colspan="3">Offline</th>
+<th colspan="3">SingleStream</th>
+<th colspan="3">MultiStream</th>
+</tr>
+<tr>
+<th>Accuracy</th>
+<th>Metric</th>
+<th>Performance</th>
+<th>Accuracy</th>
+<th>Metric</th>
+<th>Performance</th>
+<th>Accuracy</th>
+<th>Metric</th>
+<th>Performance</th>
+</tr><tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.0</td><td>Samples/s</td> <td>23.009</td><td></td><td></td><td></td><td></td><td></td><td></td><tr><td>retinanet</td><td>mAP: 37.1745</td><td></td><td>Samples/s</td> <td>0.43494</td><td></td><td></td><td></td><td></td><td></td><td></td></table></div></div>
 </div>
 </div>
 </main>

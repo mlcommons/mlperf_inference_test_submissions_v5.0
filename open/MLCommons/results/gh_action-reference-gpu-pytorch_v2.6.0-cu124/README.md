@@ -1,313 +1,4 @@
-<html>
-
-<head>
-<title>MLPerf Inference v5.0</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
-<style type="text/css">
-
-    * {
-        box-sizing: border-box;
-    }
-    html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font: inherit;
-        vertical-align: baseline;
-    }
-    body {
-        font: 400 15px / 22px Roboto, sans-serif;
-        background-color: #212930;
-        background-image: radial-gradient(circle at 100% 0%, rgb(230 157 100 / 20%) 0%, #212930 50%);
-        color: #040304;
-        padding: 0;
-        margin: 0;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        text-align: left;
-    }
-.details-cell {
-    text-transform: capitalize;
-}
-
-a.button:hover {
-    color: white;
-    background-color: gray;
-    text-decoration: underline;
-}
-a.button {
-display: inline-block; /* Allows background-color to apply */
-    text-decoration: none; /* Removes default underline */
-
-    }
-        .button-container {
-            display: flex;
-            width: 100%;
-            max-width: 800px; /* Optional: Limit the container width */
-            margin: 0 auto;
-        }
-
-        .button-container a {
-            flex: 1; /* Distribute space evenly */
-            text-decoration: none;
-        }
-
-        .button {
-            padding: 15px 0;
-            font-size: 16px;
-            color: #ffffff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            display: inline-block;
-        }
-
-
-        .button:active {
-            background-color: #003f8a;
-            transform: scale(0.95);
-        }
-
-        /* Add spacing between buttons */
-        .button:not(:last-child) {
-            margin-right: 10px;
-        }
-
-    .topbar {
-        /* position: fixed; */
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 1rem;
-        height: 66px;
-        border-bottom: 1px solid rgb(255 255 255 / 10%);
-    }
-    .topbar-container {
-        max-width: 1350px;
-        padding: 0 2rem;
-        margin: 0 auto;
-    }
-    .logo {
-        width: max-content;
-    }
-    .svg-text {
-        fill: #9d9d9d;
-    }
-    .logo:hover .svg-text {
-        fill: #ffffff;
-        transition: fill .25s ease;
-    }
-    .resultpage {
-        max-width: 1300px;
-        padding: 0 2rem;
-        margin: 0 auto;
-    }
-
-    .welcome-section, .welcome-section .table {
-        color: #fff;
-    }
-    .welcome-section a {
-        color: #90bfff;
-    }
-    .welcome-section-wrapper {
-        width: 85%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-    .titlebarcontainer {
-        margin-top: 6vh;
-        margin-bottom: 6vh;
-    }
-    .main-title {
-        font-size: 3rem;
-        margin: 1rem 0;
-    }
-    .main-title-description {
-        font-size: smaller;
-    }
-    .submittertitle {
-        text-align: center;
-    }
-    .datebar {
-        text-align: inherit;
-    }
-    .test-details-container {
-        grid-template-columns: 30% 30%;
-    }
-    .details-group {
-        margin-bottom: .5rem;
-    }
-    .details-group .details-cell:first-of-type {
-        font-weight: bold;
-        margin-right: 6px;
-    }
-    .titlebar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .date-right {
-    font-size: 18px;
-    }
-
-    .table-half {
-        width: 100%;
-        display: grid;
-        justify-content: space-around;
-        grid-template-columns: 50% 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .test-details-container {
-        grid-template-columns: 30% 30%;
-    }
-    .table-full, .table-half {
-        margin-bottom: 2rem;
-    }
-    .table-wrapper {
-        position: relative;
-        background-color: #fff;
-        padding: 2rem;
-        box-shadow: 0 1px 16px 0 rgb(25 27 28), 0 1px 16px 1px rgb(20 20 22);
-        border-radius: 8px;
-    }
-    .table-half .table-wrapper:nth-of-type(even) {
-        margin-inline-start: 1rem;
-    }
-    .table-half .table-wrapper:nth-of-type(odd) {
-        margin-inline-end: 1rem;
-    }
-    .table-wrapper .floater {
-        position: absolute;
-        right: 10%;
-        top: -25px;
-    }
-    .table-wrapper h3 {
-        margin: 0;
-        padding: 0rem .3rem .6rem .3rem;
-        border-bottom: 2px solid #dee2e6;
-    }
-    .table {
-        border-collapse: collapse;
-        width: 100%;
-        table-layout: fixed;
-        color: #212529;
-        word-break: break-word;
-    }
-    .table-striped tbody tr:nth-of-type(odd) {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-    .table th, .table td {
-        padding: 0.5rem;
-    }
-    .table th {
-        font-weight: bold;
-        border-bottom: 2px solid #dee2e6;
-    }
-    .table.datebar th {
-        border: none;
-    }
-    .table-full .table:not(.results-table) th, .table-full .table:not(.results-table) td {
-        width: 50%;
-    }
-    a.button {
-    color: black;
-    background-color: azure;
-    }
-    .table th:not(:last-child), .table td:not(:last-child) {
-        position: relative;
-    }
-    .table th:not(:last-child):after, .table td:not(:last-child):after {
-        content: "";
-        display: block;
-        width: 1px;
-        height: 65%;
-        background-color: #d9d9d9;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translatey(-50%);
-    }
-    .th-parent,
-    .results-table tr:nth-child(n+3) td:nth-child(-n+2) {
-        background-color: #dddee3;
-        text-align: center;
-    }
-    /* Apply styling to the first two columns of rows starting from the third row */
-.results-table th, .results-table tr:nth-child(n+3) td:nth-child(-n+2) {
-    background-color: #dddee3;
-    text-align: center;
-}
-
-    .footer {
-        border-top: 1px solid rgb(255 255 255 / 10%);
-        padding: 1rem 1rem 3rem 1rem;
-        color: rgb(255 255 255 / 70%);
-    }
-    .footer-container {
-        max-width: 1300px;
-        padding: 0 2rem;
-        margin: 0 auto;
-    }
-
-    @media (max-width:900px) {
-        .welcome-section-wrapper {
-            width: 100%;
-        }
-        .test-details-container {
-            grid-template-columns: 50% 50%;
-            text-align: center;
-        }
-        
-        .details-container .table-half {
-            display: block;
-        }
-        .table-half .table-wrapper:nth-of-type(odd) {
-            margin-inline-end: initial;
-            margin-bottom: 2rem;
-        }
-        .table-half .table-wrapper:nth-of-type(even) {
-            margin-inline-start: initial;
-        }
-    }
-    @media (max-width:575px) {
-        body {
-            background-image: radial-gradient(circle at 100% 0%, rgb(230 157 100 / 20%) 0%, #212930 20%);
-            font: 400 12px / 19px Roboto, sans-serif;
-        }
-        .welcome-section-wrapper {
-            padding: 0;
-        }
-        .titlebarcontainer {
-            margin-top: 8vh;
-            margin-bottom: 6vh;
-        }
-        .main-title {
-            font-size: 2rem;
-            line-height: normal;
-            margin: .5rem 0;
-        }
-        .submittertitle {
-            text-align: initial;
-        }
-        .test-details-container {
-            display: block;
-            text-align: initial;
-            font-size: small;
-        }
-        .table-container {
-            overflow: auto;
-        }
-    }
-    
-</style>
-</head>
-
-<body>
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/refs/heads/main/open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -331,7 +22,7 @@ display: inline-block; /* Allows background-color to apply */
 </div>
 </div>
 <div class="table table-full submittertitle">
-<h2>Community - default</h2>
+<h2>MLCommons - gh_action</h2>
 </div>
 <div class="test-details-container table-half">
 <div class="test-details">
@@ -347,7 +38,7 @@ display: inline-block; /* Allows background-color to apply */
 <div class="test-details">
 <div class="details-group">
 <span id="tester" class="details-cell">Submitted by:</span>
-<span id="tester_val" class="details-cell">Community</span>
+<span id="tester_val" class="details-cell">MLCommons</span>
 </div>
 <div class="details-group">
 <span id="test_date" class="details-cell"><a href="https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc#divisions">MLPerf Inference Division:</a></span>
@@ -359,9 +50,9 @@ display: inline-block; /* Allows background-color to apply */
 </div>
 <div class="welcome-section-wrapper">
 <div class="button-container">
-<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/Community/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/Community/results/default-reference-cpu-tvm-onnx_v1.19.2-default_config" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/Community/measurements/default-reference-cpu-tvm-onnx_v1.19.2-default_config" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/measurements/gh_action-reference-gpu-pytorch_v2.6.0-cu124" class="button">Measurements</a>
 </div>
 </div>
 </div>
@@ -388,7 +79,7 @@ display: inline-block; /* Allows background-color to apply */
 <h3>Accelerator Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>accelerator_model_name</td><td>N/A</td></tr><tr><td>accelerators_per_node</td><td>0</td></tr><tr><td>accelerator_memory_capacity</td><td>N/A</td></tr><tr><td>accelerator_host_interconnect</td><td>N/A</td></tr><tr><td>accelerator_frequency</td><td></td></tr><tr><td>accelerator_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect_topology</td><td></td></tr><tr><td>accelerator_memory_configuration</td><td>N/A</td></tr><tr><td>accelerator_on-chip_memories</td><td></td></tr></table></div></div>
+<tr><td>accelerator_model_name</td><td>NVIDIA GeForce RTX 4090</td></tr><tr><td>accelerators_per_node</td><td>2</td></tr><tr><td>accelerator_memory_capacity</td><td>23.64019775390625 GB</td></tr><tr><td>accelerator_host_interconnect</td><td>N/A</td></tr><tr><td>accelerator_frequency</td><td>2520000 MHz</td></tr><tr><td>accelerator_interconnect</td><td>N/A</td></tr><tr><td>accelerator_interconnect_topology</td><td></td></tr><tr><td>accelerator_memory_configuration</td><td>N/A</td></tr><tr><td>accelerator_on-chip_memories</td><td></td></tr></table></div></div>
 <div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
 <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
@@ -410,7 +101,7 @@ display: inline-block; /* Allows background-color to apply */
 <h3>Processor and Memory Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>host_processor_model_name</td><td>AMD EPYC 7763 64-Core Processor</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr><tr><td>host_processor_core_count</td><td>2</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_memory_capacity</td><td>16G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 64 KiB (2 instances), L1i cache: 64 KiB (2 instances), L2 cache: 1 MiB (2 instances), L3 cache: 32 MiB (1 instance)</td></tr><tr><td>host_processor_interconnect</td><td></td></tr></table></div></div>
+<tr><td>host_processor_model_name</td><td>Intel(R) Xeon(R) w7-2495X</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr><tr><td>host_processor_core_count</td><td>24</td></tr><tr><td>host_processor_frequency</td><td>4800.0000</td></tr><tr><td>host_memory_capacity</td><td>192G</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache: 1.1 MiB (24 instances), L1i cache: 768 KiB (24 instances), L2 cache: 48 MiB (24 instances), L3 cache: 45 MiB (1 instance)</td></tr><tr><td>host_processor_interconnect</td><td></td></tr></table></div></div>
 </div>
 <div class="table-half table-striped">
 <div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
@@ -480,7 +171,7 @@ display: inline-block; /* Allows background-color to apply */
 <h3>Software Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>framework</td><td>tvm-onnx v1.19.2</td></tr><tr><td>operating_system</td><td>Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)</td></tr><tr><td>other_software_stack</td><td>Python: 3.9.21, LLVM-18.1.3</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
+<tr><td>framework</td><td>pytorch v2.6.0</td></tr><tr><td>operating_system</td><td>Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)</td></tr><tr><td>other_software_stack</td><td>Python: 3.10.12, GCC-11.4.0, Using Docker  , CUDA 12.4</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
 <div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
@@ -521,17 +212,8 @@ display: inline-block; /* Allows background-color to apply */
 <th>Accuracy</th>
 <th>Metric</th>
 <th>Performance</th>
-</tr><tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 80.0</td><td>Samples/s</td> <td>1.73704</td><td></td><td></td><td></td><td></td><td></td><td></td></table></div></div>
+</tr><tr><td>gptj-99</td><td>ROUGE1: 42.5566, ROUGE2: 19.9223, ROUGEL: 29.6882, GEN_LEN: 3615190.2</td><td>GEN_LEN: 264.0</td><td>Tokens/s</td> <td>49.5612</td><td></td><td></td><td></td><td colspan="3"> N/A </td><tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td>Samples/s</td> <td>0.35302</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table></div></div>
 </div>
 </div>
 </main>
 
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="copyright">© 2025 MLCommons.</div>
-        </div>
-    </footer>
-    
-</body>
-</html>
