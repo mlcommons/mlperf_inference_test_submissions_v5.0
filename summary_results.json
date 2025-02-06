@@ -284,7 +284,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_action-reference-cpu-pytorch_v2.6.0-default_config/llama2-70b-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.40113,
+    "Performance_Result": 0.406358,
     "Performance_Units": "Tokens/s"
   },
   {
