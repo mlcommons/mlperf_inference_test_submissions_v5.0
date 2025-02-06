@@ -1,3 +1,19 @@
+# Copyright 2024-25 MLCommons. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# =============================================================================
+
+
 import json
 import os
 import time
@@ -33,6 +49,55 @@ def get_header():
         overflow-x: hidden;
         text-align: left;
     }
+.details-cell {
+    text-transform: capitalize;
+}
+
+a.button:hover {
+    color: white;
+    background-color: gray;
+    text-decoration: underline;
+}
+a.button {
+display: inline-block; /* Allows background-color to apply */
+    text-decoration: none; /* Removes default underline */
+
+    }
+        .button-container {
+            display: flex;
+            width: 100%;
+            max-width: 800px; /* Optional: Limit the container width */
+            margin: 0 auto;
+        }
+
+        .button-container a {
+            flex: 1; /* Distribute space evenly */
+            text-decoration: none;
+        }
+
+        .button {
+            padding: 15px 0;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: inline-block;
+        }
+
+
+        .button:active {
+            background-color: #003f8a;
+            transform: scale(0.95);
+        }
+
+        /* Add spacing between buttons */
+        .button:not(:last-child) {
+            margin-right: 10px;
+        }
 
     .topbar {
         /* position: fixed; */
@@ -44,7 +109,7 @@ def get_header():
         border-bottom: 1px solid rgb(255 255 255 / 10%);
     }
     .topbar-container {
-        max-width: 1300px;
+        max-width: 1350px;
         padding: 0 2rem;
         margin: 0 auto;
     }
@@ -102,6 +167,15 @@ def get_header():
         font-weight: bold;
         margin-right: 6px;
     }
+    .titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .date-right {
+    font-size: 18px;
+    }
 
     .table-half {
         width: 100%;
@@ -143,7 +217,9 @@ def get_header():
     .table {
         border-collapse: collapse;
         width: 100%;
+        table-layout: fixed;
         color: #212529;
+        word-break: break-word;
     }
     .table-striped tbody tr:nth-of-type(odd) {
         background-color: rgba(0, 0, 0, 0.05);
@@ -161,6 +237,10 @@ def get_header():
     .table-full .table:not(.results-table) th, .table-full .table:not(.results-table) td {
         width: 50%;
     }
+    a.button {
+    color: black;
+    background-color: azure;
+    }
     .table th:not(:last-child), .table td:not(:last-child) {
         position: relative;
     }
@@ -176,10 +256,15 @@ def get_header():
         transform: translatey(-50%);
     }
     .th-parent,
-    .results-table tr:nth-child(3) td:nth-child(-n+2) {
-        background-color: #b6bfff;
+    .results-table tr:nth-child(n+3) td:nth-child(-n+2) {
+        background-color: #dddee3;
         text-align: center;
     }
+    /* Apply styling to the first two columns of rows starting from the third row */
+.results-table th, .results-table tr:nth-child(n+3) td:nth-child(-n+2) {
+    background-color: #dddee3;
+    text-align: center;
+}
 
     .footer {
         border-top: 1px solid rgb(255 255 255 / 10%);
@@ -265,36 +350,35 @@ def get_footer():
     return html_footer
 
 def get_stripe_image():
-    html_stripe_svg = f"""
-    <div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
-        <svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
-            <path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
-            <path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
-            <path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
-            <path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
-            <path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
-            <path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
-            <path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
-            <path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
-            <path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
-            <path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
-            <path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
-            <path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
-        </svg>
-    </div>
-    """
+    html_stripe_svg = f"""<div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
+<svg role="presentation" aria-hidden="true" width="83" height="21" viewBox="0 0 83 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L0 3.42863L3.24487 0L0 0Z" fill="#FBBC04"></path>
+<path d="M8.29399 0L0 8.76368L0 12.202L11.5481 0L8.29399 0Z" fill="#FBBC04"></path>
+<path d="M16.5972 0L0 17.5371L0 20.9754L19.8513 0L16.5972 0Z" fill="#FBBC04"></path>
+<path d="M24.9016 0L5.02734 20.9998H8.28142L28.1557 0L24.9016 0Z" fill="#FBBC04"></path>
+<path d="M33.2024 0L13.3281 20.9998H16.5822L36.4565 0L33.2024 0Z" fill="#FBBC04"></path>
+<path d="M41.5071 0L21.6328 20.9998H24.8869L44.7611 0L41.5071 0Z" fill="#FBBC04"></path>
+<path d="M49.8079 0L29.9336 20.9998H33.1923L53.0619 0L49.8079 0Z" fill="#FBBC04"></path>
+<path d="M58.1119 0L38.2422 20.9998H41.4963L61.3659 0L58.1119 0Z" fill="#FBBC04"></path>
+<path d="M66.4165 0L46.5469 20.9998H49.801L69.6706 0L66.4165 0Z" fill="#FBBC04"></path>
+<path d="M74.7212 0L54.8516 20.9998H58.1056L77.9753 0L74.7212 0Z" fill="#FBBC04"></path>
+<path d="M66.4064 20.9989L82.999 3.4618V0.0234375L63.1523 20.9989H66.4064Z" fill="#FBBC04"></path>
+<path d="M74.7111 20.9989L83.0005 12.2352V8.79688L71.457 20.9989H74.7111Z" fill="#FBBC04"></path>
+<path d="M82.9981 20.9989V17.5703L79.7578 20.9989H82.9981Z" fill="#FBBC04"></path>
+</svg>
+</div>
+"""
     return html_stripe_svg
 
-def get_availability_string(version: str) -> str:
+def get_month_year(version: str) -> str:
     """
-    Generate availability string based on the version.
+    Generate month, year of submission based on the version.
     
     Args:
         version (str): Version string (e.g., 'v1.0', 'v1.1', 'v2.0', ..., 'v9.1')
         
     Returns:
-        str: Availability string (e.g., "Available as of February 2024")
+        str: month, str: year
     """
     # Define version-to-month mapping
     version_month_map = {
@@ -320,7 +404,7 @@ def get_availability_string(version: str) -> str:
         year = 2021 + (major - 1)
         month = version_month_map[minor]
         
-        return f" as of {month} {year}"
+        return month, year
     
     except (ValueError, IndexError) as e:
         return f"Error: Invalid version format - {e}"
@@ -333,6 +417,7 @@ def get_header_table(system_json, version):
     category = system_json.get('system_type')
     status = system_json.get('status')
 
+    '''
     availability_string = get_availability_string(version)
     if status.lower() == "available":
         availability_string = f"""Available {availability_string}"""
@@ -340,12 +425,15 @@ def get_header_table(system_json, version):
         availability_string = f"""Preview {availability_string}, should be avaiable within 180 days"""
     else:
         availability_string = f"""Research and Internal {availability_string}"""
-    
-    html =  f"""
-<div class="titlebarcontainer">
+    '''
+    availability_string = status
+    month, year = get_month_year(version)
+
+    html =  f"""<div class="titlebarcontainer">
 <div class="titlebar">
 <h1 class="main-title">MLPerf Inference {version}</h1>
 <p class="main-title-description">Copyright 2019 - 2025 MLCommons</p>
+<span class="date-right">{month} {year}</span>
 </div>
 </div>
 <div class="table table-full submittertitle">
@@ -354,21 +442,21 @@ def get_header_table(system_json, version):
 <div class="test-details-container table-half">
 <div class="test-details">
 <div class="details-group">
-<span id="license_num" class="details-cell"><a href="">MLPerf Inference Category:</a></span>
+<span id="license_num" class="details-cell"><a href="https://github.com/mlcommons/inference/blob/master/README.md">MLPerf Inference Category:</a></span>
 <span id="license_num_val" class="details-cell">{category}</span>
 </div>
 <div class="details-group">
-<span id="sw_avail" class="details-cell"><a href="">Availability:</a></span>
+<span id="sw_avail" class="details-cell"><a href="https://github.com/mlcommons/policies/blob/master/submission_rules.adoc#results-categories">Availability:</a></span>
 <span id="sw_avail_val" class="details-cell">{availability_string}</span>
 </div>
 </div>
 <div class="test-details">
 <div class="details-group">
-<span id="tester" class="details-cell"><a href="">Submitted by:</a></span>
+<span id="tester" class="details-cell">Submitted by:</span>
 <span id="tester_val" class="details-cell">{submitter}</span>
 </div>
 <div class="details-group">
-<span id="test_date" class="details-cell"><a href="">MLPerf Inference Division:</a></span>
+<span id="test_date" class="details-cell"><a href="https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc#divisions">MLPerf Inference Division:</a></span>
 <span id="test_date_val" class="details-cell">{division}</span>
 </div>
 </div>
@@ -393,14 +481,18 @@ def get_system_json(path):
 
 def get_accelerator_details_table(system_json):
     html_stripe_svg = get_stripe_image()
-    table = f"""
-{html_stripe_svg}
+    main_keys = [ "accelerator_model_name", "accelerators_per_node", "accelerator_memory_capacity", "accelerator_host_interconnect" ]
+    table = f"""{html_stripe_svg}
 <h3>Accelerator Details</h3>
 <div class="table-container">
 <table class="table">
 """
+    for key in main_keys:
+        if key in system_json:
+            value = system_json[key]
+            table += f"""<tr><td>{key}</td><td>{value}</td></tr>"""
     for key,value in system_json.items():
-        if not key.startswith("accelerator"):
+        if not key.startswith("accelerator") or key in main_keys:
             continue
         table += f"""<tr><td>{key}</td><td>{value}</td></tr>"""
 
@@ -409,14 +501,20 @@ def get_accelerator_details_table(system_json):
 
 def get_cpu_details_table(system_json):
     html_stripe_svg = get_stripe_image()
+    main_keys = [ "host_processor_model_name", "host_processors_per_node", "host_processor_core_count", "host_processor_frequency" ]
     table = f"""{html_stripe_svg}
 <h3>Processor and Memory Details</h3>
 <div class="table-container">
 <table class="table">
 """
+    for key in main_keys:
+        if key in system_json:
+            value = system_json[key]
+            table += f"""<tr><td>{key}</td><td>{value}</td></tr>"""
+            
     hardware_fields = [ "processor", "cpu", "memory" ]
     for key,value in system_json.items():
-        if any (a in key for a in hardware_fields) and "accelerator" not in key:
+        if any (a in key for a in hardware_fields) and "accelerator" not in key and key not in main_keys:
             table += f"""<tr><td>{key}</td><td>{value}</td></tr>"""
 
     table += "</table></div>"
@@ -436,6 +534,7 @@ def get_network_details_table(system_json):
 
     table += "</table></div>"
     return table
+    
 def get_hardware_details_table(system_json):
     html_stripe_svg = get_stripe_image()
     table = f"""{html_stripe_svg}
@@ -466,9 +565,92 @@ def get_software_details_table(system_json):
     table += "</table></div>"
     return table
 
+def round_to_max_5_digits(number):
+    # Ensure the input is a float (if it's a string, convert it)
+    if isinstance(number, str):
+        number = float(number)
+
+    # Convert the number to a string to check its decimal part
+    number_str = f"{number:.10f}".rstrip('0').rstrip('.')
+    
+    if '.' in number_str:
+        # Split into integer and decimal parts
+        integer_part, decimal_part = number_str.split('.')
+        # Check if decimal part exceeds 5 digits
+        if len(decimal_part) > 5:
+            return round(number, 5)
+    
+    return number
+
+def round_dict_values(input_dict):
+    """
+    Takes a dictionary and rounds all numeric values (integers or floats) to max 5 decimal places.
+    
+    Args:
+        input_dict (dict): A dictionary where the values are numbers.
+        
+    Returns:
+        dict: A new dictionary with the values rounded to max 5 decimal places.
+    """
+    if isinstance(input_dict, str):
+        input_dict = convert_string_to_dict(input_dict)
+    return ", ".join(f"{key}: {round_to_max_5_digits(value)}" for key, value in input_dict.items())
+
+
+# Function to convert a string to a dictionary
+def convert_string_to_dict(input_string):
+     # Split the input string by spaces
+    items = input_string.split("  ")
+    
+    # Initialize an empty dictionary
+    result_dict = {}
+    
+    # Iterate through the items, taking each pair of key and value
+    for item in items:
+        # Split each item into key and value at the colon
+        key_value = item.split(':')
+        
+        # Ensure there are exactly two parts (key and value)
+        if len(key_value) == 2:
+            key, value = key_value
+            # Strip any extra whitespace
+            key = key.strip()
+            value = value.strip()
+            
+            # Check if the value is not empty, then convert it to float
+            if value:
+                try:
+                    result_dict[key] = float(value)
+                except ValueError:
+                    print(f"Warning: Could not convert '{value}' to float. Skipping this entry.")
+            else:
+                print(f"Warning: Empty value found for '{key}'. Skipping this entry.")
+        else:
+            print(f"Warning: Invalid format for item '{item}'. Skipping this entry.")
+    
+    return result_dict
+
+def get_button_links(system, division):
+    code_link = os.path.dirname(system.replace("/results/", "/code/"))
+    results_link = system
+    measurements_link = system.replace("/results/", "/measurements/")
+    compliance_link = system.replace("/results/", "/compliance/")
+
+    html = f"""<div class="button-container">
+<a href="{code_link}" class="button">Code</a>
+<a href="{results_link}" class="button">Result Logs</a>
+<a href="{measurements_link}" class="button">Measurements</a>
+"""
+    if division == "closed":
+        html += f"""<a href="{compliance_link}" class="button">Compliance</a>
+"""
+    html +="""</div>"""
+
+    return html
+
 def get_table_header(division, category):
     if division == "open":
-        accuracy_achieved_header = '<td>Accuracy</td>'
+        accuracy_achieved_header = '<th>Accuracy</th>'
         colspan = "3"
     else:
         accuracy_achieved_header = "" #dont show accuracy as submitters are only expected to achieve the target
@@ -486,28 +668,28 @@ def get_table_header(division, category):
 """
     if "datacenter" in category:
         num_scenarios += 1
-        html_table_head += f"""
-        <th colspan="{colspan}">Server</th>"""
+        html_table_head += f"""<th colspan="{colspan}">Server</th>
+"""
 
-    html_table_head += f"""
-        <th colspan="{colspan}">Offline</th>"""
+    html_table_head += f"""<th colspan="{colspan}">Offline</th>
+"""
 
     if "edge" in category:
         num_scenarios += 2
-        html_table_head += f"""
-            <th colspan="{colspan}">SingleStream</th>
-            <th colspan="{colspan}">MultiStream</th>"""
-        html_table_head += f"""
-            </tr>
-            <tr>"""
+        html_table_head += f"""<th colspan="{colspan}">SingleStream</th>
+<th colspan="{colspan}">MultiStream</th>
+"""
+    html_table_head += f"""</tr>
+<tr>
+"""
 
     for i in range(num_scenarios):
         html_table_head += f"""{accuracy_achieved_header}
-            <td>Metric</td>
-            <td>Performance</td>"""
+<th>Metric</th>
+<th>Performance</th>
+"""
 
-    html_table_head += f"""
-            </tr>"""
+    html_table_head += f"""</tr>"""
     return html_table_head
 
 # Initialize a dictionary to organize the data by 'Details'
@@ -519,7 +701,7 @@ for entry in data:
     details = entry['Details']
     if details not in tables:
         tables[details] = {}
-        categories = [ "edge", "datacenter" ]
+    categories = [ "edge", "datacenter" ]
     for category in categories:
         if category not in entry['Suite']:
             continue
@@ -539,8 +721,6 @@ for details, entries in tables.items():
     details_split = details.split("/")
     details_split[9] = "systems"
     system = os.path.sep.join(details_split[7:11])
-    #details_split[0] = "https://raw.githubusercontent.com"
-    #system = details.replace("github.com", "raw.githubusercontent.com").replace("tree/", "refs/heads/").replace("results/", "systems/")
     system_json_path = f"""{system}.json"""
     system_json = get_system_json(system_json_path)
     header_table = get_header_table(system_json, version)
@@ -560,7 +740,7 @@ for details, entries in tables.items():
 
     for category in entries:
         for division, data in entries[category].items():
-    
+            button_links = get_button_links(details, division) 
             html_table = get_table_header(division, category)
             if division == "open":
                 colspan="3"
@@ -598,14 +778,14 @@ for details, entries in tables.items():
                     acc_targets_list = []
                     for item in acc_targets:
                         acc_targets_list.append(f"""{item[0]}: {round(item[1], 4)}""")
-                        acc_targets_string = ", ".join(acc_targets_list)
-                        html_table += f"""<td>{acc_targets_string}</td>"""
+                    acc_targets_string = ", ".join(acc_targets_list)
+                    html_table += f"""<td>{acc_targets_string}</td>"""
 
                     if "datacenter" in category:
                         if "Server" in data[model]:
                             if division == "open":
-                                html_table += f"""<td>{data[model]["Server"]["Accuracy"]}</td>"""
-                                html_table += f"""<td>{data[model]["Server"]["Performance_Units"]}</td> <td>{data[model]["Server"]["Performance_Result"]}</td>"""
+                                html_table += f"""<td>{round_dict_values(data[model]["Server"]["Accuracy"])}</td>"""
+                            html_table += f"""<td>{data[model]["Server"]["Performance_Units"]}</td> <td>{round_to_max_5_digits(data[model]["Server"]["Performance_Result"])}</td>"""
                         else:
                             if "Server" in required_scenarios_datacenter: #must be open
                                 html_table += scenario_missing_td
@@ -614,16 +794,16 @@ for details, entries in tables.items():
 
                     if "Offline" in data[model]:
                         if division == "open":
-                            html_table += f"""<td>{data[model]["Offline"]["Accuracy"]}</td>"""
-                            html_table += f"""<td>{data[model]["Offline"]['Performance_Units']}</td> <td>{data[model]["Offline"]["Performance_Result"]}</td>"""
+                            html_table += f"""<td>{round_dict_values(data[model]["Offline"]["Accuracy"])}</td>"""
+                        html_table += f"""<td>{data[model]["Offline"]['Performance_Units']}</td> <td>{round_to_max_5_digits(data[model]["Offline"]["Performance_Result"])}</td>"""
                     else:
                         html_table += scenario_missing_td
                     if "edge" in category:
                         if "SingleStream" in data[model]:
                             scenario = "SingleStream"
                             if division == "open":
-                                html_table += f"""<td>{data[model][scenario]["Accuracy"]}</td>"""
-                                html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{data[model][scenario]["Performance_Result"]}</td>"""
+                                html_table += f"""<td>{round_dict_values(data[model][scenario]["Accuracy"])}</td>"""
+                            html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{round_to_max_5_digits(data[model][scenario]["Performance_Result"])}</td>"""
                         else:
                             if "SingleStream" in required_scenarios_edge: #must be open
                                 html_table += scenario_missing_td
@@ -632,8 +812,8 @@ for details, entries in tables.items():
                         if "MultiStream" in data[model]:
                             scenario = "MultiStream"
                             if division == "open":
-                                html_table += f"""<td>{data[model][scenario]["Accuracy"]}</td>"""
-                                html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{data[model][scenario]["Performance_Result"]}</td>"""
+                                html_table += f"""<td>{round_dict_values(data[model][scenario]["Accuracy"])}</td>"""
+                            html_table += f"""<td>{data[model][scenario]["Performance_Units"]}</td> <td>{round_to_max_5_digits(data[model][scenario]["Performance_Result"])}</td>"""
                         else:
                             if "MultiStream" in required_scenarios_edge: #must be open
                                 html_table += scenario_missing_td
@@ -668,6 +848,9 @@ for details, entries in tables.items():
 <div class="welcome-section">
 <div class="welcome-section-wrapper">
 {header_table}
+</div>
+<div class="welcome-section-wrapper">
+{button_links}
 </div>
 </div>
 <div class="details-container">
