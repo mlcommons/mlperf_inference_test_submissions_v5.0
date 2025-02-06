@@ -264,14 +264,14 @@
     "Scenario": "Offline",
     "Accuracy": "ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0",
     "Nodes": 1,
-    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
+    "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 16,
+    "host_processor_core_count": 24,
     "Accelerator": "",
     "a#": "",
     "Location": "open/MLCommons/results/gh_action-reference-cpu-pytorch_v2.6.0-default_config/llama2-70b-99/offline",
     "Software": "pytorch v2.6.0",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -284,7 +284,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_action-reference-cpu-pytorch_v2.6.0-default_config/llama2-70b-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.383226,
+    "Performance_Result": 0.406358,
     "Performance_Units": "Tokens/s"
   },
   {
@@ -298,16 +298,16 @@
     "UsedModel": "mixtral-8x7b",
     "Model": "mixtral-8x7b",
     "Scenario": "Offline",
-    "Accuracy": "ROUGE1: 60.7242  ROUGE2: 44.8179  ROUGEL: 50.6964  TOKENS_PER_SAMPLE: 327.3  gsm8k_accuracy: 100.0  mbxp_accuracy: 0.0",
+    "Accuracy": "ROUGE1: 70.1571  ROUGE2: 41.2698  ROUGEL: 45.0262  TOKENS_PER_SAMPLE: 245.3  gsm8k_accuracy: 100.0  mbxp_accuracy: 0.0",
     "Nodes": 1,
-    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
+    "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 16,
+    "host_processor_core_count": 24,
     "Accelerator": "",
     "a#": "",
     "Location": "open/MLCommons/results/gh_action-reference-cpu-pytorch_v2.6.0-default_config/mixtral-8x7b/offline",
     "Software": "pytorch v2.6.0",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -320,7 +320,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_action-reference-cpu-pytorch_v2.6.0-default_config/mixtral-8x7b",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.0152169,
+    "Performance_Result": 0.0102599,
     "Performance_Units": "Tokens/s"
   },
   {
@@ -356,7 +356,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config/rgat",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 10.1778,
+    "Performance_Result": 10.0454,
     "Performance_Units": "Samples/s"
   },
   {
@@ -464,7 +464,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.432023,
+    "Performance_Result": 0.43471,
     "Performance_Units": "Samples/s"
   },
   {
@@ -732,14 +732,14 @@
     "Scenario": "Offline",
     "Accuracy": "GEN_LEN: 264",
     "Nodes": 1,
-    "Processor": "Intel(R) Xeon(R) w7-2495X",
+    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 24,
+    "host_processor_core_count": 16,
     "Accelerator": "NVIDIA GeForce RTX 4090",
-    "a#": 2,
+    "a#": 1,
     "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.5.1-cu124/gptj-99/offline",
     "Software": "pytorch v2.5.1",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-49-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -768,14 +768,14 @@
     "Scenario": "Offline",
     "Accuracy": "",
     "Nodes": 1,
-    "Processor": "Intel(R) Xeon(R) w7-2495X",
+    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 24,
+    "host_processor_core_count": 16,
     "Accelerator": "NVIDIA GeForce RTX 4090",
-    "a#": 2,
+    "a#": 1,
     "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.5.1-cu124/stable-diffusion-xl/offline",
     "Software": "pytorch v2.5.1",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-49-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -788,7 +788,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.5.1-cu124/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.358711,
+    "Performance_Result": 0.352694,
     "Performance_Units": "Samples/s"
   },
   {
@@ -811,7 +811,7 @@
     "a#": 2,
     "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/gptj-99/offline",
     "Software": "pytorch v2.6.0",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -824,7 +824,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.6.0-cu124/gptj-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 47.3379,
+    "Performance_Result": 49.1296,
     "Performance_Units": "Tokens/s"
   },
   {
@@ -847,7 +847,7 @@
     "a#": 2,
     "Location": "open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/stable-diffusion-xl/offline",
     "Software": "pytorch v2.6.0",
-    "operating_system": "Ubuntu 22.04 (linux-6.8.0-51-generic-glibc2.35)",
+    "operating_system": "Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -860,7 +860,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.6.0-cu124/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.351603,
+    "Performance_Result": 0.352003,
     "Performance_Units": "Samples/s"
   },
   {
@@ -896,7 +896,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 7.73123,
+    "Performance_Result": 8.08903,
     "Performance_Units": "Samples/s"
   },
   {
@@ -932,7 +932,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 8.08857,
+    "Performance_Result": 8.14067,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1040,7 +1040,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 19.9895,
+    "Performance_Result": 17.3387,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1076,7 +1076,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.379074,
+    "Performance_Result": 0.412266,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1193,6 +1193,42 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
+    "System": "gh_macos-latest_x86",
+    "Platform": "gh_macos-latest_x86-reference-cpu-pytorch_v2.6.0-default_config",
+    "UsedModel": "retinanet",
+    "Model": "retinanet",
+    "Scenario": "Offline",
+    "Accuracy": "",
+    "Nodes": 1,
+    "Processor": "undefined",
+    "host_processors_per_node": 1,
+    "host_processor_core_count": 3,
+    "Accelerator": "",
+    "a#": "",
+    "Location": "open/MLCommons/results/gh_macos-latest_x86-reference-cpu-pytorch_v2.6.0-default_config/retinanet/offline",
+    "Software": "pytorch v2.6.0",
+    "operating_system": " (darwin-23.6.0)",
+    "Notes": "",
+    "compliance": 1,
+    "errors": 0,
+    "version": "v5.0",
+    "inferred": 0,
+    "has_power": false,
+    "weight_data_types": "fp32",
+    "p#": 1,
+    "Details": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/results/gh_macos-latest_x86-reference-cpu-pytorch_v2.6.0-default_config",
+    "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
+    "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-pytorch_v2.6.0-default_config/retinanet",
+    "ColorKey": "availableMLCommons",
+    "Performance_Result": 0.264988,
+    "Performance_Units": "Samples/s"
+  },
+  {
+    "ID": "5.0-0033",
+    "Submitter": "MLCommons",
+    "Availability": "available",
+    "Category": "open",
+    "Suite": "edge",
     "System": "gh_ubuntu-latest",
     "Platform": "gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config",
     "UsedModel": "resnet50",
@@ -1220,11 +1256,11 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.73908,
+    "Performance_Result": 1.74836,
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0033",
+    "ID": "5.0-0034",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1256,11 +1292,11 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 22.9262,
+    "Performance_Result": 23.0164,
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0034",
+    "ID": "5.0-0035",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1292,11 +1328,11 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.432223,
+    "Performance_Result": 0.431711,
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0035",
+    "ID": "5.0-0036",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1328,11 +1364,11 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.24578,
+    "Performance_Result": 6.31453,
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0036",
+    "ID": "5.0-0037",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1368,7 +1404,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0037",
+    "ID": "5.0-0038",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1404,7 +1440,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0038",
+    "ID": "5.0-0039",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1436,11 +1472,11 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.3041,
+    "Performance_Result": 23.009,
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0039",
+    "ID": "5.0-0040",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1472,11 +1508,11 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.438784,
+    "Performance_Result": 0.43494,
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0040",
+    "ID": "5.0-0041",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1512,7 +1548,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0041",
+    "ID": "5.0-0042",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1548,7 +1584,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0042",
+    "ID": "5.0-0043",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1584,7 +1620,43 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0043",
+    "ID": "5.0-0044",
+    "Submitter": "MLCommons",
+    "Availability": "available",
+    "Category": "open",
+    "Suite": "edge",
+    "System": "gh_ubuntu-latest_x86",
+    "Platform": "gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config",
+    "UsedModel": "retinanet",
+    "Model": "retinanet",
+    "Scenario": "Offline",
+    "Accuracy": "",
+    "Nodes": 1,
+    "Processor": "AMD EPYC 7763 64-Core Processor",
+    "host_processors_per_node": 1,
+    "host_processor_core_count": 2,
+    "Accelerator": "",
+    "a#": "",
+    "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config/retinanet/offline",
+    "Software": "pytorch v2.6.0",
+    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+    "Notes": "",
+    "compliance": 1,
+    "errors": 0,
+    "version": "v5.0",
+    "inferred": 0,
+    "has_power": false,
+    "weight_data_types": "fp32",
+    "p#": 1,
+    "Details": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config",
+    "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
+    "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config/retinanet",
+    "ColorKey": "availableMLCommons",
+    "Performance_Result": 0.409259,
+    "Performance_Units": "Samples/s"
+  },
+  {
+    "ID": "5.0-0045",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1620,7 +1692,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0044",
+    "ID": "5.0-0046",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1652,11 +1724,11 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.18.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.1187,
+    "Performance_Result": 21.0425,
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0045",
+    "ID": "5.0-0047",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1692,7 +1764,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0046",
+    "ID": "5.0-0048",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1728,7 +1800,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0047",
+    "ID": "5.0-0049",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1764,7 +1836,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0048",
+    "ID": "5.0-0050",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1800,7 +1872,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0049",
+    "ID": "5.0-0051",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1836,7 +1908,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0050",
+    "ID": "5.0-0052",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1872,7 +1944,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0051",
+    "ID": "5.0-0053",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1908,7 +1980,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0052",
+    "ID": "5.0-0054",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1944,7 +2016,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0053",
+    "ID": "5.0-0055",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1980,7 +2052,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0054",
+    "ID": "5.0-0056",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -2016,7 +2088,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "5.0-0055",
+    "ID": "5.0-0057",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
