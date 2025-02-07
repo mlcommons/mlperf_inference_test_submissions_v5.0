@@ -34,6 +34,36 @@
         "Availability":"available",
         "Division":"open",
         "SystemType":"edge",
+        "SystemName":"gh_ubuntu-latest",
+        "Platform":"gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":1.74129,
+        "Accuracy":"acc: 80.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":2,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config\/resnet50\/offline",
+        "framework":"tvm-onnx v1.19.2",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "2":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
         "SystemName":"default",
         "Platform":"default-mlcommons_cpp-cpu-onnxruntime-default_config",
         "Model":"retinanet",
@@ -59,7 +89,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "2":{
+    "3":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -89,7 +119,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "3":{
+    "4":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -119,7 +149,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "4":{
+    "5":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
