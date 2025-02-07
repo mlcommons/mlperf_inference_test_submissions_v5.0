@@ -1,3 +1,32 @@
 {
-
+    "0":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter",
+        "SystemName":"gh_action",
+        "Platform":"gh_action-reference-cpu-pytorch_v2.6.0-default_config",
+        "Model":"llama2-70b-99",
+        "MlperfModel":"llama2-70b-99",
+        "Scenario":"Offline",
+        "Result":0.40413,
+        "Accuracy":"ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_action-reference-cpu-pytorch_v2.6.0-default_config\/llama2-70b-99\/offline",
+        "framework":"pytorch v2.6.0",
+        "operating_system":"Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Tokens\/s",
+        "weight_data_types":"fp32"
+    }
 }
