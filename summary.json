@@ -36,6 +36,36 @@
         "SystemType":"edge",
         "SystemName":"gh_action",
         "Platform":"gh_action-reference-gpu-pytorch_v2.6.0-cu124",
+        "Model":"gptj-99",
+        "MlperfModel":"gptj-99",
+        "Scenario":"Offline",
+        "Result":49.0101,
+        "Accuracy":"ROUGE1: 32.2581  ROUGE2: 6.6667  ROUGEL: 22.5806  GEN_LEN: 264",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/gh_action-reference-gpu-pytorch_v2.6.0-cu124\/gptj-99\/offline",
+        "framework":"pytorch v2.6.0",
+        "operating_system":"Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Tokens\/s",
+        "weight_data_types":"fp32"
+    },
+    "2":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_action",
+        "Platform":"gh_action-reference-gpu-pytorch_v2.6.0-cu124",
         "Model":"stable-diffusion-xl",
         "MlperfModel":"stable-diffusion-xl",
         "Scenario":"Offline",
@@ -59,7 +89,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "2":{
+    "3":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -89,7 +119,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "3":{
+    "4":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -119,7 +149,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "4":{
+    "5":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -149,7 +179,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "5":{
+    "6":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -179,7 +209,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "6":{
+    "7":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
