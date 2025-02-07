@@ -1,0 +1,4 @@
+
+No warnings encountered during test.
+
+2 ERRORS encountered. See detailed log.
