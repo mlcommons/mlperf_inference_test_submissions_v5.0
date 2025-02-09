@@ -159,7 +159,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.431199,
+        "Result":0.433783,
         "Accuracy":"mAP: 49.593",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
