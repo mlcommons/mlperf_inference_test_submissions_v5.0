@@ -6,7 +6,7 @@
     "dmiparser": "5.1",
     "giturlparse": "0.12.0",
     "idna": "3.10",
-    "mlcflow": "0.1.25",
+    "mlcflow": "0.1.28",
     "numpy": "2.2.2",
     "opencv-python-headless": "4.11.0.86",
     "pillow": "11.1.0",
