@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.6.0-cu124/gptj-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 49.0101,
+    "Performance_Result": 48.7891,
     "Performance_Units": "Tokens/s"
   },
   {
