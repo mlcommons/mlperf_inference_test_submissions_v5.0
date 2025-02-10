@@ -1,27 +1,27 @@
 Please download [summary.xlsx](summary.xlsx) to view the most recent results. 
  ```
-[2025-02-09 20:35:13,255 submission_checker1.py:3263 INFO] Results=10, NoResults=0, Power Results=0
-[2025-02-09 20:35:13,255 submission_checker1.py:3270 INFO] ---
-[2025-02-09 20:35:13,255 submission_checker1.py:3271 INFO] Closed Results=0, Closed Power Results=0
+[2025-02-10 05:45:20,339 submission_checker1.py:3263 INFO] Results=10, NoResults=0, Power Results=0
+[2025-02-10 05:45:20,339 submission_checker1.py:3270 INFO] ---
+[2025-02-10 05:45:20,339 submission_checker1.py:3271 INFO] Closed Results=0, Closed Power Results=0
 
-[2025-02-09 20:35:13,255 submission_checker1.py:3276 INFO] Open Results=10, Open Power Results=0
+[2025-02-10 05:45:20,339 submission_checker1.py:3276 INFO] Open Results=10, Open Power Results=0
 
-[2025-02-09 20:35:13,255 submission_checker1.py:3281 INFO] Network Results=0, Network Power Results=0
+[2025-02-10 05:45:20,339 submission_checker1.py:3281 INFO] Network Results=0, Network Power Results=0
 
-[2025-02-09 20:35:13,255 submission_checker1.py:3286 INFO] ---
-[2025-02-09 20:35:13,255 submission_checker1.py:3288 INFO] Systems=9, Power Systems=0
-[2025-02-09 20:35:13,255 submission_checker1.py:3292 INFO] Closed Systems=0, Closed Power Systems=0
-[2025-02-09 20:35:13,255 submission_checker1.py:3297 INFO] Open Systems=9, Open Power Systems=0
-[2025-02-09 20:35:13,255 submission_checker1.py:3302 INFO] Network Systems=0, Network Power Systems=0
-[2025-02-09 20:35:13,255 submission_checker1.py:3307 INFO] ---
-[2025-02-09 20:35:13,255 submission_checker1.py:3312 INFO] SUMMARY: submission looks OK
-[2025-02-09 20:35:14,297 module.py:5481 INFO] -        ! call "postprocess" from /home/runner/MLC/repos/mlcommons@mlperf-automations/script/run-mlperf-inference-submission-checker/customize.py
+[2025-02-10 05:45:20,339 submission_checker1.py:3286 INFO] ---
+[2025-02-10 05:45:20,339 submission_checker1.py:3288 INFO] Systems=9, Power Systems=0
+[2025-02-10 05:45:20,339 submission_checker1.py:3292 INFO] Closed Systems=0, Closed Power Systems=0
+[2025-02-10 05:45:20,339 submission_checker1.py:3297 INFO] Open Systems=9, Open Power Systems=0
+[2025-02-10 05:45:20,339 submission_checker1.py:3302 INFO] Network Systems=0, Network Power Systems=0
+[2025-02-10 05:45:20,340 submission_checker1.py:3307 INFO] ---
+[2025-02-10 05:45:20,340 submission_checker1.py:3312 INFO] SUMMARY: submission looks OK
+[2025-02-10 05:45:21,262 module.py:5481 INFO] -        ! call "postprocess" from /home/runner/MLC/repos/mlcommons@mlperf-automations/script/run-mlperf-inference-submission-checker/customize.py
 
 ```
 
 |    | Organization   | Availability   | Division   | SystemType   | SystemName           | Platform                                                              | Model               | MlperfModel         | Scenario   |    Result | Accuracy                                                                    |   number_of_nodes | host_processor_model_name       |   host_processors_per_node |   host_processor_core_count | accelerator_model_name   |   accelerators_per_node | Location                                                                                                       | framework           | operating_system                                |   notes |   compliance |   errors | version   |   inferred | has_power   | Units     | weight_data_types   |
 |---:|:---------------|:---------------|:-----------|:-------------|:---------------------|:----------------------------------------------------------------------|:--------------------|:--------------------|:-----------|----------:|:----------------------------------------------------------------------------|------------------:|:--------------------------------|---------------------------:|----------------------------:|:-------------------------|------------------------:|:---------------------------------------------------------------------------------------------------------------|:--------------------|:------------------------------------------------|--------:|-------------:|---------:|:----------|-----------:|:------------|:----------|:--------------------|
-|  0 | MLCommons      | available      | open       | datacenter   | gh_action            | gh_action-reference-cpu-pytorch_v2.6.0-default_config                 | llama2-70b-99       | llama2-70b-99       | Offline    |  0.40942  | ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0 |                 1 | Intel(R) Xeon(R) w7-2495X       |                          1 |                          24 | nan                      |                       0 | open/MLCommons/results/gh_action-reference-cpu-pytorch_v2.6.0-default_config/llama2-70b-99/offline             | pytorch v2.6.0      | Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35) |     nan |            1 |        0 | v5.0      |          0 | False       | Tokens/s  | fp32                |
+|  0 | MLCommons      | available      | open       | datacenter   | gh_action            | gh_action-reference-cpu-pytorch_v2.6.0-default_config                 | llama2-70b-99       | llama2-70b-99       | Offline    |  0.391627 | ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0 |                 1 | Intel(R) Xeon(R) w7-2495X       |                          1 |                          24 | nan                      |                       0 | open/MLCommons/results/gh_action-reference-cpu-pytorch_v2.6.0-default_config/llama2-70b-99/offline             | pytorch v2.6.0      | Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35) |     nan |            1 |        0 | v5.0      |          0 | False       | Tokens/s  | fp32                |
 |  1 | MLCommons      | available      | open       | edge         | gh_macos-latest_x86  | gh_macos-latest_x86-reference-cpu-pytorch_v2.6.0-default_config       | retinanet           | retinanet           | Offline    |  0.369785 | mAP: 76.951                                                                 |                 1 | undefined                       |                          1 |                           3 | nan                      |                       0 | open/MLCommons/results/gh_macos-latest_x86-reference-cpu-pytorch_v2.6.0-default_config/retinanet/offline       | pytorch v2.6.0      | (darwin-23.6.0)                                 |     nan |            1 |        0 | v5.0      |          0 | False       | Samples/s | fp32                |
 |  2 | MLCommons      | available      | open       | edge         | gh_action            | gh_action-reference-gpu-pytorch_v2.6.0-cu124                          | gptj-99             | gptj-99             | Offline    | 48.7891   | ROUGE1: 32.2581  ROUGE2: 6.6667  ROUGEL: 22.5806  GEN_LEN: 264              |                 1 | Intel(R) Xeon(R) w7-2495X       |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/gptj-99/offline                            | pytorch v2.6.0      | Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35) |     nan |            1 |        0 | v5.0      |          0 | False       | Tokens/s  | fp32                |
 |  3 | MLCommons      | available      | open       | edge         | gh_action            | gh_action-reference-gpu-pytorch_v2.6.0-cu124                          | stable-diffusion-xl | stable-diffusion-xl | Offline    |  0.352565 | CLIP_SCORE: 16.36890298128128  FID_SCORE: 237.82578979650336                |                 1 | Intel(R) Xeon(R) w7-2495X       |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | open/MLCommons/results/gh_action-reference-gpu-pytorch_v2.6.0-cu124/stable-diffusion-xl/offline                | pytorch v2.6.0      | Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35) |     nan |            1 |        0 | v5.0      |          0 | False       | Samples/s | fp32                |
