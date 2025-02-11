@@ -1,0 +1,12 @@
+MLPerf Conf path: /Users/runner/MLC/repos/local/cache/get-git-repo_56c07ebf/inference/mlperf.conf
+User Conf path: /Users/runner/MLC/repos/GATEOverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/b7eb3e0466b746d6991c1b6dd1a80cad.conf
+Dataset Preprocessed path: /Users/runner/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_c31d7152
+Dataset List filepath: 
+Scenario: Offline
+Mode: PerformanceOnly
+Batch size: 32
+Query count override: 0
+Performance sample count override in application: 0
+loaded imagenet with 500 samples
+starting benchmark
+loading samples to ram with total sample size: 500
