@@ -2,9 +2,9 @@
 
 ## Host platform
 
-* OS version: Linux-6.8.0-1021-azure-x86_64-with-glibc2.39
+* OS version: Linux-6.8.0-1020-azure-x86_64-with-glibc2.39
 * CPU version: x86_64
-* Python version: 3.12.9 (main, Feb  5 2025, 03:22:31) [GCC 13.3.0]
+* Python version: 3.12.8 (main, Dec  4 2024, 06:20:31) [GCC 13.2.0]
 * MLC version: unknown
 
 ## CM Run Command
@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo GATEOverflow@mlperf-automations --checkout=3803d88c0b0fce012f30e324e939e4a813c35580
+mlc pull repo GATEOverflow@mlperf-automations --checkout=f2b12ce7c6b81c7f2d4d7bfe70833bc6df6b4815
 
 
 ```
@@ -37,7 +37,7 @@ Platform: gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config
 Model Precision: fp32
 
 ### Accuracy Results 
-`acc`: `75.8`, Required accuracy for closed division `>= 0.72131`
+`acc`: `76.2`, Required accuracy for closed division `>= 0.72131`
 
 ### Performance Results 
-`Samples per second`: `10.4205`
+`Samples per second`: `10.2233`
