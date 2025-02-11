@@ -213,6 +213,36 @@
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_ubuntu-latest_x86",
+        "Platform":"gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
+        "Scenario":"Offline",
+        "Result":0.406474,
+        "Accuracy":"mAP: 76.951",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":2,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config\/retinanet\/offline",
+        "framework":"pytorch v2.6.0",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "8":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
         "SystemType":"datacenter",
         "SystemName":"gh_ubuntu-latest_x86",
         "Platform":"gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config",
@@ -239,7 +269,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "8":{
+    "9":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -269,7 +299,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "9":{
+    "10":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -299,7 +329,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "10":{
+    "11":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -329,7 +359,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "11":{
+    "12":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -359,7 +389,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "12":{
+    "13":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
