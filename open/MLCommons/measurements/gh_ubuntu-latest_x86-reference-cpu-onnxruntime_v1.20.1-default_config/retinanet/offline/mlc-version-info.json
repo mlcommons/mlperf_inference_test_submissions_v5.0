@@ -26,7 +26,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( python,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline )"
       }
     },
@@ -46,7 +46,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-mlperf-inference-src,4b57186581024797"
       }
     },
@@ -156,7 +156,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_onnxruntime,_offline,_retinanet,_fp32 )"
       }
     },
@@ -196,7 +196,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( onnxruntime )"
       }
     },
@@ -206,7 +206,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -216,7 +216,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( onnxruntime )"
       }
     },
@@ -257,15 +257,15 @@
         "script_tags": "dae,file,download-and-extract",
         "script_variations": "url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx",
         "version": "",
-        "parent": "get-ml-model-retinanet,427bc5665e4541c2 ( fp32,_onnx )"
+        "parent": "get-ml-model-retinanet,427bc5665e4541c2 ( onnx,_fp32 )"
       }
     },
     {
-      "get,ml-model,object-detection,retinanet,raw,_fp32,_onnx": {
+      "get,ml-model,object-detection,retinanet,raw,_onnx,_fp32": {
         "script_uid": "427bc5665e4541c2",
         "script_alias": "get-ml-model-retinanet",
         "script_tags": "get,ml-model,raw,resnext50,retinanet,object-detection",
-        "script_variations": "fp32,onnx",
+        "script_variations": "onnx,fp32",
         "version": "",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_onnxruntime,_offline,_retinanet,_fp32 )"
       }
@@ -276,7 +276,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
       }
     },
@@ -286,7 +286,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -326,7 +326,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( requests )"
       }
     },
@@ -336,7 +336,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -346,7 +346,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( requests )"
       }
     },
@@ -406,7 +406,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( boto3 )"
       }
     },
@@ -416,7 +416,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -426,7 +426,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( boto3 )"
       }
     },
@@ -436,7 +436,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "boto3",
-        "version": "1.36.16",
+        "version": "1.36.18",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -476,7 +476,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( tqdm )"
       }
     },
@@ -486,7 +486,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -496,7 +496,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( tqdm )"
       }
     },
@@ -546,7 +546,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -556,7 +556,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -566,7 +566,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -616,7 +616,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -626,7 +626,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -636,7 +636,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -686,7 +686,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pandas )"
       }
     },
@@ -696,7 +696,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -706,7 +706,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pandas )"
       }
     },
@@ -756,7 +756,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
@@ -766,7 +766,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -776,7 +776,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
@@ -816,7 +816,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
@@ -836,7 +836,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -886,7 +886,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pillow )"
       }
     },
@@ -896,7 +896,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -906,7 +906,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pillow )"
       }
     },
@@ -956,7 +956,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.ujson )"
       }
     },
@@ -966,7 +966,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -976,7 +976,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.ujson )"
       }
     },
@@ -1026,7 +1026,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1036,7 +1036,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1046,7 +1046,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1066,7 +1066,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1126,7 +1126,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
@@ -1186,7 +1186,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -1276,7 +1276,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.wheel )"
       }
     },
@@ -1286,7 +1286,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1296,7 +1296,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.wheel )"
       }
     },
@@ -1316,7 +1316,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1326,7 +1326,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -1366,7 +1366,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pybind11 )"
       }
     },
@@ -1376,7 +1376,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1386,7 +1386,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pybind11 )"
       }
     },
@@ -1436,7 +1436,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.setuptools )"
       }
     },
@@ -1446,7 +1446,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1456,7 +1456,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.setuptools )"
       }
     },
@@ -1536,7 +1536,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
       }
     },
@@ -1546,7 +1546,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1556,7 +1556,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0",
+        "version": "25.0.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
       }
     },
@@ -1576,7 +1576,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -1596,7 +1596,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1616,7 +1616,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.8",
+        "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
