@@ -46,7 +46,7 @@
     "UsedModel": "rgat",
     "Model": "rgat",
     "Scenario": "Offline",
-    "Accuracy": "acc: 75.800",
+    "Accuracy": "acc: 75.200",
     "Nodes": 1,
     "Processor": "AMD EPYC 7763 64-Core Processor",
     "host_processors_per_node": 1,
@@ -68,7 +68,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config/rgat",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 10.1858,
+    "Performance_Result": 15.1819,
     "Performance_Units": "Samples/s"
   },
   {
@@ -392,7 +392,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.0343,
+    "Performance_Result": 22.8636,
     "Performance_Units": "Samples/s"
   },
   {
@@ -487,7 +487,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/resnet50/offline",
     "Software": "onnxruntime v1.20.1",
-    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -523,7 +523,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/retinanet/offline",
     "Software": "onnxruntime v1.20.1",
-    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -536,7 +536,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.20.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.433634,
+    "Performance_Result": 0.412678,
     "Performance_Units": "Samples/s"
   },
   {
