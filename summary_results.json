@@ -104,7 +104,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.430616,
+    "Performance_Result": 0.432561,
     "Performance_Units": "Samples/s"
   },
   {
@@ -212,7 +212,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 9.45684,
+    "Performance_Result": 8.96557,
     "Performance_Units": "Samples/s"
   },
   {
@@ -365,7 +365,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_ubuntu-latest_x86",
+    "System": "gh_ubuntu-latest x86",
     "Platform": "gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
     "UsedModel": "resnet50",
     "Model": "resnet",
@@ -379,7 +379,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50/offline",
     "Software": "onnxruntime",
-    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -392,7 +392,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 22.9842,
+    "Performance_Result": 23.0343,
     "Performance_Units": "Samples/s"
   },
   {
@@ -401,7 +401,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_ubuntu-latest_x86",
+    "System": "gh_ubuntu-latest x86",
     "Platform": "gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
     "UsedModel": "retinanet",
     "Model": "retinanet",
@@ -415,7 +415,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet/offline",
     "Software": "onnxruntime",
-    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1020-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
