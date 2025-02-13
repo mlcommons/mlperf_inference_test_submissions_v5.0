@@ -214,6 +214,36 @@
         "Availability":"available",
         "Division":"open",
         "SystemType":"edge",
+        "SystemName":"gh_ubuntu-latest x86",
+        "Platform":"gh_ubuntu-latest_x86-reference-cpu-tf_v2.18.0-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":20.9355,
+        "Accuracy":"acc: 76.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":2,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-reference-cpu-tf_v2.18.0-default_config\/resnet50\/offline",
+        "framework":"tf v2.18.0",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "8":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
         "SystemName":"gh_ubuntu-latest_x86",
         "Platform":"gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config",
         "Model":"retinanet",
@@ -239,7 +269,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "8":{
+    "9":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -269,7 +299,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "9":{
+    "10":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -279,8 +309,8 @@
         "Model":"rgat",
         "MlperfModel":"rgat",
         "Scenario":"Offline",
-        "Result":10.0256,
-        "Accuracy":"acc: 75.800",
+        "Result":10.1939,
+        "Accuracy":"acc: 75.200",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
         "host_processors_per_node":1,
@@ -299,7 +329,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "10":{
+    "11":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -309,7 +339,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.431415,
+        "Result":0.27177,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
@@ -329,7 +359,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "11":{
+    "12":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -359,7 +389,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "12":{
+    "13":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -369,7 +399,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.434305,
+        "Result":0.433269,
         "Accuracy":"mAP: 49.593",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -389,7 +419,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "13":{
+    "14":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -419,7 +449,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "14":{
+    "15":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -449,7 +479,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "15":{
+    "16":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
