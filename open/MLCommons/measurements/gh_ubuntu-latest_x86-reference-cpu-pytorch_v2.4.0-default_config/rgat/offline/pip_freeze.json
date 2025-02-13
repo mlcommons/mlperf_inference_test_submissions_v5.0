@@ -26,7 +26,7 @@
     "pandas": "2.2.3",
     "pip": "25.0.1",
     "propcache": "0.2.1",
-    "psutil": "6.1.1",
+    "psutil": "7.0.0",
     "pybind11": "2.13.6",
     "pydantic": "2.10.6",
     "pydantic_core": "2.27.2",
