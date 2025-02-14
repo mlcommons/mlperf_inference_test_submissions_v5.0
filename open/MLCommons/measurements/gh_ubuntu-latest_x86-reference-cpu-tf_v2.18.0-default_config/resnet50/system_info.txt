@@ -2,10 +2,10 @@ Platform Details
 
 ------------------------------------------------------------
 1. uname -a
-Linux fv-az1922-648 6.8.0-1021-azure #25-Ubuntu SMP Wed Jan 15 20:45:09 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+Linux fv-az1779-524 6.8.0-1021-azure #25-Ubuntu SMP Wed Jan 15 20:45:09 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 ------------------------------------------------------------
 2. w
- 10:01:37 up 5 min,  0 user,  load average: 2.08, 0.91, 0.38
+ 13:08:09 up 4 min,  0 user,  load average: 2.06, 0.96, 0.40
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
 ------------------------------------------------------------
 3. Username
@@ -46,7 +46,7 @@ systemd-+-ModemManager---3*[{ModemManager}]
         |-polkitd---3*[{polkitd}]
         |-provisioner-+-Runner.Listener-+-Runner.Worker-+-bash---mlcr---sh---bash---pstree
         |             |                 |               `-18*[{Runner.Worker}]
-        |             |                 `-15*[{Runner.Listener}]
+        |             |                 `-14*[{Runner.Listener}]
         |             |-provjobd---9*[{provjobd}]
         |             `-15*[{provisioner}]
         |-python3---python3---4*[{python3}]
@@ -67,7 +67,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 2722.566
+cpu MHz		: 2445.430
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -81,7 +81,7 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips	: 4890.85
+bogomips	: 4890.86
 TLB size	: 2560 4K pages
 clflush size	: 64
 cache_alignment	: 64
@@ -95,7 +95,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 2642.783
+cpu MHz		: 2604.095
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -109,7 +109,7 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips	: 4890.85
+bogomips	: 4890.86
 TLB size	: 2560 4K pages
 clflush size	: 64
 cache_alignment	: 64
@@ -123,7 +123,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 2445.428
+cpu MHz		: 2445.430
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -137,7 +137,7 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips	: 4890.85
+bogomips	: 4890.86
 TLB size	: 2560 4K pages
 clflush size	: 64
 cache_alignment	: 64
@@ -151,7 +151,7 @@ model		: 1
 model name	: AMD EPYC 7763 64-Core Processor
 stepping	: 1
 microcode	: 0xffffffff
-cpu MHz		: 3243.850
+cpu MHz		: 3243.727
 cache size	: 512 KB
 physical id	: 0
 siblings	: 4
@@ -165,7 +165,7 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips	: 4890.85
+bogomips	: 4890.86
 TLB size	: 2560 4K pages
 clflush size	: 64
 cache_alignment	: 64
@@ -188,7 +188,7 @@ Thread(s) per core:                   2
 Core(s) per socket:                   2
 Socket(s):                            1
 Stepping:                             1
-BogoMIPS:                             4890.85
+BogoMIPS:                             4890.86
 Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 Virtualization:                       AMD-V
 Hypervisor vendor:                    Microsoft
@@ -218,53 +218,53 @@ Vulnerability Tsx async abort:        Not affected
 available: 1 nodes (0)
 node 0 cpus: 0 1 2 3
 node 0 size: 15990 MB
-node 0 free: 5610 MB
+node 0 free: 5632 MB
 node distances:
 node   0 
   0:  10 
 ------------------------------------------------------------
 9. /proc/meminfo
 MemTotal:       16373796 kB
-MemFree:         5744704 kB
-MemAvailable:   15290108 kB
-Buffers:          195036 kB
-Cached:          9200800 kB
+MemFree:         5767584 kB
+MemAvailable:   15316848 kB
+Buffers:          196084 kB
+Cached:          9201988 kB
 SwapCached:            0 kB
-Active:          1298864 kB
-Inactive:        8398052 kB
-Active(anon):     381796 kB
+Active:          1283824 kB
+Inactive:        8402328 kB
+Active(anon):     367296 kB
 Inactive(anon):        0 kB
-Active(file):     917068 kB
-Inactive(file):  8398052 kB
+Active(file):     916528 kB
+Inactive(file):  8402328 kB
 Unevictable:       46772 kB
 Mlocked:           43700 kB
 SwapTotal:       4194300 kB
 SwapFree:        4194300 kB
 Zswap:                 0 kB
 Zswapped:              0 kB
-Dirty:              1352 kB
+Dirty:              1132 kB
 Writeback:             0 kB
-AnonPages:        344196 kB
-Mapped:           343836 kB
-Shmem:             71964 kB
-KReclaimable:     576196 kB
-Slab:             686596 kB
-SReclaimable:     576196 kB
-SUnreclaim:       110400 kB
-KernelStack:        3952 kB
-PageTables:         6304 kB
+AnonPages:        332688 kB
+Mapped:           342560 kB
+Shmem:             70448 kB
+KReclaimable:     576320 kB
+Slab:             687324 kB
+SReclaimable:     576320 kB
+SUnreclaim:       111004 kB
+KernelStack:        4208 kB
+PageTables:         6412 kB
 SecPageTables:         0 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    12381196 kB
-Committed_AS:    2220620 kB
+Committed_AS:    2182168 kB
 VmallocTotal:   34359738367 kB
-VmallocUsed:       35040 kB
+VmallocUsed:       35312 kB
 VmallocChunk:          0 kB
 Percpu:             2208 kB
 HardwareCorrupted:     0 kB
-AnonHugePages:    161792 kB
+AnonHugePages:    147456 kB
 ShmemHugePages:        0 kB
 ShmemPmdMapped:        0 kB
 FileHugePages:         0 kB
@@ -276,12 +276,12 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:      110528 kB
-DirectMap2M:     4083712 kB
-DirectMap1G:    14680064 kB
+DirectMap4k:      116672 kB
+DirectMap2M:     3028992 kB
+DirectMap1G:    15728640 kB
 ------------------------------------------------------------
 10. who -r
-         run-level 5  2025-02-14 09:55
+         run-level 5  2025-02-14 13:03
 ------------------------------------------------------------
 11. Systemd service manager version
 systemd 255 (255.4-1ubuntu8.5)
@@ -808,7 +808,7 @@ fs.binfmt_misc.llvm-16-runtime/binfmt = flags:
 fs.binfmt_misc.llvm-16-runtime/binfmt = offset 0
 fs.binfmt_misc.llvm-16-runtime/binfmt = magic 4243
 fs.binfmt_misc.status = enabled
-fs.dentry-state = 298178	290692	45	0	64134	0
+fs.dentry-state = 298410	290893	45	0	64121	0
 fs.dir-notify-enable = 1
 fs.epoll.max_user_watches = 3643703
 fs.fanotify.max_queued_events = 16384
@@ -816,8 +816,8 @@ fs.fanotify.max_user_groups = 128
 fs.fanotify.max_user_marks = 132601
 fs.file-max = 9223372036854775807
 fs.file-nr = 1728	0	9223372036854775807
-fs.inode-nr = 234003	566
-fs.inode-state = 234003	566	0	0	0	0	0
+fs.inode-nr = 234251	566
+fs.inode-state = 234251	566	0	0	0	0	0
 fs.inotify.max_queued_events = 16384
 fs.inotify.max_user_instances = 1280
 fs.inotify.max_user_watches = 655360
@@ -876,7 +876,7 @@ kernel.ftrace_dump_on_oops = 0
 kernel.ftrace_enabled = 1
 kernel.hardlockup_all_cpu_backtrace = 0
 kernel.hardlockup_panic = 0
-kernel.hostname = fv-az1922-648
+kernel.hostname = fv-az1779-524
 kernel.hotplug = 
 kernel.hung_task_all_cpu_backtrace = 0
 kernel.hung_task_check_count = 4194304
@@ -909,7 +909,7 @@ kernel.msgmnb = 16384
 kernel.msgmni = 32000
 kernel.ngroups_max = 65536
 kernel.nmi_watchdog = 0
-kernel.ns_last_pid = 6821
+kernel.ns_last_pid = 6809
 kernel.numa_balancing = 0
 kernel.numa_balancing_promote_rate_limit_MBps = 65536
 kernel.oops_all_cpu_backtrace = 0
@@ -942,11 +942,11 @@ kernel.printk_ratelimit_burst = 10
 kernel.pty.max = 4096
 kernel.pty.nr = 0
 kernel.pty.reserve = 1024
-kernel.random.boot_id = 36e6994f-7e63-4316-8694-90a063f0075e
+kernel.random.boot_id = 16aa6b3b-72bb-4926-8862-6bc6b04763c3
 kernel.random.entropy_avail = 256
 kernel.random.poolsize = 256
 kernel.random.urandom_min_reseed_secs = 60
-kernel.random.uuid = eb631198-a5cb-465f-9830-ba6ec6783ff5
+kernel.random.uuid = dea423c4-8df4-4ba8-bed3-d6390c1b5c53
 kernel.random.write_wakeup_threshold = 256
 kernel.randomize_va_space = 2
 kernel.real-root-dev = 0
@@ -1359,7 +1359,7 @@ net.ipv4.tcp_ehash_entries = 131072
 net.ipv4.tcp_fack = 0
 net.ipv4.tcp_fastopen = 1
 net.ipv4.tcp_fastopen_blackhole_timeout_sec = 0
-net.ipv4.tcp_fastopen_key = 9f3dcfb3-6099d74b-3cc2dae8-e0a4d190
+net.ipv4.tcp_fastopen_key = e5bd18e7-4a551906-8261b02c-a51ac022
 net.ipv4.tcp_fin_timeout = 60
 net.ipv4.tcp_frto = 2
 net.ipv4.tcp_fwmark_accept = 0
@@ -1833,7 +1833,7 @@ net.mptcp.stale_loss_cnt = 4
 net.netfilter.nf_conntrack_acct = 0
 net.netfilter.nf_conntrack_buckets = 262144
 net.netfilter.nf_conntrack_checksum = 1
-net.netfilter.nf_conntrack_count = 163
+net.netfilter.nf_conntrack_count = 146
 net.netfilter.nf_conntrack_dccp_loose = 1
 net.netfilter.nf_conntrack_dccp_timeout_closereq = 64
 net.netfilter.nf_conntrack_dccp_timeout_closing = 64
@@ -1981,12 +1981,12 @@ LOGO=ubuntu-logo
 19. Disk information
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 sda       8:0    0   75G  0 disk 
-├─sda1    8:1    0   74G  0 part /
-├─sda14   8:14   0    4M  0 part 
-├─sda15   8:15   0  106M  0 part /boot/efi
-└─sda16 259:0    0  913M  0 part /boot
+└─sda1    8:1    0   75G  0 part /mnt
 sdb       8:16   0   75G  0 disk 
-└─sdb1    8:17   0   75G  0 part /mnt
+├─sdb1    8:17   0   74G  0 part /
+├─sdb14   8:30   0    4M  0 part 
+├─sdb15   8:31   0  106M  0 part /boot/efi
+└─sdb16 259:0    0  913M  0 part /boot
 ------------------------------------------------------------
 20. /sys/devices/virtual/dmi/id
 bios_date
@@ -2056,8 +2056,8 @@ System Information
 	Manufacturer: Microsoft Corporation
 	Product Name: Virtual Machine
 	Version: 7.0
-	Serial Number: 0000-0018-3024-7115-3126-4253-12
-	UUID: 8b70fffd-ef09-e042-8a3e-29b53d5d9538
+	Serial Number: 0000-0014-1727-4934-7016-8198-93
+	UUID: 70b8afc4-96cf-b544-9ce8-bd36c3f3a6db
 	Wake-up Type: Power Switch
 
 Handle 0x0002, DMI type 2, 8 bytes
@@ -2065,7 +2065,7 @@ Base Board Information
 	Manufacturer: Microsoft Corporation
 	Product Name: Virtual Machine
 	Version: 7.0
-	Serial Number: 0000-0009-9614-4528-4185-4784-56
+	Serial Number: 0000-0011-3064-9490-7427-0389-39
 
 Handle 0x0003, DMI type 3, 17 bytes
 Chassis Information
@@ -2073,7 +2073,7 @@ Chassis Information
 	Type: Desktop
 	Lock: Not Present
 	Version: 7.0
-	Serial Number: 3854-6961-5227-9212-5130-8206-92
+	Serial Number: 3649-6323-4482-0505-7262-6969-23
 	Asset Tag: 7783-7084-3265-9085-8269-3286-77
 	Boot-up State: Safe
 	Power Supply State: Safe
