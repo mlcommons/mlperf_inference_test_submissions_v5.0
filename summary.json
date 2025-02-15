@@ -312,9 +312,9 @@
         "Result":0.385187,
         "Accuracy":"ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0",
         "number_of_nodes":1,
-        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processor_model_name":"AMD Ryzen 9 7950X 16-Core Processor",
         "host_processors_per_node":1,
-        "host_processor_core_count":24,
+        "host_processor_core_count":16,
         "accelerator_model_name":null,
         "accelerators_per_node":0,
         "Location":"open\/MLCommons\/results\/gh_action-reference-cpu-pytorch_v2.6.0-default_config\/llama2-70b-99\/offline",
@@ -334,13 +334,43 @@
         "Availability":"available",
         "Division":"open",
         "SystemType":"datacenter",
+        "SystemName":"gh_action",
+        "Platform":"gh_action-reference-cpu-pytorch_v2.6.0-default_config",
+        "Model":"mixtral-8x7b",
+        "MlperfModel":"mixtral-8x7b",
+        "Scenario":"Offline",
+        "Result":0.0148696,
+        "Accuracy":"ROUGE1: 31.4286  ROUGE2: 5.8824  ROUGEL: 28.5714  TOKENS_PER_SAMPLE: 152.0  gsm8k_accuracy: 100.0  mbxp_accuracy: 0.0",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD Ryzen 9 7950X 16-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":16,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_action-reference-cpu-pytorch_v2.6.0-default_config\/mixtral-8x7b\/offline",
+        "framework":"pytorch v2.6.0",
+        "operating_system":"Ubuntu 22.04 (linux-6.8.0-52-generic-glibc2.35)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Tokens\/s",
+        "weight_data_types":"fp32"
+    },
+    "12":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter",
         "SystemName":"gh_ubuntu-latest_x86",
         "Platform":"gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config",
         "Model":"rgat",
         "MlperfModel":"rgat",
         "Scenario":"Offline",
-        "Result":10.2068,
-        "Accuracy":"acc: 76.200",
+        "Result":10.2786,
+        "Accuracy":"acc: 74.400",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
         "host_processors_per_node":1,
@@ -359,7 +389,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "12":{
+    "13":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -389,7 +419,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "13":{
+    "14":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -419,7 +449,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "14":{
+    "15":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -449,7 +479,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "15":{
+    "16":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -479,7 +509,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "16":{
+    "17":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -509,7 +539,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "17":{
+    "18":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
