@@ -1,0 +1,9 @@
+Processed 1 in 0.013212306999776047s
+ 0.00% pass@1
+{'ruby': 0} {'ruby': 1}
+
+Results
+
+{'rouge1': 31.4286, 'rouge2': 5.8824, 'rougeL': 28.5714, 'rougeLsum': 28.5714, 'gsm8k': 100.0, 'mbxp': 0.0, 'gen_len': 269, 'gen_num': 3, 'gen_tok_len': 456, 'tokens_per_sample': 152.0}
+
+hash=3a43abbd770839bb861d49220c5c8ae4d492637c8a5a0a4300feb6203bbca7b8

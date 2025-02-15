@@ -1,0 +1,87 @@
+Loading dataset...
+Finished loading dataset.
+Loading checkpoint shards:   0%|          | 0/19 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/19 [00:01<00:18,  1.01s/it]Loading checkpoint shards:  11%|█         | 2/19 [00:02<00:18,  1.08s/it]Loading checkpoint shards:  16%|█▌        | 3/19 [00:03<00:17,  1.10s/it]Loading checkpoint shards:  21%|██        | 4/19 [00:04<00:16,  1.10s/it]Loading checkpoint shards:  26%|██▋       | 5/19 [00:05<00:15,  1.11s/it]Loading checkpoint shards:  32%|███▏      | 6/19 [00:06<00:14,  1.11s/it]Loading checkpoint shards:  37%|███▋      | 7/19 [00:07<00:13,  1.11s/it]Loading checkpoint shards:  42%|████▏     | 8/19 [00:09<00:13,  1.23s/it]Loading checkpoint shards:  47%|████▋     | 9/19 [00:10<00:13,  1.37s/it]Loading checkpoint shards:  53%|█████▎    | 10/19 [00:12<00:13,  1.53s/it]Loading checkpoint shards:  58%|█████▊    | 11/19 [00:14<00:13,  1.64s/it]Loading checkpoint shards:  63%|██████▎   | 12/19 [00:20<00:19,  2.84s/it]Loading checkpoint shards:  68%|██████▊   | 13/19 [00:22<00:15,  2.53s/it]Loading checkpoint shards: 100%|██████████| 19/19 [00:22<00:00,  1.16s/it]
+WARNING:accelerate.big_modeling:Some parameters are on the meta device because they were offloaded to the disk and cpu.
+INFO:Mixtral-8x7B-Instruct-v0.1-MAIN:Starting Benchmark run
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+================================================
+MLPerf Results Summary
+================================================
+SUT name : PySUT
+Scenario : Offline
+Mode     : PerformanceOnly
+Samples per second: 0.000195653
+Tokens per second: 0.0148696
+Result is : VALID
+  Min duration satisfied : Yes
+  Min queries satisfied : Yes
+  Early stopping satisfied: Yes
+
+================================================
+Additional Stats
+================================================
+Min latency (ns)                : 6457626122146
+Max latency (ns)                : 15333278355759
+Mean latency (ns)               : 10388329323290
+50.00 percentile latency (ns)   : 9374083491966
+90.00 percentile latency (ns)   : 15333278355759
+95.00 percentile latency (ns)   : 15333278355759
+97.00 percentile latency (ns)   : 15333278355759
+99.00 percentile latency (ns)   : 15333278355759
+99.90 percentile latency (ns)   : 15333278355759
+
+
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 3
+target_qps : 1
+ttft_latency (ns): 2000000000
+tpot_latency (ns): 200000000
+max_async_queries : 1
+min_duration (ms): 0
+max_duration (ms): 0
+min_query_count : 1
+max_query_count : 3
+qsl_rng_seed : 6023615788873153749
+sample_index_rng_seed : 15036839855038426416
+schedule_rng_seed : 9933818062894767841
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+performance_issue_same_index : 0
+performance_sample_count : 15000
+
+No warnings encountered during test.
+
+No errors encountered during test.
+INFO:Mixtral-8x7B-Instruct-v0.1-MAIN:Run Completed!
+INFO:Mixtral-8x7B-Instruct-v0.1-MAIN:Destroying SUT...
+INFO:Mixtral-8x7B-Instruct-v0.1-MAIN:Destroying QSL...
+Loaded model
+Loaded tokenizer
+IssueQuery started with 3 samples
+IssueQuery done
+Saving outputs to run_outputs/q0.pkl
+Samples run: 1
+	BatchMaker time: 0.0056307315826416016
+	Inference time: 6457.577200174332
+	Postprocess time: 0.04436087608337402
+	==== Total time: 6457.627191781998
+Saving outputs to run_outputs/q2.pkl
+Samples run: 2
+	BatchMaker time: 0.08578920364379883
+	Inference time: 2916.3291022777557
+	Postprocess time: 0.03494524955749512
+	==== Total time: 2916.449836730957
+Saving outputs to run_outputs/q1.pkl
+Samples run: 3
+	BatchMaker time: 0.06268954277038574
+	Inference time: 5959.081780672073
+	Postprocess time: 0.04440164566040039
+	==== Total time: 5959.188871860504
