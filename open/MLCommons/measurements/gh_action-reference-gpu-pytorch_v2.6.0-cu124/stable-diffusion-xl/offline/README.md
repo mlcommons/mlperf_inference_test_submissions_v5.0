@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo gateoverflow@mlperf-automations --checkout=a2f08879e6922dc541d8b5ac2d60762c71d56b58
+mlc pull repo gateoverflow@mlperf-automations --checkout=792e40d1d2120f8bcd140c7c0ea99f9166d30513
 
 
 ```
@@ -37,8 +37,8 @@ Platform: gh_action-reference-gpu-pytorch_v2.6.0-cu124
 Model Precision: fp32
 
 ### Accuracy Results 
-`CLIP_SCORE`: `16.37863`, Required accuracy for closed division `>= 31.68632` and `<= 31.81332`
-`FID_SCORE`: `237.9399`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
+`CLIP_SCORE`: `16.3689`, Required accuracy for closed division `>= 31.68632` and `<= 31.81332`
+`FID_SCORE`: `237.82579`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
 
 ### Performance Results 
-`Samples per second`: `0.352822`
+`Samples per second`: `0.352765`
