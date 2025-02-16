@@ -190,7 +190,7 @@
     "UsedModel": "stable-diffusion-xl",
     "Model": "stable-diffusion-xl",
     "Scenario": "Offline",
-    "Accuracy": "CLIP_SCORE: 16.378625825047493  FID_SCORE: 237.9398950209584",
+    "Accuracy": "CLIP_SCORE: 16.36890298128128  FID_SCORE: 237.82578979650336",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -212,7 +212,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_action-reference-gpu-pytorch_v2.6.0-cu124/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.352822,
+    "Performance_Result": 0.352765,
     "Performance_Units": "Samples/s"
   },
   {
