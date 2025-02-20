@@ -66,7 +66,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-7bf59976b5f4eb7c5b8f30a88af832e028028446",
+        "version": "r5.0-git-cc9a89e94553e0a071fb4a5980e76aa7d0cd2615",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( cpp,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline )"
       }
     },
@@ -96,7 +96,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-7bf59976b5f4eb7c5b8f30a88af832e028028446",
+        "version": "r5.0-git-cc9a89e94553e0a071fb4a5980e76aa7d0cd2615",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -176,7 +176,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-7bf59976b5f4eb7c5b8f30a88af832e028028446",
+        "version": "master-git-cc9a89e94553e0a071fb4a5980e76aa7d0cd2615",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -466,7 +466,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-7bf59976b5f4eb7c5b8f30a88af832e028028446",
+        "version": "r5.0-git-cc9a89e94553e0a071fb4a5980e76aa7d0cd2615",
         "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( retinanet,_onnxruntime,_offline,_cpu )"
       }
     },
@@ -486,7 +486,7 @@
         "script_alias": "get-onnxruntime-prebuilt",
         "script_tags": "install,onnxruntime,get,prebuilt,lib,lang-c,lang-cpp",
         "script_variations": "cpu",
-        "version": "1.16.3",
+        "version": "1.20.1",
         "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( retinanet,_onnxruntime,_offline,_cpu )"
       }
     },
@@ -497,7 +497,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.12.9",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -586,7 +586,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-7bf59976b5f4eb7c5b8f30a88af832e028028446",
+        "version": "r5.0-git-cc9a89e94553e0a071fb4a5980e76aa7d0cd2615",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -656,7 +656,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "boto3",
-        "version": "1.36.22",
+        "version": "1.36.24",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -1017,7 +1017,7 @@
         "script_tags": "get,dataset,openimages,open-images,object-detection,original",
         "script_variations": "validation,50,default-annotations",
         "version": "",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -1026,8 +1026,8 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-7bf59976b5f4eb7c5b8f30a88af832e028028446",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "version": "r5.0-git-cc9a89e94553e0a071fb4a5980e76aa7d0cd2615",
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -1047,7 +1047,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pycocotools",
         "version": "2.0.8",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -1067,7 +1067,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "opencv-python",
         "version": "4.11.0.86",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -1137,7 +1137,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pillow",
         "version": "11.1.0",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -1207,7 +1207,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.ujson",
         "version": "5.10.0",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -1227,7 +1227,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
         "version": "2.2.3",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
@@ -1247,15 +1247,15 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
         "version": "2.2.3",
-        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW )"
+        "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
     {
-      "get,dataset,preprocessed,openimages,_validation,_NCHW": {
+      "get,dataset,preprocessed,openimages,_validation,_NCHW,_50": {
         "script_uid": "9842f1be8cba4c7b",
         "script_alias": "get-preprocessed-dataset-openimages",
         "script_tags": "get,dataset,openimages,open-images,object-detection,preprocessed",
-        "script_variations": "validation,NCHW",
+        "script_variations": "validation,NCHW,50",
         "version": "",
         "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( retinanet,_onnxruntime,_offline,_cpu )"
       }
@@ -1346,7 +1346,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-7bf59976b5f4eb7c5b8f30a88af832e028028446",
+        "version": "r5.0-git-cc9a89e94553e0a071fb4a5980e76aa7d0cd2615",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
