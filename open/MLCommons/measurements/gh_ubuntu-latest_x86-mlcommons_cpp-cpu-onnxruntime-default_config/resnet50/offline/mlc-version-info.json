@@ -137,15 +137,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/download-file_2edf226c/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/download-file_2813747b/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_path./home/runner/MLC/repos/local/cache/download-file_2edf226c/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_path./home/runner/MLC/repos/local/cache/download-file_2813747b/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./home/runner/MLC/repos/local/cache/download-file_2edf226c/caffe_ilsvrc12.tar.gz",
+        "script_variations": "path./home/runner/MLC/repos/local/cache/download-file_2813747b/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz )"
       }
@@ -177,7 +177,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -197,7 +197,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -506,7 +506,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.setuptools",
-        "version": "75.8.1",
+        "version": "75.8.2",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -517,7 +517,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -527,7 +527,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "r5.0-git-0602e21e0a1732926a66c0a952547cb04c4ff38e",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -547,7 +547,7 @@
         "script_tags": "install,onnxruntime,get,prebuilt,lib,lang-c,lang-cpp",
         "script_variations": "cpu",
         "version": "1.20.1",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -597,15 +597,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_72404d42/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_1be04a41/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
-      "extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_72404d42/ILSVRC2012_img_val_500.tar": {
+      "extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_1be04a41/ILSVRC2012_img_val_500.tar": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_72404d42/ILSVRC2012_img_val_500.tar",
+        "script_variations": "path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_1be04a41/ILSVRC2012_img_val_500.tar",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar )"
       }
@@ -797,7 +797,7 @@
         "script_tags": "get,dataset,imagenet,ILSVRC,image-classification,preprocessed",
         "script_variations": "NCHW",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -837,7 +837,7 @@
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
         "script_variations": "onnx",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -917,7 +917,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -987,7 +987,7 @@
         "script_tags": "compile,program,c-program,cpp-program,compile-program,compile-c-program,compile-cpp-program",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     },
     {
@@ -1027,7 +1027,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( onnxruntime,_resnet50,_cpu,_offline )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( resnet50,_onnxruntime,_offline,_cpu )"
       }
     }
   ]
