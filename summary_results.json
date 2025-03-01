@@ -12,9 +12,9 @@
     "Scenario": "Offline",
     "Accuracy": "ROUGE1: 61.7021  ROUGE2: 37.9679  ROUGEL: 39.3617  TOKENS_PER_SAMPLE: 610.0",
     "Nodes": 1,
-    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
+    "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 16,
+    "host_processor_core_count": 24,
     "Accelerator": "",
     "a#": "",
     "Location": "open/MLCommons/results/gh_action-reference-cpu-pytorch_v2.6.0-default_config/llama2-70b-99/offline",
@@ -32,7 +32,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_action-reference-cpu-pytorch_v2.6.0-default_config/llama2-70b-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.385187,
+    "Performance_Result": 0.378015,
     "Performance_Units": "Tokens/s"
   },
   {
@@ -48,9 +48,9 @@
     "Scenario": "Offline",
     "Accuracy": "ROUGE1: 31.4286  ROUGE2: 5.8824  ROUGEL: 28.5714  TOKENS_PER_SAMPLE: 152.0  gsm8k_accuracy: 100.0  mbxp_accuracy: 0.0",
     "Nodes": 1,
-    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
+    "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 16,
+    "host_processor_core_count": 24,
     "Accelerator": "",
     "a#": "",
     "Location": "open/MLCommons/results/gh_action-reference-cpu-pytorch_v2.6.0-default_config/mixtral-8x7b/offline",
@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.421108,
+    "Performance_Result": 0.41903,
     "Performance_Units": "Samples/s"
   },
   {
