@@ -8,10 +8,10 @@ graph TD
     app-mlperf-inference,d775cac873ee4231_(_cpp,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline_) --> get,mlcommons,inference,src
     get-mlperf-inference-utils,e341e5f86d8342e5 --> get,mlperf,inference,src
     app-mlperf-inference,d775cac873ee4231_(_cpp,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline_) --> get,mlperf,inference,utils
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> detect,os
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> detect,cpu
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> get,sys-utils-cm
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> detect,cpu
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> get,sys-utils-cm
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> detect,os
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,python3
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,mlcommons,inference,src
@@ -40,11 +40,11 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.setuptools_) --> get,generic-python-lib,_pip
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,generic-python-lib,_package.setuptools
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> get,loadgen
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> get,mlcommons,inference,src
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> get,lib,onnxruntime,lang-cpp,_cpu
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> get,dataset,preprocessed,openimages,_validation,_NCHW,_50
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> get,ml-model,retinanet,_onnx,_fp32
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> get,loadgen
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> get,lib,onnxruntime,lang-cpp,_cpu
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> get,dataset,preprocessed,openimages,_validation,_NCHW,_50
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> get,ml-model,retinanet,_onnx,_fp32
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -52,15 +52,15 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> generate,user-conf,mlperf,inference
     detect-cpu,586c8a43320142f7 --> detect,os
     compile-program,c05042ba005a4bfa --> detect,cpu
     compile-program,c05042ba005a4bfa --> get,compiler,gcc
     detect-cpu,586c8a43320142f7 --> detect,os
     get-compiler-flags,31be8b74a69742f8 --> detect,cpu
     compile-program,c05042ba005a4bfa --> get,compiler-flags
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> compile,cpp-program
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> compile,cpp-program
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_onnxruntime,_retinanet,_offline,_cpu_) --> benchmark-mlperf
+    app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf_(_cpu,_retinanet,_onnxruntime,_offline_) --> benchmark-mlperf
