@@ -1,7 +1,7 @@
 {
   "pip_freeze": {
-    "boto3": "1.37.5",
-    "botocore": "1.37.5",
+    "boto3": "1.37.6",
+    "botocore": "1.37.6",
     "certifi": "2025.1.31",
     "charset-normalizer": "3.4.1",
     "colorama": "0.4.6",
@@ -28,7 +28,7 @@
     "pytz": "2025.1",
     "PyYAML": "6.0.2",
     "requests": "2.32.3",
-    "s3transfer": "0.11.3",
+    "s3transfer": "0.11.4",
     "setuptools": "75.8.2",
     "six": "1.17.0",
     "tabulate": "0.9.0",
