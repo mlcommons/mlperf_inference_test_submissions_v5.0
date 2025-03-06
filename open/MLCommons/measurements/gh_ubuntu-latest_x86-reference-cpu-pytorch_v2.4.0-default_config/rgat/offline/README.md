@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo sujik18@mlperf-automations --checkout=394ab4a7695fcc2ea9cb37ffa7e69e1de8ee6842
+mlc pull repo sujik18@mlperf-automations --checkout=beda189cf1f1058454fe3a1c2a0242478ddb0386
 
 
 ```
@@ -37,7 +37,7 @@ Platform: gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config
 Model Precision: fp32
 
 ### Accuracy Results 
-`acc`: `76.0`, Required accuracy for closed division `>= 0.72131`
+`acc`: `75.8`, Required accuracy for closed division `>= 0.72131`
 
 ### Performance Results 
-`Samples per second`: `10.0695`
+`Samples per second`: `9.99715`
