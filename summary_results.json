@@ -82,7 +82,7 @@
     "UsedModel": "rgat",
     "Model": "rgat",
     "Scenario": "Offline",
-    "Accuracy": "acc: 74.600",
+    "Accuracy": "acc: 75.200",
     "Nodes": 1,
     "Processor": "AMD EPYC 7763 64-Core Processor",
     "host_processors_per_node": 1,
@@ -104,7 +104,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.4.0-default_config/rgat",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 10.2292,
+    "Performance_Result": 10.1569,
     "Performance_Units": "Samples/s"
   },
   {
@@ -572,7 +572,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.25029,
+    "Performance_Result": 6.28806,
     "Performance_Units": "Samples/s"
   },
   {
