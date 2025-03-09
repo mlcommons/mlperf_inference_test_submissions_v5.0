@@ -18,7 +18,7 @@
     "kiwisolver": "1.4.8",
     "MarkupSafe": "3.0.2",
     "matplotlib": "3.10.1",
-    "mlcflow": "1.0.6",
+    "mlcflow": "1.0.8",
     "mpmath": "1.3.0",
     "networkx": "3.4.2",
     "numpy": "1.26.4",
