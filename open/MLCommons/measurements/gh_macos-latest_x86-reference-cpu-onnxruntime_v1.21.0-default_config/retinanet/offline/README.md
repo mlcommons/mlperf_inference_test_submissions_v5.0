@@ -2,9 +2,9 @@
 
 ## Host platform
 
-* OS version: macOS-14.7.2-arm64-arm-64bit
+* OS version: macOS-14.7.4-arm64-arm-64bit
 * CPU version: arm
-* Python version: 3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+* Python version: 3.12.9 (v3.12.9:fdb81425a9a, Feb  4 2025, 12:21:36) [Clang 13.0.0 (clang-1300.0.29.30)]
 * MLC version: unknown
 
 ## CM Run Command
@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo GATEOverflow@mlperf-automations --checkout=8b338a6cb6bb238bff92d9f0bcedbbd5490db8b9
+mlc pull repo GATEOverflow@mlperf-automations --checkout=ed164cd52c0cbf081edbb5f3489d9a76375280af
 
 
 ```
@@ -40,4 +40,4 @@ Model Precision: fp32
 `mAP`: `76.951`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `0.437693`
+`Samples per second`: `0.402228`
