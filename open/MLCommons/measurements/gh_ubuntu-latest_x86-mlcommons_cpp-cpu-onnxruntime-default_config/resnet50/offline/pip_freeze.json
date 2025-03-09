@@ -6,7 +6,7 @@
     "dmiparser": "5.1",
     "giturlparse": "0.12.0",
     "idna": "3.10",
-    "mlcflow": "1.0.6",
+    "mlcflow": "1.0.8",
     "numpy": "2.2.3",
     "opencv-python-headless": "4.11.0.86",
     "pillow": "11.1.0",
@@ -14,7 +14,7 @@
     "pybind11": "2.13.6",
     "PyYAML": "6.0.2",
     "requests": "2.32.3",
-    "setuptools": "75.8.2",
+    "setuptools": "76.0.0",
     "tabulate": "0.9.0",
     "urllib3": "2.3.0",
     "wheel": "0.45.1"
