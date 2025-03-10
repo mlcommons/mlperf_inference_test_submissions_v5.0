@@ -10,7 +10,7 @@ Running per image evaluation...
 Evaluate annotation type *bbox*
 DONE (t=0.04s).
 Accumulating evaluation results...
-DONE (t=0.08s).
+DONE (t=0.09s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.770
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.982
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.677
