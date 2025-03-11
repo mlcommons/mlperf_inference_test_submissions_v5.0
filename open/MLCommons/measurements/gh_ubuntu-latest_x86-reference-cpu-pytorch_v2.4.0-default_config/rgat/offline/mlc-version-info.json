@@ -746,7 +746,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e216af0f8a6e725c798c8847d288c4766da9b267",
+        "version": "master-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
