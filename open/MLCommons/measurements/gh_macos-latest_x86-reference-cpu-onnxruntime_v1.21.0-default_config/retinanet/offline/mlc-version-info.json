@@ -26,7 +26,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( python,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline )"
       }
     },
@@ -46,7 +46,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-mlperf-inference-src,4b57186581024797"
       }
     },
@@ -66,7 +66,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-e216af0f8a6e725c798c8847d288c4766da9b267",
+        "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( python,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline )"
       }
     },
@@ -96,7 +96,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-e216af0f8a6e725c798c8847d288c4766da9b267",
+        "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -117,7 +117,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -137,7 +137,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -156,8 +156,8 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "version": "3.12.8",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -196,7 +196,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( onnxruntime )"
       }
     },
@@ -206,7 +206,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -216,7 +216,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( onnxruntime )"
       }
     },
@@ -227,7 +227,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "onnxruntime",
         "version": "1.21.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -297,17 +297,17 @@
         "script_tags": "dae,file,download-and-extract",
         "script_variations": "url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx",
         "version": "",
-        "parent": "get-ml-model-retinanet,427bc5665e4541c2 ( onnx,_fp32 )"
+        "parent": "get-ml-model-retinanet,427bc5665e4541c2 ( fp32,_onnx )"
       }
     },
     {
-      "get,ml-model,object-detection,retinanet,raw,_onnx,_fp32": {
+      "get,ml-model,object-detection,retinanet,raw,_fp32,_onnx": {
         "script_uid": "427bc5665e4541c2",
         "script_alias": "get-ml-model-retinanet",
         "script_tags": "get,ml-model,raw,resnext50,retinanet,object-detection",
-        "script_variations": "onnx,fp32",
+        "script_variations": "fp32,onnx",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -316,7 +316,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
@@ -326,7 +326,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -366,7 +366,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( requests )"
       }
     },
@@ -376,7 +376,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -386,7 +386,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( requests )"
       }
     },
@@ -406,7 +406,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-e216af0f8a6e725c798c8847d288c4766da9b267",
+        "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -446,7 +446,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( boto3 )"
       }
     },
@@ -456,7 +456,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -466,7 +466,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( boto3 )"
       }
     },
@@ -476,7 +476,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "boto3",
-        "version": "1.37.9",
+        "version": "1.37.10",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -516,7 +516,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( tqdm )"
       }
     },
@@ -526,7 +526,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -536,7 +536,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( tqdm )"
       }
     },
@@ -586,7 +586,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -596,7 +596,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -606,7 +606,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -656,7 +656,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -666,7 +666,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -676,7 +676,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -726,7 +726,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pandas )"
       }
     },
@@ -736,7 +736,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -746,7 +746,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pandas )"
       }
     },
@@ -796,7 +796,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
@@ -806,7 +806,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -816,7 +816,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
@@ -846,7 +846,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-e216af0f8a6e725c798c8847d288c4766da9b267",
+        "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
         "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
@@ -856,7 +856,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
@@ -876,7 +876,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -926,7 +926,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pillow )"
       }
     },
@@ -936,7 +936,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -946,7 +946,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pillow )"
       }
     },
@@ -996,7 +996,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.ujson )"
       }
     },
@@ -1006,7 +1006,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1016,7 +1016,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.ujson )"
       }
     },
@@ -1066,7 +1066,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1076,7 +1076,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1086,7 +1086,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1106,7 +1106,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1127,7 +1127,7 @@
         "script_tags": "get,dataset,openimages,open-images,object-detection,preprocessed",
         "script_variations": "validation,NCHW,50",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1166,7 +1166,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
@@ -1176,7 +1176,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-e216af0f8a6e725c798c8847d288c4766da9b267",
+        "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
@@ -1207,7 +1207,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1226,7 +1226,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -1236,7 +1236,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e216af0f8a6e725c798c8847d288c4766da9b267",
+        "version": "master-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -1276,7 +1276,7 @@
         "script_alias": "get-cmake",
         "script_tags": "get,cmake,get-cmake",
         "script_variations": "",
-        "version": "3.31.6",
+        "version": "3.31.4",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -1316,7 +1316,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.wheel )"
       }
     },
@@ -1326,7 +1326,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1336,7 +1336,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.wheel )"
       }
     },
@@ -1356,7 +1356,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1366,7 +1366,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -1406,7 +1406,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pybind11 )"
       }
     },
@@ -1416,7 +1416,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1426,7 +1426,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pybind11 )"
       }
     },
@@ -1476,7 +1476,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.setuptools )"
       }
     },
@@ -1486,7 +1486,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1496,7 +1496,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.setuptools )"
       }
     },
@@ -1517,7 +1517,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1526,8 +1526,8 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-e216af0f8a6e725c798c8847d288c4766da9b267",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1536,8 +1536,8 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-e216af0f8a6e725c798c8847d288c4766da9b267",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "version": "master-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1576,7 +1576,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
       }
     },
@@ -1586,7 +1586,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
@@ -1596,7 +1596,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.0.1",
+        "version": "24.3.1",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
       }
     },
@@ -1607,7 +1607,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "7.0.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1616,7 +1616,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -1627,7 +1627,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "opencv-python",
         "version": "4.11.0.86",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1667,7 +1667,7 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "libgl",
         "version": "undetected",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1676,7 +1676,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1687,7 +1687,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
         "version": "1.26.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1696,7 +1696,7 @@
         "script_alias": "get-python3",
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
-        "version": "3.12.9",
+        "version": "3.12.8",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
@@ -1707,7 +1707,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pycocotools",
         "version": "2.0.8",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     },
     {
@@ -1747,7 +1747,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_onnxruntime,_cpu,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_retinanet,_offline,_fp32 )"
       }
     }
   ]

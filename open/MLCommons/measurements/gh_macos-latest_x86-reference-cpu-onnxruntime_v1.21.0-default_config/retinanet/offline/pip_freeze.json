@@ -1,8 +1,8 @@
 {
   "pip_freeze": {
-    "boto3": "1.37.9",
-    "botocore": "1.37.9",
-    "certifi": "2025.1.31",
+    "boto3": "1.37.10",
+    "botocore": "1.37.10",
+    "certifi": "2024.12.14",
     "charset-normalizer": "3.4.1",
     "colorama": "0.4.6",
     "coloredlogs": "15.0.1",
@@ -25,7 +25,7 @@
     "packaging": "24.2",
     "pandas": "2.2.3",
     "pillow": "11.1.0",
-    "pip": "25.0.1",
+    "pip": "24.3.1",
     "protobuf": "6.30.0",
     "psutil": "7.0.0",
     "pybind11": "2.13.6",
