@@ -365,7 +365,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_macos-latest_x86",
+    "System": "gh_macos-latest x86",
     "Platform": "gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.0-default_config",
     "UsedModel": "resnet50",
     "Model": "resnet",
@@ -392,7 +392,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 16.6841,
+    "Performance_Result": 21.0461,
     "Performance_Units": "Samples/s"
   },
   {
@@ -401,7 +401,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_macos-latest_x86",
+    "System": "gh_macos-latest x86",
     "Platform": "gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.0-default_config",
     "UsedModel": "retinanet",
     "Model": "retinanet",
@@ -464,7 +464,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-pytorch_v2.6.0-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.408576,
+    "Performance_Result": 0.39636,
     "Performance_Units": "Samples/s"
   },
   {
@@ -860,7 +860,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.19.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.3374,
+    "Performance_Result": 21.0076,
     "Performance_Units": "Samples/s"
   }
 ]
