@@ -1,0 +1,30 @@
+python3 python/main.py --profile resnet50-tf --model "/home/runner/MLC/repos/local/cache/download-file_dec01fb7/resnet50_v1.pb" --dataset-path /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_c2285539 --output "/home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_a3a6a09f/test_results/gh_ubuntu-latest x86-reference-cpu-tf-v2.19.0-default_config/resnet50/offline/accuracy" --scenario Offline --count 500 --threads 4 --user_conf /home/runner/MLC/repos/sujik18@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/07495647dac246ceb1a67f7a359815aa.conf --accuracy --use_preprocessed_dataset --cache_dir /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_c2285539 --dataset-list /home/runner/MLC/repos/local/cache/extract-file_e618e503/val.txt
+INFO:main:Namespace(dataset='imagenet', dataset_path='/home/runner/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_c2285539', dataset_list='/home/runner/MLC/repos/local/cache/extract-file_e618e503/val.txt', data_format=None, profile='resnet50-tf', scenario='Offline', max_batchsize=32, model='/home/runner/MLC/repos/local/cache/download-file_dec01fb7/resnet50_v1.pb', output='/home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_a3a6a09f/test_results/gh_ubuntu-latest x86-reference-cpu-tf-v2.19.0-default_config/resnet50/offline/accuracy', inputs=['input_tensor:0'], outputs=['ArgMax:0'], backend='tensorflow', device=None, model_name='resnet50', threads=4, qps=None, cache=0, cache_dir='/home/runner/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_c2285539', preprocessed_dir=None, use_preprocessed_dataset=True, accuracy=True, find_peak_performance=False, debug=False, user_conf='/home/runner/MLC/repos/sujik18@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/07495647dac246ceb1a67f7a359815aa.conf', audit_conf='audit.config', time=None, count=500, performance_sample_count=None, max_latency=None, samples_per_query=8)
+2025-03-15 13:23:20.289449: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-03-15 13:23:20.292787: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-03-15 13:23:20.301490: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1742045000.315407    7879 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1742045000.319645    7879 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1742045000.331543    7879 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1742045000.331560    7879 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1742045000.331562    7879 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1742045000.331564    7879 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-03-15 13:23:20.335133: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:imagenet:Loading 500 preprocessed images using 4 threads
+INFO:imagenet:loaded 500 images, cache=0, already_preprocessed=True, took=0.0sec
+WARNING:tensorflow:From /home/runner/MLC/repos/local/cache/get-git-repo_cdbb1682/inference/vision/classification_and_detection/python/backend_tf.py:55: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+WARNING:tensorflow:From /opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/tensorflow/python/tools/strip_unused_lib.py:84: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This API was designed for TensorFlow v1. See https://www.tensorflow.org/guide/migrate for instructions on how to migrate your code to TensorFlow v2.
+WARNING:tensorflow:From /opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/tensorflow/python/tools/optimize_for_inference_lib.py:138: remove_training_nodes (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This API was designed for TensorFlow v1. See https://www.tensorflow.org/guide/migrate for instructions on how to migrate your code to TensorFlow v2.
+2025-03-15 13:24:15.822187: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1742045055.863074    7879 mlir_graph_optimization_pass.cc:425] MLIR V1 optimization pass is not enabled
+INFO:main:starting TestScenario.Offline
+TestScenario.Offline qps=0.68, mean=14.7776, time=23.414, acc=76.000%, queries=16, tiles=50.0:14.9440,80.0:22.5184,90.0:23.1491,95.0:23.2753,99.0:23.3172,99.9:23.3266
