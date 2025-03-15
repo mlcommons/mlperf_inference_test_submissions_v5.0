@@ -339,8 +339,8 @@
         "Model":"rgat",
         "MlperfModel":"rgat",
         "Scenario":"Offline",
-        "Result":10.157,
-        "Accuracy":"acc: 74.000",
+        "Result":10.2361,
+        "Accuracy":"acc: 75.400",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
         "host_processors_per_node":1,
@@ -545,6 +545,36 @@
         "Division":"open",
         "SystemType":"edge",
         "SystemName":"gh_ubuntu-latest x86",
+        "Platform":"gh_ubuntu-latest_x86-reference-cpu-tf_v2.19.0-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":21.3374,
+        "Accuracy":"acc: 76.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
+        "host_processors_per_node":1,
+        "host_processor_core_count":2,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_ubuntu-latest_x86-reference-cpu-tf_v2.19.0-default_config\/resnet50\/offline",
+        "framework":"tf v2.19.0",
+        "operating_system":"Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "19":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"gh_ubuntu-latest x86",
         "Platform":"gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
         "Model":"resnet50",
         "MlperfModel":"resnet",
@@ -569,7 +599,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "19":{
+    "20":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -599,7 +629,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "20":{
+    "21":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -629,7 +659,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "21":{
+    "22":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
