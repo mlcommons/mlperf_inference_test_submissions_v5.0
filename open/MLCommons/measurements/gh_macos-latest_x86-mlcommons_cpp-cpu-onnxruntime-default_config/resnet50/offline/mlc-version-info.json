@@ -177,7 +177,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/download-file_c50ca0a5/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/download-file_8430b3b1/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
@@ -187,15 +187,15 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "md5sha1sum",
         "version": "0.9.5",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/download-file_c50ca0a5/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/download-file_8430b3b1/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_path./Users/runner/MLC/repos/local/cache/download-file_c50ca0a5/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_path./Users/runner/MLC/repos/local/cache/download-file_8430b3b1/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./Users/runner/MLC/repos/local/cache/download-file_c50ca0a5/caffe_ilsvrc12.tar.gz",
+        "script_variations": "path./Users/runner/MLC/repos/local/cache/download-file_8430b3b1/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz )"
       }
@@ -556,7 +556,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.setuptools",
-        "version": "76.0.0",
+        "version": "77.0.3",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -657,7 +657,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_c4932ab9/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_6fee8796/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
@@ -667,15 +667,15 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "md5sha1sum",
         "version": "0.9.5",
-        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_c4932ab9/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_6fee8796/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
-      "extract,file,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_c4932ab9/ILSVRC2012_img_val_500.tar": {
+      "extract,file,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_6fee8796/ILSVRC2012_img_val_500.tar": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_c4932ab9/ILSVRC2012_img_val_500.tar",
+        "script_variations": "path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_6fee8796/ILSVRC2012_img_val_500.tar",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar )"
       }
