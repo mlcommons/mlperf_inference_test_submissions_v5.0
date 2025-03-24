@@ -2,9 +2,9 @@
   "pip_freeze": {
     "distlib": "0.3.9",
     "dmiparser": "5.1",
-    "filelock": "3.17.0",
+    "filelock": "3.18.0",
     "pip": "22.2.2",
-    "platformdirs": "4.3.6",
+    "platformdirs": "4.3.7",
     "pybind11": "2.13.6",
     "setuptools": "63.2.0",
     "virtualenv": "20.29.3",
