@@ -446,7 +446,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.setuptools",
-        "version": "76.0.0",
+        "version": "78.1.0",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -656,7 +656,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "boto3",
-        "version": "1.37.13",
+        "version": "1.37.20",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -796,7 +796,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
-        "version": "2.2.3",
+        "version": "2.2.4",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -1226,7 +1226,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
-        "version": "2.2.3",
+        "version": "2.2.4",
         "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
@@ -1246,7 +1246,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
-        "version": "2.2.3",
+        "version": "2.2.4",
         "parent": "get-preprocessed-dataset-openimages,9842f1be8cba4c7b ( validation,_NCHW,_50 )"
       }
     },
