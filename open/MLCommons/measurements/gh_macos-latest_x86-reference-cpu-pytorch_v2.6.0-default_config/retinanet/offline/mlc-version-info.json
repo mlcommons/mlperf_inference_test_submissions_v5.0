@@ -117,7 +117,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -137,7 +137,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -157,7 +157,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.12.9",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -198,6 +198,36 @@
         "script_variations": "",
         "version": "3.12.9",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( torch )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
     {
@@ -227,7 +257,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torch",
         "version": "2.6.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -297,7 +327,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torchvision",
         "version": "0.21.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -367,17 +397,17 @@
         "script_tags": "dae,file,download-and-extract",
         "script_variations": "url.https://zenodo.org/record/6617981/files/resnext50_32x4d_fpn.pth",
         "version": "",
-        "parent": "get-ml-model-retinanet,427bc5665e4541c2 ( fp32,_pytorch )"
+        "parent": "get-ml-model-retinanet,427bc5665e4541c2 ( pytorch,_fp32 )"
       }
     },
     {
-      "get,ml-model,object-detection,retinanet,raw,_fp32,_pytorch": {
+      "get,ml-model,object-detection,retinanet,raw,_pytorch,_fp32": {
         "script_uid": "427bc5665e4541c2",
         "script_alias": "get-ml-model-retinanet",
         "script_tags": "get,ml-model,raw,resnext50,retinanet,object-detection",
-        "script_variations": "fp32,pytorch",
+        "script_variations": "pytorch,fp32",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -546,7 +576,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "boto3",
-        "version": "1.37.13",
+        "version": "1.37.22",
         "parent": "get-dataset-openimages,0a9d49b644cf4142 ( validation,_50,_default-annotations )"
       }
     },
@@ -1197,7 +1227,7 @@
         "script_tags": "get,dataset,openimages,open-images,object-detection,preprocessed",
         "script_variations": "validation,NCHW,50",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1277,7 +1307,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1576,7 +1606,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.setuptools",
-        "version": "76.0.0",
+        "version": "78.1.0",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -1587,7 +1617,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1597,7 +1627,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1607,7 +1637,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "master-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1677,7 +1707,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "7.0.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1697,7 +1727,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "opencv-python",
         "version": "4.11.0.86",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1737,7 +1767,7 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "libgl",
         "version": "undetected",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1757,7 +1787,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
         "version": "1.26.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1777,7 +1807,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pycocotools",
         "version": "2.0.8",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     },
     {
@@ -1817,7 +1847,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( offline,_retinanet,_cpu,_pytorch,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( retinanet,_offline,_cpu,_pytorch,_fp32 )"
       }
     }
   ]
