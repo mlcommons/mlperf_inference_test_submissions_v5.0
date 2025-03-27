@@ -19,6 +19,9 @@ graph TD
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_pip_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    get-generic-python-lib,94b62a682bc44791_(_pip_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> get,generic-python-lib,_pip
     app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_retinanet,_offline,_onnxruntime,_cpu,_fp32_) --> get,generic-python-lib,_onnxruntime
