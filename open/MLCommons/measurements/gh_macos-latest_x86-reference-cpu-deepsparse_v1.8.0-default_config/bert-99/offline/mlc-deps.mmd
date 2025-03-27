@@ -23,35 +23,38 @@ graph TD
     download-and-extract,c67e81a4ce2649f5_(_wget,_url.https://zenodo.org/record/3733868/files/vocab.txt_) --> download,file,_wget,_url.https://zenodo.org/record/3733868/files/vocab.txt
     get-dataset-squad-vocab,e38874fff5094577 --> download-and-extract,_wget,_url.https://zenodo.org/record/3733868/files/vocab.txt
     app-mlperf-inference,d775cac873ee4231_(_reference,_bert-99,_deepsparse,_cpu,_test,_r5.0-dev_default,_int8,_offline_) --> get,dataset-aux,squad-vocab
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> detect,os
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> detect,cpu
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> detect,cpu
     get-sys-utils-cm,bc90993277e84b8e --> detect,os
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,python
     get-generic-python-lib,94b62a682bc44791_(_torch_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_torch_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_torch_) --> get,python3
+    get-generic-python-lib,94b62a682bc44791_(_pip_) --> detect,os
+    detect-cpu,586c8a43320142f7 --> detect,os
+    get-generic-python-lib,94b62a682bc44791_(_pip_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_torch_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_torch
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_torch
     get-generic-python-lib,94b62a682bc44791_(_transformers_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_transformers_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_transformers_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_transformers_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_transformers
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_transformers
     download-file,9cdc8dc41aae437e_(_cmutil,_url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> detect,os
     download-and-extract,c67e81a4ce2649f5_(_url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> download,file,_cmutil,_url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz
-    extract-file,3f0b76219d004817_(_path./Users/runner/MLC/repos/local/cache/download-file_43e63ab9/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> detect,os
-    extract-file,3f0b76219d004817_(_path./Users/runner/MLC/repos/local/cache/download-file_43e63ab9/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> get,generic-sys-util,_md5sha1sum
-    download-and-extract,c67e81a4ce2649f5_(_url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> extract,file,_path./Users/runner/MLC/repos/local/cache/download-file_43e63ab9/oBERT-Large_95sparse_block4_qat.onnx.tar.xz
-    get-ml-model-bert-large-squad,5e865dbdc65949d2_(_deepsparse,_int8_) --> download-and-extract,_url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz
-    get-ml-model-bert-large-squad,5e865dbdc65949d2_(_deepsparse,_int8_) --> get,dataset-aux,squad-vocab
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,ml-model,language-processing,bert-large,raw,_deepsparse,_int8
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,dataset,squad,original
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,dataset-aux,squad-vocab
+    extract-file,3f0b76219d004817_(_path./Users/runner/MLC/repos/local/cache/download-file_360245a0/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> detect,os
+    extract-file,3f0b76219d004817_(_path./Users/runner/MLC/repos/local/cache/download-file_360245a0/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> get,generic-sys-util,_md5sha1sum
+    download-and-extract,c67e81a4ce2649f5_(_url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz_) --> extract,file,_path./Users/runner/MLC/repos/local/cache/download-file_360245a0/oBERT-Large_95sparse_block4_qat.onnx.tar.xz
+    get-ml-model-bert-large-squad,5e865dbdc65949d2_(_int8,_deepsparse_) --> download-and-extract,_url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz
+    get-ml-model-bert-large-squad,5e865dbdc65949d2_(_int8,_deepsparse_) --> get,dataset-aux,squad-vocab
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,ml-model,language-processing,bert-large,raw,_int8,_deepsparse
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,dataset,squad,original
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,dataset-aux,squad-vocab
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -59,7 +62,7 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src,_deeplearningexamples
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> generate,user-conf,mlperf,inference
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> detect,os
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,python3
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,mlcommons,inference,src
@@ -90,56 +93,56 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.setuptools_) --> get,generic-python-lib,_pip
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,generic-python-lib,_package.setuptools
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,loadgen
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,mlcommons,inference,src,_deeplearningexamples
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,loadgen
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,mlcommons,inference,src,_deeplearningexamples
     get-mlperf-inference-src,4b57186581024797 --> detect,os
     get-mlperf-inference-src,4b57186581024797 --> get,python3
     get-git-repo,ed603e7292974f10_(_branch.deepsparse,_repo.https://github.com/gateoverflow/nm-inference_) --> detect,os
     get-mlperf-inference-src,4b57186581024797 --> get,git,repo,_branch.deepsparse,_repo.https://github.com/gateoverflow/nm-inference
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,mlcommons,inference,src
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_package.psutil
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_package.psutil
     get-generic-python-lib,94b62a682bc44791_(_deepsparse_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_deepsparse_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_deepsparse_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_deepsparse_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_deepsparse
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_deepsparse
     get-generic-python-lib,94b62a682bc44791_(_package.pydantic_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.pydantic_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.pydantic_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.pydantic_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_package.pydantic
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_package.pydantic
     get-generic-python-lib,94b62a682bc44791_(_tokenization_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_tokenization_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_tokenization_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_tokenization_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_tokenization
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_tokenization
     get-generic-python-lib,94b62a682bc44791_(_six_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_six_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_six_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_six_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_six
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_six
     get-generic-python-lib,94b62a682bc44791_(_package.absl-py_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.absl-py_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.absl-py_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.absl-py_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> get,generic-python-lib,_package.absl-py
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> get,generic-python-lib,_package.absl-py
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_cpu,_int8,_bert-99,_offline,_deepsparse_) --> benchmark-mlperf
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_int8,_bert-99,_offline,_cpu,_deepsparse_) --> benchmark-mlperf
