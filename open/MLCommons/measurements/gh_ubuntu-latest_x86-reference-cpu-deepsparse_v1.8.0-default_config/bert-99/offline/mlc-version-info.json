@@ -197,7 +197,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -217,7 +217,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -237,7 +237,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.11.11",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -278,6 +278,36 @@
         "script_variations": "",
         "version": "3.11.11",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( torch )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
       }
     },
     {
@@ -307,7 +337,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "torch",
         "version": "2.6.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -376,8 +406,8 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "transformers",
-        "version": "4.50.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "version": "4.50.2",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -407,15 +437,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/download-file_862b2603/oBERT-Large_95sparse_block4_qat.onnx.tar.xz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./home/runner/MLC/repos/local/cache/download-file_db940a3b/oBERT-Large_95sparse_block4_qat.onnx.tar.xz )"
       }
     },
     {
-      "extract,file,_path./home/runner/MLC/repos/local/cache/download-file_862b2603/oBERT-Large_95sparse_block4_qat.onnx.tar.xz": {
+      "extract,file,_path./home/runner/MLC/repos/local/cache/download-file_db940a3b/oBERT-Large_95sparse_block4_qat.onnx.tar.xz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./home/runner/MLC/repos/local/cache/download-file_862b2603/oBERT-Large_95sparse_block4_qat.onnx.tar.xz",
+        "script_variations": "path./home/runner/MLC/repos/local/cache/download-file_db940a3b/oBERT-Large_95sparse_block4_qat.onnx.tar.xz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz )"
       }
@@ -427,7 +457,7 @@
         "script_tags": "dae,file,download-and-extract",
         "script_variations": "url.https://github.com/mlcommons/inference_results_v2.1/raw/master/open/NeuralMagic/code/bert/deepsparse/models/oBERT-Large_95sparse_block4_qat.onnx.tar.xz",
         "version": "",
-        "parent": "get-ml-model-bert-large-squad,5e865dbdc65949d2 ( deepsparse,_int8 )"
+        "parent": "get-ml-model-bert-large-squad,5e865dbdc65949d2 ( int8,_deepsparse )"
       }
     },
     {
@@ -437,17 +467,17 @@
         "script_tags": "get,aux,squad,dataset-aux,language-processing,squad-aux,vocab,squad-vocab",
         "script_variations": "",
         "version": "",
-        "parent": "get-ml-model-bert-large-squad,5e865dbdc65949d2 ( deepsparse,_int8 )"
+        "parent": "get-ml-model-bert-large-squad,5e865dbdc65949d2 ( int8,_deepsparse )"
       }
     },
     {
-      "get,ml-model,language-processing,bert-large,raw,_deepsparse,_int8": {
+      "get,ml-model,language-processing,bert-large,raw,_int8,_deepsparse": {
         "script_uid": "5e865dbdc65949d2",
         "script_alias": "get-ml-model-bert-large-squad",
         "script_tags": "get,ml-model,raw,bert,bert-large,bert-squad,language,language-processing",
-        "script_variations": "deepsparse,int8",
+        "script_variations": "int8,deepsparse",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -457,7 +487,7 @@
         "script_tags": "get,dataset,squad,language-processing,validation,original",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -467,7 +497,7 @@
         "script_tags": "get,aux,squad,dataset-aux,language-processing,squad-aux,vocab,squad-vocab",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -547,7 +577,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -857,7 +887,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -867,7 +897,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "deeplearningexamples",
         "version": "r5.0-git-5e9039561c8f3e3851b0a98c3e4035e2a7469cca",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -917,7 +947,7 @@
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
         "version": "deepsparse",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -987,7 +1017,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "7.0.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -1057,7 +1087,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "deepsparse",
         "version": "1.8.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -1126,8 +1156,8 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.pydantic",
-        "version": "2.10.6",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "version": "2.11.0",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -1197,7 +1227,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "tokenization",
         "version": "1.0.7",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -1267,7 +1297,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "six",
         "version": "1.17.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -1336,8 +1366,8 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.absl-py",
-        "version": "2.2.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "version": "2.2.1",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     },
     {
@@ -1377,7 +1407,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( deepsparse,_int8,_bert-99,_offline,_cpu )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( int8,_bert-99,_deepsparse,_cpu,_offline )"
       }
     }
   ]
