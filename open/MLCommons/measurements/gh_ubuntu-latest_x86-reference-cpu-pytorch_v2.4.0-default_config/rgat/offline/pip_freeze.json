@@ -27,7 +27,7 @@
     "propcache": "0.3.1",
     "psutil": "7.0.0",
     "pybind11": "2.13.6",
-    "pydantic": "2.11.0",
+    "pydantic": "2.11.1",
     "pydantic_core": "2.33.0",
     "pyparsing": "3.2.3",
     "python-dateutil": "2.9.0.post0",
