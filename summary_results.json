@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.421317,
+    "Performance_Result": 0.422216,
     "Performance_Units": "Samples/s"
   },
   {
