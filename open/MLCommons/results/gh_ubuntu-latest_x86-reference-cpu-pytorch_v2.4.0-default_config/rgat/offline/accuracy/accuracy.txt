@@ -1,2 +1,2 @@
-accuracy=76.000%, good=380, total=500
-hash=22707fa9020fd1a612d9da1941d1e8025c5775f7d754b8d15bfafd21424573d0
+accuracy=74.200%, good=371, total=500
+hash=ffd1c3c2e4cac0fa05abbc737d98511bbfaf35acabee74a1a1ca9387abfce970
