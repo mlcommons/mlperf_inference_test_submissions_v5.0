@@ -10,11 +10,11 @@ graph TD
     app-mlperf-inference,d775cac873ee4231_(_python,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline_) --> pull,git,repo
     get-mlperf-inference-utils,e341e5f86d8342e5 --> get,mlperf,inference,src
     app-mlperf-inference,d775cac873ee4231_(_python,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline_) --> get,mlperf,inference,utils
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> detect,os
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> detect,cpu
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> detect,cpu
     get-sys-utils-cm,bc90993277e84b8e --> detect,os
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,python
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> detect,cpu
@@ -24,16 +24,16 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_onnxruntime_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_onnxruntime
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_onnxruntime
     download-file,9cdc8dc41aae437e_(_cmutil,_url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx_) --> detect,os
     get-generic-sys-util,bb0393afa8404a11_(_md5sha1sum_) --> detect,os
     get-generic-sys-util,bb0393afa8404a11_(_install,_md5sha1sum_) --> detect,os
     get-generic-sys-util,bb0393afa8404a11_(_md5sha1sum_) --> get,generic-sys-util,_install,_md5sha1sum
     download-file,9cdc8dc41aae437e_(_cmutil,_url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx_) --> get,generic-sys-util,_md5sha1sum
     download-and-extract,c67e81a4ce2649f5_(_url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx_) --> download,file,_cmutil,_url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx
-    get-ml-model-retinanet,427bc5665e4541c2_(_onnx,_fp32_) --> download-and-extract,_url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,ml-model,object-detection,retinanet,raw,_onnx,_fp32
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,python3
+    get-ml-model-retinanet,427bc5665e4541c2_(_fp32,_onnx_) --> download-and-extract,_url.https://zenodo.org/record/6617879/files/resnext50_32x4d_fpn.onnx
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,ml-model,object-detection,retinanet,raw,_fp32,_onnx
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,python3
     get-dataset-openimages,0a9d49b644cf4142_(_validation,_50,_default-annotations_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_requests_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
@@ -85,36 +85,36 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> get,generic-python-lib,_pip
     get-dataset-openimages,0a9d49b644cf4142_(_validation,_50,_default-annotations_) --> get,generic-python-lib,_pycocotools
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,dataset,object-detection,openimages,original,_validation,_50,_default-annotations
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> mlperf,mlcommons,inference,source,src
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,dataset,object-detection,openimages,original,_validation,_50,_default-annotations
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> mlperf,mlcommons,inference,source,src
     get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> get,python3
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,generic-python-lib,_pycocotools
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,generic-python-lib,_pycocotools
     get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> get,python3
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,generic-python-lib,_opencv-python
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,generic-python-lib,_opencv-python
     get-generic-python-lib,94b62a682bc44791_(_pillow_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_pillow_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_pillow_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pillow_) --> get,generic-python-lib,_pip
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,generic-python-lib,_pillow
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,generic-python-lib,_pillow
     get-generic-python-lib,94b62a682bc44791_(_package.ujson_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.ujson_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.ujson_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.ujson_) --> get,generic-python-lib,_pip
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,generic-python-lib,_package.ujson
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,generic-python-lib,_package.ujson
     get-generic-python-lib,94b62a682bc44791_(_numpy_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_numpy_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,generic-python-lib,_pip
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,generic-python-lib,_numpy
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,generic-python-lib,_numpy
     get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,python3
-    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_NCHW,_50_) --> get,generic-python-lib,_numpy
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,dataset,object-detection,open-images,openimages,preprocessed,_validation,_NCHW,_50
+    get-preprocessed-dataset-openimages,9842f1be8cba4c7b_(_validation,_50,_NCHW_) --> get,generic-python-lib,_numpy
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,dataset,object-detection,open-images,openimages,preprocessed,_validation,_50,_NCHW
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -122,7 +122,7 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> generate,user-conf,mlperf,inference
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> detect,os
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,python3
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,mlcommons,inference,src
@@ -153,27 +153,27 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.setuptools_) --> get,generic-python-lib,_pip
     get-mlperf-inference-loadgen,64c3d98d0ba04950 --> get,generic-python-lib,_package.setuptools
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,loadgen
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,mlcommons,inference,src
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,loadgen
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,mlcommons,inference,src
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,mlcommons,inference,src
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.psutil_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_package.psutil
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_package.psutil
     get-generic-python-lib,94b62a682bc44791_(_opencv-python_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_opencv-python
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_opencv-python
     get-generic-sys-util,bb0393afa8404a11_(_libgl_) --> detect,os
     get-generic-sys-util,bb0393afa8404a11_(_install,_libgl_) --> detect,os
     get-generic-sys-util,bb0393afa8404a11_(_libgl_) --> get,generic-sys-util,_install,_libgl
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,generic-sys-util,_libgl
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,generic-sys-util,_libgl
     get-generic-python-lib,94b62a682bc44791_(_numpy_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_numpy
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_numpy
     get-generic-python-lib,94b62a682bc44791_(_pycocotools_) --> get,python3
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_pycocotools
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> get,generic-python-lib,_pycocotools
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_offline,_onnxruntime,_retinanet,_cpu,_fp32_) --> benchmark-mlperf
+    app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_onnxruntime,_offline,_retinanet,_cpu,_fp32_) --> benchmark-mlperf
