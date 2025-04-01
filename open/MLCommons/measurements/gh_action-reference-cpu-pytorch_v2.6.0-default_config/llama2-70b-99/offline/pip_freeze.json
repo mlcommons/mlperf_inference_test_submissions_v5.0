@@ -16,7 +16,6 @@
     "cramjam": "2.9.1",
     "datasets": "3.2.0",
     "dill": "0.3.8",
-    "dmiparser": "5.1",
     "evaluate": "0.4.3",
     "fastparquet": "2024.11.0",
     "filelock": "3.17.0",
