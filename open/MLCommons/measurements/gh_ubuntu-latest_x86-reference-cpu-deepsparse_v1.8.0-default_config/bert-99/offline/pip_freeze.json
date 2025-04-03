@@ -1,6 +1,6 @@
 {
   "pip_freeze": {
-    "absl-py": "2.2.1",
+    "absl-py": "2.2.2",
     "annotated-types": "0.7.0",
     "certifi": "2025.1.31",
     "charset-normalizer": "3.4.1",
@@ -33,8 +33,8 @@
     "psutil": "7.0.0",
     "py-machineid": "0.7.0",
     "pybind11": "2.13.6",
-    "pydantic": "2.11.1",
-    "pydantic_core": "2.33.0",
+    "pydantic": "2.11.2",
+    "pydantic_core": "2.33.1",
     "python-dateutil": "2.9.0.post0",
     "pytz": "2025.2",
     "PyYAML": "6.0.2",
