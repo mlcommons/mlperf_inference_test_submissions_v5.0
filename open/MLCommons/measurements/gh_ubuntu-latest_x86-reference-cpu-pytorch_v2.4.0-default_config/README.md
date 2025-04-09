@@ -1,3 +1,3 @@
 | Model   | Scenario   |   Accuracy |   Throughput | Latency (in ms)   |
 |---------|------------|------------|--------------|-------------------|
-| rgat    | offline    |         75 |       10.172 | -                 |
+| rgat    | offline    |         76 |       10.355 | -                 |
