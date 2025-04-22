@@ -279,7 +279,7 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Offline",
-        "Result":0.436766,
+        "Result":0.440114,
         "Accuracy":"mAP: 76.951",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD EPYC 7763 64-Core Processor",
@@ -514,6 +514,36 @@
         "Availability":"available",
         "Division":"open",
         "SystemType":"edge",
+        "SystemName":"gh_macos-latest x86",
+        "Platform":"gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config",
+        "Model":"resnet50",
+        "MlperfModel":"resnet",
+        "Scenario":"Offline",
+        "Result":16.5402,
+        "Accuracy":"acc: 76.000",
+        "number_of_nodes":1,
+        "host_processor_model_name":"undefined",
+        "host_processors_per_node":1,
+        "host_processor_core_count":3,
+        "accelerator_model_name":null,
+        "accelerators_per_node":0,
+        "Location":"open\/MLCommons\/results\/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config\/resnet50\/offline",
+        "framework":"onnxruntime v1.21.1",
+        "operating_system":" (darwin-23.6.0)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    },
+    "18":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
         "SystemName":"gh_ubuntu-latest_x86",
         "Platform":"gh_ubuntu-latest_x86-reference-cpu-pytorch_v2.6.0-default_config",
         "Model":"retinanet",
@@ -539,7 +569,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "18":{
+    "19":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -569,7 +599,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "19":{
+    "20":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -599,7 +629,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "20":{
+    "21":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -629,7 +659,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "21":{
+    "22":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -659,7 +689,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "22":{
+    "23":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -689,7 +719,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "23":{
+    "24":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -719,7 +749,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "24":{
+    "25":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
