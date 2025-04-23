@@ -127,7 +127,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet/offline",
     "Software": "onnxruntime",
-    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1012-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.417637,
+    "Performance_Result": 0.41736,
     "Performance_Units": "Samples/s"
   },
   {
