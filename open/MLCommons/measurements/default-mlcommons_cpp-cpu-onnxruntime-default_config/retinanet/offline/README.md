@@ -2,7 +2,7 @@
 
 ## Host platform
 
-* OS version: Linux-6.8.0-1021-azure-x86_64-with-glibc2.34
+* OS version: Linux-6.11.0-1012-azure-x86_64-with-glibc2.34
 * CPU version: x86_64
 * Python version: 3.8.18 (default, Dec 12 2024, 19:15:30) 
 [GCC 13.2.0]
@@ -17,7 +17,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo anandhu-eng@mlperf-automations --checkout=01d67d8e7e8998611634ce6e1a75a6207064cae5
+mlc pull repo anandhu-eng@mlperf-automations --checkout=da86f8db5f220fd1bf9e168dde4f6a32f20969af
 
 
 ```
@@ -41,4 +41,4 @@ Model Precision: fp32
 `mAP`: `49.593`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `0.419768`
+`Samples per second`: `0.419822`
