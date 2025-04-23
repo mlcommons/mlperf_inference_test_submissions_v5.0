@@ -248,7 +248,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 8.52106,
+    "Performance_Result": 9.41581,
     "Performance_Units": "Samples/s"
   },
   {
@@ -437,7 +437,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_macos-latest x86",
+    "System": "gh_macos-latest_x86",
     "Platform": "gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config",
     "UsedModel": "resnet50",
     "Model": "resnet",
@@ -473,7 +473,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_macos-latest x86",
+    "System": "gh_macos-latest_x86",
     "Platform": "gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config",
     "UsedModel": "retinanet",
     "Model": "retinanet",
@@ -500,7 +500,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.389516,
+    "Performance_Result": 0.410481,
     "Performance_Units": "Samples/s"
   },
   {
