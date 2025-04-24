@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.417538,
+    "Performance_Result": 0.419295,
     "Performance_Units": "Samples/s"
   },
   {
@@ -617,7 +617,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_ubuntu-latest x86",
+    "System": "gh_ubuntu-latest_x86",
     "Platform": "gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
     "UsedModel": "resnet50",
     "Model": "resnet",
@@ -653,7 +653,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_ubuntu-latest x86",
+    "System": "gh_ubuntu-latest_x86",
     "Platform": "gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config",
     "UsedModel": "retinanet",
     "Model": "retinanet",
@@ -680,7 +680,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.416065,
+    "Performance_Result": 0.418319,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1027,7 +1027,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-tf_v2.19.0-default_config/resnet50/offline",
     "Software": "tf v2.19.0",
-    "operating_system": "Ubuntu 24.04 (linux-6.8.0-1021-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1012-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -1040,7 +1040,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.19.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.076,
+    "Performance_Result": 21.0048,
     "Performance_Units": "Samples/s"
   }
 ]
