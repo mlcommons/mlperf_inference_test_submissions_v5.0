@@ -608,7 +608,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.70404,
+    "Performance_Result": 1.74317,
     "Performance_Units": "Samples/s"
   },
   {
@@ -644,7 +644,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 22.9773,
+    "Performance_Result": 23.0648,
     "Performance_Units": "Samples/s"
   },
   {
@@ -716,7 +716,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.32648,
+    "Performance_Result": 6.27691,
     "Performance_Units": "Samples/s"
   },
   {
