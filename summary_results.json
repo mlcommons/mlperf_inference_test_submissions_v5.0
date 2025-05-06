@@ -464,7 +464,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 20.4138,
+    "Performance_Result": 16.7593,
     "Performance_Units": "Samples/s"
   },
   {
@@ -608,7 +608,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.74317,
+    "Performance_Result": 1.71468,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1063,7 +1063,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-tf_v2.19.0-default_config/resnet50/offline",
     "Software": "tf v2.19.0",
-    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1012-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1013-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -1076,7 +1076,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.19.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 20.988,
+    "Performance_Result": 20.7149,
     "Performance_Units": "Samples/s"
   }
 ]
