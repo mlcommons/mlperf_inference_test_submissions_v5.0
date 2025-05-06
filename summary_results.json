@@ -869,7 +869,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_ubuntu-latest x86",
+    "System": "gh_ubuntu-latest_x86",
     "Platform": "gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config",
     "UsedModel": "resnet50",
     "Model": "resnet",
@@ -905,7 +905,7 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "edge",
-    "System": "gh_ubuntu-latest x86",
+    "System": "gh_ubuntu-latest_x86",
     "Platform": "gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config",
     "UsedModel": "retinanet",
     "Model": "retinanet",
@@ -932,7 +932,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.21.1-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.430777,
+    "Performance_Result": 0.431769,
     "Performance_Units": "Samples/s"
   },
   {
