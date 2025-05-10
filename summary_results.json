@@ -127,7 +127,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet/offline",
     "Software": "onnxruntime",
-    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1012-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1013-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -140,7 +140,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.417812,
+    "Performance_Result": 0.421368,
     "Performance_Units": "Samples/s"
   },
   {
@@ -284,7 +284,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-deepsparse_v1.8.0-default_config/bert-99",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.32683,
+    "Performance_Result": 7.44519,
     "Performance_Units": "Samples/s"
   },
   {
@@ -608,7 +608,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.7158,
+    "Performance_Result": 1.71494,
     "Performance_Units": "Samples/s"
   },
   {
