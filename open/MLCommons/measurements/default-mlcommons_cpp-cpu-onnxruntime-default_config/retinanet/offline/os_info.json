@@ -26,8 +26,8 @@
   ],
   "MLC_HOST_PLATFORM_FLAVOR": "x86_64",
   "MLC_HOST_PYTHON_BITS": "64",
-  "MLC_HOST_SYSTEM_NAME": "fv-az802-840",
+  "MLC_HOST_SYSTEM_NAME": "fv-az2246-12",
   "+PATH": [
-    "/home/runner/MLC/repos/local/cache/install-python-src_77466d18/install/bin"
+    "/home/runner/MLC/repos/local/cache/install-python-src_8c9bb41e/install/bin"
   ]
 }
