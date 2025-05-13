@@ -12,8 +12,8 @@ graph TD
     app-mlperf-inference,d775cac873ee4231_(_python,_resnet50,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline_) --> get,mlperf,inference,utils
     download-file,9cdc8dc41aae437e_(_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz_) --> detect,os
     download-and-extract,c67e81a4ce2649f5_(_extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz_) --> download,file,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz
-    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/download-file_2b260cd5/caffe_ilsvrc12.tar.gz_) --> detect,os
-    download-and-extract,c67e81a4ce2649f5_(_extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz_) --> extract,file,_path./home/runner/MLC/repos/local/cache/download-file_2b260cd5/caffe_ilsvrc12.tar.gz
+    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/download-file_c1a9d82a/caffe_ilsvrc12.tar.gz_) --> detect,os
+    download-and-extract,c67e81a4ce2649f5_(_extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz_) --> extract,file,_path./home/runner/MLC/repos/local/cache/download-file_c1a9d82a/caffe_ilsvrc12.tar.gz
     get-dataset-imagenet-aux,bb2c6dd8c8c64217 --> download-and-extract,_extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz
     app-mlperf-inference,d775cac873ee4231_(_python,_resnet50,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline_) --> get,dataset-aux,imagenet-aux
     app-mlperf-inference-mlcommons-python,ff149e9781fc4b65_(_resnet50,_offline,_onnxruntime,_cpu,_fp32_) --> detect,os
@@ -39,8 +39,8 @@ graph TD
     get-dataset-imagenet-val,7afd58d287fe4f11_(_size.500,_2012_) --> detect,os
     download-file,9cdc8dc41aae437e_(_cmutil,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> detect,os
     download-and-extract,c67e81a4ce2649f5_(_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> download,file,_cmutil,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar
-    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_2e9afedc/ILSVRC2012_img_val_500.tar_) --> detect,os
-    download-and-extract,c67e81a4ce2649f5_(_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_2e9afedc/ILSVRC2012_img_val_500.tar
+    extract-file,3f0b76219d004817_(_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_e4fcaddf/ILSVRC2012_img_val_500.tar_) --> detect,os
+    download-and-extract,c67e81a4ce2649f5_(_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar_) --> extract,file,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_e4fcaddf/ILSVRC2012_img_val_500.tar
     get-dataset-imagenet-val,7afd58d287fe4f11_(_size.500,_2012_) --> download-and-extract,file,_extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar
     get-preprocessed-dataset-imagenet,f259d490bbaf45f5_(_-for.mobilenet,_NCHW_) --> get,dataset,image-classification,original,_size.500,_2012
     get-preprocessed-dataset-imagenet,f259d490bbaf45f5_(_-for.mobilenet,_NCHW_) --> get,dataset-aux,image-classification,imagenet-aux
