@@ -66,7 +66,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-836f22c77d3a6c4d925e74ab98cc99c4fc9c1517",
+        "version": "r5.0-git-cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( cpp,_retinanet,_onnxruntime,_cpu,_test,_r5.0-dev_default,_offline )"
       }
     },
@@ -76,7 +76,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-836f22c77d3a6c4d925e74ab98cc99c4fc9c1517",
+        "version": "r5.0-git-cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -156,7 +156,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-836f22c77d3a6c4d925e74ab98cc99c4fc9c1517",
+        "version": "master-git-cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950"
       }
     },
@@ -456,7 +456,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-836f22c77d3a6c4d925e74ab98cc99c4fc9c1517",
+        "version": "r5.0-git-cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3",
         "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( retinanet,_offline,_cpu,_onnxruntime )"
       }
     },
@@ -536,7 +536,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-836f22c77d3a6c4d925e74ab98cc99c4fc9c1517",
+        "version": "r5.0-git-cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
