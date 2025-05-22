@@ -33,7 +33,7 @@
     "psutil": "7.0.0",
     "py-machineid": "0.7.0",
     "pybind11": "2.13.6",
-    "pydantic": "2.11.4",
+    "pydantic": "2.11.5",
     "pydantic_core": "2.33.2",
     "python-dateutil": "2.9.0.post0",
     "pytz": "2025.2",
