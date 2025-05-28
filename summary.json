@@ -459,7 +459,7 @@
         "Model":"bert-99",
         "MlperfModel":"bert-99",
         "Scenario":"Offline",
-        "Result":5.95448,
+        "Result":7.57138,
         "Accuracy":"F1: 80.0",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
