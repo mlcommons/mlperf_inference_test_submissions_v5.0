@@ -30,7 +30,7 @@
     "opencv-python": "4.11.0.86",
     "opencv-python-headless": "4.11.0.86",
     "opt_einsum": "3.4.0",
-    "optree": "0.15.0",
+    "optree": "0.16.0",
     "packaging": "25.0",
     "pillow": "11.2.1",
     "pip": "25.1.1",
