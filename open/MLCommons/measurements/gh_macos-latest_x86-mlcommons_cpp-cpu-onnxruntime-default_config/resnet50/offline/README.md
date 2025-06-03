@@ -2,7 +2,7 @@
 
 ## Host platform
 
-* OS version: macOS-14.7.5-arm64-arm-64bit
+* OS version: macOS-14.7.6-arm64-arm-64bit
 * CPU version: arm
 * Python version: 3.12.10 (v3.12.10:0cc81280367, Apr  8 2025, 08:46:59) [Clang 13.0.0 (clang-1300.0.29.30)]
 * MLC version: unknown
@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo anandhu-eng@mlperf-automations --checkout=29ed14c6378fc031ebd5bd7fef581e300ce03bc0
+mlc pull repo anandhu-eng@mlperf-automations --checkout=f0fd1e81cbca07ecd89d25126bfc011204622471
 
 
 ```
@@ -40,4 +40,4 @@ Model Precision: fp32
 `acc`: `76.0`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Samples per second`: `8.26503`
+`Samples per second`: `6.22828`
