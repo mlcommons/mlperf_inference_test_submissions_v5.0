@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 21.0042
+Samples per second: 20.931
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -13,15 +13,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 5782608173
-Max latency (ns)                : 23804755657
-Mean latency (ns)               : 14890860832
-50.00 percentile latency (ns)   : 12609695965
-90.00 percentile latency (ns)   : 23782021179
-95.00 percentile latency (ns)   : 23804755657
-97.00 percentile latency (ns)   : 23804755657
-99.00 percentile latency (ns)   : 23804755657
-99.90 percentile latency (ns)   : 23804755657
+Min latency (ns)                : 6004625312
+Max latency (ns)                : 23888042335
+Mean latency (ns)               : 14920125887
+50.00 percentile latency (ns)   : 12309447599
+90.00 percentile latency (ns)   : 23854577295
+95.00 percentile latency (ns)   : 23888042335
+97.00 percentile latency (ns)   : 23888042335
+99.00 percentile latency (ns)   : 23888042335
+99.90 percentile latency (ns)   : 23888042335
 
 ================================================
 Test Parameters Used
@@ -34,9 +34,9 @@ min_duration (ms): 0
 max_duration (ms): 0
 min_query_count : 1
 max_query_count : 500
-qsl_rng_seed : 6023615788873153749
-sample_index_rng_seed : 15036839855038426416
-schedule_rng_seed : 9933818062894767841
+qsl_rng_seed : 1780908523862526354
+sample_index_rng_seed : 14771362308971278857
+schedule_rng_seed : 18209322760996052031
 accuracy_log_rng_seed : 0
 accuracy_log_probability : 0
 accuracy_log_sampling_target : 0
