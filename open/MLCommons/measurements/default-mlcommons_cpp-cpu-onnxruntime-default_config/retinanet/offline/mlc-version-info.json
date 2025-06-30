@@ -31,42 +31,12 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-mlperf-inference-src,4b57186581024797"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.10.8",
-        "parent": "get-mlperf-inference-src,4b57186581024797"
-      }
-    },
-    {
-      "get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference": {
-        "script_uid": "ed603e7292974f10",
-        "script_alias": "get-git-repo",
-        "script_tags": "get,git,repo,repository,clone",
-        "script_variations": "branch.master,repo.https://github.com/mlcommons/inference",
-        "version": "",
-        "parent": "get-mlperf-inference-src,4b57186581024797"
-      }
-    },
-    {
       "get,mlcommons,inference,src": {
         "script_uid": "4b57186581024797",
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
+        "version": "master-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( cpp,_retinanet,_onnxruntime,_cpu,_test,_r5.1-dev_default,_offline )"
       }
     },
@@ -76,7 +46,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
+        "version": "master-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -97,7 +67,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -117,7 +87,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -127,7 +97,7 @@
         "script_tags": "get,sys-utils-cm,sys-utils-mlc",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -447,7 +417,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "wg-inference",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -456,8 +426,8 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "version": "master-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -467,7 +437,7 @@
         "script_tags": "install,onnxruntime,get,prebuilt,lib,lang-c,lang-cpp",
         "script_variations": "cpu",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -477,7 +447,7 @@
         "script_tags": "get,dataset,openimages,open-images,object-detection,preprocessed",
         "script_variations": "validation,NCHW,50",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -487,7 +457,7 @@
         "script_tags": "get,ml-model,raw,resnext50,retinanet,object-detection",
         "script_variations": "onnx,fp32",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -556,7 +526,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "r5.0-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
+        "version": "master-git-0a3570efb0309b5581f2831d84c05fe5483b5ef7",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
       }
     },
@@ -567,7 +537,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "wg-inference",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -637,7 +607,7 @@
         "script_tags": "compile,program,c-program,cpp-program,compile-program,compile-c-program,compile-cpp-program",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     },
     {
@@ -677,7 +647,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( cpu,_offline,_onnxruntime,_retinanet )"
+        "parent": "app-mlperf-inference-mlcommons-cpp,bf62405e6c7a44bf ( offline,_cpu,_onnxruntime,_retinanet )"
       }
     }
   ]
