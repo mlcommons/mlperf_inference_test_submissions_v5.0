@@ -8,7 +8,7 @@
     "mlcflow": "1.0.18",
     "numpy": "2.3.1",
     "opencv-python-headless": "4.11.0.86",
-    "pillow": "11.2.1",
+    "pillow": "11.3.0",
     "pip": "25.1.1",
     "pybind11": "2.13.6",
     "PyYAML": "6.0.2",
