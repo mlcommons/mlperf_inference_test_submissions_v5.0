@@ -31,42 +31,12 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "get-mlperf-inference-src,4b57186581024797 ( branch.master )"
-      }
-    },
-    {
-      "get,python3": {
-        "script_uid": "d0b5dd74373f4a62",
-        "script_alias": "get-python3",
-        "script_tags": "get,python,python3,get-python,get-python3",
-        "script_variations": "",
-        "version": "3.12.10",
-        "parent": "get-mlperf-inference-src,4b57186581024797 ( branch.master )"
-      }
-    },
-    {
-      "get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference": {
-        "script_uid": "ed603e7292974f10",
-        "script_alias": "get-git-repo",
-        "script_tags": "get,git,repo,repository,clone",
-        "script_variations": "branch.master,repo.https://github.com/mlcommons/inference",
-        "version": "",
-        "parent": "get-mlperf-inference-src,4b57186581024797 ( branch.master )"
-      }
-    },
-    {
-      "get,mlcommons,inference,src,_branch.master": {
+      "get,mlcommons,inference,src": {
         "script_uid": "4b57186581024797",
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
-        "script_variations": "branch.master",
-        "version": "custom-git-fdac4dcc0bcae68ec29462bb80a68e54067ab7a9",
+        "script_variations": "",
+        "version": "master-git-20628f046f3ac69b98064121c6c32cb14f5ce8e4",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( python,_resnet50,_onnxruntime,_cpu,_test,_r5.1-dev_default,_offline )"
       }
     },
@@ -91,12 +61,12 @@
       }
     },
     {
-      "get,mlperf,inference,src,_branch.master": {
+      "get,mlperf,inference,src": {
         "script_uid": "4b57186581024797",
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
-        "script_variations": "branch.master",
-        "version": "custom-git-fdac4dcc0bcae68ec29462bb80a68e54067ab7a9",
+        "script_variations": "",
+        "version": "master-git-20628f046f3ac69b98064121c6c32cb14f5ce8e4",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -177,7 +147,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_9a8929f7/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_ddc427e8/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
@@ -187,15 +157,15 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "md5sha1sum",
         "version": "0.9.5",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_9a8929f7/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_ddc427e8/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_keep,_path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_9a8929f7/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_keep,_path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_ddc427e8/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "keep,path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_9a8929f7/caffe_ilsvrc12.tar.gz",
+        "script_variations": "keep,path./Users/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_ddc427e8/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz )"
       }
@@ -227,7 +197,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -247,7 +217,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -267,7 +237,7 @@
         "script_tags": "get,python,python3,get-python,get-python3",
         "script_variations": "",
         "version": "3.12.10",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -367,7 +337,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "onnxruntime",
         "version": "1.22.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -417,7 +387,7 @@
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
         "script_variations": "onnx,fp32",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -477,7 +447,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_9d589546/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_99f2206d/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
@@ -487,15 +457,15 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "md5sha1sum",
         "version": "0.9.5",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_9d589546/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_99f2206d/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
-      "extract,file,_keep,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_9d589546/ILSVRC2012_img_val_500.tar": {
+      "extract,file,_keep,_path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_99f2206d/ILSVRC2012_img_val_500.tar": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "keep,path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_9d589546/ILSVRC2012_img_val_500.tar",
+        "script_variations": "keep,path./Users/runner/MLC/repos/local/cache/get-dataset-imagenet-val_99f2206d/ILSVRC2012_img_val_500.tar",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar )"
       }
@@ -596,7 +566,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.opencv-python-headless",
-        "version": "4.11.0.86",
+        "version": "4.12.0.88",
         "parent": "get-preprocessed-dataset-imagenet,f259d490bbaf45f5 ( -for.mobilenet,_NCHW )"
       }
     },
@@ -671,12 +641,12 @@
       }
     },
     {
-      "mlperf,mlcommons,inference,source,src,_branch.master": {
+      "mlperf,mlcommons,inference,source,src": {
         "script_uid": "4b57186581024797",
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
-        "script_variations": "branch.master",
-        "version": "custom-git-fdac4dcc0bcae68ec29462bb80a68e54067ab7a9",
+        "script_variations": "",
+        "version": "master-git-20628f046f3ac69b98064121c6c32cb14f5ce8e4",
         "parent": "get-preprocessed-dataset-imagenet,f259d490bbaf45f5 ( -for.mobilenet,_NCHW )"
       }
     },
@@ -727,7 +697,7 @@
         "script_tags": "get,dataset,imagenet,ILSVRC,image-classification,preprocessed",
         "script_variations": "-for.mobilenet,NCHW",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -737,7 +707,7 @@
         "script_tags": "get,aux,dataset-aux,image-classification,imagenet-aux",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -801,12 +771,12 @@
       }
     },
     {
-      "get,mlcommons,inference,src,_branch.master": {
+      "get,mlcommons,inference,src": {
         "script_uid": "4b57186581024797",
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
-        "script_variations": "branch.master",
-        "version": "custom-git-fdac4dcc0bcae68ec29462bb80a68e54067ab7a9",
+        "script_variations": "",
+        "version": "master-git-20628f046f3ac69b98064121c6c32cb14f5ce8e4",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
       }
     },
@@ -817,7 +787,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "wg-inference",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -846,7 +816,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-fdac4dcc0bcae68ec29462bb80a68e54067ab7a9",
+        "version": "master-git-20628f046f3ac69b98064121c6c32cb14f5ce8e4",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950 ( wg-inference )"
       }
     },
@@ -1127,17 +1097,7 @@
         "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
         "script_variations": "wg-inference",
         "version": "master",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
-      }
-    },
-    {
-      "get,mlcommons,inference,src,_branch.master": {
-        "script_uid": "4b57186581024797",
-        "script_alias": "get-mlperf-inference-src",
-        "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
-        "script_variations": "branch.master",
-        "version": "custom-git-fdac4dcc0bcae68ec29462bb80a68e54067ab7a9",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -1146,8 +1106,18 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "custom-git-fdac4dcc0bcae68ec29462bb80a68e54067ab7a9",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "version": "master-git-20628f046f3ac69b98064121c6c32cb14f5ce8e4",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
+      }
+    },
+    {
+      "get,mlcommons,inference,src": {
+        "script_uid": "4b57186581024797",
+        "script_alias": "get-mlperf-inference-src",
+        "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
+        "script_variations": "",
+        "version": "master-git-20628f046f3ac69b98064121c6c32cb14f5ce8e4",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -1217,7 +1187,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.psutil",
         "version": "7.0.0",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -1286,8 +1256,8 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "opencv-python",
-        "version": "4.11.0.86",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "version": "4.12.0.88",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -1297,7 +1267,7 @@
         "script_tags": "get,sys-util,generic,generic-sys-util",
         "script_variations": "libgl",
         "version": "undetected",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -1367,7 +1337,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "numpy",
         "version": "1.26.4",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -1437,7 +1407,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pycocotools",
         "version": "2.0.10",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     },
     {
@@ -1477,7 +1447,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_resnet50,_onnxruntime,_offline,_fp32 )"
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_cpu,_offline,_resnet50,_fp32 )"
       }
     }
   ]
