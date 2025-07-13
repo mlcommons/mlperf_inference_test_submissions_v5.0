@@ -608,7 +608,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest-reference-cpu-tvm-onnx_v1.19.2-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.71509,
+    "Performance_Result": 1.72183,
     "Performance_Units": "Samples/s"
   },
   {
@@ -631,7 +631,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50/offline",
     "Software": "onnxruntime",
-    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1015-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1018-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -644,7 +644,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 23.2518,
+    "Performance_Result": 23.216,
     "Performance_Units": "Samples/s"
   },
   {
@@ -667,7 +667,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet/offline",
     "Software": "onnxruntime",
-    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1015-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1018-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -1004,7 +1004,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-onnxruntime_v1.22.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 22.9332,
+    "Performance_Result": 23.0531,
     "Performance_Units": "Samples/s"
   },
   {
