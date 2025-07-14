@@ -1,6 +1,6 @@
 {
   "pip_freeze": {
-    "certifi": "2025.7.9",
+    "certifi": "2025.7.14",
     "charset-normalizer": "3.4.2",
     "colorama": "0.4.6",
     "giturlparse": "0.12.0",
