@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 17.3033
+Samples per second: 15.0021
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -13,15 +13,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 8481922042
-Max latency (ns)                : 28896154584
-Mean latency (ns)               : 18106054330
-50.00 percentile latency (ns)   : 17670355334
-90.00 percentile latency (ns)   : 26941209667
-95.00 percentile latency (ns)   : 26941209667
-97.00 percentile latency (ns)   : 28896154584
-99.00 percentile latency (ns)   : 28896154584
-99.90 percentile latency (ns)   : 28896154584
+Min latency (ns)                : 9679721916
+Max latency (ns)                : 33328685458
+Mean latency (ns)               : 20629294708
+50.00 percentile latency (ns)   : 19975977208
+90.00 percentile latency (ns)   : 31137420250
+95.00 percentile latency (ns)   : 31137420250
+97.00 percentile latency (ns)   : 33328685458
+99.00 percentile latency (ns)   : 33328685458
+99.90 percentile latency (ns)   : 33328685458
 
 ================================================
 Test Parameters Used
