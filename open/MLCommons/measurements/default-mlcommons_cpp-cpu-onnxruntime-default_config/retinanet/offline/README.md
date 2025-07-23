@@ -1,4 +1,4 @@
-*Check [CM MLPerf docs](https://docs.mlcommons.org/inference) for more details.*
+*Check [MLC MLPerf docs](https://docs.mlcommons.org/inference) for more details.*
 
 ## Host platform
 
@@ -8,16 +8,16 @@
 [GCC 13.2.0]
 * MLC version: unknown
 
-## CM Run Command
+## MLC Run Command
 
-See [CM installation guide](https://docs.mlcommons.org/inference/install/).
+See [MLC installation guide](https://docs.mlcommons.org/inference/install/).
 
 ```bash
 pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo GATEOverflow@mlperf-automations --checkout=a88987506f31a01998bc95a411dea666b2bcc5b6
+mlc pull repo GATEOverflow@mlperf-automations --checkout=e5a1b2043c6aa97bf4b5dee7d2d78b66a819808a
 
 
 ```
@@ -41,4 +41,4 @@ Model Precision: fp32
 `mAP`: `49.593`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `0.420981`
+`Samples per second`: `0.416222`
