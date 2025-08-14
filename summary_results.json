@@ -487,7 +487,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.22.1-default_config/resnet50/offline",
     "Software": "onnxruntime v1.22.1",
-    "operating_system": " (darwin-23.6.0)",
+    "operating_system": " (darwin-24.5.0)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -500,7 +500,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-reference-cpu-onnxruntime_v1.22.1-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 18.3366,
+    "Performance_Result": 16.288,
     "Performance_Units": "Samples/s"
   },
   {
