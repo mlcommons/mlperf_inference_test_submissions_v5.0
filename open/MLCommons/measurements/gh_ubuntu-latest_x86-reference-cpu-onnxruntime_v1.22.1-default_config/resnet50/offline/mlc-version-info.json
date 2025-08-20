@@ -36,7 +36,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-6ad8e26f9219f78acefaf29a3b9bc0fac11f3beb",
+        "version": "master-git-e20506b2293e82564e1183817a889ed6258bb7dd",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( python,_resnet50,_onnxruntime,_cpu,_test,_r5.1-dev_default,_offline )"
       }
     },
@@ -66,7 +66,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-6ad8e26f9219f78acefaf29a3b9bc0fac11f3beb",
+        "version": "master-git-e20506b2293e82564e1183817a889ed6258bb7dd",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -107,15 +107,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_24da7982/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_9883a7de/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_24da7982/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_9883a7de/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_24da7982/caffe_ilsvrc12.tar.gz",
+        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_9883a7de/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz )"
       }
@@ -276,7 +276,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( onnxruntime )"
       }
     },
@@ -317,15 +317,15 @@
         "script_tags": "dae,file,download-and-extract",
         "script_variations": "url.https://armi.in/files/resnet50_v1_op11/resnet50_v1.onnx",
         "version": "",
-        "parent": "get-ml-model-resnet50,56203e4e998b4bc0 ( fp32,_onnx )"
+        "parent": "get-ml-model-resnet50,56203e4e998b4bc0 ( onnx,_fp32 )"
       }
     },
     {
-      "get,ml-model,image-classification,resnet50,raw,_fp32,_onnx": {
+      "get,ml-model,image-classification,resnet50,raw,_onnx,_fp32": {
         "script_uid": "56203e4e998b4bc0",
         "script_alias": "get-ml-model-resnet50",
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
-        "script_variations": "fp32,onnx",
+        "script_variations": "onnx,fp32",
         "version": "",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_onnxruntime,_resnet50,_offline,_fp32 )"
       }
@@ -377,15 +377,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_38baede8/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_47509d91/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
-      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_38baede8/ILSVRC2012_img_val_500.tar": {
+      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_47509d91/ILSVRC2012_img_val_500.tar": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_38baede8/ILSVRC2012_img_val_500.tar",
+        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_47509d91/ILSVRC2012_img_val_500.tar",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar )"
       }
@@ -476,7 +476,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.opencv-python-headless )"
       }
     },
@@ -546,7 +546,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pillow )"
       }
     },
@@ -566,7 +566,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-6ad8e26f9219f78acefaf29a3b9bc0fac11f3beb",
+        "version": "master-git-e20506b2293e82564e1183817a889ed6258bb7dd",
         "parent": "get-preprocessed-dataset-imagenet,f259d490bbaf45f5 ( -for.mobilenet,_NCHW )"
       }
     },
@@ -716,7 +716,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-6ad8e26f9219f78acefaf29a3b9bc0fac11f3beb",
+        "version": "master-git-e20506b2293e82564e1183817a889ed6258bb7dd",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
       }
     },
@@ -756,7 +756,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-6ad8e26f9219f78acefaf29a3b9bc0fac11f3beb",
+        "version": "master-git-e20506b2293e82564e1183817a889ed6258bb7dd",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950 ( wg-inference )"
       }
     },
@@ -856,7 +856,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.wheel )"
       }
     },
@@ -886,7 +886,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-mlperf-inference-loadgen,64c3d98d0ba04950 ( wg-inference )"
       }
     },
@@ -946,7 +946,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pybind11 )"
       }
     },
@@ -1016,7 +1016,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.setuptools )"
       }
     },
@@ -1046,7 +1046,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-6ad8e26f9219f78acefaf29a3b9bc0fac11f3beb",
+        "version": "master-git-e20506b2293e82564e1183817a889ed6258bb7dd",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_onnxruntime,_resnet50,_offline,_fp32 )"
       }
     },
@@ -1056,7 +1056,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-6ad8e26f9219f78acefaf29a3b9bc0fac11f3beb",
+        "version": "master-git-e20506b2293e82564e1183817a889ed6258bb7dd",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( cpu,_onnxruntime,_resnet50,_offline,_fp32 )"
       }
     },
@@ -1116,7 +1116,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
       }
     },
@@ -1186,7 +1186,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
       }
     },
@@ -1266,7 +1266,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( numpy )"
       }
     },
@@ -1336,7 +1336,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "pip",
-        "version": "25.1.1",
+        "version": "25.2",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pycocotools )"
       }
     },
