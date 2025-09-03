@@ -16,16 +16,16 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo hemanthtanguturi1@mlperf-automations --checkout=2c3b0d3d841b7b60380e27ef0c38bea07e9d1b87
+mlc pull repo GATEOverflow@mlperf-automations --checkout=b4301c0f44ba0e8b06337de8beddd8b7c3509b0d
 
 
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf,
- you should simply reload hemanthtanguturi1@mlperf-automations without checkout and clean MLC cache as follows:*
+ you should simply reload GATEOverflow@mlperf-automations without checkout and clean MLC cache as follows:*
 
 ```bash
-mlc rm repo hemanthtanguturi1@mlperf-automations
-mlc pull repo hemanthtanguturi1@mlperf-automations
+mlc rm repo GATEOverflow@mlperf-automations
+mlc pull repo GATEOverflow@mlperf-automations
 mlc rm cache -f
 
 ```
@@ -40,4 +40,4 @@ Model Precision: fp32
 `mAP`: `49.593`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `0.42074`
+`Samples per second`: `0.421296`
