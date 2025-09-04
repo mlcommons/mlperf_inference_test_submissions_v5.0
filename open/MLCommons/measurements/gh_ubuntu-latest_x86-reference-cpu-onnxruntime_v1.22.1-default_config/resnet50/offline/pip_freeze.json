@@ -19,7 +19,7 @@
     "pip": "25.2",
     "protobuf": "6.32.0",
     "psutil": "7.0.0",
-    "pybind11": "3.0.0",
+    "pybind11": "3.0.1",
     "pycocotools": "2.0.10",
     "PyYAML": "6.0.2",
     "requests": "2.32.5",
