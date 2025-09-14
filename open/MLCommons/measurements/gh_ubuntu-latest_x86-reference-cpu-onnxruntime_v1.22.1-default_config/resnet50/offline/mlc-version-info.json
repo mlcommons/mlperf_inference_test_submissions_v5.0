@@ -107,15 +107,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_de79cb9c/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_24c1ebe3/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_de79cb9c/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_24c1ebe3/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_de79cb9c/caffe_ilsvrc12.tar.gz",
+        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/download-file_imagenet-aux-da_24c1ebe3/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://armi.in/files/caffe_ilsvrc12.tar.gz )"
       }
@@ -148,16 +148,6 @@
         "script_variations": "",
         "version": "",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_resnet50,_offline,_cpu,_fp32 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
@@ -201,16 +191,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
       "detect,cpu": {
         "script_uid": "586c8a43320142f7",
         "script_alias": "detect-cpu",
@@ -238,16 +218,6 @@
         "script_variations": "",
         "version": "",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
@@ -377,15 +347,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_b45e8221/ILSVRC2012_img_val_500.tar )"
+        "parent": "extract-file,3f0b76219d004817 ( keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_8f15ea2f/ILSVRC2012_img_val_500.tar )"
       }
     },
     {
-      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_b45e8221/ILSVRC2012_img_val_500.tar": {
+      "extract,file,_keep,_path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_8f15ea2f/ILSVRC2012_img_val_500.tar": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_b45e8221/ILSVRC2012_img_val_500.tar",
+        "script_variations": "keep,path./home/runner/MLC/repos/local/cache/get-dataset-imagenet-val_8f15ea2f/ILSVRC2012_img_val_500.tar",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_url.http://cKnowledge.org/ai/data/ILSVRC2012_img_val_500.tar )"
       }
@@ -428,16 +398,6 @@
         "script_variations": "",
         "version": "",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.opencv-python-headless )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
@@ -498,16 +458,6 @@
         "script_variations": "",
         "version": "",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( pillow )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
@@ -661,16 +611,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
       "detect,cpu": {
         "script_uid": "586c8a43320142f7",
         "script_alias": "detect-cpu",
@@ -771,16 +711,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
       "detect,cpu": {
         "script_uid": "586c8a43320142f7",
         "script_alias": "detect-cpu",
@@ -808,16 +738,6 @@
         "script_variations": "",
         "version": "",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.wheel )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
@@ -901,16 +821,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
       "detect,cpu": {
         "script_uid": "586c8a43320142f7",
         "script_alias": "detect-cpu",
@@ -968,16 +878,6 @@
         "script_variations": "",
         "version": "",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( package.setuptools )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
@@ -1071,16 +971,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
       "detect,cpu": {
         "script_uid": "586c8a43320142f7",
         "script_alias": "detect-cpu",
@@ -1138,16 +1028,6 @@
         "script_variations": "",
         "version": "",
         "parent": "get-generic-python-lib,94b62a682bc44791 ( opencv-python )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
@@ -1221,16 +1101,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
       "detect,cpu": {
         "script_uid": "586c8a43320142f7",
         "script_alias": "detect-cpu",
@@ -1291,16 +1161,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
-      }
-    },
-    {
       "detect,cpu": {
         "script_uid": "586c8a43320142f7",
         "script_alias": "detect-cpu",
@@ -1348,16 +1208,6 @@
         "script_variations": "pycocotools",
         "version": "2.0.10",
         "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( onnxruntime,_resnet50,_offline,_cpu,_fp32 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "detect-cpu,586c8a43320142f7"
       }
     },
     {
