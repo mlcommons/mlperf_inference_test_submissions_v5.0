@@ -1184,7 +1184,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.20.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 20.9513,
+    "Performance_Result": 19.7117,
     "Performance_Units": "Samples/s"
   }
 ]
