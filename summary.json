@@ -699,7 +699,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"Offline",
-        "Result":13.4174,
+        "Result":15.3994,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"undefined",
