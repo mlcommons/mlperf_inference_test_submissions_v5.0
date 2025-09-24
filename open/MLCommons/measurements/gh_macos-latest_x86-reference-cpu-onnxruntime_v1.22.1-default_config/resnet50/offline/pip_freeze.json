@@ -4,7 +4,7 @@
     "charset-normalizer": "3.4.3",
     "colorama": "0.4.6",
     "coloredlogs": "15.0.1",
-    "flatbuffers": "25.2.10",
+    "flatbuffers": "25.9.23",
     "giturlparse": "0.12.0",
     "humanfriendly": "10.0",
     "idna": "3.10",
