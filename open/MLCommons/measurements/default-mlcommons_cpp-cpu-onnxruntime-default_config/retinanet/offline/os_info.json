@@ -26,8 +26,8 @@
   ],
   "MLC_HOST_PLATFORM_FLAVOR": "x86_64",
   "MLC_HOST_PYTHON_BITS": "64",
-  "MLC_HOST_SYSTEM_NAME": "runnervmf4ws1",
+  "MLC_HOST_SYSTEM_NAME": "runnervm3ublj",
   "+PATH": [
-    "/home/runner/MLC/repos/local/cache/install-python-src_37704fc2/install/bin"
+    "/home/runner/MLC/repos/local/cache/install-python-src_885295f2/install/bin"
   ]
 }
