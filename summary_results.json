@@ -660,7 +660,7 @@
     "Scenario": "Offline",
     "Accuracy": "acc: 76.000",
     "Nodes": 1,
-    "Processor": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "Processor": "AMD EPYC 7763 64-Core Processor",
     "host_processors_per_node": 1,
     "host_processor_core_count": 2,
     "Accelerator": "",
@@ -680,7 +680,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 38.3613,
+    "Performance_Result": 23.2291,
     "Performance_Units": "Samples/s"
   },
   {
@@ -696,7 +696,7 @@
     "Scenario": "Offline",
     "Accuracy": "mAP: 76.951",
     "Nodes": 1,
-    "Processor": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "Processor": "AMD EPYC 7763 64-Core Processor",
     "host_processors_per_node": 1,
     "host_processor_core_count": 2,
     "Accelerator": "",
