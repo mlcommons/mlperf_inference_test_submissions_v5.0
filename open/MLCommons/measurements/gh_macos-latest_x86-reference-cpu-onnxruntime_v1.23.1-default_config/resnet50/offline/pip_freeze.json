@@ -1,14 +1,14 @@
 {
   "pip_freeze": {
     "certifi": "2025.8.3",
-    "charset-normalizer": "3.4.3",
+    "charset-normalizer": "3.4.4",
     "colorama": "0.4.6",
     "coloredlogs": "15.0.1",
     "flatbuffers": "25.9.23",
     "giturlparse": "0.12.0",
     "humanfriendly": "10.0",
-    "idna": "3.10",
-    "mlcflow": "1.1.2",
+    "idna": "3.11",
+    "mlcflow": "1.1.5",
     "mpmath": "1.3.0",
     "numpy": "1.26.4",
     "onnxruntime": "1.23.1",
