@@ -104,7 +104,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/default-mlcommons_cpp-cpu-onnxruntime-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.417046,
+    "Performance_Result": 0.421782,
     "Performance_Units": "Samples/s"
   },
   {
@@ -176,7 +176,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_macos-latest_x86-mlcommons_cpp-cpu-onnxruntime-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 7.00901,
+    "Performance_Result": 4.45283,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1308,7 +1308,7 @@
     "Scenario": "Offline",
     "Accuracy": "acc: 76.000",
     "Nodes": 1,
-    "Processor": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "Processor": "AMD EPYC 7763 64-Core Processor",
     "host_processors_per_node": 1,
     "host_processor_core_count": 2,
     "Accelerator": "",
@@ -1328,7 +1328,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.20.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 36.8746,
+    "Performance_Result": 21.0068,
     "Performance_Units": "Samples/s"
   }
 ]
