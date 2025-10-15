@@ -16,7 +16,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo mlcommons@mlperf-automations --checkout=7d9c9a22e13d5e659286ac9eedc13ad29023613a
+mlc pull repo mlcommons@mlperf-automations --checkout=ecca7b38e4f06b699a469d23838a64d29387b1f2
 
 
 ```
@@ -40,4 +40,4 @@ Model Precision: fp32
 `acc`: `76.0`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Samples per second`: `7.00901`
+`Samples per second`: `4.45283`
