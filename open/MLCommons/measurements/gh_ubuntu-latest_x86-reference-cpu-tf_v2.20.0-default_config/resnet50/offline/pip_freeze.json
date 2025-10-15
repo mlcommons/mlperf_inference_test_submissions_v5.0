@@ -3,7 +3,7 @@
     "absl-py": "2.3.1",
     "astunparse": "1.6.3",
     "certifi": "2025.10.5",
-    "charset-normalizer": "3.4.3",
+    "charset-normalizer": "3.4.4",
     "colorama": "0.4.6",
     "flatbuffers": "25.9.23",
     "gast": "0.6.0",
