@@ -1315,7 +1315,7 @@
     "a#": "",
     "Location": "open/MLCommons/results/gh_ubuntu-latest_x86-reference-cpu-tf_v2.20.0-default_config/resnet50/offline",
     "Software": "tf v2.20.0",
-    "operating_system": "Ubuntu 24.04 (linux-6.11.0-1018-azure-glibc2.39)",
+    "operating_system": "Ubuntu 24.04 (linux-6.14.0-1012-azure-glibc2.39)",
     "Notes": "",
     "compliance": 1,
     "errors": 0,
@@ -1328,7 +1328,7 @@
     "Code": "https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "edge/open/MLCommons/gh_ubuntu-latest_x86-reference-cpu-tf_v2.20.0-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 21.0068,
+    "Performance_Result": 20.9643,
     "Performance_Units": "Samples/s"
   }
 ]
