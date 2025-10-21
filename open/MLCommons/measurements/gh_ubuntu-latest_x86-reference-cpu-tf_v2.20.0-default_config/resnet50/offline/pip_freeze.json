@@ -19,7 +19,7 @@
     "MarkupSafe": "3.0.3",
     "mdurl": "0.1.2",
     "ml_dtypes": "0.5.3",
-    "mlcflow": "1.1.5",
+    "mlcflow": "1.1.7",
     "namex": "0.1.0",
     "numpy": "1.26.4",
     "opencv-python": "4.10.0.82",
