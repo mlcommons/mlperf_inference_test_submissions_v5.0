@@ -1,0 +1,11 @@
+User Conf path: /home/runner/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/6e3149b9de0f46a98050db28532e031c.conf
+Dataset Preprocessed path: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_429609b0
+Dataset List filepath: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_429609b0/annotations/openimages-mlperf.json
+Scenario: Offline
+Mode: PerformanceOnly
+Batch size: 1
+Query count override: 0
+Performance sample count override in application: 0
+loaded openimages with 10 samples
+starting benchmark
+loading samples to ram with total sample size: 10
