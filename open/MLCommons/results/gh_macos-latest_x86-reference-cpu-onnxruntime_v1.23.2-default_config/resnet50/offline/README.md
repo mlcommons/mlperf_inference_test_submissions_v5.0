@@ -2,7 +2,7 @@
 
 ## Host platform
 
-* OS version: macOS-15.7.1-arm64-arm-64bit
+* OS version: macOS-15.7.2-arm64-arm-64bit
 * CPU version: arm
 * Python version: 3.12.10 (v3.12.10:0cc81280367, Apr  8 2025, 08:46:59) [Clang 13.0.0 (clang-1300.0.29.30)]
 * MLC version: unknown
@@ -40,4 +40,4 @@ Model Precision: fp32
 `acc`: `76.0`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Samples per second`: `16.2171`
+`Samples per second`: `13.0368`
