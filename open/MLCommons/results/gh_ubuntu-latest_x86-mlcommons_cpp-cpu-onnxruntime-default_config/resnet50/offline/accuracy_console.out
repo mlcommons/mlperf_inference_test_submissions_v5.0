@@ -1,0 +1,11 @@
+User Conf path: /home/runner/MLC/repos/amd@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/0eb91f95f0fc4ea5a2c692c6983c8f9d.conf
+Dataset Preprocessed path: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_6ccf76d4
+Dataset List filepath: 
+Scenario: Offline
+Mode: AccuracyOnly
+Batch size: 32
+Query count override: 0
+Performance sample count override in application: 0
+loaded imagenet with 500 samples
+starting benchmark
+loading samples to ram with total sample size: 500
