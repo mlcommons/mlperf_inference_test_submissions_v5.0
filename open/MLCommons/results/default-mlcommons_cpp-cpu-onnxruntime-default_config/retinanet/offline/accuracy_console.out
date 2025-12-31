@@ -1,6 +1,6 @@
-User Conf path: /home/runner/MLC/repos/amd@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/b894399c585a4623859751cbdfc4286d.conf
-Dataset Preprocessed path: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_43acc0cc
-Dataset List filepath: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_43acc0cc/annotations/openimages-mlperf.json
+User Conf path: /home/runner/MLC/repos/sujik18@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/5eec4af5ddc14c5da44ec863557c98ab.conf
+Dataset Preprocessed path: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_0b49c70b
+Dataset List filepath: /home/runner/MLC/repos/local/cache/get-preprocessed-dataset-openimages_0b49c70b/annotations/openimages-mlperf.json
 Scenario: Offline
 Mode: AccuracyOnly
 Batch size: 1
