@@ -1,7 +1,7 @@
 {
   "pip_freeze": {
     "distlib": "0.4.0",
-    "filelock": "3.20.1",
+    "filelock": "3.20.2",
     "pip": "22.2.2",
     "platformdirs": "4.5.1",
     "pybind11": "3.0.1",
