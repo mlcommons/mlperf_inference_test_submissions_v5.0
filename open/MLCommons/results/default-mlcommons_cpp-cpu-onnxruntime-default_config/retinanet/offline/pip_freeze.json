@@ -1,13 +1,13 @@
 {
   "pip_freeze": {
     "distlib": "0.4.0",
-    "filelock": "3.20.2",
+    "filelock": "3.20.3",
     "pip": "22.2.2",
     "platformdirs": "4.5.1",
     "pybind11": "3.0.1",
     "setuptools": "63.2.0",
     "typing_extensions": "4.15.0",
-    "virtualenv": "20.36.0",
+    "virtualenv": "20.36.1",
     "wheel": "0.45.1"
   }
 }
