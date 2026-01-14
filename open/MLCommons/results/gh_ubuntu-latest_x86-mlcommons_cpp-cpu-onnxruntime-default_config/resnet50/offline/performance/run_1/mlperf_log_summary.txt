@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : QueueSUT
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 23.2069
+Samples per second: 23.29
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -13,15 +13,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 1348506029
-Max latency (ns)                : 21545311134
-Mean latency (ns)               : 11434871567
-50.00 percentile latency (ns)   : 11047481801
-90.00 percentile latency (ns)   : 20680650755
-95.00 percentile latency (ns)   : 20680650755
-97.00 percentile latency (ns)   : 21545311134
-99.00 percentile latency (ns)   : 21545311134
-99.90 percentile latency (ns)   : 21545311134
+Min latency (ns)                : 1348088093
+Max latency (ns)                : 21468411384
+Mean latency (ns)               : 11377277817
+50.00 percentile latency (ns)   : 10977884460
+90.00 percentile latency (ns)   : 20605837466
+95.00 percentile latency (ns)   : 20605837466
+97.00 percentile latency (ns)   : 21468411384
+99.00 percentile latency (ns)   : 21468411384
+99.90 percentile latency (ns)   : 21468411384
 
 ================================================
 Test Parameters Used
@@ -34,9 +34,9 @@ min_duration (ms): 0
 max_duration (ms): 0
 min_query_count : 1
 max_query_count : 500
-qsl_rng_seed : 1780908523862526354
-sample_index_rng_seed : 14771362308971278857
-schedule_rng_seed : 18209322760996052031
+qsl_rng_seed : 2465351861681999779
+sample_index_rng_seed : 14276810075590677512
+schedule_rng_seed : 3936089224930324775
 accuracy_log_rng_seed : 0
 accuracy_log_probability : 0
 accuracy_log_sampling_target : 0
