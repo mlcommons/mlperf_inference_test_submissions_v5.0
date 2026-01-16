@@ -969,7 +969,7 @@
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"offline",
-        "Result":35.8758,
+        "Result":36.8323,
         "Accuracy":"acc: 76.000",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
