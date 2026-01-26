@@ -8,14 +8,15 @@
     "mlcflow": "1.1.18",
     "numpy": "2.4.1",
     "opencv-python-headless": "4.13.0.90",
+    "packaging": "26.0",
     "pillow": "12.1.0",
     "pip": "25.3",
     "pybind11": "3.0.1",
     "PyYAML": "6.0.3",
     "requests": "2.32.5",
-    "setuptools": "80.9.0",
+    "setuptools": "80.10.2",
     "tabulate": "0.9.0",
     "urllib3": "2.6.3",
-    "wheel": "0.45.1"
+    "wheel": "0.46.3"
   }
 }
