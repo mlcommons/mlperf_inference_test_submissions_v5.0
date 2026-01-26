@@ -22,7 +22,7 @@
   "host_processor_interconnect": "",
   "host_processor_model_name": "AMD EPYC 7763 64-Core Processor",
   "host_processors_per_node": "1",
-  "host_storage_capacity": "159G",
+  "host_storage_capacity": "158G",
   "host_storage_type": "SSD",
   "hw_notes": "",
   "number_of_nodes": "1",
